@@ -26,7 +26,7 @@ describe('entry schema', () => {
     expect(result.success, JSON.stringify(result.error?.issues)).toBe(true);
   });
 
-  const required = ['name', 'site', 'url', 'captured', 'raw', 'status', 'posture', 'summary', 'tiers', 'honesty', 'notes'];
+  const required = ['name', 'site', 'url', 'captured', 'raw', 'status', 'posture', 'summary', 'tiers', 'notes'];
   it.each(required)('rejects an entry missing %s', (field) => {
     const entry = structuredClone(valid);
     delete entry[field];
@@ -56,6 +56,14 @@ describe('entry schema', () => {
     const entry = structuredClone(valid);
     entry.tiers[0].timingFunction = 'springy';
     expect(parse(entry).success).toBe(false);
+  });
+
+  it('rejects a tier whose values are not in the raw file', () => {
+    for (const change of [{ duration: '0.3s', durationMs: 300 }, { selector: 'button' }, { property: 'transform' }, { count: 2 }, { phase: 'scroll' }]) {
+      const entry = structuredClone(valid);
+      Object.assign(entry.tiers[0], change);
+      expect(parse(entry).success, JSON.stringify(change)).toBe(false);
+    }
   });
 
   it('rejects a raw file that does not exist', () => {

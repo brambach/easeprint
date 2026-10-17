@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>easeprint measure fixture</title>
+<link rel="stylesheet" href="/style.css">
+<style>
+  .inline-all { transition: all 0.1s linear; }
+</style>
+</head>
+<body>
+  <a class="card" href="#a">Card</a>
+  <button class="btn" type="button">Button</button>
+  <div class="spinner"></div>
+  <div class="tall"></div>
+  <div class="waapi">waapi</div>
+  <script>
+    document.querySelector('.waapi').animate([{ transform: 'none' }, { transform: 'translateX(10px)' }], { duration: 640, easing: 'cubic-bezier(0.2, 1.4, 0.4, 1)' });
+  </script>
+</body>
+</html>

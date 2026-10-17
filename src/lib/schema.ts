@@ -2,15 +2,19 @@ import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { z } from 'astro/zod';
 import { parseDuration, parseEasing } from './easing';
+import { readRaw } from './honesty';
+import { findInRaw } from './trace';
 
 /**
- * The shape of an entry. Rules live here first: a value that can't be traced or parsed fails the build.
- * Vocabulary follows the house glossary: spatial and material postures, ambient split three ways.
+ * The shape of an entry. Rules live here first: a value that can't be parsed, or can't be found in the raw file
+ * it names, fails the build. Vocabulary follows the house glossary: spatial and material postures, ambient split
+ * three ways. Honesty notes (reduced motion, `transition: all`, JS and canvas) are computed from the raw files in
+ * src/lib/honesty.ts, so they aren't fields here.
  */
 export const POSTURES = ['spatial', 'material', 'ambient'] as const;
 export const AMBIENT_KINDS = ['decorative', 'diagrammatic', 'character'] as const;
-export const ROLES = ['statement', 'signature', 'utility', 'exit', 'ambient'] as const;
-export const PHASES = ['load', 'scroll', 'hover', 'final'] as const;
+export const ROLES = ['statement', 'secondary', 'signature', 'utility', 'exit', 'ambient'] as const;
+export const PHASES = ['load', 'scroll', 'hover', 'unhover', 'final'] as const;
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'expected YYYY-MM-DD');
 
@@ -37,13 +41,18 @@ const duration = z.string().refine(
   { message: 'not a CSS duration like "0.9s" or "200ms"' },
 );
 
+const exists = (p: string) => existsSync(resolve(process.env.EASEPRINT_ROOT ?? process.cwd(), p));
+
 /** A file under data/raw that exists on disk. Paths are relative to the repo root (EASEPRINT_ROOT in tests). */
 export const rawPath = z
   .string()
   .regex(/^data\/raw\/[a-z0-9.-]+\/\d{4}-\d{2}-\d{2}\.json$/, 'expected data/raw/<site>/<YYYY-MM-DD>.json')
-  .refine((p) => existsSync(resolve(process.env.EASEPRINT_ROOT ?? process.cwd(), p)), {
-    message: 'raw measurement file does not exist',
-  });
+  .refine(exists, { message: 'raw measurement file does not exist' });
+
+export const rawReducedPath = z
+  .string()
+  .regex(/^data\/raw\/[a-z0-9.-]+\/\d{4}-\d{2}-\d{2}-reduced\.json$/, 'expected data/raw/<site>/<YYYY-MM-DD>-reduced.json')
+  .refine(exists, { message: 'reduced-motion measurement file does not exist' });
 
 export const tierSchema = z
   .strictObject({
@@ -56,12 +65,11 @@ export const tierSchema = z
     timingFunction,
     duration,
     durationMs: z.number().nonnegative(),
-    delay: duration.optional(),
     /** Which part of the measurement run saw it. */
     phase: z.enum(PHASES),
-    /** A sample selector from the raw file. */
+    /** A sample selector, exactly as the raw file has it. */
     selector: z.string().min(1),
-    /** How many elements or events carried this exact pair. */
+    /** Count on the matching raw record: events seen, or elements carrying it for phase "final". */
     count: z.number().int().positive(),
   })
   .refine((t) => Math.abs(parseDuration(t.duration) - t.durationMs) < 0.001, {
@@ -85,6 +93,7 @@ export const entrySchema = z
     url: z.url(),
     captured: isoDate,
     raw: rawPath,
+    rawReduced: rawReducedPath.optional(),
     status: z.enum(['measured', 'partial', 'unmeasurable']),
     /** Why a site is partial or unmeasurable. Required for both. */
     statusReason: z.string().min(10).optional(),
@@ -92,18 +101,8 @@ export const entrySchema = z
     ambientKind: z.enum(AMBIENT_KINDS).optional(),
     summary: z.string().min(20),
     tiers: z.array(tierSchema),
-    honesty: z.strictObject({
-      reducedMotion: z.enum(['honored', 'partial', 'not-found', 'unknown']),
-      reducedMotionEvidence: z.string().min(10),
-      transitionAll: z.strictObject({
-        /** Elements whose computed transition-property included `all` at the end of the run. */
-        computedElements: z.number().int().nonnegative(),
-        /** `transition: all` or `transition-property: all` declarations in the CSS the page loaded. */
-        declarations: z.number().int().nonnegative(),
-      }),
-      motionInJs: z.boolean(),
-      motionInCanvas: z.boolean(),
-    }),
+    /** Anything the computed honesty notes can't say on their own. */
+    honestyNote: z.string().min(10).optional(),
     notes: z.array(z.string().min(1)),
     fromNotes: z.array(noteSchema).default([]),
   })
@@ -120,13 +119,22 @@ export const entrySchema = z
     if (e.status !== 'unmeasurable' && e.tiers.length === 0) {
       ctx.addIssue({ code: 'custom', path: ['tiers'], message: 'a measured entry needs at least one tier' });
     }
-    if (!e.raw.includes(`/${e.captured}.json`)) {
-      ctx.addIssue({ code: 'custom', path: ['raw'], message: 'raw file date must match captured' });
+    if (!e.raw.endsWith(`/${e.captured}.json`) || !e.raw.includes(`/${e.site}/`)) {
+      ctx.addIssue({ code: 'custom', path: ['raw'], message: 'raw file must be data/raw/<site>/<captured>.json' });
     }
-    const roles = e.tiers.map((t) => t.role);
-    if (roles.filter((r) => r === 'statement').length > 1) {
+    if (e.rawReduced && e.rawReduced !== e.raw.replace(/\.json$/, '-reduced.json')) {
+      ctx.addIssue({ code: 'custom', path: ['rawReduced'], message: 'reduced run must sit beside the raw file, same date' });
+    }
+    if (e.tiers.filter((t) => t.role === 'statement').length > 1) {
       ctx.addIssue({ code: 'custom', path: ['tiers'], message: 'at most one statement tier per site' });
     }
+    // Every tier must be found, exactly, in the raw file. This is the trace rule, enforced at build time.
+    if (!exists(e.raw)) return;
+    const raw = readRaw(e.raw);
+    e.tiers.forEach((tier, i) => {
+      const hit = findInRaw(raw, tier);
+      if (!hit.found) ctx.addIssue({ code: 'custom', path: ['tiers', i], message: `untraced: ${hit.reason}` });
+    });
   });
 
 export type Entry = z.infer<typeof entrySchema>;

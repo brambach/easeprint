@@ -1,0 +1,73 @@
+{
+  "name": "Cuberto",
+  "site": "cuberto.com",
+  "url": "https://cuberto.com/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/cuberto.com/2026-10-17.json",
+  "rawReduced": "data/raw/cuberto.com/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "material",
+  "summary": "Long, front-loaded transforms on cards and titles, elastic overshoot on button icons, and a cursor that answers in 0.3s. The surfaces feel like they have give.",
+  "tiers": [
+    {
+      "role": "statement",
+      "label": "work card preview drift on hover",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration": "1.2s",
+      "durationMs": 1200,
+      "phase": "hover",
+      "selector": "a.Card > div.preview",
+      "count": 4
+    },
+    {
+      "role": "secondary",
+      "label": "title line rising out of its mask",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration": "0.8s",
+      "durationMs": 800,
+      "phase": "scroll",
+      "selector": "span.title > span",
+      "count": 3
+    },
+    {
+      "role": "signature",
+      "label": "round button icon overshoot",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.34, 4.56, 0.64, 1)",
+      "duration": "0.7s",
+      "durationMs": 700,
+      "phase": "hover",
+      "selector": "a.RoundButton > span.icon",
+      "count": 1
+    },
+    {
+      "role": "signature",
+      "label": "button fill ripple",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.4, 0, 0, 1)",
+      "duration": "0.5s",
+      "durationMs": 500,
+      "phase": "hover",
+      "selector": "span.ripple > span",
+      "count": 2
+    },
+    {
+      "role": "utility",
+      "label": "cursor dot resizing over targets",
+      "property": "transform",
+      "timingFunction": "ease",
+      "duration": "0.3s",
+      "durationMs": 300,
+      "phase": "hover",
+      "selector": "div.Cursor::before",
+      "count": 12
+    }
+  ],
+  "honestyNote": "Scripts ship GSAP, ScrollTrigger and Lenis, but window.gsap wasn't exposed, so any GSAP tweens and the smooth scroll itself aren't in these numbers. Only CSS transitions and animations were readable.",
+  "notes": [
+    "Leaving a card runs the same 1.2s curve as arriving. No separate, faster exit tier was seen.",
+    "The icon curve's second control point sits at y = 4.56, so a short hop reads as a big spring. A 0.6s sibling at y = 5.56 runs on CTA buttons."
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "name": "Raycast",
+  "site": "raycast.com",
+  "url": "https://www.raycast.com/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/raycast.com/2026-10-17.json",
+  "rawReduced": "data/raw/raycast.com/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "material",
+  "summary": "Keys that press and glow on a quint-out curve, diagrams that settle over two seconds on quart-out, and a dense floor of 0.25s to 0.3s ease fades underneath. Product as object.",
+  "tiers": [
+    {
+      "role": "statement",
+      "label": "API diagram labels settling into place",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+      "duration": "2s",
+      "durationMs": 2000,
+      "phase": "scroll",
+      "selector": "svg > g.ApiFig1-module__Ijg2gW__selectedItem.ApiFig1-module__Ijg2gW__label",
+      "count": 1
+    },
+    {
+      "role": "secondary",
+      "label": "API diagram panels sliding apart",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+      "duration": "1.5s",
+      "durationMs": 1500,
+      "phase": "scroll",
+      "selector": "svg > g.ApiFig1-module__Ijg2gW__top.ApiFig1-module__Ijg2gW__topActive",
+      "count": 1
+    },
+    {
+      "role": "secondary",
+      "label": "hero copy fading up on load",
+      "property": "page-module__H3BVAa__fade-in-up",
+      "timingFunction": "ease",
+      "duration": "1s",
+      "durationMs": 1000,
+      "phase": "load",
+      "selector": "div.page-module__H3BVAa__hero > div.page-module__H3BVAa__heroText.page-module__H3BVAa__fadeInUp",
+      "count": 1
+    },
+    {
+      "role": "signature",
+      "label": "keyboard key glow",
+      "property": "opacity",
+      "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "duration": "0.4s",
+      "durationMs": 400,
+      "phase": "unhover",
+      "selector": "div.index-module__h8MSgW__keyboardRow > div.index-module__h8MSgW__key",
+      "count": 4
+    },
+    {
+      "role": "signature",
+      "label": "keyboard key press",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "hover",
+      "selector": "div > div.index-module__h8MSgW__key.index-module__h8MSgW__pressed",
+      "count": 3
+    },
+    {
+      "role": "utility",
+      "label": "card glow on hover",
+      "property": "opacity",
+      "timingFunction": "ease",
+      "duration": "0.3s",
+      "durationMs": 300,
+      "phase": "hover",
+      "selector": "a.index-module__pFn2Lq__link > div.index-module__pFn2Lq__card::after",
+      "count": 3
+    },
+    {
+      "role": "utility",
+      "label": "star field twinkle",
+      "property": "opacity",
+      "timingFunction": "ease",
+      "duration": "0.25s",
+      "durationMs": 250,
+      "phase": "hover",
+      "selector": "div.index-module__utU0aa__top > div.index-module__utU0aa__star::after",
+      "count": 79
+    },
+    {
+      "role": "exit",
+      "label": "icon stack swap, leaving (WAAPI)",
+      "property": "opacity",
+      "timingFunction": "ease-out",
+      "duration": "100ms",
+      "durationMs": 100,
+      "phase": "unhover",
+      "selector": "span.styles-module__lSQKOG__iconStack > span.styles-module__lSQKOG__iconStackItem",
+      "count": 2
+    }
+  ],
+  "honestyNote": "The hero is a WebGL canvas; its motion isn't in these numbers. 149 elements compute transition-property: all at the end of the visit: unnamed divs (69), API diagram SVG paths (44) and nav links (31) among them.",
+  "notes": [
+    "The two long curves are the usual cubic-bezier stand-ins for quart-out (0.165, 0.84, 0.44, 1) and quint-out (0.23, 1, 0.32, 1).",
+    "The star field's 0.25s ease fades fired 949 times in one visit, out of 1,153 timed motion events in total.",
+    "The icon stack swap runs through the Web Animations API, not CSS, at 100ms leaving and 240ms arriving."
+  ]
+}

@@ -1,0 +1,8 @@
+.card { display: block; width: 200px; height: 100px; transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1), opacity 140ms ease-in; }
+.card:hover { transform: translateY(-4px); opacity: 0.9; }
+.btn { width: 120px; height: 40px; transition: all 0.2s ease-out; }
+.btn:hover { transform: scale(1.05); }
+.spinner { width: 20px; height: 20px; animation: spin 1.5s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.tall { height: 2000px; }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }

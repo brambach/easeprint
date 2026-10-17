@@ -3,7 +3,7 @@
  "tool": "easeprint-measure 1.1.0",
  "url": "https://vaul.emilkowal.ski",
  "date": "2026-10-17",
- "capturedAt": "2026-10-17T05:55:55.546Z",
+ "capturedAt": "2026-10-17T06:05:06.926Z",
  "browser": "Chromium 141.0.7390.37",
  "viewport": {
   "width": 1440,
@@ -16,7 +16,12 @@
    "load, settle 3s",
    "wheel-scroll to bottom in 80% viewport steps",
    "hover then leave up to 30 elements",
+   "click div.flex.gap-4 > button.rounded-full.bg-white, wait 1.5s, press Escape, wait 1s",
+   "wait 5s for anything the clicks started to finish",
    "final computed scan"
+  ],
+  "clicks": [
+   "div.flex.gap-4 > button.rounded-full.bg-white"
   ]
  },
  "status": 200,
@@ -57,7 +62,68 @@
    }
   ]
  },
+ "click": [
+  {
+   "selector": "div.flex.gap-4 > button.rounded-full.bg-white",
+   "ok": true
+  }
+ ],
  "observed": [
+  {
+   "kind": "transition",
+   "phase": "click",
+   "property": "border-bottom-left-radius",
+   "declaredProperty": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "delay": "0s",
+   "selector": "div.relative.light",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "click",
+   "property": "border-bottom-right-radius",
+   "declaredProperty": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "delay": "0s",
+   "selector": "div.relative.light",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "click",
+   "property": "border-top-left-radius",
+   "declaredProperty": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "delay": "0s",
+   "selector": "div.relative.light",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "click",
+   "property": "border-top-right-radius",
+   "declaredProperty": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "delay": "0s",
+   "selector": "div.relative.light",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "click",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "delay": "0s",
+   "selector": "div.relative.light",
+   "count": 2
+  },
   {
    "kind": "transition",
    "phase": "hover",
@@ -79,6 +145,54 @@
    "delay": "0s",
    "selector": "div.flex.justify-center > a.text-center.mt-4",
    "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "click",
+   "name": "fadeIn",
+   "keyframeProperties": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.fixed.inset-0",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "click",
+   "name": "slideFromBottom",
+   "keyframeProperties": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.bg-gray-100.flex",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "click",
+   "name": "fadeOut",
+   "keyframeProperties": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.fixed.inset-0",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "click",
+   "name": "slideToBottom",
+   "keyframeProperties": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.bg-gray-100.flex",
+   "count": 1
   }
  ],
  "computed": {
@@ -94,6 +208,26 @@
     "count": 1,
     "samples": [
      "div.relative.mx-auto > button.ml-2.h-7"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.relative.light"
+    ]
+   },
+   {
+    "property": "border-radius",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.relative.light"
     ]
    },
    {
@@ -223,5 +357,5 @@
    "springPhysics": true
   }
  },
- "elapsedMs": 15363
+ "elapsedMs": 23386
 }

@@ -14,7 +14,7 @@ import { findInRaw } from './trace';
 export const POSTURES = ['spatial', 'material', 'ambient'] as const;
 export const AMBIENT_KINDS = ['decorative', 'diagrammatic', 'character'] as const;
 export const ROLES = ['statement', 'secondary', 'signature', 'utility', 'exit', 'ambient'] as const;
-export const PHASES = ['load', 'scroll', 'hover', 'unhover', 'final'] as const;
+export const PHASES = ['load', 'scroll', 'hover', 'unhover', 'click', 'final'] as const;
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'expected YYYY-MM-DD');
 

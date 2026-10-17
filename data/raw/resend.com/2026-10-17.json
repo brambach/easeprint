@@ -1,0 +1,3053 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://resend.com",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:57:20.850Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "no-preference",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://resend.com/",
+ "scrolledTo": 6480,
+ "hover": {
+  "candidates": {
+   "available": 103,
+   "distinct": 57,
+   "picked": [
+    "div > header.sticky.top-0",
+    "div > a.outline-hidden.transition",
+    "li > a.outline-hidden.transition",
+    "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+    "div.flex.flex-col > a.relative.inline-flex",
+    "div.flex.items-center > button#base-ui-_R_lh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_1lh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_2lh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_3lh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_4lh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_5lh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_65h4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_2lmh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_6lmh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_almh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_elmh4ltabsdb_",
+    "div.flex.items-center > button#base-ui-_R_ilmh4ltabsdb_",
+    "footer.absolute.bottom-0 > a.outline-hidden.transition",
+    "div.relative.inline-flex > button.flex.items-center",
+    "div.mx-auto.my-8 > a.relative.inline-flex",
+    "div.flex.gap-2 > button#base-ui-_R_36q4ltabsdb_",
+    "div.flex.gap-2 > button#base-ui-_R_76q4ltabsdb_",
+    "td > a",
+    "p.text-sm.text-gray-11 > button#base-ui-_R_1lt1mcltabsdb_",
+    "p.text-sm.text-gray-11 > button#base-ui-_R_1ll3mcltabsdb_",
+    "p.text-sm.text-gray-11 > button#base-ui-_R_1kt7mcltabsdb_",
+    "p.text-sm.text-gray-11 > button#base-ui-_R_qt9mcltabsdb_",
+    "div.mb-3.grid > button#base-ui-_R_9msltabsdb_",
+    "div.my-8.mb-24 > a.relative.inline-flex",
+    "div.flex.min-w-48 > a.outline-hidden.transition"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div > header.sticky.top-0",
+    "covered": false
+   },
+   {
+    "selector": "div > a.outline-hidden.transition",
+    "covered": false
+   },
+   {
+    "selector": "li > a.outline-hidden.transition",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.flex-col > a.relative.inline-flex",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_lh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_1lh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_2lh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_3lh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_4lh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_5lh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_65h4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_2lmh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_6lmh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_almh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_elmh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > button#base-ui-_R_ilmh4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "footer.absolute.bottom-0 > a.outline-hidden.transition",
+    "covered": false
+   },
+   {
+    "selector": "div.relative.inline-flex > button.flex.items-center",
+    "covered": false
+   },
+   {
+    "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.gap-2 > button#base-ui-_R_36q4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.gap-2 > button#base-ui-_R_76q4ltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "td > a",
+    "covered": true
+   },
+   {
+    "selector": "p.text-sm.text-gray-11 > button#base-ui-_R_1lt1mcltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "p.text-sm.text-gray-11 > button#base-ui-_R_1ll3mcltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "p.text-sm.text-gray-11 > button#base-ui-_R_1kt7mcltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "p.text-sm.text-gray-11 > button#base-ui-_R_qt9mcltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.mb-3.grid > button#base-ui-_R_9msltabsdb_",
+    "covered": false
+   },
+   {
+    "selector": "div.my-8.mb-24 > a.relative.inline-flex",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.min-w-48 > a.outline-hidden.transition",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.3s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "div.flex.items-center > a.rainbow-border.mb-8::after",
+   "count": 204
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "a.rainbow-border.mb-8 > span.inline-flex.items-center",
+   "count": 204
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.3s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "div.flex.items-center > a.rainbow-border.mb-8::after",
+   "count": 203
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "a.rainbow-border.mb-8 > span.inline-flex.items-center",
+   "count": 203
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.3s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "div.flex.items-center > a.rainbow-border.mb-8::after",
+   "count": 97
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "a.rainbow-border.mb-8 > span.inline-flex.items-center",
+   "count": 97
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.3s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "div.flex.items-center > a.rainbow-border.mb-8::after",
+   "count": 39
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "a.rainbow-border.mb-8 > span.inline-flex.items-center",
+   "count": 39
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-bottom-color",
+   "declaredProperty": "border",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.inline.text-current > span.inline-flex.h-4",
+   "count": 16
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-left-color",
+   "declaredProperty": "border",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.inline.text-current > span.inline-flex.h-4",
+   "count": 16
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-right-color",
+   "declaredProperty": "border",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.inline.text-current > span.inline-flex.h-4",
+   "count": 16
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-top-color",
+   "declaredProperty": "border",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.inline.text-current > span.inline-flex.h-4",
+   "count": 16
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.relative.inline-flex > span.transition-all.opacity-100",
+   "count": 10
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "cubic-bezier(0.25, 0.1, 0.35, 1)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.relative.z-20 > div.flex.w-full",
+   "count": 9
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-bottom-color",
+   "declaredProperty": "border",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.inline.text-current > span.inline-flex.h-4",
+   "count": 8
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-left-color",
+   "declaredProperty": "border",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.inline.text-current > span.inline-flex.h-4",
+   "count": 8
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-right-color",
+   "declaredProperty": "border",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.inline.text-current > span.inline-flex.h-4",
+   "count": 8
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-top-color",
+   "declaredProperty": "border",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.inline.text-current > span.inline-flex.h-4",
+   "count": 8
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "650ms",
+   "timingFunction": "linear(0 0%, 0.0144 1.5625%, 0.0538 3.125%, 0.1123 4.6875%, 0.1848 6.25%, 0.2668 7.8125%, 0.3542 9.375%, 0.4436 10.9375%, 0.5321 12.5%, 0.6174 14.0625%, 0.6977 15.625%, 0.7716 17.1875%, 0.8384 18.75%, 0.8974 20.3125%, 0.9484 21.875%, 0.9915 23.4375%, 1.0269 25%, 1.0551 26.5625%, 1.0765 28.125%, 1.0918 29.6875%, 1.1018 31.25%, 1.1071 32.8125%, 1.1084 34.375%, 1.1065 35.9375%, 1.1019 37.5%, 1.0953 39.0625%, 1.0873 40.625%, 1.0783 42.1875%, 1.0688 43.75%, 1.0591 45.3125%, 1.0495 46.875%, 1.0404 48.4375%, 1.0317 50%, 1.0238 51.5625%, 1.0167 53.125%, 1.0104 54.6875%, 1.005 56.25%, 1.0004 57.8125%, 0.9967 59.375%, 0.9937 60.9375%, 0.9915 62.5%, 0.9899 64.0625%, 0.9889 65.625%, 0.9883 67.1875%, 0.9882 68.75%, 0.9885 70.3125%, 0.989 71.875%, 0.9898 73.4375%, 0.9906 75%, 0.9916 76.5625%, 0.9927 78.125%, 0.9937 79.6875%, 0.9948 81.25%, 0.9957 82.8125%, 0.9967 84.375%, 0.9975 85.9375%, 0.9983 87.5%, 0.999 89.0625%, 0.9995 90.625%, 1 92.1875%, 1.0004 93.75%, 1.0007 95.3125%, 1 96.875%, 1 98.4375%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.flex.flex-col-reverse > div.mb-2.flex",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "a.font-display.relative > div.pointer-events-none.absolute",
+   "count": 6
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "1050ms",
+   "timingFunction": "linear(0 0%, 0.0089 0.9615384615384616%, 0.0315 1.923076923076923%, 0.0628 2.8846153846153846%, 0.0994 3.8461538461538463%, 0.1389 4.8076923076923075%, 0.1797 5.769230769230769%, 0.2206 6.730769230769231%, 0.2611 7.6923076923076925%, 0.3004 8.653846153846153%, 0.3384 9.615384615384615%, 0.3749 10.576923076923077%, 0.4097 11.538461538461538%, 0.4428 12.5%, 0.4742 13.461538461538462%, 0.504 14.423076923076923%, 0.5323 15.384615384615385%, 0.5589 16.346153846153847%, 0.5841 17.307692307692307%, 0.6079 18.269230769230766%, 0.6303 19.230769230769226%, 0.6515 20.192307692307686%, 0.6715 21.153846153846146%, 0.6903 22.115384615384606%, 0.7081 23.076923076923066%, 0.7249 24.038461538461526%, 0.7406 24.99999999999999%, 0.7555 25.961538461538453%, 0.7696 26.923076923076913%, 0.7828 27.884615384615376%, 0.7953 28.84615384615384%, 0.807 29.8076923076923%, 0.8181 30.769230769230763%, 0.8286 31.730769230769226%, 0.8384 32.692307692307686%, 0.8477 33.653846153846146%, 0.8564 34.615384615384606%, 0.8647 35.576923076923066%, 0.8724 36.538461538461526%, 0.8798 37.499999999999986%, 0.8867 38.461538461538446%, 0.8932 39.423076923076906%, 0.8993 40.384615384615365%, 0.9051 41.346153846153825%, 0.9105 42.307692307692285%, 0.9157 43.269230769230745%, 0.9205 44.230769230769205%, 0.9251 45.192307692307665%, 0.9294 46.153846153846125%, 0.9334 47.115384615384585%, 0.9373 48.076923076923045%, 0.9409 49.038461538461505%, 0.9443 49.999999999999964%, 0.9475 50.961538461538424%, 0.9505 51.923076923076884%, 0.9533 52.884615384615344%, 0.956 53.846153846153804%, 0.9585 54.807692307692264%, 0.9609 55.769230769230724%, 0.9632 56.730769230769184%, 0.9653 57.692307692307644%, 0.9673 58.653846153846104%, 0.9691 59.61538461538456%, 0.9709 60.57692307692302%, 0.9726 61.53846153846148%, 0.9742 62.49999999999994%, 0.9756 63.4615384615384%, 0.977 64.42307692307686%, 0.9784 65.38461538461533%, 0.9796 66.3461538461538%, 0.9808 67.30769230769226%, 0.9819 68.26923076923073%, 0.9829 69.2307692307692%, 0.9839 70.19230769230766%, 0.9848 71.15384615384613%, 0.9857 72.1153846153846%, 0.9865 73.07692307692307%, 0.9873 74.03846153846153%, 0.988 75%, 0.9887 75.96153846153847%, 0.9894 76.92307692307693%, 0.99 77.8846153846154%, 0.9905 78.84615384615387%, 0.9911 79.80769230769234%, 0.9916 80.7692307692308%, 0.9921 81.73076923076925%, 0.9925 82.69230769230772%, 0.993 83.65384615384619%, 0.9934 84.61538461538464%, 0.9938 85.5769230769231%, 0.9941 86.53846153846156%, 0.9944 87.50000000000003%, 0.9948 88.46153846153848%, 0.9951 89.42307692307693%, 0.9954 90.3846153846154%, 0.9956 91.34615384615387%, 0.9959 92.30769230769232%, 0.9961 93.26923076923077%, 0.9963 94.23076923076924%, 0.9965 95.19230769230771%, 1 96.15384615384616%, 1 97.11538461538461%, 1 98.07692307692308%, 1 99.03846153846155%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "100ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.z-1.relative > div",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_6lmh4ltabsdb_",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.relative.inline-flex > span.transition-all.opacity-100",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "a.font-display.relative > div.pointer-events-none.absolute",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.relative.inline-flex > span.transition-all.opacity-100",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_almh4ltabsdb_",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-col > a.relative.inline-flex",
+   "count": 3
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "scroll-x",
+   "keyframeProperties": "transform",
+   "duration": "180s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.flex.flex-row > ul.flex.shrink-0",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > div.align-center.border-slate-6",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_8lmh4ltabsdb_",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_elmh4ltabsdb_",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_elmh4ltabsdb_",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-bottom-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-left-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-right-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-top-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "translate",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "a.font-display.relative > div.pointer-events-none.absolute",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-bottom-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-left-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-right-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-top-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "translate",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "a.font-display.relative > div.pointer-events-none.absolute",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 1, 1)",
+   "delay": "0s",
+   "selector": "button.flex.items-center > svg.opacity-70.transition-transform",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-col > a.relative.inline-flex",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-col > a.relative.inline-flex",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-col > a.relative.inline-flex",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-col > a.relative.inline-flex",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_2lh4ltabsdb_ > div.flex.h-14",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_2lh4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_3lh4ltabsdb_ > div.flex.h-14",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_3lh4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_almh4ltabsdb_",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_96q4ltabsdb_",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_96q4ltabsdb_",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_96q4ltabsdb_",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_96q4ltabsdb_",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.my-8.mb-24 > a.relative.inline-flex",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.my-8.mb-24 > a.relative.inline-flex",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.my-8.mb-24 > a.relative.inline-flex",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.my-8.mb-24 > a.relative.inline-flex",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "a.outline-hidden.transition > div.absolute.inset-0",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "a.outline-hidden.transition > div.absolute.inset-0",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "final",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.3s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "div.flex.items-center > a.rainbow-border.mb-8::after",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "final",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "a.rainbow-border.mb-8 > span.inline-flex.items-center",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "hero-text-slide-up-fade",
+   "keyframeProperties": "opacity, transform",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.flex.h-full > div.origin-center-left.order-2",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "rotate",
+   "keyframeProperties": "",
+   "duration": "30s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.flex.items-center > a.rainbow-border.mb-8",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "rotate",
+   "keyframeProperties": "",
+   "duration": "30s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.flex.items-center > a.rainbow-border.mb-8::after",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "disco",
+   "keyframeProperties": "",
+   "duration": "6s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "button#base-ui-_R_5msltabsdb_ > span.absolute.inset-0::before",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "auto",
+   "timingFunction": "linear(0 0%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "500ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#base-ui-_R_6msltabsdb_ > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "1500ms",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "Infinity",
+   "source": "element.animate",
+   "selector": "div.relative.h-2 > div.absolute.inset-0",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.h-full > img.pointer-events-none.absolute",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "div.relative.flex > a.font-display.relative",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+   "delay": "0s",
+   "selector": "a.font-display.relative > div.pointer-events-none.absolute",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.my-8.mb-24 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.outline-hidden.transition > div.relative.h-2",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "webgl-scale-in-fade",
+   "keyframeProperties": "opacity, transform",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.relative.order-1 > div.relative.animate-webgl-scale-in-fade",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "open-scale-up-fade",
+   "keyframeProperties": "opacity, transform",
+   "duration": "1.5s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.flex.h-full > div.relative.order-1",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > header.sticky.top-0::after",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "header-slide-down-fade",
+   "keyframeProperties": "",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div > header.sticky.top-0",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "650ms",
+   "timingFunction": "linear(0 0%, 0.0144 1.5625%, 0.0538 3.125%, 0.1123 4.6875%, 0.1848 6.25%, 0.2668 7.8125%, 0.3542 9.375%, 0.4436 10.9375%, 0.5321 12.5%, 0.6174 14.0625%, 0.6977 15.625%, 0.7716 17.1875%, 0.8384 18.75%, 0.8974 20.3125%, 0.9484 21.875%, 0.9915 23.4375%, 1.0269 25%, 1.0551 26.5625%, 1.0765 28.125%, 1.0918 29.6875%, 1.1018 31.25%, 1.1071 32.8125%, 1.1084 34.375%, 1.1065 35.9375%, 1.1019 37.5%, 1.0953 39.0625%, 1.0873 40.625%, 1.0783 42.1875%, 1.0688 43.75%, 1.0591 45.3125%, 1.0495 46.875%, 1.0404 48.4375%, 1.0317 50%, 1.0238 51.5625%, 1.0167 53.125%, 1.0104 54.6875%, 1.005 56.25%, 1.0004 57.8125%, 0.9967 59.375%, 0.9937 60.9375%, 0.9915 62.5%, 0.9899 64.0625%, 0.9889 65.625%, 0.9883 67.1875%, 0.9882 68.75%, 0.9885 70.3125%, 0.989 71.875%, 0.9898 73.4375%, 0.9906 75%, 0.9916 76.5625%, 0.9927 78.125%, 0.9937 79.6875%, 0.9948 81.25%, 0.9957 82.8125%, 0.9967 84.375%, 0.9975 85.9375%, 0.9983 87.5%, 0.999 89.0625%, 0.9995 90.625%, 1 92.1875%, 1.0004 93.75%, 1.0007 95.3125%, 1 96.875%, 1 98.4375%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.flex.flex-col-reverse > div.mb-2.flex",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "1050ms",
+   "timingFunction": "linear(0 0%, 0.0089 0.9615384615384616%, 0.0315 1.923076923076923%, 0.0628 2.8846153846153846%, 0.0994 3.8461538461538463%, 0.1389 4.8076923076923075%, 0.1797 5.769230769230769%, 0.2206 6.730769230769231%, 0.2611 7.6923076923076925%, 0.3004 8.653846153846153%, 0.3384 9.615384615384615%, 0.3749 10.576923076923077%, 0.4097 11.538461538461538%, 0.4428 12.5%, 0.4742 13.461538461538462%, 0.504 14.423076923076923%, 0.5323 15.384615384615385%, 0.5589 16.346153846153847%, 0.5841 17.307692307692307%, 0.6079 18.269230769230766%, 0.6303 19.230769230769226%, 0.6515 20.192307692307686%, 0.6715 21.153846153846146%, 0.6903 22.115384615384606%, 0.7081 23.076923076923066%, 0.7249 24.038461538461526%, 0.7406 24.99999999999999%, 0.7555 25.961538461538453%, 0.7696 26.923076923076913%, 0.7828 27.884615384615376%, 0.7953 28.84615384615384%, 0.807 29.8076923076923%, 0.8181 30.769230769230763%, 0.8286 31.730769230769226%, 0.8384 32.692307692307686%, 0.8477 33.653846153846146%, 0.8564 34.615384615384606%, 0.8647 35.576923076923066%, 0.8724 36.538461538461526%, 0.8798 37.499999999999986%, 0.8867 38.461538461538446%, 0.8932 39.423076923076906%, 0.8993 40.384615384615365%, 0.9051 41.346153846153825%, 0.9105 42.307692307692285%, 0.9157 43.269230769230745%, 0.9205 44.230769230769205%, 0.9251 45.192307692307665%, 0.9294 46.153846153846125%, 0.9334 47.115384615384585%, 0.9373 48.076923076923045%, 0.9409 49.038461538461505%, 0.9443 49.999999999999964%, 0.9475 50.961538461538424%, 0.9505 51.923076923076884%, 0.9533 52.884615384615344%, 0.956 53.846153846153804%, 0.9585 54.807692307692264%, 0.9609 55.769230769230724%, 0.9632 56.730769230769184%, 0.9653 57.692307692307644%, 0.9673 58.653846153846104%, 0.9691 59.61538461538456%, 0.9709 60.57692307692302%, 0.9726 61.53846153846148%, 0.9742 62.49999999999994%, 0.9756 63.4615384615384%, 0.977 64.42307692307686%, 0.9784 65.38461538461533%, 0.9796 66.3461538461538%, 0.9808 67.30769230769226%, 0.9819 68.26923076923073%, 0.9829 69.2307692307692%, 0.9839 70.19230769230766%, 0.9848 71.15384615384613%, 0.9857 72.1153846153846%, 0.9865 73.07692307692307%, 0.9873 74.03846153846153%, 0.988 75%, 0.9887 75.96153846153847%, 0.9894 76.92307692307693%, 0.99 77.8846153846154%, 0.9905 78.84615384615387%, 0.9911 79.80769230769234%, 0.9916 80.7692307692308%, 0.9921 81.73076923076925%, 0.9925 82.69230769230772%, 0.993 83.65384615384619%, 0.9934 84.61538461538464%, 0.9938 85.5769230769231%, 0.9941 86.53846153846156%, 0.9944 87.50000000000003%, 0.9948 88.46153846153848%, 0.9951 89.42307692307693%, 0.9954 90.3846153846154%, 0.9956 91.34615384615387%, 0.9959 92.30769230769232%, 0.9961 93.26923076923077%, 0.9963 94.23076923076924%, 0.9965 95.19230769230771%, 1 96.15384615384616%, 1 97.11538461538461%, 1 98.07692307692308%, 1 99.03846153846155%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "100ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.z-1.relative > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.35s",
+   "timingFunction": "cubic-bezier(0.22, 1, 0.36, 1)",
+   "delay": "0s",
+   "selector": "div > nav#base-ui-_r_8_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.35s",
+   "timingFunction": "cubic-bezier(0.22, 1, 0.36, 1)",
+   "delay": "0s",
+   "selector": "div > nav#base-ui-_r_8_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.35s",
+   "timingFunction": "cubic-bezier(0.22, 1, 0.36, 1)",
+   "delay": "0s",
+   "selector": "div.relative.size-full > div.flex.w-full",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "box-shadow",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.h-full > img.pointer-events-none.absolute",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.h-full > img.pointer-events-none.absolute",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_lh4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_lh4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_1lh4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_1lh4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_1lh4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_1lh4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_6lmh4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_8lmh4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_4lh4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_4lh4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_4lh4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_4lh4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_5lh4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_5lh4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_5lh4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_5lh4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_65h4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_65h4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_65h4ltabsdb_ > div.flex.h-14",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#base-ui-_R_65h4ltabsdb_ > span.text-sm.text-gray-11",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_ilmh4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > button#base-ui-_R_ilmh4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "footer.absolute.bottom-0 > a.outline-hidden.transition",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "footer.absolute.bottom-0 > a.outline-hidden.transition",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "650ms",
+   "timingFunction": "linear(0 0%, 0.0144 1.5625%, 0.0538 3.125%, 0.1123 4.6875%, 0.1848 6.25%, 0.2668 7.8125%, 0.3542 9.375%, 0.4436 10.9375%, 0.5321 12.5%, 0.6174 14.0625%, 0.6977 15.625%, 0.7716 17.1875%, 0.8384 18.75%, 0.8974 20.3125%, 0.9484 21.875%, 0.9915 23.4375%, 1.0269 25%, 1.0551 26.5625%, 1.0765 28.125%, 1.0918 29.6875%, 1.1018 31.25%, 1.1071 32.8125%, 1.1084 34.375%, 1.1065 35.9375%, 1.1019 37.5%, 1.0953 39.0625%, 1.0873 40.625%, 1.0783 42.1875%, 1.0688 43.75%, 1.0591 45.3125%, 1.0495 46.875%, 1.0404 48.4375%, 1.0317 50%, 1.0238 51.5625%, 1.0167 53.125%, 1.0104 54.6875%, 1.005 56.25%, 1.0004 57.8125%, 0.9967 59.375%, 0.9937 60.9375%, 0.9915 62.5%, 0.9899 64.0625%, 0.9889 65.625%, 0.9883 67.1875%, 0.9882 68.75%, 0.9885 70.3125%, 0.989 71.875%, 0.9898 73.4375%, 0.9906 75%, 0.9916 76.5625%, 0.9927 78.125%, 0.9937 79.6875%, 0.9948 81.25%, 0.9957 82.8125%, 0.9967 84.375%, 0.9975 85.9375%, 0.9983 87.5%, 0.999 89.0625%, 0.9995 90.625%, 1 92.1875%, 1.0004 93.75%, 1.0007 95.3125%, 1 96.875%, 1 98.4375%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.flex.flex-col-reverse > div.mb-2.flex",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "1050ms",
+   "timingFunction": "linear(0 0%, 0.0089 0.9615384615384616%, 0.0315 1.923076923076923%, 0.0628 2.8846153846153846%, 0.0994 3.8461538461538463%, 0.1389 4.8076923076923075%, 0.1797 5.769230769230769%, 0.2206 6.730769230769231%, 0.2611 7.6923076923076925%, 0.3004 8.653846153846153%, 0.3384 9.615384615384615%, 0.3749 10.576923076923077%, 0.4097 11.538461538461538%, 0.4428 12.5%, 0.4742 13.461538461538462%, 0.504 14.423076923076923%, 0.5323 15.384615384615385%, 0.5589 16.346153846153847%, 0.5841 17.307692307692307%, 0.6079 18.269230769230766%, 0.6303 19.230769230769226%, 0.6515 20.192307692307686%, 0.6715 21.153846153846146%, 0.6903 22.115384615384606%, 0.7081 23.076923076923066%, 0.7249 24.038461538461526%, 0.7406 24.99999999999999%, 0.7555 25.961538461538453%, 0.7696 26.923076923076913%, 0.7828 27.884615384615376%, 0.7953 28.84615384615384%, 0.807 29.8076923076923%, 0.8181 30.769230769230763%, 0.8286 31.730769230769226%, 0.8384 32.692307692307686%, 0.8477 33.653846153846146%, 0.8564 34.615384615384606%, 0.8647 35.576923076923066%, 0.8724 36.538461538461526%, 0.8798 37.499999999999986%, 0.8867 38.461538461538446%, 0.8932 39.423076923076906%, 0.8993 40.384615384615365%, 0.9051 41.346153846153825%, 0.9105 42.307692307692285%, 0.9157 43.269230769230745%, 0.9205 44.230769230769205%, 0.9251 45.192307692307665%, 0.9294 46.153846153846125%, 0.9334 47.115384615384585%, 0.9373 48.076923076923045%, 0.9409 49.038461538461505%, 0.9443 49.999999999999964%, 0.9475 50.961538461538424%, 0.9505 51.923076923076884%, 0.9533 52.884615384615344%, 0.956 53.846153846153804%, 0.9585 54.807692307692264%, 0.9609 55.769230769230724%, 0.9632 56.730769230769184%, 0.9653 57.692307692307644%, 0.9673 58.653846153846104%, 0.9691 59.61538461538456%, 0.9709 60.57692307692302%, 0.9726 61.53846153846148%, 0.9742 62.49999999999994%, 0.9756 63.4615384615384%, 0.977 64.42307692307686%, 0.9784 65.38461538461533%, 0.9796 66.3461538461538%, 0.9808 67.30769230769226%, 0.9819 68.26923076923073%, 0.9829 69.2307692307692%, 0.9839 70.19230769230766%, 0.9848 71.15384615384613%, 0.9857 72.1153846153846%, 0.9865 73.07692307692307%, 0.9873 74.03846153846153%, 0.988 75%, 0.9887 75.96153846153847%, 0.9894 76.92307692307693%, 0.99 77.8846153846154%, 0.9905 78.84615384615387%, 0.9911 79.80769230769234%, 0.9916 80.7692307692308%, 0.9921 81.73076923076925%, 0.9925 82.69230769230772%, 0.993 83.65384615384619%, 0.9934 84.61538461538464%, 0.9938 85.5769230769231%, 0.9941 86.53846153846156%, 0.9944 87.50000000000003%, 0.9948 88.46153846153848%, 0.9951 89.42307692307693%, 0.9954 90.3846153846154%, 0.9956 91.34615384615387%, 0.9959 92.30769230769232%, 0.9961 93.26923076923077%, 0.9963 94.23076923076924%, 0.9965 95.19230769230771%, 1 96.15384615384616%, 1 97.11538461538461%, 1 98.07692307692308%, 1 99.03846153846155%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "100ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.z-1.relative > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.relative.inline-flex > button.flex.items-center",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.relative.inline-flex > button.flex.items-center",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "650ms",
+   "timingFunction": "linear(0 0%, 0.0144 1.5625%, 0.0538 3.125%, 0.1123 4.6875%, 0.1848 6.25%, 0.2668 7.8125%, 0.3542 9.375%, 0.4436 10.9375%, 0.5321 12.5%, 0.6174 14.0625%, 0.6977 15.625%, 0.7716 17.1875%, 0.8384 18.75%, 0.8974 20.3125%, 0.9484 21.875%, 0.9915 23.4375%, 1.0269 25%, 1.0551 26.5625%, 1.0765 28.125%, 1.0918 29.6875%, 1.1018 31.25%, 1.1071 32.8125%, 1.1084 34.375%, 1.1065 35.9375%, 1.1019 37.5%, 1.0953 39.0625%, 1.0873 40.625%, 1.0783 42.1875%, 1.0688 43.75%, 1.0591 45.3125%, 1.0495 46.875%, 1.0404 48.4375%, 1.0317 50%, 1.0238 51.5625%, 1.0167 53.125%, 1.0104 54.6875%, 1.005 56.25%, 1.0004 57.8125%, 0.9967 59.375%, 0.9937 60.9375%, 0.9915 62.5%, 0.9899 64.0625%, 0.9889 65.625%, 0.9883 67.1875%, 0.9882 68.75%, 0.9885 70.3125%, 0.989 71.875%, 0.9898 73.4375%, 0.9906 75%, 0.9916 76.5625%, 0.9927 78.125%, 0.9937 79.6875%, 0.9948 81.25%, 0.9957 82.8125%, 0.9967 84.375%, 0.9975 85.9375%, 0.9983 87.5%, 0.999 89.0625%, 0.9995 90.625%, 1 92.1875%, 1.0004 93.75%, 1.0007 95.3125%, 1 96.875%, 1 98.4375%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.flex.flex-col-reverse > div.mb-2.flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "box-shadow",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scrollbar-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.mx-auto.my-8 > a.relative.inline-flex",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_36q4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_36q4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_76q4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_76q4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_76q4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.gap-2 > button#base-ui-_R_76q4ltabsdb_",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "2000ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "section.mx-auto.px-6 > div.relative.hidden",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 2553,
+  "elementsTotal": 2553,
+  "transitionAllElements": 16,
+  "transitions": [
+   {
+    "property": "opacity",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div > header.sticky.top-0::after",
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "outline-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "text-decoration-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "--tw-gradient-from",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "--tw-gradient-via",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "--tw-gradient-to",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "scale",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "rotate",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 52,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "box-shadow",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 51,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 51,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "-webkit-backdrop-filter",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 51,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "backdrop-filter",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 51,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "display",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 51,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "content-visibility",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 51,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "overlay",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 51,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "pointer-events",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 51,
+    "samples": [
+     "div.flex-auto > a.outline-hidden.transition",
+     "div.flex.flex-auto > button.inline-flex.items-center",
+     "div > a.outline-hidden.transition"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "outline-color",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "text-decoration-color",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "--tw-gradient-from",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "--tw-gradient-via",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "--tw-gradient-to",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 49,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "box-shadow",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "scale",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "rotate",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "-webkit-backdrop-filter",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "backdrop-filter",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "display",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "content-visibility",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "overlay",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "pointer-events",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 48,
+    "samples": [
+     "div > header.sticky.top-0",
+     "div.flex.flex-1 > a#base-ui-_R_quccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "border",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 9,
+    "samples": [
+     "span.inline > span.inline-flex.h-4",
+     "span.inline.text-current > span.inline-flex.h-4"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "a.relative.inline-flex > span.transition-all.opacity-100",
+     "div.relative.flex > div.align-center.border-slate-6"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 1, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "button.flex.items-center > svg.opacity-70.transition-transform"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 1, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "button.flex.items-center > svg.opacity-70.transition-transform"
+    ]
+   },
+   {
+    "property": "scale",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 1, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "button.flex.items-center > svg.opacity-70.transition-transform"
+    ]
+   },
+   {
+    "property": "rotate",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 1, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "button.flex.items-center > svg.opacity-70.transition-transform"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div.flex.flex-1 > a#base-ui-_R_reccltabsdb_",
+     "div.flex.flex-col > a.relative.inline-flex",
+     "div.mx-auto.my-8 > a.relative.inline-flex"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "div.relative.flex > div.pointer-events-none.absolute"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden",
+     "div.relative.z-20 > img.pointer-events-none.absolute"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "div.relative.flex > a.font-display.relative",
+     "a.font-display.relative > div.pointer-events-none.absolute"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "outline-color",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "text-decoration-color",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "--tw-gradient-from",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "--tw-gradient-via",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "--tw-gradient-to",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "box-shadow",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "scale",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "rotate",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "-webkit-backdrop-filter",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "backdrop-filter",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "display",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "content-visibility",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "overlay",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "pointer-events",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.w-full > div.mx-auto.hidden"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.3s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.rainbow-border.mb-8::after"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.2s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "a.rainbow-border.mb-8 > span.inline-flex.items-center"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.h-full > img.pointer-events-none.absolute"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.h-full > div.duration-300.will-change-filter"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "1s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.relative.flex > div.flex.items-center"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.6s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.relative.flex > div.flex.items-center"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.3s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.relative.flex > div.flex.items-center"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.absolute.inset-0 > svg.pointer-events-none.absolute"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.36, 0.66, 0.6, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "a.outline-hidden.transition > div.absolute.inset-0"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.15s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "a.outline-hidden.transition > div.absolute.inset-0"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "scroll-x",
+    "duration": "180s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "div.flex.flex-row > ul.flex.shrink-0"
+    ]
+   },
+   {
+    "name": "rotate",
+    "duration": "30s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "div.flex.items-center > a.rainbow-border.mb-8",
+     "div.flex.items-center > a.rainbow-border.mb-8::after"
+    ]
+   },
+   {
+    "name": "header-slide-down-fade",
+    "duration": "1s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "div > header.sticky.top-0"
+    ]
+   },
+   {
+    "name": "hero-text-slide-up-fade",
+    "duration": "1s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "div.flex.h-full > div.origin-center-left.order-2"
+    ]
+   },
+   {
+    "name": "open-scale-up-fade",
+    "duration": "1.5s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "div.flex.h-full > div.relative.order-1"
+    ]
+   },
+   {
+    "name": "webgl-scale-in-fade",
+    "duration": "1s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "div.relative.order-1 > div.relative.animate-webgl-scale-in-fade"
+    ]
+   },
+   {
+    "name": "disco",
+    "duration": "6s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 1,
+    "samples": [
+     "button#base-ui-_R_5msltabsdb_ > span.absolute.inset-0::before"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 3,
+  "reducedMotionRules": 1,
+  "transitionAll": [],
+  "keyframes": [
+   "swipe-out-left",
+   "swipe-out-right",
+   "swipe-out-up",
+   "swipe-out-down",
+   "sonner-fade-in",
+   "sonner-fade-out",
+   "sonner-spin",
+   "ProseMirror-cursor-blink"
+  ],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Resend · Email for developers",
+  "canvases": 1,
+  "viewportSizedCanvases": 1,
+  "webglContexts": 3,
+  "canvas2dContexts": 2,
+  "videos": 5,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 5,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: no-preference)"
+  ],
+  "documentHeight": 12320
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 275,
+  "stylesheets": 6,
+  "scripts": 117,
+  "failed": 2
+ },
+ "stylesheets": {
+  "files": 6,
+  "bytes": 1055787,
+  "reducedMotionQueries": 8,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "fade-half",
+   "fade",
+   "hero-scale-in",
+   "dots-float-01",
+   "dots-float-02",
+   "bars-bounce",
+   "forge-live-blink",
+   "forge-live-ping",
+   "forge-gradient-sweep",
+   "forge-enter-grid",
+   "forge-enter-grow",
+   "forge-enter-fade",
+   "forge-enter-wipe",
+   "forge-enter-flicker",
+   "spin",
+   "ping",
+   "pulse",
+   "ai-shimmer-text",
+   "scroll-x",
+   "shine",
+   "disco",
+   "fade-in",
+   "fade-out",
+   "open-slide-down-fade",
+   "open-slide-up-fade",
+   "open-scale-up-fade",
+   "plop",
+   "hero-text-slide-up-fade",
+   "globe-spin",
+   "webgl-scale-in-fade",
+   "header-slide-down-fade",
+   "caret-blink",
+   "scroll-shadow-line",
+   "scroll-shadow-line-y",
+   "scroll-fade-x",
+   "rotate",
+   "column-border-flash",
+   "skeleton-module__p4cxwq__loading"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0, 0, 0.2, 1)": 9,
+   "cubic-bezier(0.4, 0, 0.6, 1)": 2,
+   "cubic-bezier(0.4, 0, 0.2, 1)": 72,
+   "cubic-bezier(0.3, 1, 0.66, 1)": 4,
+   "cubic-bezier(0.6, 0.12, 0.34, 0.96)": 4,
+   "cubic-bezier(0.16, 1, 0.3, 1)": 4,
+   "cubic-bezier(0.25, 0.46, 0.45, 0.94)": 4,
+   "cubic-bezier(0.36, 0.66, 0.6, 1)": 8,
+   "cubic-bezier(0.42, 0, 0.58, 1.8)": 4,
+   "cubic-bezier(0.075, 0.82, 0.165, 1)": 4,
+   "cubic-bezier(0.77, 0, 0.175, 1)": 4,
+   "cubic-bezier(0.215, 0.61, 0.355, 1)": 4,
+   "cubic-bezier(0.645, 0.045, 0.355, 1)": 4,
+   "cubic-bezier(0, 0.24, 0.54, 1)": 4,
+   "cubic-bezier(0.22, 1, 0.36, 1)": 5,
+   "cubic-bezier(0.32, 0.72, 0, 1)": 4,
+   "cubic-bezier(0.87, 0, 0.13, 1)": 4,
+   "cubic-bezier(0.4, 0, 1, 1)": 3,
+   "cubic-bezier(0.66, 0.06, 0.36, 0.96)": 2,
+   "cubic-bezier(0.36, 0.66, 0.6, 0.96)": 2,
+   "cubic-bezier(0.19, 1, 0.22, 1)": 1,
+   "cubic-bezier(0.33, 1, 0.68, 1)": 1,
+   "cubic-bezier(0.65, 0, 0.35, 1)": 1,
+   "cubic-bezier(0.45, 0.05, 0.55, 0.95)": 2
+  }
+ },
+ "scripts": {
+  "files": 117,
+  "bytes": 11252882,
+  "reducedMotionMentions": 9,
+  "libraries": {
+   "framerMotion": true,
+   "springPhysics": true,
+   "three": true
+  }
+ },
+ "elapsedMs": 325592
+}

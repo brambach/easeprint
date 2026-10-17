@@ -1,0 +1,436 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://locomotive.ca",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:59:32.546Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "reduce",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://locomotive.ca/en",
+ "scrolledTo": 5698,
+ "hover": {
+  "candidates": {
+   "available": 60,
+   "distinct": 12,
+   "picked": [
+    "div.c-header > a.c-header_logo",
+    "li.c-header-menu_item > a.c-header-menu_link",
+    "div.c-header > a.c-header_cta",
+    "span.c-home-summary_footer > a.c-button.c-home-summary_link",
+    "li.c-featured-links_item > a.c-featured-links_link",
+    "div > a.c-button.c-home-about_link",
+    "div.c-list_item > a.c-list_link",
+    "article.c-shop-tile.o-grid_item > a.c-shop-tile_link",
+    "li.c-footer_menu_item > a.c-footer_menu_link",
+    "div.c-footer_menu_cta > button",
+    "address > a",
+    "div.c-footer_coords > a"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div.c-header > a.c-header_logo",
+    "covered": false
+   },
+   {
+    "selector": "li.c-header-menu_item > a.c-header-menu_link",
+    "covered": false
+   },
+   {
+    "selector": "div.c-header > a.c-header_cta",
+    "covered": false
+   },
+   {
+    "selector": "span.c-home-summary_footer > a.c-button.c-home-summary_link",
+    "covered": false
+   },
+   {
+    "selector": "li.c-featured-links_item > a.c-featured-links_link",
+    "covered": false
+   },
+   {
+    "selector": "div > a.c-button.c-home-about_link",
+    "covered": false
+   },
+   {
+    "selector": "div.c-list_item > a.c-list_link",
+    "covered": false
+   },
+   {
+    "selector": "article.c-shop-tile.o-grid_item > a.c-shop-tile_link",
+    "covered": false
+   },
+   {
+    "selector": "li.c-footer_menu_item > a.c-footer_menu_link",
+    "covered": false
+   },
+   {
+    "selector": "div.c-footer_menu_cta > button",
+    "covered": false
+   },
+   {
+    "selector": "address > a",
+    "covered": false
+   },
+   {
+    "selector": "div.c-footer_coords > a",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "width",
+   "declaredProperty": "width",
+   "duration": "0.45s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.c-featured-links_title > div.c-image.c-featured-links_visual",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "width",
+   "declaredProperty": "width",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.c-featured-links_title > div.c-image.c-featured-links_visual",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "width",
+   "declaredProperty": "width",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.c-featured-links_title > div.c-image.c-featured-links_visual",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "width",
+   "declaredProperty": "width",
+   "duration": "0.45s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.c-featured-links_title > div.c-image.c-featured-links_visual",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+   "delay": "0s",
+   "selector": "div.c-header_bg",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.o-grid_item > form.c-newsletter-modal_form",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0.15s",
+   "selector": "div.o-grid_item > form.c-newsletter-modal_form",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.25s",
+   "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+   "delay": "0s",
+   "selector": "div.c-video-modal_content > div.c-video-modal_inner",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "featuredProjectsAllFlash",
+   "keyframeProperties": "",
+   "duration": "2s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "li.c-featured-links_item > div.c-featured-links_title::before",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "featuredProjectsAllFlash",
+   "keyframeProperties": "",
+   "duration": "2s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "li.c-featured-links_item > div.c-featured-links_title::after",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "preloaderAppear",
+   "keyframeProperties": "opacity, transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+   "delay": "0.3s",
+   "iterations": "1",
+   "selector": "div.c-preloader_inner > div.c-preloader_logo",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+   "delay": "0s",
+   "selector": "div.c-header_bg",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "width",
+   "declaredProperty": "width",
+   "duration": "0.45s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.c-featured-links_title > div.c-image.c-featured-links_visual",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "width",
+   "declaredProperty": "width",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.c-featured-links_title > div.c-image.c-featured-links_visual",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+   "delay": "0s",
+   "selector": "header > div.c-header",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 347,
+  "elementsTotal": 347,
+  "transitionAllElements": 0,
+  "transitions": [
+   {
+    "property": "width",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "div.c-featured-links_title > div.c-image.c-featured-links_visual"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "html.js-focus-visible.is-loaded",
+     "div.c-header_bg"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.c-header_bg"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "header > div.c-header"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.o-grid_item > button.c-newsletter-modal_close::before"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.o-grid_item > form.c-newsletter-modal_form"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div > div.c-video-modal::before"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.25s",
+    "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.c-video-modal_content > div.c-video-modal_inner"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "featuredProjectsAllFlash",
+    "duration": "2s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "li.c-featured-links_item > div.c-featured-links_title::before",
+     "li.c-featured-links_item > div.c-featured-links_title::after"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 1,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [
+   "preloaderAppear"
+  ],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Locomotive | Montreal web agency",
+  "canvases": 2,
+  "viewportSizedCanvases": 0,
+  "webglContexts": 3,
+  "canvas2dContexts": 12,
+  "videos": 1,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": true,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 0,
+  "reducedMotionQueries": [],
+  "documentHeight": 6598
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 53,
+  "stylesheets": 1,
+  "scripts": 12,
+  "failed": 1
+ },
+ "stylesheets": {
+  "files": 1,
+  "bytes": 200077,
+  "reducedMotionQueries": 5,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "swiper-preloader-spin",
+   "spin",
+   "shake",
+   "fall",
+   "featuredProjectsAllFlash",
+   "lisaDisclaimerFlash",
+   "lisaDisclaimerProcedure",
+   "lisaLoader",
+   "lisaCursor"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0.215, 0.61, 0.355, 1)": 43,
+   "cubic-bezier(0.23, 1, 0.32, 1)": 9
+  }
+ },
+ "scripts": {
+  "files": 11,
+  "bytes": 3768145,
+  "reducedMotionMentions": 0,
+  "libraries": {
+   "gsap": true,
+   "scrollTrigger": true,
+   "lenis": true,
+   "three": true,
+   "barba": true,
+   "springPhysics": true
+  }
+ },
+ "elapsedMs": 103626
+}

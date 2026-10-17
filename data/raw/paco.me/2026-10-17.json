@@ -1,0 +1,299 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://paco.me",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T06:06:01.792Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "no-preference",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ],
+  "clicks": []
+ },
+ "status": 200,
+ "finalUrl": "https://paco.me/",
+ "scrolledTo": 524,
+ "hover": {
+  "candidates": {
+   "available": 13,
+   "distinct": 3,
+   "picked": [
+    "p > a",
+    "span > a",
+    "p > a.email"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "p > a",
+    "covered": false
+   },
+   {
+    "selector": "span > a",
+    "covered": false
+   },
+   {
+    "selector": "p > a.email",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "enter",
+   "keyframeProperties": "opacity, transform",
+   "duration": "0.6s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div > h1",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "enter",
+   "keyframeProperties": "opacity, transform",
+   "duration": "0.6s",
+   "timingFunction": "ease",
+   "delay": "0.24s",
+   "iterations": "1",
+   "selector": "div > p",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "enter",
+   "keyframeProperties": "opacity, transform",
+   "duration": "0.6s",
+   "timingFunction": "ease",
+   "delay": "0.12s",
+   "iterations": "1",
+   "selector": "div > p",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "enter",
+   "keyframeProperties": "opacity, transform",
+   "duration": "0.6s",
+   "timingFunction": "ease",
+   "delay": "0.36s",
+   "iterations": "1",
+   "selector": "article > div",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "enter",
+   "keyframeProperties": "opacity, transform",
+   "duration": "0.6s",
+   "timingFunction": "ease",
+   "delay": "0.6s",
+   "iterations": "1",
+   "selector": "article > div",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "enter",
+   "keyframeProperties": "opacity, transform",
+   "duration": "0.6s",
+   "timingFunction": "ease",
+   "delay": "0.72s",
+   "iterations": "1",
+   "selector": "article > div",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 158,
+  "elementsTotal": 158,
+  "transitionAllElements": 0,
+  "transitions": [
+   {
+    "property": "text-decoration-color",
+    "duration": "0.24s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 13,
+    "samples": [
+     "p > a",
+     "span > a",
+     "p > a.email"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "enter",
+    "duration": "0.6s",
+    "timingFunction": "ease",
+    "delay": "0.24s",
+    "iterations": "1",
+    "count": 2,
+    "samples": [
+     "div > p"
+    ]
+   },
+   {
+    "name": "enter",
+    "duration": "0.6s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "div > h1"
+    ]
+   },
+   {
+    "name": "enter",
+    "duration": "0.6s",
+    "timingFunction": "ease",
+    "delay": "0.12s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "div > p"
+    ]
+   },
+   {
+    "name": "enter",
+    "duration": "0.6s",
+    "timingFunction": "ease",
+    "delay": "0.36s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "article > div"
+    ]
+   },
+   {
+    "name": "enter",
+    "duration": "0.6s",
+    "timingFunction": "ease",
+    "delay": "0.6s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "article > div"
+    ]
+   },
+   {
+    "name": "enter",
+    "duration": "0.6s",
+    "timingFunction": "ease",
+    "delay": "0.72s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "article > div"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 0,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Paco Coursey",
+  "canvases": 0,
+  "viewportSizedCanvases": 0,
+  "webglContexts": 0,
+  "canvas2dContexts": 0,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 0,
+  "reducedMotionQueries": [],
+  "documentHeight": 1424
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 36,
+  "stylesheets": 4,
+  "scripts": 21,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 4,
+  "bytes": 134843,
+  "reducedMotionQueries": 1,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "readerBarIn",
+   "readerBarOut",
+   "readerOverlayIn",
+   "readerOverlayOut",
+   "baggageIn",
+   "baggageOut",
+   "indicate",
+   "stroke",
+   "fadeIn",
+   "blink",
+   "scrollStart",
+   "enter",
+   "opacityIn",
+   "opacityOut",
+   "nothing",
+   "nothing2",
+   "tooltipIn",
+   "tooltipOut",
+   "dialogIn",
+   "dialogOut"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0.55, 0.085, 0.68, 0.53)": 1,
+   "cubic-bezier(0.55, 0.055, 0.675, 0.19)": 1,
+   "cubic-bezier(0.895, 0.03, 0.685, 0.22)": 1,
+   "cubic-bezier(0.755, 0.05, 0.855, 0.06)": 1,
+   "cubic-bezier(0.95, 0.05, 0.795, 0.035)": 1,
+   "cubic-bezier(0.6, 0.04, 0.98, 0.335)": 1,
+   "cubic-bezier(0.25, 0.46, 0.45, 0.94)": 1,
+   "cubic-bezier(0.215, 0.61, 0.355, 1)": 1,
+   "cubic-bezier(0.165, 0.84, 0.44, 1)": 1,
+   "cubic-bezier(0.23, 1, 0.32, 1)": 1,
+   "cubic-bezier(0.19, 1, 0.22, 1)": 1,
+   "cubic-bezier(0.075, 0.82, 0.165, 1)": 1,
+   "cubic-bezier(0.455, 0.03, 0.515, 0.955)": 1,
+   "cubic-bezier(0.645, 0.045, 0.355, 1)": 1,
+   "cubic-bezier(0.77, 0, 0.175, 1)": 1,
+   "cubic-bezier(0.86, 0, 0.07, 1)": 1,
+   "cubic-bezier(1, 0, 0, 1)": 1,
+   "cubic-bezier(0.785, 0.135, 0.15, 0.86)": 1
+  }
+ },
+ "scripts": {
+  "files": 21,
+  "bytes": 596432,
+  "reducedMotionMentions": 0,
+  "libraries": {}
+ },
+ "elapsedMs": 11860
+}

@@ -1,0 +1,133 @@
+{
+  "name": "Bryce Rambach",
+  "site": "brycerambach.com",
+  "url": "https://brycerambach.com/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/brycerambach.com/2026-10-17.json",
+  "rawReduced": "data/raw/brycerambach.com/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "spatial",
+  "summary": "One custom ease-out, cubic-bezier(0.2, 0.7, 0.1, 1), carries almost everything from 0.3s to 1.3s. Cards lift out of their berths and sink back on an ease-in, letters rise, and a small overshoot marks the nav.",
+  "tiers": [
+    {
+      "role": "statement",
+      "kind": "transition",
+      "label": "project card lifting out of its berth",
+      "property": "translate",
+      "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+      "duration": "1.15s",
+      "durationMs": 1150,
+      "phase": "hover",
+      "selector": "div.sky-berth.is-up > a.sky-card",
+      "count": 2
+    },
+    {
+      "role": "secondary",
+      "kind": "transition",
+      "label": "section rule drawing across",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+      "duration": "1.3s",
+      "durationMs": 1300,
+      "phase": "scroll",
+      "selector": "h2.sky-title > span.sky-rule",
+      "count": 3
+    },
+    {
+      "role": "secondary",
+      "kind": "transition",
+      "label": "letters rising on scroll",
+      "property": "translate",
+      "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+      "duration": "0.9s",
+      "durationMs": 900,
+      "phase": "scroll",
+      "selector": "span > span.sky-ch",
+      "count": 3
+    },
+    {
+      "role": "signature",
+      "kind": "transition",
+      "label": "nav marker overshoot",
+      "property": "scale",
+      "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+      "duration": "0.6s",
+      "durationMs": 600,
+      "phase": "hover",
+      "selector": "li > a.sky-head::before",
+      "count": 1
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "external link arrow colour",
+      "property": "color",
+      "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+      "duration": "0.3s",
+      "durationMs": 300,
+      "phase": "hover",
+      "selector": "li > a.sky-u.sky-ext::after",
+      "count": 1
+    },
+    {
+      "role": "exit",
+      "kind": "transition",
+      "label": "card sinking back into its berth",
+      "property": "translate",
+      "timingFunction": "cubic-bezier(0.45, 0, 0.75, 0.25)",
+      "duration": "0.6s",
+      "durationMs": 600,
+      "phase": "unhover",
+      "selector": "div.sky-berth > a.sky-card",
+      "count": 3
+    },
+    {
+      "role": "ambient",
+      "kind": "animation",
+      "label": "word glint",
+      "property": "sky-glint",
+      "timingFunction": "ease-in-out",
+      "duration": "1.2s",
+      "durationMs": 1200,
+      "phase": "scroll",
+      "selector": "a.sky-pl.lit-up > span.sky-w.sky-pw",
+      "count": 3
+    }
+  ],
+  "honestyNote": "Eleven canvases draw with 2D contexts (no WebGL); whatever they animate isn't in these numbers. Scripts asked matchMedia about reduced motion 6,137 times in one visit, which looks like a check on every animation frame.",
+  "notes": [
+    "A dedicated ease-in exit: the card rises in 1.15s on ease-out and drops in 0.6s on cubic-bezier(0.45, 0, 0.75, 0.25).",
+    "Reduced motion stops everything the tool could see: 293 timed events became 0.",
+    "The live values differ from the house tiers written in the easeprint brief; both are listed, with dates."
+  ],
+  "fromNotes": [
+    {
+      "date": "2026-10-17",
+      "label": "house statement tier (easeprint brief)",
+      "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+      "duration": "900ms",
+      "text": "One statement move per viewport."
+    },
+    {
+      "date": "2026-10-17",
+      "label": "house signature tier (easeprint brief)",
+      "timingFunction": "cubic-bezier(0.2, 1.4, 0.4, 1)",
+      "duration": "400ms",
+      "text": "The overshoot."
+    },
+    {
+      "date": "2026-10-17",
+      "label": "house utility tier (easeprint brief)",
+      "timingFunction": "ease-out",
+      "duration": "200ms",
+      "text": "Hover and press."
+    },
+    {
+      "date": "2026-10-17",
+      "label": "house exit tier (easeprint brief)",
+      "timingFunction": "ease-in",
+      "duration": "140ms",
+      "text": "Leaving is faster than arriving."
+    }
+  ]
+}

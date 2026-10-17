@@ -1,0 +1,91 @@
+{
+  "name": "Attio",
+  "site": "attio.com",
+  "url": "https://attio.com/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/attio.com/2026-10-17.json",
+  "rawReduced": "data/raw/attio.com/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "material",
+  "summary": "Things arrive out of a blur on cubic-out, images give a little under the pointer on a curve that's all front, and colour changes run on a quick Material-style ease. Glass that comes into focus.",
+  "tiers": [
+    {
+      "role": "statement",
+      "kind": "waapi",
+      "label": "headline arriving out of a blur (WAAPI)",
+      "property": "opacity",
+      "timingFunction": "cubic-bezier(0, 0, 0.58, 1)",
+      "duration": "600ms",
+      "durationMs": 600,
+      "phase": "load",
+      "selector": "div.flex.flex-col > h1.text-balance.font-display",
+      "count": 1
+    },
+    {
+      "role": "secondary",
+      "kind": "waapi",
+      "label": "product panels arriving out of a blur (WAAPI)",
+      "property": "opacity",
+      "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+      "duration": "600ms",
+      "durationMs": 600,
+      "phase": "load",
+      "selector": "div.overflow-hidden.rounded-xl > div.h-full",
+      "count": 1
+    },
+    {
+      "role": "signature",
+      "kind": "transition",
+      "label": "image scale on hover",
+      "property": "scale",
+      "timingFunction": "cubic-bezier(0, 0, 0, 1)",
+      "duration": "0.5s",
+      "durationMs": 500,
+      "phase": "hover",
+      "selector": "div.absolute.inset-0 > img.object-cover.transition",
+      "count": 6
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "nav link colour",
+      "property": "color",
+      "timingFunction": "cubic-bezier(0.2, 0, 0, 1)",
+      "duration": "0.3s",
+      "durationMs": 300,
+      "phase": "unhover",
+      "selector": "li > a.relative.inline-flex",
+      "count": 10
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "menu sliding in",
+      "property": "translate",
+      "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+      "duration": "0.15s",
+      "durationMs": 150,
+      "phase": "hover",
+      "selector": "div.hidden > nav#base-ui-_r_d_",
+      "count": 1
+    },
+    {
+      "role": "exit",
+      "kind": "transition",
+      "label": "card glow shrinking as the pointer leaves",
+      "property": "scale",
+      "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "unhover",
+      "selector": "a.group.relative > div.pointer-events-none.absolute",
+      "count": 1
+    }
+  ],
+  "honestyNote": "A WebGL canvas fills part of the hero; its motion isn't measured. Reduced motion cuts movement to 29% but leaves most fades and blurs running, so it's marked partial.",
+  "notes": [
+    "cubic-bezier(0, 0, 0, 1) puts both handles at x = 0: the image reaches most of its scale almost at once and spends the rest of the half second settling.",
+    "The card glow arrives in 0.24s and leaves in 0.2s on the same cubic-out, a small faster-exit rule.",
+    "Most entrances animate filter (blur) and opacity together. The demo shows the opacity half."
+  ]
+}

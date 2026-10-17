@@ -1,0 +1,79 @@
+{
+  "name": "Family",
+  "site": "family.co",
+  "url": "https://family.co/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/family.co/2026-10-17.json",
+  "rawReduced": "data/raw/family.co/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "material",
+  "summary": "Expo-out at one second for anything that moves, with a 0.1s ease floor for fills and shadows. Soft, quick to respond, slow to settle.",
+  "tiers": [
+    {
+      "role": "statement",
+      "kind": "transition",
+      "label": "panels easing on hover (selector is unnamed: div > div)",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+      "duration": "1s",
+      "durationMs": 1000,
+      "phase": "hover",
+      "selector": "div > div",
+      "count": 65
+    },
+    {
+      "role": "signature",
+      "kind": "transition",
+      "label": "avatar images, resting transition",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+      "duration": "0.22s",
+      "durationMs": 220,
+      "phase": "final",
+      "selector": "span.sc-iGgWBj.dVSjCO > img",
+      "count": 42
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "avatar image hover",
+      "property": "transform",
+      "timingFunction": "ease",
+      "duration": "0.18s",
+      "durationMs": 180,
+      "phase": "hover",
+      "selector": "span.sc-iGgWBj.dVSjCO > img",
+      "count": 1
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "icon fill on hover",
+      "property": "fill",
+      "timingFunction": "ease",
+      "duration": "0.1s",
+      "durationMs": 100,
+      "phase": "hover",
+      "selector": "svg > path",
+      "count": 17
+    },
+    {
+      "role": "ambient",
+      "kind": "animation",
+      "label": "testimonial marquee",
+      "property": "hdKGda",
+      "timingFunction": "linear",
+      "duration": "120s",
+      "durationMs": 120000,
+      "phase": "load",
+      "selector": "div.kLosTT > div.Testimonials__RowContainer-sc-1rcs3hw-1.Qwkbu",
+      "count": 4
+    }
+  ],
+  "honestyNote": "Family's CSS is styled-components injected into the page, so there were no stylesheet files; the inline sheets were read instead. 123 links compute transition: all (0.2s ease-out), from two `a` rules.",
+  "notes": [
+    "The 1s curve is cubic-bezier(0.19, 1, 0.22, 1), the common stand-in for expo-out. It's the same curve the house statement tier uses.",
+    "Avatars carry a 0.22s expo-out at rest but switch to a 0.18s ease while hovered, so the way in and the way out differ.",
+    "Selectors are styled-components hashes; the panel selector is literally div > div."
+  ]
+}

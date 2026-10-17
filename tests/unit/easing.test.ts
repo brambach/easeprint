@@ -77,6 +77,8 @@ describe('durations and lists', () => {
 describe('initialSlope', () => {
   it('is y1/x1 for cubics', () => {
     expect(initialSlope(parseEasing('cubic-bezier(0.19, 1, 0.22, 1)'))).toBeCloseTo(5.263, 2);
-    expect(initialSlope(parseEasing('ease-out'))).toBe(1);
+    expect(initialSlope(parseEasing('ease-out'))).toBeCloseTo(1 / 0.58, 5);
+    expect(initialSlope(parseEasing('cubic-bezier(0, 0, 0, 1)'))).toBe(Infinity);
+    expect(initialSlope(parseEasing('linear'))).toBe(1);
   });
 });

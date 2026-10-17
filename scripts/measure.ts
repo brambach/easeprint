@@ -1,5 +1,5 @@
 /**
- * pnpm measure <url> [--reduced] [--hover 30] [--date YYYY-MM-DD] [--out data/raw]
+ * pnpm measure <url> [--reduced] [--click <css>]... [--hover 30] [--date YYYY-MM-DD] [--out data/raw]
  *
  * One load of a live page in Chromium. It waits for the page to settle, wheel-scrolls to the bottom, then hovers
  * and leaves a spread sample of interactive elements. Everything the browser computed along the way is written to
@@ -25,20 +25,26 @@ interface Options {
   out: string;
   /** Emulate prefers-reduced-motion: reduce. Its own run, its own single load, its own file. */
   reduced: boolean;
+  /**
+   * Opt-in, for component demo sites whose motion only exists after a click (a toast, a drawer). CSS selectors of
+   * the site's own demo buttons. Each is clicked once, then Escape is pressed. Recorded in the raw file.
+   */
+  click: string[];
 }
 
 function parseArgs(argv: string[]): Options {
   const args = [...argv];
-  const opts: Partial<Options> = { reduced: false, hover: 30, date: new Date().toISOString().slice(0, 10), out: 'data/raw' };
+  const opts: Partial<Options> = { reduced: false, click: [], hover: 30, date: new Date().toISOString().slice(0, 10), out: 'data/raw' };
   while (args.length) {
     const a = args.shift()!;
     if (a === '--hover') opts.hover = Number(args.shift());
     else if (a === '--date') opts.date = args.shift();
     else if (a === '--out') opts.out = args.shift();
     else if (a === '--reduced') opts.reduced = true;
+    else if (a === '--click') opts.click!.push(args.shift()!);
     else if (!a.startsWith('--')) opts.url = /^https?:\/\//.test(a) ? a : `https://${a}`;
   }
-  if (!opts.url) throw new Error('Usage: pnpm measure <url> [--reduced] [--hover 30] [--date YYYY-MM-DD]');
+  if (!opts.url) throw new Error('Usage: pnpm measure <url> [--reduced] [--click <css>]... [--hover 30] [--date YYYY-MM-DD]');
   return opts as Options;
 }
 
@@ -101,7 +107,15 @@ export async function measure(opts: Options) {
     reducedMotion: opts.reduced ? 'reduce' : 'no-preference',
     method: {
       loads: 1,
-      steps: ['load, settle 3s', 'wheel-scroll to bottom in 80% viewport steps', `hover then leave up to ${opts.hover} elements`, 'final computed scan'],
+      steps: [
+        'load, settle 3s',
+        'wheel-scroll to bottom in 80% viewport steps',
+        `hover then leave up to ${opts.hover} elements`,
+        ...opts.click.map((c) => `click ${c}, wait 1.5s, press Escape, wait 1s`),
+        ...(opts.click.length ? ['wait 5s for anything the clicks started to finish'] : []),
+        'final computed scan',
+      ],
+      clicks: opts.click,
     },
   };
 
@@ -152,6 +166,29 @@ export async function measure(opts: Options) {
       hovered.push({ selector: point.selector, covered: point.covered });
     }
     raw.hover = { candidates, hovered };
+
+    // Click (opt-in, demo buttons only)
+    if (opts.click.length) {
+      const clicked: { selector: string; ok: boolean }[] = [];
+      for (const selector of opts.click) {
+        await phase(page, 'click');
+        try {
+          const target = page.locator(selector).first();
+          await target.scrollIntoViewIfNeeded({ timeout: 5000 });
+          await page.waitForTimeout(400);
+          await phase(page, 'click');
+          await target.click({ timeout: 5000 });
+          await page.waitForTimeout(1500);
+          await page.keyboard.press('Escape');
+          await page.waitForTimeout(1000);
+          clicked.push({ selector, ok: true });
+        } catch {
+          clicked.push({ selector, ok: false });
+        }
+      }
+      await page.waitForTimeout(5000);
+      raw.click = clicked;
+    }
 
     await phase(page, 'final');
     await page.waitForTimeout(500);

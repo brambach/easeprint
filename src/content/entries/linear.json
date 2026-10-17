@@ -1,0 +1,92 @@
+{
+  "name": "Linear",
+  "site": "linear.app",
+  "url": "https://linear.app/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/linear.app/2026-10-17.json",
+  "rawReduced": "data/raw/linear.app/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "ambient",
+  "ambientKind": "diagrammatic",
+  "summary": "Mostly diagrams: hundreds of dots popping in on quad-out, step-timed loaders, a product frame fading up over 1.5s. The headline blurs into place on a plain 1s ease, and conversation turns arrive on a sampled spring.",
+  "tiers": [
+    {
+      "role": "statement",
+      "kind": "waapi",
+      "label": "headline lines blurring up into place (WAAPI)",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+      "duration": "1000ms",
+      "durationMs": 1000,
+      "phase": "load",
+      "selector": "span > span.hide-mobile.QI8oKG_titleLine",
+      "count": 1
+    },
+    {
+      "role": "secondary",
+      "kind": "waapi",
+      "label": "product frame background fading up (WAAPI)",
+      "property": "opacity",
+      "timingFunction": "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+      "duration": "1500ms",
+      "durationMs": 1500,
+      "phase": "load",
+      "selector": "div.WS84WW_wrapper > div.WS84WW_background",
+      "count": 1
+    },
+    {
+      "role": "signature",
+      "kind": "waapi",
+      "label": "agent conversation turn arriving (WAAPI spring)",
+      "property": "opacity",
+      "timingFunction": "linear(0 0%, 0.0411 3.4482758620689653%, 0.1342 6.896551724137931%, 0.2478 10.344827586206897%, 0.3638 13.793103448275863%, 0.4725 17.24137931034483%, 0.5692 20.689655172413794%, 0.6524 24.137931034482758%, 0.7222 27.586206896551722%, 0.7798 31.034482758620687%, 0.8267 34.48275862068965%, 0.8644 37.93103448275862%, 0.8944 41.37931034482759%, 0.9181 44.827586206896555%, 0.9367 48.27586206896552%, 0.9513 51.72413793103449%, 0.9626 55.17241379310346%, 0.9714 58.62068965517243%, 0.9782 62.068965517241395%, 0.9834 65.51724137931036%, 0.9874 68.96551724137933%, 0.9904 72.4137931034483%, 0.9927 75.86206896551727%, 0.9945 79.31034482758623%, 0.9959 82.7586206896552%, 0.9969 86.20689655172416%, 0.9976 89.65517241379311%, 0.9982 93.10344827586208%, 0.9987 96.55172413793105%, 1 100%)",
+      "duration": "300ms",
+      "durationMs": 300,
+      "phase": "scroll",
+      "selector": "div.q1lnWq_turn > div",
+      "count": 3
+    },
+    {
+      "role": "ambient",
+      "kind": "animation",
+      "label": "diagram dots popping in",
+      "property": "fFDhtq_dotIn",
+      "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+      "duration": "0.42s",
+      "durationMs": 420,
+      "phase": "scroll",
+      "selector": "g.fFDhtq_cluster > circle.fFDhtq_dot",
+      "count": 5
+    },
+    {
+      "role": "ambient",
+      "kind": "animation",
+      "label": "grid loader dot, stepped",
+      "property": "grid-dot-0-0-agent",
+      "timingFunction": "steps(1)",
+      "duration": "3.2s",
+      "durationMs": 3200,
+      "phase": "load",
+      "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-0-agent",
+      "count": 1
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "customer card hover filter",
+      "property": "filter",
+      "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+      "duration": "0.16s",
+      "durationMs": 160,
+      "phase": "hover",
+      "selector": "div.Dc5tqa_customerCards > a.Dc5tqa_customerCard.Dc5tqa_primary",
+      "count": 3
+    }
+  ],
+  "notes": [
+    "The one site so far that cuts movement when asked: 474 movement events became 18 with reduced motion on. Fades and filters mostly stay.",
+    "The hover floor is quad-out, cubic-bezier(0.25, 0.46, 0.45, 0.94), at 0.1s to 0.16s.",
+    "The statement is the browser's own ease written out as cubic-bezier(0.25, 0.1, 0.25, 1). Not an aggressive ease-out.",
+    "The grid loaders are steps(1) keyframe animations, one per dot, so each dot blinks rather than fades."
+  ]
+}

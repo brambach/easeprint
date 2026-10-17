@@ -1,0 +1,92 @@
+{
+  "name": "Vercel",
+  "site": "vercel.com",
+  "url": "https://vercel.com/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/vercel.com/2026-10-17.json",
+  "rawReduced": "data/raw/vercel.com/2026-10-17-reduced.json",
+  "status": "partial",
+  "statusReason": "The hero is a WebGL canvas and the scripts load Rive and Lottie. What CSS and WAAPI show is colour, shadow, short fades and a marquee, so the tiers here are the floor, not the show.",
+  "posture": "ambient",
+  "ambientKind": "decorative",
+  "summary": "Tailwind's default curve, cubic-bezier(0.4, 0, 0.2, 1), at 0.1s to 0.2s on nearly every hover, a 40s logo marquee, and a tooltip that leaves on a 0.1s ease-in. The movement is in the canvas.",
+  "tiers": [
+    {
+      "role": "ambient",
+      "kind": "animation",
+      "label": "logo marquee",
+      "property": "marquee",
+      "timingFunction": "linear",
+      "duration": "40s",
+      "durationMs": 40000,
+      "phase": "final",
+      "selector": "div.flex.overflow-hidden > div.flex.shrink-0",
+      "count": 2
+    },
+    {
+      "role": "signature",
+      "kind": "transition",
+      "label": "small indicator scaling (resting transition)",
+      "property": "scale",
+      "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "final",
+      "selector": "span.relative.flex > span.absolute.inset-0",
+      "count": 2
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "icon chip shadow on hover",
+      "property": "box-shadow",
+      "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "hover",
+      "selector": "span.relative.inline-flex > span.flex.size-6",
+      "count": 6
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "menu item background on hover",
+      "property": "background-color",
+      "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "duration": "0.15s",
+      "durationMs": 150,
+      "phase": "hover",
+      "selector": "div.flex.flex-col > button.outline-none.m-0",
+      "count": 2
+    },
+    {
+      "role": "utility",
+      "kind": "waapi",
+      "label": "hero canvas fading on scroll (WAAPI)",
+      "property": "opacity",
+      "timingFunction": "linear",
+      "duration": "150ms",
+      "durationMs": 150,
+      "phase": "scroll",
+      "selector": "div#home-hero > canvas.pointer-events-none.absolute",
+      "count": 1
+    },
+    {
+      "role": "exit",
+      "kind": "animation",
+      "label": "tooltip leaving",
+      "property": "fadeInTooltip",
+      "timingFunction": "ease-in",
+      "duration": "0.1s",
+      "durationMs": 100,
+      "phase": "unhover",
+      "selector": "div > div#tooltip-_R_2lb5tr9abqpfivb_",
+      "count": 1
+    }
+  ],
+  "honestyNote": "Nothing the tool could read moves anything (no transform, position or size changes), so reduced motion has nothing to reduce in the CSS. Whether the canvas and Rive animations respect it wasn't measured.",
+  "notes": [
+    "A 0.1s transition on Tailwind's default curve turns up 790 times in the final computed scan (counting each element and property pair). It's the house floor.",
+    "The marquee was applied but never fired an animationstart while the tool watched, so it's listed from the final computed scan."
+  ]
+}

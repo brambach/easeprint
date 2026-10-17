@@ -1,0 +1,66 @@
+{
+  "name": "Sonner",
+  "site": "sonner.emilkowal.ski",
+  "url": "https://sonner.emilkowal.ski/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/sonner.emilkowal.ski/2026-10-17.json",
+  "rawReduced": "data/raw/sonner.emilkowal.ski/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "spatial",
+  "summary": "The toast library's own demo. Toasts arrive and stack on the browser's plain ease at 0.4s, transform, opacity and height moving together; one stack move ran at 0.5s. Restraint as a feature.",
+  "tiers": [
+    {
+      "role": "statement",
+      "kind": "transition",
+      "label": "toast arriving and stacking",
+      "property": "transform",
+      "timingFunction": "ease",
+      "duration": "0.4s",
+      "durationMs": 400,
+      "phase": "click",
+      "selector": "ol > li",
+      "count": 4
+    },
+    {
+      "role": "secondary",
+      "kind": "transition",
+      "label": "toast moving in the stack, longer variant",
+      "property": "transform",
+      "timingFunction": "ease",
+      "duration": "0.5s",
+      "durationMs": 500,
+      "phase": "click",
+      "selector": "ol > li",
+      "count": 1
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "toast fading",
+      "property": "opacity",
+      "timingFunction": "ease",
+      "duration": "0.4s",
+      "durationMs": 400,
+      "phase": "click",
+      "selector": "ol > li",
+      "count": 3
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "code block copy button appearing",
+      "property": "opacity",
+      "timingFunction": "ease",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "hover",
+      "selector": "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N",
+      "count": 6
+    }
+  ],
+  "honestyNote": "Measured with two opt-in clicks on the page's own demo buttons (Render a toast, then the first toast type), recorded in the raw file. Swipe-to-dismiss wasn't tried, so the swipe-out keyframes in the stylesheet aren't tiers.",
+  "notes": [
+    "Every toast timing seen is the keyword ease. No custom curve at all.",
+    "Reduced motion cut movement from 8 events to 2. Small numbers from two clicks, so read it as a hint."
+  ]
+}

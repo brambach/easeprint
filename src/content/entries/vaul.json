@@ -1,0 +1,78 @@
+{
+  "name": "Vaul",
+  "site": "vaul.emilkowal.ski",
+  "url": "https://vaul.emilkowal.ski/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/vaul.emilkowal.ski/2026-10-17.json",
+  "rawReduced": "data/raw/vaul.emilkowal.ski/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "spatial",
+  "summary": "One curve, cubic-bezier(0.32, 0.72, 0, 1) at 0.5s, for the whole drawer: it slides up, the page behind shrinks back and rounds its corners, the overlay fades, and it all leaves the same way.",
+  "tiers": [
+    {
+      "role": "statement",
+      "kind": "animation",
+      "label": "drawer sliding up from the bottom",
+      "property": "slideFromBottom",
+      "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+      "duration": "0.5s",
+      "durationMs": 500,
+      "phase": "click",
+      "selector": "div.bg-gray-100.flex",
+      "count": 1
+    },
+    {
+      "role": "secondary",
+      "kind": "transition",
+      "label": "page behind scaling back",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+      "duration": "0.5s",
+      "durationMs": 500,
+      "phase": "click",
+      "selector": "div.relative.light",
+      "count": 2
+    },
+    {
+      "role": "secondary",
+      "kind": "animation",
+      "label": "overlay fading in",
+      "property": "fadeIn",
+      "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+      "duration": "0.5s",
+      "durationMs": 500,
+      "phase": "click",
+      "selector": "div.fixed.inset-0",
+      "count": 1
+    },
+    {
+      "role": "exit",
+      "kind": "animation",
+      "label": "drawer sliding back down",
+      "property": "slideToBottom",
+      "timingFunction": "cubic-bezier(0.32, 0.72, 0, 1)",
+      "duration": "0.5s",
+      "durationMs": 500,
+      "phase": "click",
+      "selector": "div.bg-gray-100.flex",
+      "count": 1
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "link colour",
+      "property": "color",
+      "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "duration": "0.15s",
+      "durationMs": 150,
+      "phase": "hover",
+      "selector": "div.flex.justify-center > a.text-center.mt-4",
+      "count": 1
+    }
+  ],
+  "honestyNote": "Measured with one opt-in click on the page's own Open Drawer button, then Escape, recorded in the raw file. Dragging the drawer (its main trick) wasn't tried; drag motion follows the pointer and has no timing to measure.",
+  "notes": [
+    "The exit uses the same 0.5s and the same curve as the entrance. No faster exit tier.",
+    "With reduced motion on, the drawer still slid: 4 movement events in both runs, and no prefers-reduced-motion query in the CSS."
+  ]
+}

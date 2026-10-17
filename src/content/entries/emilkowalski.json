@@ -1,0 +1,43 @@
+{
+  "name": "Emil Kowalski",
+  "site": "emilkowal.ski",
+  "url": "https://emilkowal.ski/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/emilkowal.ski/2026-10-17.json",
+  "rawReduced": "data/raw/emilkowal.ski/2026-10-17-reduced.json",
+  "status": "partial",
+  "statusReason": "The homepage is nearly still on load, scroll and hover. Emil's motion lives in his articles, his course and his libraries (Sonner and Vaul have their own entries), none of which this one-load visit opened.",
+  "posture": "material",
+  "summary": "A writing homepage that barely moves: Tailwind's default 0.15s colour transition on the email field, and a header that snaps in with a 50ms WAAPI hold. The motion is elsewhere.",
+  "tiers": [
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "email field colour",
+      "property": "color",
+      "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "duration": "0.15s",
+      "durationMs": 150,
+      "phase": "final",
+      "selector": "form.mt-6.flex > input#email",
+      "count": 1
+    },
+    {
+      "role": "utility",
+      "kind": "waapi",
+      "label": "sticky header snapping visible (WAAPI)",
+      "property": "opacity",
+      "timingFunction": "linear(0 0%, 1 25%, 1 50%, 1 75%, 1 100%)",
+      "duration": "50ms",
+      "durationMs": 50,
+      "phase": "load",
+      "selector": "div.sticky.left-0",
+      "count": 1
+    }
+  ],
+  "notes": [
+    "The header's linear() curve reaches 1 at 25% and holds, so the 50ms fade is really a 12.5ms one.",
+    "One more WAAPI animation had duration auto, which usually means a scroll-driven timeline. It has no fixed duration, so it isn't a tier.",
+    "Posture is a light call from very little evidence: the site is about material motion more than it shows any."
+  ]
+}

@@ -159,8 +159,12 @@ export function yRange(easing: Easing): [number, number] {
  */
 export function initialSlope(easing: Easing): number {
   if (easing.kind === 'cubic') {
-    const [x1, y1] = easing.bezier;
-    return x1 === 0 ? (y1 === 0 ? 1 : Infinity) : y1 / x1;
+    const [x1, y1, x2, y2] = easing.bezier;
+    if (x1 > 0) return y1 / x1;
+    if (y1 !== 0) return y1 > 0 ? Infinity : -Infinity;
+    // First handle on the start point: the slope comes from the second handle.
+    if (x2 > 0) return y2 / x2;
+    return y2 > 0 ? Infinity : y2 < 0 ? -Infinity : 1;
   }
   const f = easingFunction(easing);
   return f(0.02) / 0.02;

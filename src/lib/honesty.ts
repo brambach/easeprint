@@ -6,7 +6,7 @@ import type { RawFile } from './trace';
 /**
  * The honest notes on an entry, computed from its raw files at build time so nobody types them by hand.
  */
-export type ReducedVerdict = 'honored' | 'partial' | 'not-honored' | 'unknown';
+export type ReducedVerdict = 'honored' | 'partial' | 'not-honored' | 'no-movement' | 'unknown';
 
 export interface Honesty {
   reducedMotion: ReducedVerdict;
@@ -91,8 +91,9 @@ export function honesty(raw: RawFile, reduced: RawFile | null): Honesty {
   const reducedEvents = usable ? motionEvents(usable) : null;
   const moving = movementEvents(raw);
   const reducedMoving = usable ? movementEvents(usable) : null;
-  // Judge on movement when the page moves anything; otherwise on all timed motion.
-  const v = moving > 0 ? verdict(moving, reducedMoving) : verdict(normal, reducedEvents);
+  // Judge on movement. Fades and colour changes are fine under reduced motion, so a page that moves nothing has
+  // nothing to reduce (as far as CSS and WAAPI show).
+  const v = usable === null ? 'unknown' : moving > 0 ? verdict(moving, reducedMoving) : 'no-movement';
   const fp = (raw.fingerprint ?? {}) as Record<string, unknown>;
   const libs = Object.entries(raw.scripts?.libraries ?? {})
     .filter(([k, on]) => on && k in JS_LIBS)

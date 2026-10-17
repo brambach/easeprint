@@ -3,7 +3,7 @@
  "tool": "easeprint-measure 1.1.0",
  "url": "https://sonner.emilkowal.ski",
  "date": "2026-10-17",
- "capturedAt": "2026-10-17T05:55:12.803Z",
+ "capturedAt": "2026-10-17T06:04:23.392Z",
  "browser": "Chromium 141.0.7390.37",
  "viewport": {
   "width": 1440,
@@ -16,7 +16,14 @@
    "load, settle 3s",
    "wheel-scroll to bottom in 80% viewport steps",
    "hover then leave up to 30 elements",
+   "click div.hero_buttons__WlsdS > button.hero_button__qYlMs, wait 1.5s, press Escape, wait 1s",
+   "click div.buttons > button.button, wait 1.5s, press Escape, wait 1s",
+   "wait 5s for anything the clicks started to finish",
    "final computed scan"
+  ],
+  "clicks": [
+   "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+   "div.buttons > button.button"
   ]
  },
  "status": 200,
@@ -82,6 +89,16 @@
    }
   ]
  },
+ "click": [
+  {
+   "selector": "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+   "ok": true
+  },
+  {
+   "selector": "div.buttons > button.button",
+   "ok": true
+  }
+ ],
  "observed": [
   {
    "kind": "transition",
@@ -173,6 +190,28 @@
   },
   {
    "kind": "transition",
+   "phase": "click",
+   "property": "background-color",
+   "declaredProperty": "box-shadow",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "click",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+   "count": 2
+  },
+  {
+   "kind": "transition",
    "phase": "hover",
    "property": "background-color",
    "declaredProperty": "box-shadow",
@@ -257,12 +296,23 @@
    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
    "delay": "0s",
    "selector": "a.mt-6.inline-flex > span.underline.decoration-gray-300",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "click",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.buttons > button.button",
    "count": 1
   }
  ],
  "computed": {
-  "elementsScanned": 314,
-  "elementsTotal": 314,
+  "elementsScanned": 322,
+  "elementsTotal": 322,
   "transitionAllElements": 2,
   "transitions": [
    {
@@ -405,5 +455,5 @@
    "springPhysics": true
   }
  },
- "elapsedMs": 23984
+ "elapsedMs": 35114
 }

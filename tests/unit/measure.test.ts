@@ -27,7 +27,7 @@ beforeAll(async () => {
   });
   await new Promise<void>((r) => server.listen(0, '127.0.0.1', r));
   url = `http://127.0.0.1:${(server.address() as AddressInfo).port}/`;
-  const opts = { url, hover: 5, date: '2026-10-17', out: '' };
+  const opts = { url, hover: 5, date: '2026-10-17', out: '', click: [] };
   raw = (await measure({ ...opts, reduced: false })) as unknown as RawFile;
   reduced = (await measure({ ...opts, reduced: true })) as unknown as RawFile;
 }, 120_000);

@@ -1,0 +1,79 @@
+{
+  "name": "Obys Agency",
+  "site": "obys.agency",
+  "url": "https://obys.agency/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/obys.agency/2026-10-17.json",
+  "rawReduced": "data/raw/obys.agency/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "spatial",
+  "summary": "Images that slide a long way on expo-style curves, a 3.5s progress bar, and hover springs run through the Web Animations API as a sampled linear() curve. Everything travels.",
+  "tiers": [
+    {
+      "role": "statement",
+      "kind": "transition",
+      "label": "work images sliding in on load",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration": "1.6s",
+      "durationMs": 1600,
+      "phase": "load",
+      "selector": "figure.ho-wo-2-r > img",
+      "count": 38
+    },
+    {
+      "role": "secondary",
+      "kind": "transition",
+      "label": "loading progress bar",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration": "3.5s",
+      "durationMs": 3500,
+      "phase": "load",
+      "selector": "div#prg > div",
+      "count": 5
+    },
+    {
+      "role": "signature",
+      "kind": "waapi",
+      "label": "hover spring on menu links (WAAPI)",
+      "property": "transform",
+      "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+      "duration": "1600ms",
+      "durationMs": 1600,
+      "phase": "hover",
+      "selector": "div#header-menu > a",
+      "count": 1
+    },
+    {
+      "role": "secondary",
+      "kind": "transition",
+      "label": "menu underline",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+      "duration": "0.8s",
+      "durationMs": 800,
+      "phase": "hover",
+      "selector": "a > span::before",
+      "count": 1
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "contact button fill",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration": "0.6s",
+      "durationMs": 600,
+      "phase": "hover",
+      "selector": "a#fix-co-em > div.l",
+      "count": 1
+    }
+  ],
+  "honestyNote": "A full-viewport WebGL canvas sits behind the page; what it draws isn't measured. The hover spring is a JavaScript spring sampled into a CSS linear() easing and handed to element.animate, so it is readable here.",
+  "notes": [
+    "No fast tier. The quickest motion seen was a 0.4s colour change on the logo; everything else runs 0.6s or longer.",
+    "The spring's linear() string has 51 stops at 2% intervals. It overshoots nothing: it's a critically damped settle, 50% of the way there by 10% of the time.",
+    "No prefers-reduced-motion query anywhere in its CSS or scripts."
+  ]
+}

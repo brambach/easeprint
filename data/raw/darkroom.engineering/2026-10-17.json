@@ -1,0 +1,1145 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://darkroom.engineering",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T06:01:10.991Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "no-preference",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://darkroom.engineering/",
+ "scrolledTo": 7642,
+ "hover": {
+  "candidates": {
+   "available": 83,
+   "distinct": 15,
+   "picked": [
+    "div.x1n2onr6.x1xdureb > a.x1vjfegm.x78zum5",
+    "nav.xkgw8q5.xf544u5 > a.x78zum5.x6s0dn4",
+    "section.xb1svr.x1mn72p5 > a.x1n2onr6.x78zum5",
+    "section.x14eo49t.x18zr1rw > a.x1n2onr6.x78zum5",
+    "div.xrvj5dj.x1mldcvi > a.x1n2onr6.x78zum5",
+    "div.x78zum5.x1fhomru > button",
+    "div.xrvj5dj.xl501l6 > a.x1n2onr6.x1e1ffwq",
+    "p.x1xdureb.xmkus2p > a.x1bvjpef.x19991ni",
+    "section.x14eo49t.xtvhhri > a.x1n2onr6.x78zum5",
+    "li > a.x19991ni.xx6bhzk",
+    "li > a.x1n2onr6.xh8yej3",
+    "div.xkgw8q5.x10l6tqk > button.xrvj5dj.x1n2onr6",
+    "div.x1n2onr6.xrvj5dj > a.x1n2onr6.xf544u5",
+    "section.x1n2onr6.xhtitgo > a.x1jlg1zd.x1n2onr6",
+    "li > a.xiesj5o.xvf62v9"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div.x1n2onr6.x1xdureb > a.x1vjfegm.x78zum5",
+    "covered": true
+   },
+   {
+    "selector": "nav.xkgw8q5.xf544u5 > a.x78zum5.x6s0dn4",
+    "covered": true
+   },
+   {
+    "selector": "section.xb1svr.x1mn72p5 > a.x1n2onr6.x78zum5",
+    "covered": false
+   },
+   {
+    "selector": "section.x14eo49t.x18zr1rw > a.x1n2onr6.x78zum5",
+    "covered": false
+   },
+   {
+    "selector": "div.xrvj5dj.x1mldcvi > a.x1n2onr6.x78zum5",
+    "covered": false
+   },
+   {
+    "selector": "div.x78zum5.x1fhomru > button",
+    "covered": false
+   },
+   {
+    "selector": "div.xrvj5dj.xl501l6 > a.x1n2onr6.x1e1ffwq",
+    "covered": false
+   },
+   {
+    "selector": "p.x1xdureb.xmkus2p > a.x1bvjpef.x19991ni",
+    "covered": false
+   },
+   {
+    "selector": "section.x14eo49t.xtvhhri > a.x1n2onr6.x78zum5",
+    "covered": false
+   },
+   {
+    "selector": "li > a.x19991ni.xx6bhzk",
+    "covered": false
+   },
+   {
+    "selector": "li > a.x1n2onr6.xh8yej3",
+    "covered": false
+   },
+   {
+    "selector": "div.xkgw8q5.x10l6tqk > button.xrvj5dj.x1n2onr6",
+    "covered": true
+   },
+   {
+    "selector": "div.x1n2onr6.xrvj5dj > a.x1n2onr6.xf544u5",
+    "covered": true
+   },
+   {
+    "selector": "section.x1n2onr6.xhtitgo > a.x1jlg1zd.x1n2onr6",
+    "covered": true
+   },
+   {
+    "selector": "li > a.xiesj5o.xvf62v9",
+    "covered": true
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > a.x1n2onr6.xh8yej3",
+   "count": 18
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > a.x1n2onr6.xh8yej3",
+   "count": 18
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > a.x1n2onr6.xh8yej3",
+   "count": 13
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > a.x1n2onr6.xh8yej3",
+   "count": 13
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "a.x1n2onr6.xh8yej3 > p.xcrlgei.x1orquvw",
+   "count": 11
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "a.x1n2onr6.xh8yej3 > p.xcrlgei.x1orquvw",
+   "count": 9
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > a.x1n2onr6.xh8yej3",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > a.x1n2onr6.xh8yej3",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > div.x1n2onr6.xh8yej3",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > div.x1n2onr6.xh8yej3",
+   "count": 6
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity, pointerEvents",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-group(root)",
+   "count": 5
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "width, height",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-view-transition-group-anim-_t_0_",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-group(_t_0_)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-mix-blend-mode-plus-lighter",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-new(_t_0_)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-mix-blend-mode-plus-lighter",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-old(_t_0_)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-view-transition-fade-in",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-new(_t_0__1)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-mix-blend-mode-plus-lighter",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-new(_t_0__1)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-mix-blend-mode-plus-lighter",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-old(_t_0__1)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-view-transition-group-anim-_t_0__1",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-group(_t_0__1)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-view-transition-fade-out",
+   "keyframeProperties": "",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-old(root)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-view-transition-fade-in",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-new(_t_0_)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-view-transition-fade-out",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-old(_t_0_)",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "-ua-view-transition-fade-out",
+   "keyframeProperties": "",
+   "duration": "0.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-old(_t_0__1)",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > div.x1n2onr6.xh8yej3",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > div.x1n2onr6.xh8yej3",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "a.x1n2onr6.xh8yej3 > p.xcrlgei.x1orquvw",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > div.x1n2onr6.xh8yej3",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > div.x1n2onr6.xh8yej3",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "a.x1n2onr6.x78zum5 > span.x24d10j.xowd6un",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "a.x1n2onr6.x78zum5 > span.x24d10j.xowd6un",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.35s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xixxii4.x10a8y8t > header.xh8yej3.xrxpjvj",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > a.x19991ni.xx6bhzk",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "li > a.x19991ni.xx6bhzk",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.x1n2onr6.xh8yej3 > p.xcrlgei.x1orquvw",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.x1n2onr6.xh8yej3 > p.xcrlgei.x1orquvw",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "main#main-content > footer.x3v6ha1.xwcsmn1",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "main#main-content > footer.x3v6ha1.xwcsmn1",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "main#main-content > footer.x3v6ha1.xnn1q72",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "main#main-content > footer.x3v6ha1.xnn1q72",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "main#main-content > footer.x3v6ha1.xwcsmn1",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "main#main-content > footer.x3v6ha1.xwcsmn1",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.x1n2onr6.xh8yej3 > p.xcrlgei.x1orquvw",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.35s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xixxii4.x10a8y8t > header.xh8yej3.xrxpjvj",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "main#main-content > footer.x3v6ha1.xnn1q72",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "main#main-content > footer.x3v6ha1.xnn1q72",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.xb1svr.x1mn72p5 > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.xb1svr.x1mn72p5 > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.xb1svr.x1mn72p5 > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.xb1svr.x1mn72p5 > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.x14eo49t.x18zr1rw > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.x14eo49t.x18zr1rw > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.x14eo49t.x18zr1rw > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.x14eo49t.x18zr1rw > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xrvj5dj.x1mldcvi > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xrvj5dj.x1mldcvi > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xrvj5dj.x1mldcvi > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xrvj5dj.x1mldcvi > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xrvj5dj.xl501l6 > a.x1n2onr6.x1e1ffwq",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xrvj5dj.xl501l6 > a.x1n2onr6.x1e1ffwq",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "a.x1n2onr6.x1e1ffwq > span.x24d10j.xowd6un",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xrvj5dj.xl501l6 > a.x1n2onr6.x1e1ffwq",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "div.xrvj5dj.xl501l6 > a.x1n2onr6.x1e1ffwq",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "a.x1n2onr6.x1e1ffwq > span.x24d10j.xowd6un",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "p.x1xdureb.xmkus2p > a.x1bvjpef.x19991ni",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "p.x1xdureb.xmkus2p > a.x1bvjpef.x19991ni",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.x14eo49t.xtvhhri > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.x14eo49t.xtvhhri > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.x14eo49t.xtvhhri > a.x1n2onr6.x78zum5",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "delay": "0s",
+   "selector": "section.x14eo49t.xtvhhri > a.x1n2onr6.x78zum5",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 1282,
+  "elementsTotal": 1282,
+  "transitionAllElements": 0,
+  "transitions": [
+   {
+    "property": "background-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 31,
+    "samples": [
+     "li > a.x1n2onr6.xh8yej3",
+     "li > div.x1n2onr6.xh8yej3"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 31,
+    "samples": [
+     "li > a.x1n2onr6.xh8yej3",
+     "li > div.x1n2onr6.xh8yej3"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 31,
+    "samples": [
+     "a.x1n2onr6.xh8yej3 > p.xcrlgei.x1orquvw",
+     "div.x1n2onr6.xh8yej3 > p.xcrlgei.x1orquvw"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 10,
+    "samples": [
+     "p.x1xdureb.xmkus2p > a.x1bvjpef.x19991ni",
+     "li > a.x19991ni.xx6bhzk"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "a.x1n2onr6.x78zum5 > span.x24d10j.xowd6un",
+     "a.x1n2onr6.x1e1ffwq > span.x24d10j.xowd6un",
+     "main#main-content > footer.x3v6ha1.xnn1q72"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "section.xb1svr.x1mn72p5 > a.x1n2onr6.x78zum5",
+     "section.x14eo49t.x18zr1rw > a.x1n2onr6.x78zum5",
+     "div.xrvj5dj.x1mldcvi > a.x1n2onr6.x78zum5"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "section.xb1svr.x1mn72p5 > a.x1n2onr6.x78zum5",
+     "section.x14eo49t.x18zr1rw > a.x1n2onr6.x78zum5",
+     "div.xrvj5dj.x1mldcvi > a.x1n2onr6.x78zum5"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.12s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "section.xb1svr.x1mn72p5 > a.x1n2onr6.x78zum5",
+     "section.x14eo49t.x18zr1rw > a.x1n2onr6.x78zum5",
+     "div.xrvj5dj.x1mldcvi > a.x1n2onr6.x78zum5"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.25s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "button#base-ui-_r_1_ > span.x10l6tqk.x1mpvtrp"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.25s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "button#base-ui-_r_1_ > span.x10l6tqk.x1mpvtrp"
+    ]
+   },
+   {
+    "property": "overflow",
+    "duration": "0.001s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable",
+     "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable > body"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.35s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.xixxii4.x10a8y8t > header.xh8yej3.xrxpjvj"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "main#main-content > footer.x3v6ha1.xnn1q72"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div > div.xixxii4.x10a8y8t"
+    ]
+   },
+   {
+    "property": "clip-path",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div > div.xixxii4.xxzkxad"
+    ]
+   }
+  ],
+  "animations": []
+ },
+ "inlineSheets": {
+  "sheets": 0,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "where things get developed - darkroom.engineering",
+  "canvases": 0,
+  "viewportSizedCanvases": 0,
+  "webglContexts": 1,
+  "canvas2dContexts": 0,
+  "videos": 4,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": true,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 327,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)"
+  ],
+  "documentHeight": 8542
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 55,
+  "stylesheets": 2,
+  "scripts": 31,
+  "failed": 4
+ },
+ "stylesheets": {
+  "files": 2,
+  "bytes": 75343,
+  "reducedMotionQueries": 2,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "xddbt8b-B",
+   "xfp45k0-B",
+   "x1wc8ddo-B"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0.55, 0.085, 0.68, 0.53)": 1,
+   "cubic-bezier(0.55, 0.055, 0.675, 0.19)": 1,
+   "cubic-bezier(0.895, 0.03, 0.685, 0.22)": 1,
+   "cubic-bezier(0.755, 0.05, 0.855, 0.06)": 1,
+   "cubic-bezier(0.95, 0.05, 0.795, 0.035)": 1,
+   "cubic-bezier(0.6, 0.04, 0.98, 0.335)": 1,
+   "cubic-bezier(0.25, 0.46, 0.45, 0.94)": 1,
+   "cubic-bezier(0.215, 0.61, 0.355, 1)": 1,
+   "cubic-bezier(0.165, 0.84, 0.44, 1)": 1,
+   "cubic-bezier(0.23, 1, 0.32, 1)": 1,
+   "cubic-bezier(0.19, 1, 0.22, 1)": 1,
+   "cubic-bezier(0.075, 0.82, 0.165, 1)": 1,
+   "cubic-bezier(0.455, 0.03, 0.515, 0.955)": 1,
+   "cubic-bezier(0.645, 0.045, 0.355, 1)": 1,
+   "cubic-bezier(0.77, 0, 0.175, 1)": 1,
+   "cubic-bezier(0.86, 0, 0.07, 1)": 1,
+   "cubic-bezier(1, 0, 0, 1)": 1,
+   "cubic-bezier(0.785, 0.135, 0.15, 0.86)": 1,
+   "cubic-bezier(0.4, 0, 0, 1)": 1,
+   "cubic-bezier(0.7, 0, 0.3, 1)": 1,
+   "cubic-bezier(0.4, 0, 0.2, 1)": 1
+  }
+ },
+ "scripts": {
+  "files": 31,
+  "bytes": 1181369,
+  "reducedMotionMentions": 8,
+  "libraries": {
+   "scrollTrigger": true,
+   "lenis": true,
+   "gsap": true
+  }
+ },
+ "elapsedMs": 38297
+}

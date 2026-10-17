@@ -1,0 +1,186 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://rauno.me",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T06:00:52.522Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "reduce",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://rauno.me/",
+ "scrolledTo": 5208,
+ "hover": {
+  "candidates": {
+   "available": 13,
+   "distinct": 3,
+   "picked": [
+    "div.index_frames__d9hw4 > a.index_frame__XKrH1",
+    "div.index_contact__4w2ft > a",
+    "div.index_contact__4w2ft > button"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div.index_frames__d9hw4 > a.index_frame__XKrH1",
+    "covered": true
+   },
+   {
+    "selector": "div.index_contact__4w2ft > a",
+    "covered": true
+   },
+   {
+    "selector": "div.index_contact__4w2ft > button",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "index_fadeFrames__RAnv2",
+   "keyframeProperties": "opacity",
+   "duration": "0.35s",
+   "timingFunction": "ease-in-out",
+   "delay": "0.8s",
+   "iterations": "1",
+   "selector": "div.index_frames__d9hw4 > a.index_frame__XKrH1",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "index_fadeFrames__RAnv2",
+   "keyframeProperties": "opacity",
+   "duration": "0.35s",
+   "timingFunction": "ease-in-out",
+   "delay": "0.8s",
+   "iterations": "1",
+   "selector": "div.index_frames__d9hw4 > div.index_frame__XKrH1",
+   "count": 2
+  }
+ ],
+ "computed": {
+  "elementsScanned": 186,
+  "elementsTotal": 186,
+  "transitionAllElements": 0,
+  "transitions": [
+   {
+    "property": "background",
+    "duration": "0.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0.2s",
+    "count": 4,
+    "samples": [
+     "div.c-lesPJm.c-lesPJm-icvxujr-css > a.minimap_tracker__HbSjC",
+     "div.c-lesPJm.c-lesPJm-icvxujr-css > div.minimap_tracker__HbSjC"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0.2s",
+    "count": 4,
+    "samples": [
+     "div.c-lesPJm.c-lesPJm-icvxujr-css > a.minimap_tracker__HbSjC",
+     "div.c-lesPJm.c-lesPJm-icvxujr-css > div.minimap_tracker__HbSjC"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div.c-lesPJm.c-lesPJm-icvxujr-css > a.minimap_tracker__HbSjC",
+     "div.c-lesPJm.c-lesPJm-icvxujr-css > div.minimap_tracker__HbSjC"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "index_fadeFrames__RAnv2",
+    "duration": "0.35s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 7,
+    "samples": [
+     "div.index_frames__d9hw4 > a.index_frame__XKrH1",
+     "div.index_frames__d9hw4 > div.index_frame__XKrH1"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 1,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Rauno Freiberg",
+  "canvases": 0,
+  "viewportSizedCanvases": 0,
+  "webglContexts": 0,
+  "canvas2dContexts": 0,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 1,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion)"
+  ],
+  "documentHeight": 6108
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 37,
+  "stylesheets": 2,
+  "scripts": 17,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 2,
+  "bytes": 12227,
+  "reducedMotionQueries": 0,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "index_fadeFrames__RAnv2",
+   "fade",
+   "animate"
+  ],
+  "cubicBeziers": {}
+ },
+ "scripts": {
+  "files": 17,
+  "bytes": 1562098,
+  "reducedMotionMentions": 4,
+  "libraries": {
+   "framerMotion": true,
+   "springPhysics": true
+  }
+ },
+ "elapsedMs": 16273
+}

@@ -13,6 +13,15 @@ const withStatement = rows.filter((x) => x.r.statement);
 const nearMisses = withStatement.filter((x) => !x.r.meets && [x.r.aggressive, x.r.long, x.r.hasFast].filter(Boolean).length === 2);
 const list = (names: string[]) => (names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names.at(-1)}`);
 const dates = [...new Set(entries.map((e) => e.data.captured))].join(', ');
+// Sites the notes name as the teams behind the convention, with what the notes said and how they fare live.
+const named = rows
+  .map((x) => ({ ...x, note: x.e.data.fromNotes.find((n) => n.convention) }))
+  .filter((x) => x.note)
+  .sort((a, b) => a.e.data.name.localeCompare(b.e.data.name));
+const noteDates = [...new Set(named.map((x) => x.note!.date))].join(', ');
+const words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+const say = (n: number) => words[n] ?? String(n);
+const cap = (t: string) => t[0]!.toUpperCase() + t.slice(1);
 
 // Chart 1: every statement curve on one scale.
 const SIZE = 360;
@@ -42,12 +51,11 @@ const tfShort = (tf: string) => (tf.startsWith('linear(') ? 'linear() spring' : 
 <Base title="The convention" current="convention" description="An aggressive ease-out at long duration for the statement, a fast tier underneath. Tested against 20 sites.">
   <article class="wrap conv">
     <header class="page-head">
-      <p class="kicker">The convention</p>
-      <h1 class="display">Slow to settle, quick to answer</h1>
+      <h1 class="display">The convention</h1>
       <p class="lede">
-        The claim: separate teams landed on the same shape. The one statement move is an aggressive ease-out at a long
-        duration, and under it sits a fast tier for everything you touch. Here it is as three tests, run against every
-        site measured on {dates}.
+        The claim, from Bryce's motion notes of {noteDates}: {say(named.length)} teams landed independently on an
+        aggressive ease-out at a long duration for statement moves, with a fast plain tier underneath. Here it is as three
+        tests, run against every site measured on {dates}.
       </p>
     </header>
 
@@ -60,8 +68,8 @@ const tfShort = (tf: string) => (tf.startsWith('linear(') ? 'linear() spring' : 
       </ol>
     </section>
 
-    <section class="verdict" aria-labelledby="verdict">
-      <h2 class="h2" id="verdict">{meets.length} of {entries.length} sites pass all three</h2>
+    <section class="result" aria-labelledby="verdict">
+      <h2 class="h2" id="verdict">{cap(say(meets.length))} of twenty pass all three</h2>
       <p class="lede">
         {list(meets.map((m) => m.e.data.name))}.
         {nearMisses.length > 0 && <> Near misses, passing two of three: {list(nearMisses.map((m) => m.e.data.name))}.</>}
@@ -72,6 +80,22 @@ const tfShort = (tf: string) => (tf.startsWith('linear(') ? 'linear() spring' : 
         Cuberto and Obys use the identical curve, cubic-bezier(0.16, 1, 0.3, 1); Raycast and Stripe both use the
         usual quart-out, cubic-bezier(0.165, 0.84, 0.44, 1).
       </p>
+    </section>
+
+    <section class="named" aria-labelledby="named-title">
+      <h2 class="h2" id="named-title">The {say(named.length)} the notes named</h2>
+      <p class="fine section-note">From notes, {noteDates}, beside this measurement.</p>
+      <ul class="named-list">
+        {named.map(({ e, r, note }) => (
+          <li>
+            <p class="named-head">
+              <a href={`/entries/${e.id}/`}>{e.data.name}</a>
+              <span class="value">{r.meets ? 'passes all three live' : `passes ${[r.aggressive && '1', r.long && '2', r.hasFast && '3'].filter(Boolean).join(' and ') || 'none'} live`}</span>
+            </p>
+            <p class="fine"><span class="value">notes: {note!.timingFunction} {note!.duration}</span>. {note!.text}</p>
+          </li>
+        ))}
+      </ul>
     </section>
 
     <section class="charts" aria-labelledby="curves-title">
@@ -213,15 +237,41 @@ const tfShort = (tf: string) => (tf.startsWith('linear(') ? 'linear() spring' : 
     color: var(--muted);
   }
 
-  .verdict {
+  .result,
+  .named {
     margin-top: var(--s8);
   }
 
-  .verdict .lede {
+  .section-note {
+    margin-top: var(--s2);
+  }
+
+  .named-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--s5) var(--s6);
+    margin-top: var(--s4);
+  }
+
+  .named-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--s1) var(--s3);
+    margin-bottom: var(--s1);
+    font-weight: 600;
+  }
+
+  .named-head .value {
+    font-weight: 400;
+    color: var(--muted);
+  }
+
+  .result .lede {
     margin-top: var(--s3);
   }
 
-  .verdict .fine {
+  .result .fine {
     margin-top: var(--s3);
     max-width: 44em;
   }
@@ -393,10 +443,15 @@ const tfShort = (tf: string) => (tf.startsWith('linear(') ? 'linear() spring' : 
 
   .results th,
   .results td {
-    padding: 10px 12px 10px 0;
-    border-bottom: 1px solid var(--line);
+    padding: 9px 12px 9px 0;
     text-align: left;
     vertical-align: top;
+    transition: opacity var(--dur-utility) var(--ease-utility);
+  }
+
+  /* Quiet rows: no rule lines; hovering a row dims the others. */
+  .results tbody:hover tr:not(:hover) :is(th, td) {
+    opacity: 0.45;
   }
 
   .results thead th {

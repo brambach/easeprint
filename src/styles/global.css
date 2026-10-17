@@ -1,7 +1,7 @@
 /*
  * easeprint's chrome. Material borrowed from Dervo (trydervo.com): warm paper, ink, hairlines, one 1200px column,
- * serif only for display. The chrome stays neutral; the demos carry the colour. Pine is the one accent and each
- * page spends it once, on the wordmark's full stop.
+ * serif only for display. The chrome stays neutral; the demos carry the colour. Taste rules from design-taste
+ * APPLY.md: lift not outline, pine only on the primary button, status as a glyph plus a word, quiet lists.
  */
 @import "@fontsource/instrument-serif/400.css";
 @import "@fontsource/instrument-serif/400-italic.css";
@@ -23,6 +23,17 @@
   --line: #e6e5df;
   --line2: #d6d5ce;
   --pine: #22382b;
+  --pine-ink: #f8f8f5;
+  --lift:
+    0 0 0 1px rgb(20 30 24 / 5%),
+    0 1px 2px rgb(20 30 24 / 5%),
+    0 4px 10px -4px rgb(20 30 24 / 8%),
+    0 18px 36px -18px rgb(34 56 43 / 22%);
+  --lift-hover:
+    0 0 0 1px rgb(20 30 24 / 7%),
+    0 2px 4px rgb(20 30 24 / 6%),
+    0 10px 20px -8px rgb(20 30 24 / 10%),
+    0 26px 48px -20px rgb(34 56 43 / 28%);
 
   /* Demo colours, one per posture. These are the only colour on the page. Validated as a categorical set
      (lightness band, chroma, CVD and normal-vision separation, 3:1 on paper) in light and dark. */
@@ -46,6 +57,7 @@
   --wrap: 1200px;
   --r-sm: 6px;
   --r: 10px;
+  --r-card: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,7 +73,10 @@
     --faint: #a5a198;
     --line: #2b2926;
     --line2: #3d3a35;
-    --pine: #adc19b;
+    --pine: #dfe8d6;
+    --pine-ink: #161a14;
+    --lift: inset 0 1px 0 rgb(255 255 255 / 4%), 0 1px 2px rgb(0 0 0 / 35%), 0 12px 30px -14px rgb(0 0 0 / 70%);
+    --lift-hover: inset 0 1px 0 rgb(255 255 255 / 6%), 0 2px 4px rgb(0 0 0 / 40%), 0 18px 40px -16px rgb(0 0 0 / 75%);
     --spatial: #d46a3d;
     --material: #4585d6;
     --ambient: #1fa274;
@@ -82,7 +97,10 @@
   --faint: #a5a198;
   --line: #2b2926;
   --line2: #3d3a35;
-  --pine: #adc19b;
+  --pine: #dfe8d6;
+  --pine-ink: #161a14;
+  --lift: inset 0 1px 0 rgb(255 255 255 / 4%), 0 1px 2px rgb(0 0 0 / 35%), 0 12px 30px -14px rgb(0 0 0 / 70%);
+  --lift-hover: inset 0 1px 0 rgb(255 255 255 / 6%), 0 2px 4px rgb(0 0 0 / 40%), 0 18px 40px -16px rgb(0 0 0 / 75%);
   --spatial: #d46a3d;
   --material: #4585d6;
   --ambient: #1fa274;
@@ -258,7 +276,6 @@ p {
 
 .brand b {
   font-weight: 400;
-  color: var(--pine);
 }
 
 .masthead nav {
@@ -313,7 +330,7 @@ p {
   font: 500 13px/1 var(--f-text);
   cursor: pointer;
   white-space: nowrap;
-  transition: transform var(--dur-utility) var(--ease-utility);
+  transition: transform var(--dur-micro) var(--ease-utility);
 }
 
 .btn:hover {
@@ -322,6 +339,16 @@ p {
 
 .btn:active {
   transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--pine);
+  color: var(--pine-ink);
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--pine) 88%, var(--canvas));
 }
 
 .btn[aria-pressed="true"] {
@@ -379,18 +406,25 @@ p {
   border-style: dashed;
 }
 
-/* Signature tier: the copy confirmation stamps in with the house overshoot. */
-[data-copy-status]:not(:empty) {
-  display: inline-block;
-  animation: signature-stamp var(--dur-signature) var(--ease-signature) both;
+/* ---------- Status: a glyph plus a word, never colour alone ---------- */
+.verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
-@keyframes signature-stamp {
-  from {
-    transform: scale(0.8);
-  }
+.verdict svg {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
-  to {
-    transform: none;
-  }
+.verdict .fill {
+  fill: currentcolor;
+  stroke: none;
 }

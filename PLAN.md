@@ -69,3 +69,18 @@ file and the exact `timingFunction` and `duration` strings, and a test fails if 
 - **Hover sampling** misses states behind menus or clicks. The note says how many elements were hovered.
 - **Hosting:** the repo has no `main` yet. Pushing the session branch makes it GitHub's default branch until you
   create `main`. I won't create `main`.
+
+## Update, 2026-10-17: design-taste
+
+`github.com/brambach/design-taste` now holds what `design/` was meant to: TASTE.md, APPLY.md, tokens, the motion
+glossary, `motion/default/motion.css` and the four motion notes. So:
+
+- `src/styles/motion.css` is now that file, byte for byte (the reconstruction is gone). Stylelint skips it; it
+  carries a `.t-material` class that transitions shadow and colour, which our own rules don't allow in our CSS.
+- The Cuberto, Raycast, Family and brycerambach.com notes (dated 2026-09-01) are in each entry's `fromNotes`, with
+  their source path, beside the live values. Obys gets the convention line from the motion default README.
+- The convention's four teams are the notes' four: Cuberto, Obys, Family, Raycast.
+- Postures follow the motion glossary's definitions; each entry shows the glossary's property-list test as evidence.
+- The site follows APPLY.md: nothing moves on load, lifted cards, pine primary buttons, status as glyph plus word,
+  quiet lists, no serif on list rows or numbers, plain copy. Type stays Instrument Serif, Instrument Sans and
+  JetBrains Mono, APPLY's default pair (TASTE.md records Instrument beating Fraunces for Dervo).

@@ -75,7 +75,7 @@ const defaults = { a: statementOf('cuberto'), b: statementOf('family') };
           </div>
         ))}
         <div class="controls">
-          <button class="btn" type="button" data-play-both>Play both</button>
+          <button class="btn btn-primary" type="button" data-play-both>Play both</button>
           <button class="btn" type="button" data-slow aria-pressed="false">Slow-mo 10%</button>
           <label class="scrub"><span class="sr">Scrub both curves</span><input type="range" min="0" max="1000" value="0" data-scrub /></label>
         </div>
@@ -215,9 +215,9 @@ const defaults = { a: statementOf('cuberto'), b: statementOf('family') };
   .track {
     margin-top: var(--s2);
     padding: 12px;
-    border: 1px solid var(--line);
     border-radius: var(--r);
-    background: var(--canvas);
+    background: var(--raised);
+    box-shadow: var(--lift);
   }
 
   .puck {
@@ -259,8 +259,7 @@ const defaults = { a: statementOf('cuberto'), b: statementOf('family') };
     flex-wrap: wrap;
     gap: var(--s2);
     align-items: center;
-    padding-top: var(--s4);
-    border-top: 1px solid var(--line);
+    padding-top: var(--s2);
   }
 
   .scrub {

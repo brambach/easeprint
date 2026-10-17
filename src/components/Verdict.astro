@@ -1,0 +1,28 @@
+---
+import type { ReducedVerdict } from '../lib/honesty';
+
+/** A reduced-motion verdict as a glyph plus a word. Shape carries the meaning; nothing is colour-only. */
+interface Props {
+  verdict: ReducedVerdict;
+  /** "Honored" instead of "Honors reduced motion", for places already labelled. */
+  short?: boolean;
+}
+const { verdict, short = false } = Astro.props;
+const words: Record<ReducedVerdict, [string, string]> = {
+  honored: ['Honored', 'Honors reduced motion'],
+  partial: ['Partly honored', 'Partly honors reduced motion'],
+  'not-honored': ['Not honored', 'Ignores reduced motion'],
+  'no-movement': ['Nothing measured moves', 'Nothing measured moves'],
+  unknown: ['Unknown', 'Reduced motion unknown'],
+};
+---
+<span class="verdict" data-verdict={verdict}>
+  <svg viewBox="0 0 16 16" aria-hidden="true">
+    {verdict === 'unknown' ? <circle cx="8" cy="8" r="6.2" stroke-dasharray="2 2.4" /> : <circle cx="8" cy="8" r="6.2" />}
+    {verdict === 'honored' && <path d="M5.2 8.2l1.9 1.9 3.8-4" />}
+    {verdict === 'partial' && <path class="fill" d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" />}
+    {verdict === 'not-honored' && <path d="M5.8 5.8l4.4 4.4M10.2 5.8l-4.4 4.4" />}
+    {verdict === 'no-movement' && <path d="M5.2 8h5.6" />}
+  </svg>
+  <span>{words[verdict][short ? 0 : 1]}</span>
+</span>

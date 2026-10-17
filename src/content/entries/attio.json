@@ -7,7 +7,7 @@
   "rawReduced": "data/raw/attio.com/2026-10-17-reduced.json",
   "status": "measured",
   "posture": "material",
-  "summary": "Things arrive out of a blur on cubic-out, images give a little under the pointer on a curve that's all front, and colour changes run on a quick Material-style ease. Glass that comes into focus.",
+  "summary": "Things arrive out of a blur on cubic-out, images scale under the pointer on a curve that's nearly all front, and colour changes run on Material's standard 0.3s ease.",
   "tiers": [
     {
       "role": "statement",

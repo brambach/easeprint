@@ -57,7 +57,7 @@ const phaseText: Record<string, string> = {
         </button>
       </div>
       <div class="controls">
-        <button class="btn" type="button" data-play>Replay</button>
+        <button class="btn btn-primary" type="button" data-play>Replay</button>
         <button class="btn" type="button" data-slow aria-pressed="false">Slow-mo 10%</button>
         <label class="scrub">
           <span class="sr">Scrub through the curve</span>
@@ -85,8 +85,11 @@ const phaseText: Record<string, string> = {
 
 <style>
   .specimen {
-    border-top: 1px solid var(--line);
     padding-block: var(--s6);
+  }
+
+  .specimen + .specimen {
+    margin-top: var(--s5);
   }
 
   .specimen-head {
@@ -125,9 +128,9 @@ const phaseText: Record<string, string> = {
 
   .stage {
     position: relative;
-    border: 1px solid var(--line);
     border-radius: var(--r);
-    background: var(--canvas);
+    background: var(--raised);
+    box-shadow: var(--lift);
     padding: 14px;
   }
 
@@ -193,9 +196,7 @@ const phaseText: Record<string, string> = {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: var(--s3) var(--s5);
-    margin-top: var(--s4);
-    padding-top: var(--s4);
-    border-top: 1px dashed var(--line);
+    margin-top: var(--s5);
   }
 
   .spec dt {

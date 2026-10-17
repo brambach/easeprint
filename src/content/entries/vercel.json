@@ -7,8 +7,7 @@
   "rawReduced": "data/raw/vercel.com/2026-10-17-reduced.json",
   "status": "partial",
   "statusReason": "The hero is a WebGL canvas and the scripts load Rive and Lottie. What CSS and WAAPI show is colour, shadow, short fades and a marquee, so the tiers here are the floor, not the show.",
-  "posture": "ambient",
-  "ambientKind": "decorative",
+  "posture": "material",
   "summary": "Tailwind's default curve, cubic-bezier(0.4, 0, 0.2, 1), at 0.1s to 0.2s on nearly every hover, a 40s logo marquee, and a tooltip that leaves on a 0.1s ease-in. The movement is in the canvas.",
   "tiers": [
     {

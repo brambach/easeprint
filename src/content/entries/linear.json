@@ -6,8 +6,7 @@
   "raw": "data/raw/linear.app/2026-10-17.json",
   "rawReduced": "data/raw/linear.app/2026-10-17-reduced.json",
   "status": "measured",
-  "posture": "ambient",
-  "ambientKind": "diagrammatic",
+  "posture": "material",
   "summary": "Mostly diagrams: hundreds of dots popping in on quad-out, step-timed loaders, a product frame fading up over 1.5s. The headline blurs into place on a plain 1s ease, and conversation turns arrive on a sampled spring.",
   "tiers": [
     {

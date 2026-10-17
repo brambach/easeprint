@@ -6,8 +6,8 @@
   "raw": "data/raw/family.co/2026-10-17.json",
   "rawReduced": "data/raw/family.co/2026-10-17-reduced.json",
   "status": "measured",
-  "posture": "material",
-  "summary": "Expo-out at one second for anything that moves, with a 0.1s ease floor for fills and shadows. Soft, quick to respond, slow to settle.",
+  "posture": "spatial",
+  "summary": "Expo-out at one second for anything that moves, with a 0.1s to 0.2s floor for fills, shadows and links.",
   "tiers": [
     {
       "role": "statement",
@@ -75,5 +75,44 @@
     "The 1s curve is cubic-bezier(0.19, 1, 0.22, 1), the common stand-in for expo-out. It's the same curve the house statement tier uses.",
     "Avatars carry a 0.22s expo-out at rest but switch to a 0.18s ease while hovered, so the way in and the way out differ.",
     "Selectors are styled-components hashes; the panel selector is literally div > div."
+  ],
+  "fromNotes": [
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/reveal-on-enter/004-family-home.md",
+      "label": "statement curve (expo-out)",
+      "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+      "duration": "1s",
+      "text": "On 56 elements. Live on 2026-10-17: the same, on 56 elements.",
+      "convention": true
+    },
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/reveal-on-enter/004-family-home.md",
+      "label": "utility floor",
+      "timingFunction": "ease-out",
+      "duration": "0.2s",
+      "text": "ease-out at 0.2s on 105 elements, ease at 0.1s on 49, ease-in-out at 0.1s on 44."
+    },
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/reveal-on-enter/004-family-home.md",
+      "label": "transition: all",
+      "text": "120 elements, the most common transition property on the page. Live: 123."
+    },
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/reveal-on-enter/004-family-home.md",
+      "label": "ambient loops",
+      "timingFunction": "linear",
+      "duration": "120s",
+      "text": "Two loops at 120s linear, probably a marquee. Live: the testimonial marquee."
+    },
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/reveal-on-enter/004-family-home.md",
+      "label": "reduced motion",
+      "text": "Ignored, zero blocks. Live: still no query in the CSS, and 96% of movement runs with it on."
+    }
   ]
 }

@@ -6,8 +6,7 @@
   "raw": "data/raw/stripe.com/2026-10-17.json",
   "rawReduced": "data/raw/stripe.com/2026-10-17-reduced.json",
   "status": "measured",
-  "posture": "ambient",
-  "ambientKind": "diagrammatic",
+  "posture": "material",
   "summary": "Product diagrams that play for seconds at a time through the Web Animations API, case-study cards that drift 0.8s on quart-out, a 2s in-out logo swap, and the arrow that slides on every link in 0.3s. The most motion of any site here: 1,600 timed events in one visit.",
   "tiers": [
     {

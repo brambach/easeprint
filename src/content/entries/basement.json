@@ -8,8 +8,8 @@
   "status": "partial",
   "statusReason": "Two viewport-sized WebGL canvases carry the showpiece motion and three.js is in the scripts. That motion lives in canvas and isn't measured; the tiers are the DOM layer around it.",
   "posture": "ambient",
-  "ambientKind": "character",
-  "summary": "Moving diagonal stripes on a 6s loop, links that blink on a 0.3s linear flicker and 0.06s linear opacity, images that pulse, and a number ticker rolling on a sampled spring. Motion with a personality, mostly in canvas.",
+  "ambientKind": "decorative",
+  "summary": "Diagonal stripes drifting on a 6s loop across 37 panels, links that blink on a 0.3s linear flicker, images that pulse, and a number ticker rolling on a sampled spring. The showpiece motion is in canvas.",
   "tiers": [
     {
       "role": "ambient",

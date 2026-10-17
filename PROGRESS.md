@@ -164,8 +164,7 @@ Evidence:
 
 Evidence:
 
-- Screenshots, desktop and mobile: `evidence/index-*.png`, `evidence/convention-*.png`, `evidence/compare-*.png`,
-  `evidence/entries-family-*.png`; dark: `evidence/index-desktop-dark.png`, `evidence/entries-raycast-desktop-dark.png`.
+- Screenshots: replaced by the taste pass below (same pages, at the 1052x854 pane and a phone).
 - `tests/e2e/site.spec.ts`: axe finds no serious or critical issues on six pages (index, two entries, compare,
   convention, method) at desktop and mobile, and on four pages in dark mode. Fixed along the way: tag text
   contrast, and keyboard access to the scrolling chart and table.
@@ -176,6 +175,39 @@ Evidence:
   containing `all`, and transitions on anything but transform and opacity; it passes the site's own CSS.
 - Final run: `pnpm test` 208 passed, `pnpm test:e2e` 46 passed, `pnpm lint` clean, `pnpm check` 0 errors,
   `pnpm build` 24 pages.
+
+## Taste pass (design-taste)
+
+`github.com/brambach/design-taste` arrived after M5. Read: APPLY.md, TASTE.md, tokens/tokens.css, the motion
+glossary, `motion/default/` and the four motion notes. Not edited (its AGENTS.md says not to from another project).
+
+- **motion.css**: `src/styles/motion.css` is `motion/default/motion.css` byte for byte (checked with `cmp`).
+  Stylelint ignores that one file. The site no longer spends a statement move on load, per APPLY ("the page paints
+  finished", "nothing animates just because the page loaded") and the README ("one statement move per viewport, at
+  most"). The copy confirmation lost its overshoot (motion.css: signature "never on data or chrome"). Chrome now
+  uses utility (card hover), micro (button press) and exit (card leave) only.
+- **Notes**: `fromNotes` with date and source path on Cuberto (4), Raycast (3), Family (5), Obys (1, from the
+  motion default README) and brycerambach.com (4, the Oak and Clay build, which the live sky build has replaced).
+  The brief's house tiers came off brycerambach.com's entry; they describe the house style, not that site. Where
+  live differs from the notes, the note says so: Cuberto now has one reduced-motion query (notes: zero); Raycast
+  has 12 (notes: 2) and the note called it honoured, but 80 of 84 movement events ran with reduced motion on.
+- **Convention**: the page now names the notes' four (Cuberto, Obys, Family, Raycast) and tests each live.
+  Cuberto, Family and Raycast pass; Obys passes tests 1 and 2 but no tier at 300ms or under was seen. Raycast passes
+  through its 2s diagrams, not the 0.4s quint-out the note cited. brycerambach.com and Stripe also pass.
+- **Postures** follow the motion glossary. Changed: Cuberto and Family to spatial (the notes' own calls); Linear,
+  Stripe, Vercel and darkroom to material (dense pages, short durations, triggered motion); basement.studio's
+  ambient kind to decorative (37 identical stripe loops). Each entry shows the glossary's property-list test from
+  its raw file; where it disagrees (Raycast, Sonner, Vaul, Paco, Locomotive, Arc), the page says the test counts
+  what sits at rest, not what moved.
+- **APPLY.md checklist**: lifted cards with a tinted shadow instead of outlines; pine only on primary buttons
+  (Replay, Play both); no accent spent on the wordmark; reduced-motion status as a glyph plus a word; no serif on
+  list rows or a leading number; no rule lines between list rows or table rows (hover dims the others); copy taglines
+  cut ("Product as object.", "Restraint as a feature.", "Glass that comes into focus." and others). Type stays
+  Instrument Serif, Instrument Sans and JetBrains Mono, APPLY's default pair.
+- **Checked at his size**: `pnpm screenshot --pane` renders at 1052x854, 2x. Evidence: `evidence/*-pane.png`,
+  `evidence/*-mobile.png`, `evidence/index-pane-dark.png`, `evidence/entries-raycast-pane-dark.png`.
+- `pnpm test` 208 passed, `pnpm test:e2e` 46 passed (axe light and dark, reduced motion, filter, compare,
+  clipboard), `pnpm lint` clean, `pnpm check` 0 errors, `pnpm build` 24 pages.
 
 ## Summary
 
@@ -189,10 +221,9 @@ requestAnimationFrame. If you'd rather have 20 fully measured sites, those are t
 
 **Needed from you:**
 
-1. Your `design/` folder (TASTE.md, MOTION.md, motion.css, motion/GLOSSARY.md, and the Cuberto, Raycast, Family and
-   brycerambach.com notes). Then the notes go into each entry's `fromNotes` beside the live values, dated, and
-   `src/styles/motion.css` gets replaced with the original.
-2. A `main` branch. The repo had no commits, so `claude/easeprint-mvp` is its only branch and GitHub shows it as the
+1. A `main` branch. The repo had no commits, so `claude/easeprint-mvp` is its only branch and GitHub shows it as the
    default; a PR needs a base to merge into.
-3. A call on the type: I followed Dervo (Instrument Serif, Instrument Sans, JetBrains Mono) per your message; the
-   brief's fallback was Fraunces, Hanken Grotesk and Plex Mono. It's one block in `src/styles/global.css`.
+2. Whether the page should get a background scene. TASTE.md says plain paper alone was "too plain"; APPLY.md says one
+   scene per page that recedes. That's a look to compare side by side, so it isn't built.
+
+(The design folder and the type question were answered by design-taste; see the taste pass above.)

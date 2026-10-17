@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import CurvePlot from '../components/CurvePlot.astro';
+import Verdict from '../components/Verdict.astro';
 import { leadTier, loadEntries } from '../lib/entries';
 import { POSTURES } from '../lib/schema';
 
@@ -9,17 +10,10 @@ const tiers = entries.reduce((n, e) => n + e.data.tiers.length, 0);
 const honored = entries.filter((e) => e.honesty.reducedMotion === 'honored').length;
 const dates = [...new Set(entries.map((e) => e.data.captured))].sort();
 const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => e.data.posture === p).length]));
-const verdict: Record<string, string> = {
-  honored: 'honors reduced motion',
-  partial: 'partly honors reduced motion',
-  'not-honored': 'ignores reduced motion',
-  'no-movement': 'nothing measured moves',
-  unknown: 'reduced motion unknown',
-};
 ---
 <Base title="easeprint" current="index">
   <section class="hero wrap">
-    <h1 class="wordmark" data-statement>easeprint</h1>
+    <h1 class="wordmark">easeprint</h1>
     <p class="lede">
       How {entries.length} real sites move, measured in a browser. Exact cubic-beziers and durations, read from computed
       styles. Every curve plotted, rebuilt as a demo in our own code, and copyable. Honest notes on reduced motion
@@ -77,7 +71,7 @@ const verdict: Record<string, string> = {
                   <span class="tag" data-posture={e.data.posture}><i></i>{e.data.posture}{e.data.ambientKind ? `, ${e.data.ambientKind}` : ''}</span>
                   {e.data.status !== 'measured' && <span class="tag" data-status={e.data.status}>{e.data.status}</span>}
                 </p>
-                <p class="fine card-rm">{verdict[e.honesty.reducedMotion]}</p>
+                <p class="fine card-rm"><Verdict verdict={e.honesty.reducedMotion} /></p>
               </div>
             </a>
           </li>
@@ -115,22 +109,11 @@ const verdict: Record<string, string> = {
     padding-block: var(--s8) var(--s7);
   }
 
-  /* The one oversized wordmark. Its statement move: it settles up once on load, painted visible from the start. */
+  /* The one oversized wordmark. It doesn't move: the page paints finished, and the long moves live in the demos. */
   .wordmark {
     font: 400 clamp(84px, 19vw, 264px) / 0.82 var(--f-display);
     letter-spacing: -0.045em;
     margin-left: -0.04em;
-    animation: statement-settle var(--dur-statement) var(--ease-statement) both;
-  }
-
-  @keyframes statement-settle {
-    from {
-      transform: translateY(0.12em);
-    }
-
-    to {
-      transform: none;
-    }
   }
 
   .hero .lede {
@@ -212,24 +195,40 @@ const verdict: Record<string, string> = {
     display: none;
   }
 
+  /* Lifted, not outlined. The hover rises on the utility tier and drops back on the exit tier. */
   .card-link {
+    position: relative;
     display: flex;
     gap: var(--s4);
     height: 100%;
     padding: var(--s4);
-    border: 1px solid var(--line);
-    border-radius: var(--r);
-    background: var(--canvas);
+    border-radius: var(--r-card);
+    background: var(--raised);
+    box-shadow: var(--lift);
     text-decoration: none;
-
-    /* Leaving uses the exit tier; arriving uses utility (below). */
     transition: transform var(--dur-exit) var(--ease-exit);
   }
 
+  /* The deeper shadow sits on a pseudo-element and fades, so only opacity and transform animate. */
+  .card-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: var(--lift-hover);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--dur-exit) var(--ease-exit);
+  }
+
   .card-link:hover {
-    border-color: var(--line2);
     transform: translateY(-2px);
     transition: transform var(--dur-utility) var(--ease-utility);
+  }
+
+  .card-link:hover::after {
+    opacity: 1;
+    transition: opacity var(--dur-utility) var(--ease-utility);
   }
 
   .card-plot {
@@ -242,8 +241,8 @@ const verdict: Record<string, string> = {
   }
 
   .card h3 {
-    font: 400 26px/1 var(--f-display);
-    letter-spacing: -0.01em;
+    font: 600 17px/1.2 var(--f-text);
+    letter-spacing: -0.005em;
     overflow-wrap: anywhere;
   }
 

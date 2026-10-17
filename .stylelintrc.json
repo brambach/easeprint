@@ -1,13 +1,23 @@
 {
-  "extends": ["stylelint-config-standard"],
+  "extends": [
+    "stylelint-config-standard"
+  ],
   "rules": {
     "declaration-property-value-disallowed-list": {
-      "transition": ["/(^|[\\s,])all([\\s,]|$)/"],
-      "transition-property": ["/(^|[\\s,])all([\\s,]|$)/"]
+      "transition": [
+        "/(^|[\\s,])all([\\s,]|$)/"
+      ],
+      "transition-property": [
+        "/(^|[\\s,])all([\\s,]|$)/"
+      ]
     },
     "declaration-property-value-allowed-list": {
-      "transition-property": ["/^(none|transform|opacity|translate|scale|rotate)(\\s*,\\s*(transform|opacity|translate|scale|rotate))*$/"],
-      "transition": ["/^(none|(transform|opacity|translate|scale|rotate)\\s[^,]+(,\\s*(transform|opacity|translate|scale|rotate)\\s[^,]+)*)$/"]
+      "transition-property": [
+        "/^(none|transform|opacity|translate|scale|rotate)(\\s*,\\s*(transform|opacity|translate|scale|rotate))*$/"
+      ],
+      "transition": [
+        "/^(none|(transform|opacity|translate|scale|rotate)\\s[^,]+(,\\s*(transform|opacity|translate|scale|rotate)\\s[^,]+)*)$/"
+      ]
     },
     "selector-class-pattern": null,
     "custom-property-pattern": null,
@@ -15,5 +25,8 @@
     "no-descending-specificity": null,
     "import-notation": "string",
     "custom-property-empty-line-before": null
-  }
+  },
+  "ignoreFiles": [
+    "src/styles/motion.css"
+  ]
 }

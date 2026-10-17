@@ -7,8 +7,8 @@
   "rawReduced": "data/raw/darkroom.engineering/2026-10-17-reduced.json",
   "status": "partial",
   "statusReason": "Scroll runs through Lenis and the scenes through GSAP and ScrollTrigger, which weren't exposed on window, so the long scroll-linked moves aren't readable. What's here is the CSS layer.",
-  "posture": "spatial",
-  "summary": "Quint-out, cubic-bezier(0.23, 1, 0.32, 1), at 0.12s to 0.35s on almost every hover, a header that slides away on scroll, and a CSS view transition on load at the browser's default 0.25s ease. Fast and consistent.",
+  "posture": "material",
+  "summary": "Quint-out, cubic-bezier(0.23, 1, 0.32, 1), at 0.12s to 0.35s on almost every hover, a header that slides away on scroll, and a CSS view transition on load at the browser's default 0.25s ease.",
   "tiers": [
     {
       "role": "secondary",

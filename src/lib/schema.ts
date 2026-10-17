@@ -79,13 +79,17 @@ export const tierSchema = z
     path: ['durationMs'],
   });
 
-/** Values from Bryce's own notes. Never mixed with measured values; always dated. */
+/** Values from Bryce's own notes. Never mixed with measured values; always dated and sourced. */
 export const noteSchema = z.strictObject({
   date: isoDate,
+  /** Where the note lives, e.g. "design-taste motion/library/reveal-on-enter/001-cuberto-home.md". */
+  source: z.string().min(5),
   label: z.string().min(3),
   timingFunction: timingFunction.optional(),
   duration: duration.optional(),
   text: z.string().min(1),
+  /** The note names this site as one of the teams behind the convention. */
+  convention: z.boolean().optional(),
 });
 
 export const entrySchema = z

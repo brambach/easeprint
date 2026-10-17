@@ -7,7 +7,7 @@
   "rawReduced": "data/raw/arc.net/2026-10-17-reduced.json",
   "status": "measured",
   "posture": "material",
-  "summary": "Buttons lift on a 0.15s ease with a 0.15s ease-out shadow, sections fade on 300ms ease-in-out, and a logo marquee takes 78.5 seconds a lap. Small, quick, friendly, and no long statement move.",
+  "summary": "Buttons lift on a 0.15s ease with a 0.15s ease-out shadow, sections fade on 300ms ease-in-out, and a logo marquee takes 78.5 seconds a lap. No long statement move.",
   "tiers": [
     {
       "role": "signature",

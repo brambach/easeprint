@@ -1,42 +1,92 @@
-/*
- * motion.css: the house tiers, as custom properties.
- *
- * Reconstructed 2026-10-17 from the tiers stated in the easeprint brief. The original design/motion.css was not
- * in the repo. Replace this file with the original when it lands; the variable names below are what the site uses.
- *
- * - statement: one per viewport, plays once. 900ms cubic-bezier(0.19, 1, 0.22, 1)
- * - signature: 400ms cubic-bezier(0.2, 1.4, 0.4, 1), the overshoot
- * - utility:   200ms ease-out, hover and press
- * - exit:      140ms ease-in, leaving is faster than arriving
- *
- * Transform and opacity only. Reduced motion zeroes every duration, so the end state shows at once.
- */
+/* ---------------------------------------------------------------------------
+   Motion default
+   Derived from 15 sites measured 2026-09-01. See README.md for the evidence.
+
+   Three tiers, and a rule about which gets spent when. The structure is the
+   convention (four independent teams landed on it). The signature curve is
+   yours and appears nowhere else in the sample.
+   --------------------------------------------------------------------------- */
 
 :root {
+  /* STATEMENT - rationed. One per viewport, at most.
+     easeOutExpo. Covers most of its distance in the first fifth of the
+     duration, so a long move still reads as immediate. */
   --ease-statement: cubic-bezier(0.19, 1, 0.22, 1);
   --dur-statement: 900ms;
+
+  /* SIGNATURE - yours. The 1.4 control point overshoots the target and
+     settles back. Use where something should feel alive: a character, a
+     mark, an arrival that has personality. Never on data or chrome. */
   --ease-signature: cubic-bezier(0.2, 1.4, 0.4, 1);
   --dur-signature: 400ms;
+
+  /* UTILITY - everything else. Hovers, focus, small state flips. */
   --ease-utility: ease-out;
   --dur-utility: 200ms;
-  --ease-exit: ease-in;
+  --dur-micro: 120ms;
+
+  /* EXIT - always faster than the entrance. Waiting for something to leave
+     is worse than waiting for it to arrive. */
   --dur-exit: 140ms;
+  --ease-exit: ease-in;
+
+  /* AMBIENT - untriggered loops. Long enough that a cycle is never seen
+     whole, which is what stops it reading as a loop. */
+  --dur-ambient-slow: 21s;
+  --dur-ambient: 12s;
+  --ease-ambient: ease-in-out;
 }
 
+/* --- Base -------------------------------------------------------------- */
+
+/* Transform and opacity only. Both stay on the compositor. Animating width,
+   height, top or margin forces layout and drops frames on long pages. */
+.t-statement { transition: transform var(--dur-statement) var(--ease-statement),
+                           opacity   var(--dur-statement) var(--ease-statement); }
+
+.t-signature { transition: transform var(--dur-signature) var(--ease-signature); }
+
+.t-utility   { transition: transform var(--dur-utility) var(--ease-utility),
+                           opacity   var(--dur-utility) var(--ease-utility); }
+
+/* Material variant: for dense, already-designed surfaces where things should
+   illuminate rather than travel. Costs paint, so keep it off long scrolls. */
+.t-material  { transition: box-shadow var(--dur-utility) var(--ease-utility),
+                           color      var(--dur-utility) var(--ease-utility),
+                           background var(--dur-utility) var(--ease-utility); }
+
+.t-exit      { transition: transform var(--dur-exit) var(--ease-exit),
+                           opacity   var(--dur-exit) var(--ease-exit); }
+
+/* Reveal on scroll entry. Pair with an IntersectionObserver that adds .is-in. */
+.reveal {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: transform var(--dur-statement) var(--ease-statement),
+              opacity   var(--dur-statement) var(--ease-statement);
+  /* Stagger: set --i on each sibling. 40ms reads as a wave; past 80ms it
+     reads as a queue. Defaults to 0 when unset. */
+  transition-delay: calc(var(--i, 0) * 40ms);
+}
+
+.reveal.is-in { opacity: 1; transform: none; }
+
+/* --- Reduced motion ----------------------------------------------------- */
+
+/* Considered rather than blunt. What the setting protects against is large
+   movement, not feedback, so micro and utility survive. Statement moves,
+   overshoot and ambient loops do not. */
 @media (prefers-reduced-motion: reduce) {
   :root {
-    --dur-statement: 0ms;
-    --dur-signature: 0ms;
-    --dur-utility: 0ms;
-    --dur-exit: 0ms;
+    --dur-statement: 1ms;
+    --dur-signature: 1ms;
+    --ease-signature: linear;   /* kill the overshoot, not just the time */
   }
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0ms !important;
-    scroll-behavior: auto !important;
-  }
+  .reveal { opacity: 1; transform: none; }
+
+  [data-ambient],
+  .ambient { animation: none !important; }
+
+  html { scroll-behavior: auto; }
 }

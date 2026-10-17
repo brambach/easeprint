@@ -7,7 +7,7 @@
   "rawReduced": "data/raw/sonner.emilkowal.ski/2026-10-17-reduced.json",
   "status": "measured",
   "posture": "spatial",
-  "summary": "The toast library's own demo. Toasts arrive and stack on the browser's plain ease at 0.4s, transform, opacity and height moving together; one stack move ran at 0.5s. Restraint as a feature.",
+  "summary": "The toast library's own demo. Toasts arrive and stack on the browser's plain ease at 0.4s, transform, opacity and height moving together; one stack move ran at 0.5s.",
   "tiers": [
     {
       "role": "statement",

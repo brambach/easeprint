@@ -7,7 +7,7 @@
   "rawReduced": "data/raw/raycast.com/2026-10-17-reduced.json",
   "status": "measured",
   "posture": "material",
-  "summary": "Keys that press and glow on a quint-out curve, diagrams that settle over two seconds on quart-out, and a dense floor of 0.25s to 0.3s ease fades underneath. Product as object.",
+  "summary": "Keys that press and glow on a quint-out curve, diagrams that settle over two seconds on quart-out, and a dense floor of 0.25s to 0.3s ease fades underneath.",
   "tiers": [
     {
       "role": "statement",
@@ -111,5 +111,30 @@
     "The two long curves are the usual cubic-bezier stand-ins for quart-out (0.165, 0.84, 0.44, 1) and quint-out (0.23, 1, 0.32, 1).",
     "The star field's 0.25s ease fades fired 949 times in one visit, out of 1,153 timed motion events in total.",
     "The icon stack swap runs through the Web Animations API, not CSS, at 100ms leaving and 240ms arriving."
+  ],
+  "fromNotes": [
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/micro-feedback/002-raycast-home.md",
+      "label": "statement curve (quint-out)",
+      "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "duration": "0.4s",
+      "text": "On 81 elements, the long tier of 90 at 0.4s and above. Live on 2026-10-17: the same curve at 0.4s on the keyboard keys. The live statement here is the 2s quart-out on the API diagrams, which the note didn't list.",
+      "convention": true
+    },
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/micro-feedback/002-raycast-home.md",
+      "label": "utility floor",
+      "timingFunction": "ease",
+      "duration": "0.3s",
+      "text": "Plain ease at 0.3s on 49 elements and 0.2s on 34. Live: still there."
+    },
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/micro-feedback/002-raycast-home.md",
+      "label": "reduced motion",
+      "text": "Honoured: two prefers-reduced-motion blocks across 12 stylesheets. Live on 2026-10-17: 12 queries across 31 stylesheets, but 80 of 84 movement events still ran with reduced motion on. The note counted blocks; this run measured motion. They disagree."
+    }
   ]
 }

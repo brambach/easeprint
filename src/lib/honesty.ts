@@ -23,6 +23,34 @@ export interface Honesty {
   jsLibraries: string[];
   motionInCanvas: boolean;
   hovered: number;
+  tell: PostureTell;
+}
+
+/**
+ * The glossary's quick posture test: "read the property list. Transform and opacity on top means spatial. Shadow and
+ * colour on top means material." Counted over transitions every element carries at rest at the end of the visit,
+ * so it's evidence beside the posture an entry chooses, not a verdict: utility classes inflate the surface side, and
+ * motion that only exists after a click isn't at rest.
+ */
+export interface PostureTell {
+  moving: number;
+  surface: number;
+  looping: number;
+  suggests: 'spatial' | 'material';
+}
+
+const MOVING_PROPS = new Set(['transform', 'translate', 'scale', 'rotate', 'opacity']);
+
+export function postureTell(raw: RawFile): PostureTell {
+  let moving = 0;
+  let surface = 0;
+  for (const r of raw.computed?.transitions ?? []) {
+    if (r.property === 'all' || r.property === 'none') continue;
+    if (MOVING_PROPS.has(r.property ?? '')) moving += r.count;
+    else surface += r.count;
+  }
+  const looping = (raw.computed?.animations ?? []).filter((r) => r.iterations === 'infinite').reduce((n, r) => n + r.count, 0);
+  return { moving, surface, looping, suggests: moving >= surface ? 'spatial' : 'material' };
 }
 
 export function readRaw(path: string): RawFile {
@@ -127,5 +155,6 @@ export function honesty(raw: RawFile, reduced: RawFile | null): Honesty {
     jsLibraries: libs,
     motionInCanvas: Number(fp.webglContexts ?? 0) > 0 && Number(fp.viewportSizedCanvases ?? 0) > 0,
     hovered: raw.hover?.hovered.length ?? 0,
+    tell: postureTell(raw),
   };
 }

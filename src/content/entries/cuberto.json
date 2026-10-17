@@ -6,8 +6,8 @@
   "raw": "data/raw/cuberto.com/2026-10-17.json",
   "rawReduced": "data/raw/cuberto.com/2026-10-17-reduced.json",
   "status": "measured",
-  "posture": "material",
-  "summary": "Long, front-loaded transforms on cards and titles, elastic overshoot on button icons, and a cursor that answers in 0.3s. The surfaces feel like they have give.",
+  "posture": "spatial",
+  "summary": "Long, front-loaded transforms on cards and titles, one curve for all of them, an elastic overshoot on button icons, and a cursor that answers in 0.3s. The page is sparse and the motion delivers it.",
   "tiers": [
     {
       "role": "statement",
@@ -73,6 +73,38 @@
   "honestyNote": "Scripts ship GSAP, ScrollTrigger and Lenis, but window.gsap wasn't exposed, so any GSAP tweens and the smooth scroll itself aren't in these numbers. Only CSS transitions and animations were readable.",
   "notes": [
     "Leaving a card runs the same 1.2s curve as arriving. No separate, faster exit tier was seen.",
-    "The icon curve's second control point sits at y = 4.56, so a short hop reads as a big spring. A 0.6s sibling at y = 5.56 runs on CTA buttons."
+    "The icon curve's second control point sits at y = 4.56, so a short hop reads as a big spring. A 0.6s sibling at y = 5.56 runs on CTA buttons. The motion default README says nothing outside brycerambach.com overshoots; these are hover-only, so a scan at rest wouldn't see them."
+  ],
+  "fromNotes": [
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/reveal-on-enter/001-cuberto-home.md",
+      "label": "statement curve",
+      "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration": "1.2s",
+      "text": "On 30 elements, and 0.8s on 20 more. Always on transform alone. Live on 2026-10-17: the same curve at 1.2s and 0.8s.",
+      "convention": true
+    },
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/reveal-on-enter/001-cuberto-home.md",
+      "label": "morph pair",
+      "timingFunction": "cubic-bezier(0.4, 0, 0, 1)",
+      "text": "On the one transform and border-radius pair. Live: the button ripple, at 0.5s."
+    },
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/reveal-on-enter/001-cuberto-home.md",
+      "label": "opacity layer",
+      "timingFunction": "ease",
+      "duration": "0.4s",
+      "text": "Opacity on its own timing, 0.4s and 0.6s, separate from the move. Micro-feedback at 0.2s."
+    },
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/library/reveal-on-enter/001-cuberto-home.md",
+      "label": "reduced motion",
+      "text": "Ignored: zero prefers-reduced-motion blocks in the one stylesheet. Live on 2026-10-17 the CSS has one such query and a script asks matchMedia once, but 91% of movement still runs with it on. The verdict is the same; the zero is out of date."
+    }
   ]
 }

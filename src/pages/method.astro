@@ -34,16 +34,29 @@ import { CRITERIA } from '../lib/convention';
 
     <section aria-labelledby="words">
       <h2 class="h2" id="words">Words</h2>
+      <p>From Bryce's motion glossary (design-taste, filed 2026-09-01). Posture names what the motion is for; two sites can share a curve and feel nothing alike.</p>
       <dl class="glossary">
-        <div><dt>Spatial</dt><dd>Motion that says where things are and where they go: travel, slides, layers, stacks.</dd></div>
-        <div><dt>Material</dt><dd>Motion that says what things are made of: press, give, glow, blur, spring.</dd></div>
-        <div><dt>Ambient</dt><dd>Motion that runs on its own, not in answer to you. <em>Decorative</em> (marquees, drifts), <em>diagrammatic</em> (product diagrams that explain), or <em>character</em> (motion with a personality).</dd></div>
+        <div><dt>Spatial</dt><dd>The page is sparse and the motion delivers the content. Things travel from somewhere to somewhere. Transform and opacity lead the property list, durations run long.</dd></div>
+        <div><dt>Material</dt><dd>The page is already dense and designed. Motion changes how surfaces look rather than where they are: shadow, colour, background. Short durations. Nothing arrives; everything responds.</dd></div>
+        <div><dt>Ambient</dt><dd>Nothing triggers it. Untriggered, looping, slow. <em>Decorative</em> when the loops are many, uniform and procedurally named; <em>diagrammatic</em> when they illustrate a product feature; <em>character</em> when they're few and named after a subject's behaviour.</dd></div>
+        <div><dt>The quick test</dt><dd>Read the property list. Transform and opacity on top means spatial; shadow and colour on top means material. Each entry shows this count from its raw file beside the posture it was given.</dd></div>
         <div><dt>Statement</dt><dd>The one big move. At most one per site here.</dd></div>
         <div><dt>Secondary</dt><dd>Long moves under the statement.</dd></div>
         <div><dt>Signature</dt><dd>The move that's recognisably theirs, often an overshoot.</dd></div>
         <div><dt>Utility</dt><dd>Hover, press, colour: the fast floor.</dd></div>
         <div><dt>Exit</dt><dd>Leaving, when it's timed differently from arriving.</dd></div>
       </dl>
+    </section>
+
+    <section aria-labelledby="house">
+      <h2 class="h2" id="house">This site's own motion</h2>
+      <p>
+        easeprint runs Bryce's motion default (<code>motion.css</code>, unchanged): statement 900ms
+        <code>cubic-bezier(0.19, 1, 0.22, 1)</code>, signature 400ms <code>cubic-bezier(0.2, 1.4, 0.4, 1)</code>,
+        utility 200ms ease-out, micro 120ms, exit 140ms ease-in. The chrome spends only the small ones: cards rise on
+        utility and drop on exit, buttons press on micro. Nothing moves on load or on scroll. The page paints finished,
+        and every long move on the site is a demo you asked to play.
+      </p>
     </section>
 
     <section aria-labelledby="verdicts">

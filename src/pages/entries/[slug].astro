@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Specimen from '../../components/Specimen.astro';
+import Verdict from '../../components/Verdict.astro';
 import { loadEntries, rawHref, type EntryWithHonesty } from '../../lib/entries';
 
 export async function getStaticPaths() {
@@ -19,13 +20,11 @@ interface Props {
 const { entry, prev, next } = Astro.props;
 const e = entry.data;
 const h = entry.honesty;
-const verdict: Record<string, string> = {
-  honored: 'Honored',
-  partial: 'Partly honored',
-  'not-honored': 'Not honored',
-  'no-movement': 'Nothing measured moves',
-  unknown: 'Unknown',
-};
+const tell = h.tell;
+const tellText =
+  `At rest, ${tell.moving} transitions move things (transform, opacity) and ${tell.surface} change surfaces ` +
+  `(colour, shadow, background, filter)${tell.looping ? `, and ${tell.looping} elements loop` : ''}. ` +
+  `The glossary's quick test reads that as ${tell.suggests}.`;
 const allUsed = h.transitionAllElements > 0 || h.transitionAllDeclarations > 0;
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 ---
@@ -61,7 +60,7 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
         <div>
           <dt>Reduced motion</dt>
           <dd>
-            <strong data-verdict={h.reducedMotion}>{verdict[h.reducedMotion]}</strong>
+            <strong><Verdict verdict={h.reducedMotion} short /></strong>
             <p class="fine">{h.reducedMotionEvidence}</p>
           </dd>
         </div>
@@ -87,6 +86,13 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
           </dd>
         </div>
         <div>
+          <dt>Posture</dt>
+          <dd>
+            <strong class="cap">{e.posture}{e.ambientKind ? `, ${e.ambientKind}` : ''}</strong>
+            <p class="fine">{tellText}{tell.suggests !== e.posture && ' The entry says otherwise because the tell counts what sits at rest, not what moved during the visit.'}</p>
+          </dd>
+        </div>
+        <div>
           <dt>Coverage</dt>
           <dd>
             <strong>One load, {h.hovered} elements hovered</strong>
@@ -107,11 +113,13 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
     {e.fromNotes.length > 0 && (
       <section aria-labelledby="from-notes">
         <h2 class="h2 section-title" id="from-notes">From notes</h2>
-        <p class="fine section-note">Values from Bryce's own notes, kept apart from the measurement. Dated as written.</p>
-        <ul class="notes">
+        <p class="fine section-note">Values from Bryce's own notes, kept apart from this measurement and dated as written. Where the live site differs, the note says so.</p>
+        <ul class="notes from-notes">
           {e.fromNotes.map((n) => (
             <li>
-              <span class="value">{n.date}</span> {n.label}: {n.timingFunction && <code>{n.timingFunction}</code>} {n.duration && <code>{n.duration}</code>} {n.text}
+              <p class="note-head"><span class="value">{n.date}</span> <strong>{n.label}</strong>{n.timingFunction && <> <code>{n.timingFunction}</code></>}{n.duration && <> <code>{n.duration}</code></>}</p>
+              <p>{n.text}</p>
+              <p class="fine value">{n.source}</p>
             </li>
           ))}
         </ul>
@@ -168,10 +176,8 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
   .facts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: var(--s5) var(--s6);
+    gap: var(--s6) var(--s6);
     margin-top: var(--s5);
-    padding-top: var(--s5);
-    border-top: 1px solid var(--line);
   }
 
   .facts dt {
@@ -205,16 +211,21 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
     gap: var(--s3);
   }
 
-  .notes li {
-    padding-left: var(--s4);
-    border-left: 1px solid var(--line2);
+  .from-notes {
+    gap: var(--s5);
+  }
+
+  .note-head {
+    margin-bottom: var(--s1);
+  }
+
+  .cap {
+    text-transform: capitalize;
   }
 
   .pager {
     display: flex;
     justify-content: space-between;
     margin-top: var(--s8);
-    padding-top: var(--s5);
-    border-top: 1px solid var(--line);
   }
 </style>

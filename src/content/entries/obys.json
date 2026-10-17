@@ -75,5 +75,16 @@
     "No fast tier. The quickest motion seen was a 0.4s colour change on the logo; everything else runs 0.6s or longer.",
     "The spring's linear() string has 51 stops at 2% intervals. It overshoots nothing: it's a critically damped settle, 50% of the way there by 10% of the time.",
     "No prefers-reduced-motion query anywhere in its CSS or scripts."
+  ],
+  "fromNotes": [
+    {
+      "date": "2026-09-01",
+      "source": "design-taste motion/default/README.md",
+      "label": "statement curve (expo-out)",
+      "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration": "1.6s",
+      "text": "Listed as one of the four teams at 0.8s and 1.6s. Live on 2026-10-17: 1.6s on the work images and 0.8s on 42 elements at rest. But no tier at 300ms or under was seen, so the live page fails the \"fast tier underneath\" half of the convention.",
+      "convention": true
+    }
   ]
 }

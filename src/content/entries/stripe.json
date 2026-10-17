@@ -1,0 +1,116 @@
+{
+  "name": "Stripe",
+  "site": "stripe.com",
+  "url": "https://stripe.com/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/stripe.com/2026-10-17.json",
+  "rawReduced": "data/raw/stripe.com/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "ambient",
+  "ambientKind": "diagrammatic",
+  "summary": "Product diagrams that play for seconds at a time through the Web Animations API, case-study cards that drift 0.8s on quart-out, a 2s in-out logo swap, and the arrow that slides on every link in 0.3s. The most motion of any site here: 1,600 timed events in one visit.",
+  "tiers": [
+    {
+      "role": "statement",
+      "kind": "transition",
+      "label": "case study card media drifting on hover",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+      "duration": "0.8s",
+      "durationMs": 800,
+      "phase": "hover",
+      "selector": "a.case-study-card > div.case-study-card__media",
+      "count": 16
+    },
+    {
+      "role": "ambient",
+      "kind": "transition",
+      "label": "developer systems logos swapping",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.9, 0, 0.1, 1)",
+      "duration": "2s",
+      "durationMs": 2000,
+      "phase": "hover",
+      "selector": "div.developer-systems-animation__app > div.developer-systems-animation__app-logo",
+      "count": 3
+    },
+    {
+      "role": "ambient",
+      "kind": "waapi",
+      "label": "product graphic sequence (WAAPI, eased per keyframe)",
+      "property": "transform",
+      "timingFunction": "linear",
+      "duration": "4480ms",
+      "durationMs": 4480,
+      "phase": "hover",
+      "selector": "div > div",
+      "count": 10
+    },
+    {
+      "role": "secondary",
+      "kind": "transition",
+      "label": "diagram strokes moving",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration": "0.6s",
+      "durationMs": 600,
+      "phase": "hover",
+      "selector": "svg > path",
+      "count": 36
+    },
+    {
+      "role": "signature",
+      "kind": "transition",
+      "label": "link arrow sliding",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+      "duration": "0.3s",
+      "durationMs": 300,
+      "phase": "load",
+      "selector": "g > g.arrow-group",
+      "count": 21
+    },
+    {
+      "role": "signature",
+      "kind": "waapi",
+      "label": "headline words rising (WAAPI)",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+      "duration": "325ms",
+      "durationMs": 325,
+      "phase": "load",
+      "selector": "span > span",
+      "count": 10
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "globe arc labels",
+      "property": "transform",
+      "timingFunction": "ease-out",
+      "duration": "0.15s",
+      "durationMs": 150,
+      "phase": "hover",
+      "selector": "div.globe__ui-container > div.globe__arc-ui",
+      "count": 116
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "nav link fade",
+      "property": "opacity",
+      "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+      "duration": "0.24s",
+      "durationMs": 240,
+      "phase": "hover",
+      "selector": "nav#navigation-menu > a.hds-link.navigation-menu-home-link",
+      "count": 1
+    }
+  ],
+  "honestyNote": "Seven viewport-sized WebGL canvases (the globe among them) aren't measured. The long WAAPI sequences carry linear timing on the effect and put their easing on each keyframe (ease-out and quad-out here), so the plotted curve for that tier is linear by construction.",
+  "notes": [
+    "Stripe's arrow is cubic-bezier(0.25, 1, 0.5, 1), quart-ish out at 0.3s. It fired on load as the page settled, not only on hover.",
+    "cubic-bezier(0.9, 0, 0.1, 1) is a severe in-out: almost nothing happens for the first and last fifth of its 2 seconds.",
+    "92 prefers-reduced-motion queries in the CSS, more than any other site measured."
+  ]
+}

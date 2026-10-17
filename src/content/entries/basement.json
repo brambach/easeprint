@@ -1,0 +1,92 @@
+{
+  "name": "basement.studio",
+  "site": "basement.studio",
+  "url": "https://basement.studio/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/basement.studio/2026-10-17.json",
+  "rawReduced": "data/raw/basement.studio/2026-10-17-reduced.json",
+  "status": "partial",
+  "statusReason": "Two viewport-sized WebGL canvases carry the showpiece motion and three.js is in the scripts. That motion lives in canvas and isn't measured; the tiers are the DOM layer around it.",
+  "posture": "ambient",
+  "ambientKind": "character",
+  "summary": "Moving diagonal stripes on a 6s loop, links that blink on a 0.3s linear flicker and 0.06s linear opacity, images that pulse, and a number ticker rolling on a sampled spring. Motion with a personality, mostly in canvas.",
+  "tiers": [
+    {
+      "role": "ambient",
+      "kind": "animation",
+      "label": "diagonal stripe pattern drifting",
+      "property": "diagonalPatternAnimation",
+      "timingFunction": "linear",
+      "duration": "6s",
+      "durationMs": 6000,
+      "phase": "load",
+      "selector": "div.relative.h-full > div.with-diagonal-lines.pointer-events-none::after",
+      "count": 36
+    },
+    {
+      "role": "signature",
+      "kind": "animation",
+      "label": "link blink on hover",
+      "property": "actionable-blink",
+      "timingFunction": "linear",
+      "duration": "0.3s",
+      "durationMs": 300,
+      "phase": "hover",
+      "selector": "button.flex.flex-col > span.actionable",
+      "count": 2
+    },
+    {
+      "role": "signature",
+      "kind": "waapi",
+      "label": "number ticker digits rolling (WAAPI spring)",
+      "property": "--_number-flow-dx",
+      "timingFunction": "linear(0 0%, 0.005 1.1235955056179776%, 0.019 2.247191011235955%, 0.039 3.370786516853933%, 0.066 4.49438202247191%, 0.096 5.617977528089888%, 0.129 6.741573033707866%, 0.165 7.865168539325843%, 0.202 8.98876404494382%, 0.24 10.112359550561798%, 0.278 11.235955056179776%, 0.316 12.359550561797754%, 0.354 13.483146067415731%, 0.39 14.606741573033709%, 0.426 15.730337078651687%, 0.461 16.853932584269664%, 0.494 17.97752808988764%, 0.526 19.10112359550562%, 0.557 20.224719101123597%, 0.586 21.348314606741575%, 0.614 22.471910112359552%, 0.64 23.59550561797753%, 0.665 24.719101123595507%, 0.689 25.842696629213485%, 0.711 26.966292134831463%, 0.731 28.08988764044944%, 0.751 29.213483146067418%, 0.769 30.337078651685395%, 0.786 31.460674157303373%, 0.802 32.58426966292135%, 0.817 33.70786516853933%, 0.831 34.831460674157306%, 0.844 35.95505617977528%, 0.856 37.07865168539326%, 0.867 38.20224719101124%, 0.877 39.325842696629216%, 0.887 40.449438202247194%, 0.896 41.57303370786517%, 0.904 42.69662921348315%, 0.912 43.82022471910113%, 0.919 44.943820224719104%, 0.925 46.06741573033708%, 0.931 47.19101123595506%, 0.937 48.31460674157304%, 0.942 49.438202247191015%, 0.947 50.56179775280899%, 0.951 51.68539325842697%, 0.955 52.80898876404495%, 0.959 53.932584269662925%, 0.962 55.0561797752809%, 0.965 56.17977528089888%, 0.968 57.30337078651686%, 0.971 58.426966292134836%, 0.973 59.55056179775281%, 0.976 60.67415730337079%, 0.978 61.79775280898877%, 0.98 62.921348314606746%, 0.981 64.04494382022472%, 0.983 65.16853932584269%, 0.984 66.29213483146067%, 0.986 67.41573033707866%, 0.987 68.53932584269663%, 0.988 69.6629213483146%, 0.989 70.78651685393258%, 0.99 71.91011235955057%, 0.991 73.03370786516854%, 0.992 74.15730337078651%, 0.992 75.28089887640449%, 0.993 76.40449438202248%, 0.994 77.52808988764045%, 0.994 78.65168539325842%, 0.995 79.7752808988764%, 0.995 80.89887640449439%, 0.996 82.02247191011236%, 0.996 83.14606741573033%, 0.9963 84.26966292134831%, 0.9967 85.3932584269663%, 0.9969 86.51685393258427%, 0.9972 87.64044943820224%, 0.9975 88.76404494382022%, 0.9977 89.88764044943821%, 0.9979 91.01123595505618%, 0.9981 92.13483146067415%, 0.9982 93.25842696629213%, 0.9984 94.38202247191012%, 0.9985 95.50561797752809%, 0.9987 96.62921348314606%, 0.9988 97.75280898876404%, 0.9989 98.87640449438203%, 1 100%)",
+      "duration": "900ms",
+      "durationMs": 900,
+      "phase": "load",
+      "selector": "span.number",
+      "count": 2
+    },
+    {
+      "role": "ambient",
+      "kind": "animation",
+      "label": "project image pulse",
+      "property": "subtle-pulse",
+      "timingFunction": "ease-in-out",
+      "duration": "1s",
+      "durationMs": 1000,
+      "phase": "hover",
+      "selector": "div.group.relative > img.h-full.w-full",
+      "count": 4
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "hover flicker on link backgrounds",
+      "property": "opacity",
+      "timingFunction": "linear",
+      "duration": "0.06s",
+      "durationMs": 60,
+      "phase": "hover",
+      "selector": "button.flex.flex-col > span.actionable::before",
+      "count": 4
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "project overlay fade",
+      "property": "opacity",
+      "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "hover",
+      "selector": "div.group.relative > div.pointer-events-none.absolute",
+      "count": 6
+    }
+  ],
+  "honestyNote": "The number ticker animates CSS custom properties (--_number-flow-dx and friends) through element.animate, which reads as a spring sampled into linear(); the demo shows that timing as movement.",
+  "notes": [
+    "Linear timing is a choice here, not a default: the blink, the flicker and the stripes all run linear, which reads as mechanical and on purpose.",
+    "Reduced motion changed almost nothing: 43 movement events in both runs."
+  ]
+}

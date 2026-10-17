@@ -1,0 +1,67 @@
+{
+  "name": "darkroom.engineering",
+  "site": "darkroom.engineering",
+  "url": "https://darkroom.engineering/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/darkroom.engineering/2026-10-17.json",
+  "rawReduced": "data/raw/darkroom.engineering/2026-10-17-reduced.json",
+  "status": "partial",
+  "statusReason": "Scroll runs through Lenis and the scenes through GSAP and ScrollTrigger, which weren't exposed on window, so the long scroll-linked moves aren't readable. What's here is the CSS layer.",
+  "posture": "spatial",
+  "summary": "Quint-out, cubic-bezier(0.23, 1, 0.32, 1), at 0.12s to 0.35s on almost every hover, a header that slides away on scroll, and a CSS view transition on load at the browser's default 0.25s ease. Fast and consistent.",
+  "tiers": [
+    {
+      "role": "secondary",
+      "kind": "transition",
+      "label": "header sliding away and back",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "duration": "0.35s",
+      "durationMs": 350,
+      "phase": "unhover",
+      "selector": "div.xixxii4.x10a8y8t > header.xh8yej3.xrxpjvj",
+      "count": 3
+    },
+    {
+      "role": "signature",
+      "kind": "transition",
+      "label": "link arrow nudge on hover",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "duration": "0.3s",
+      "durationMs": 300,
+      "phase": "hover",
+      "selector": "a.x1n2onr6.x78zum5 > span.x24d10j.xowd6un",
+      "count": 4
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "nav link colour",
+      "property": "background-color",
+      "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "duration": "0.15s",
+      "durationMs": 150,
+      "phase": "unhover",
+      "selector": "li > a.x1n2onr6.xh8yej3",
+      "count": 13
+    },
+    {
+      "role": "utility",
+      "kind": "animation",
+      "label": "view transition on load (browser default timing)",
+      "property": "-ua-view-transition-group-anim-_t_0_",
+      "timingFunction": "ease",
+      "duration": "0.25s",
+      "durationMs": 250,
+      "phase": "load",
+      "selector": "html.mono_5da033d2-module__n1AzdG__variable.sauce_c7ca0744-module__ziOkUW__variable::view-transition-group(_t_0_)",
+      "count": 5
+    }
+  ],
+  "honestyNote": "With reduced motion on, movement went from 107 events to 0, but colour and opacity changes went up from 249 timed events in total to 1,844, nearly all 0.15s ease colour and opacity transitions. The site appears to swap movement for a lot of quick fades, which reduced motion allows.",
+  "notes": [
+    "One curve family for the whole UI: quint-out at 0.12s, 0.15s, 0.2s, 0.25s, 0.3s and 0.35s.",
+    "The view transition uses the browser's own defaults (0.25s ease), not a custom curve."
+  ]
+}

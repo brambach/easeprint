@@ -1,0 +1,782 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://basement.studio",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T06:07:12.319Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "reduce",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ],
+  "clicks": []
+ },
+ "status": 200,
+ "finalUrl": "https://basement.studio/",
+ "scrolledTo": 5814,
+ "hover": {
+  "candidates": {
+   "available": 89,
+   "distinct": 14,
+   "picked": [
+    "div.grid-layout.h-9 > button.col-span-1.w-fit",
+    "div.flex.items-center > a.group.space-x-1",
+    "div.col-start-11.col-end-13 > button.inline-flex.items-center",
+    "div.col-start-11.col-end-13 > button#nav-contact",
+    "div.grid-rows-auto.group > a.text-brand-w1",
+    "div.relative.col-span-full > a.block",
+    "div.grid-layout.py-4 > a.hidden.h-max",
+    "h3.text-f-h4-mobile > a",
+    "div.relative.col-span-5 > a",
+    "li > a.flex.w-fit",
+    "li > button.flex.flex-col",
+    "form.flex.flex-col > button.ml-1.flex",
+    "div.flex.flex-row > a.h-max.text-brand-w1",
+    "div.flex.items-center > a.px-3.uppercase"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div.grid-layout.h-9 > button.col-span-1.w-fit",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > a.group.space-x-1",
+    "covered": false
+   },
+   {
+    "selector": "div.col-start-11.col-end-13 > button.inline-flex.items-center",
+    "covered": false
+   },
+   {
+    "selector": "div.col-start-11.col-end-13 > button#nav-contact",
+    "covered": false
+   },
+   {
+    "selector": "div.grid-rows-auto.group > a.text-brand-w1",
+    "covered": true
+   },
+   {
+    "selector": "div.relative.col-span-full > a.block",
+    "covered": true
+   },
+   {
+    "selector": "div.grid-layout.py-4 > a.hidden.h-max",
+    "covered": false
+   },
+   {
+    "selector": "h3.text-f-h4-mobile > a",
+    "covered": true
+   },
+   {
+    "selector": "div.relative.col-span-5 > a",
+    "covered": true
+   },
+   {
+    "selector": "li > a.flex.w-fit",
+    "covered": true
+   },
+   {
+    "selector": "li > button.flex.flex-col",
+    "covered": false
+   },
+   {
+    "selector": "form.flex.flex-col > button.ml-1.flex",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.flex-row > a.h-max.text-brand-w1",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > a.px-3.uppercase",
+    "covered": true
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-in-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.grid-rows-auto.group > a.text-brand-w1",
+   "count": 72
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "diagonalPatternAnimation",
+   "keyframeProperties": "",
+   "duration": "6s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.relative.h-full > div.with-diagonal-lines.pointer-events-none::after",
+   "count": 36
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.group.relative > div.pointer-events-none.absolute",
+   "count": 8
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.absolute.left-0 > p.bg-brand-k.text-brand-w1",
+   "count": 7
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "subtle-pulse",
+   "keyframeProperties": "opacity",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.group.relative > img.h-full.w-full",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "button.flex.flex-col > span.actionable::before",
+   "count": 4
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "subtle-pulse",
+   "keyframeProperties": "opacity",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.group.relative > img.h-full.w-full",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.group.relative > div.pointer-events-none.absolute",
+   "count": 3
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.absolute.left-0 > p.bg-brand-k.text-brand-w1",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.group.relative > div.pointer-events-none.absolute",
+   "count": 3
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.absolute.left-0 > p.bg-brand-k.text-brand-w1",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "a.flex.w-fit > span.actionable::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button.flex.flex-col > span.actionable",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "button.flex.flex-col > span.actionable",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "button.flex.flex-col > span.actionable::before",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "diagonalPatternAnimation",
+   "keyframeProperties": "",
+   "duration": "6s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.relative.col-span-full > div.with-diagonal-lines.pointer-events-none::after",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "auto",
+   "timingFunction": "linear(0 0%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > span.flex.items-center",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "h2.col-span-full.text-f-h3-mobile > span",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "pulse",
+   "keyframeProperties": "opacity",
+   "duration": "2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.6, 1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "span.group.relative > span.animate-pulse.rounded-full",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "nav.pointer-events-none.fixed",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > a.group.space-x-1",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "div.flex.items-center > a.group.space-x-1",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#nav-contact > span.actionable-opacity",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "button#nav-contact > span.actionable-opacity",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "nav.pointer-events-none.fixed",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "unhover",
+   "name": "subtle-pulse",
+   "keyframeProperties": "opacity",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.group.relative > img.h-full.w-full",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.flex.w-fit > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "nav.pointer-events-none.fixed",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "a.flex.w-fit > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "none",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "button.flex.flex-col > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.h-max.text-brand-w1 > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "a.h-max.text-brand-w1 > span.actionable::before",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "a.h-max.text-brand-w1 > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "a.h-max.text-brand-w1 > span.actionable::before",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 698,
+  "elementsTotal": 698,
+  "transitionAllElements": 3,
+  "transitions": [
+   {
+    "property": "opacity",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 41,
+    "samples": [
+     "div.relative.h-full > div.with-diagonal-lines.pointer-events-none",
+     "div.with-dots.relative > div.group.relative",
+     "nav.pointer-events-none.fixed"
+    ]
+   },
+   {
+    "property": "none",
+    "duration": "0.06s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "count": 40,
+    "samples": [
+     "div.flex.items-center > a.group.space-x-1",
+     "button#nav-contact > span.actionable-opacity",
+     "a.text-f-h2-mobile.text-brand-w1 > span.actionable"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.06s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "count": 33,
+    "samples": [
+     "a.text-f-h2-mobile.text-brand-w1 > span.actionable::before",
+     "a.hidden.h-max > span.actionable.group::before",
+     "a > span.actionable::before"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "nav.fixed.top-0",
+     "span.relative.flex > span.w-full.origin-center",
+     "div.col-span-full > div.grid-layout.py-4"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "span.group.relative > span.text-caption.pointer-events-none",
+     "div.group.relative > div.pointer-events-none.absolute"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "span.actionable.group > span.translate-x-6.transition-transform"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "span.actionable.group > svg.size-6.opacity-0"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "legend.px-1 > button.bg-black.px-1",
+     "div.w-full.px-4 > button.h-8.w-full",
+     "div.pointer-events-none.fixed"
+    ]
+   },
+   {
+    "property": "width",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "span.relative.flex > span.w-full.origin-center"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "text-decoration-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "diagonalPatternAnimation",
+    "duration": "6s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 37,
+    "samples": [
+     "div.relative.h-full > div.with-diagonal-lines.pointer-events-none::after",
+     "div.relative.col-span-full > div.with-diagonal-lines.pointer-events-none::after"
+    ]
+   },
+   {
+    "name": "pulse",
+    "duration": "2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.6, 1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 1,
+    "samples": [
+     "span.group.relative > span.animate-pulse.rounded-full"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 0,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "basement.studio | We make cool shit that performs.",
+  "canvases": 2,
+  "viewportSizedCanvases": 2,
+  "webglContexts": 2,
+  "canvas2dContexts": 8,
+  "videos": 4,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 2,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion)"
+  ],
+  "documentHeight": 6714
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 324,
+  "stylesheets": 2,
+  "scripts": 70,
+  "failed": 2
+ },
+ "stylesheets": {
+  "files": 2,
+  "bytes": 118835,
+  "reducedMotionQueries": 2,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "fade-in",
+   "fade-in-out",
+   "fade-out-in",
+   "pulse",
+   "spin",
+   "actionable-blink",
+   "diagonalPatternAnimation",
+   "machine-reveal",
+   "machine-flicker",
+   "marquee-translate",
+   "subtle-pulse",
+   "accordion-up",
+   "accordion-down"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0.4, 0, 0.6, 1)": 1,
+   "cubic-bezier(0.4, 0, 0.2, 1)": 14
+  }
+ },
+ "scripts": {
+  "files": 70,
+  "bytes": 7621150,
+  "reducedMotionMentions": 6,
+  "libraries": {
+   "framerMotion": true,
+   "three": true,
+   "springPhysics": true
+  }
+ },
+ "elapsedMs": 36271
+}

@@ -1,0 +1,5909 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://stripe.com",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T06:07:49.867Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "no-preference",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ],
+  "clicks": []
+ },
+ "status": 200,
+ "finalUrl": "https://stripe.com/",
+ "scrolledTo": 14341,
+ "hover": {
+  "candidates": {
+   "available": 639,
+   "distinct": 136,
+   "picked": [
+    "nav#navigation-menu > a.hds-link.navigation-menu-home-link",
+    "div.hds-button-group.hero-section__actions > a.hds-button.hds-button--primary",
+    "div > div",
+    "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__inner",
+    "div.payments-graphic__checkout-item-card > div",
+    "div.modular-solutions-bento__layout > button.modular-solutions-bento-card.modular-solutions-bento__card-billing",
+    "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div.modular-solutions-bento-card__inner",
+    "button.modular-solutions-bento-card > div.modular-solutions-bento-card__text",
+    "div > div.agentic-commerce-graphic__product-card",
+    "div.modular-solutions-bento-card__text > h3#bento-card-title-issuing",
+    "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div.modular-solutions-bento-card__text",
+    "div.modular-solutions-bento__layout > button.modular-solutions-bento-card.modular-solutions-bento__card-connect",
+    "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div.modular-solutions-bento-card__inner",
+    "div > span",
+    "div.stats-menu__stat-wrapper > button.stats-menu__stat",
+    "div.customer-stories__customer-summary.customer-stories__customer-summary--open > button.customer-stories__customer-button",
+    "div.carousel__inner > a.case-study-card",
+    "a.case-study-card > h4.hds-text.case-study-card__title",
+    "a.startups-program-card.startups__program-card--startups > div.startups-program-card__border",
+    "div.startups-program-card__content > div.hds-link.fake-link",
+    "a.startups-program-card.startups__program-card--atlas > div.startups-program-card__inner",
+    "div > div.platform-graphic-browser-card-item__title",
+    "div.platform-graphic__feature-card__wrap > div.platform-graphic__feature-card__content",
+    "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__capital",
+    "div.platform-graphic__feature-card__container.platform-graphic-features__payouts > div.platform-graphic__feature-card__shadow",
+    "div.testimonial-carousel__cards > div.testimonial-card.testimonial-carousel__card",
+    "div.testimonial-card__author > span.testimonial-card__author-role",
+    "div > a.hds-button.hds-button-primary",
+    "div.dom-graphic__content > div.integrated-code-graphic__card",
+    "div.footer-cta-section__feature-grid > div.footer-cta-section__feature-card"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "nav#navigation-menu > a.hds-link.navigation-menu-home-link",
+    "covered": false
+   },
+   {
+    "selector": "div.hds-button-group.hero-section__actions > a.hds-button.hds-button--primary",
+    "covered": false
+   },
+   {
+    "selector": "div > div",
+    "covered": true
+   },
+   {
+    "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__inner",
+    "covered": true
+   },
+   {
+    "selector": "div.payments-graphic__checkout-item-card > div",
+    "covered": true
+   },
+   {
+    "selector": "div.modular-solutions-bento__layout > button.modular-solutions-bento-card.modular-solutions-bento__card-billing",
+    "covered": false
+   },
+   {
+    "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div.modular-solutions-bento-card__inner",
+    "covered": true
+   },
+   {
+    "selector": "button.modular-solutions-bento-card > div.modular-solutions-bento-card__text",
+    "covered": true
+   },
+   {
+    "selector": "div > div.agentic-commerce-graphic__product-card",
+    "covered": true
+   },
+   {
+    "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-issuing",
+    "covered": true
+   },
+   {
+    "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div.modular-solutions-bento-card__text",
+    "covered": true
+   },
+   {
+    "selector": "div.modular-solutions-bento__layout > button.modular-solutions-bento-card.modular-solutions-bento__card-connect",
+    "covered": false
+   },
+   {
+    "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div.modular-solutions-bento-card__inner",
+    "covered": true
+   },
+   {
+    "selector": "div > span",
+    "covered": true
+   },
+   {
+    "selector": "div.stats-menu__stat-wrapper > button.stats-menu__stat",
+    "covered": false
+   },
+   {
+    "selector": "div.customer-stories__customer-summary.customer-stories__customer-summary--open > button.customer-stories__customer-button",
+    "covered": false
+   },
+   {
+    "selector": "div.carousel__inner > a.case-study-card",
+    "covered": false
+   },
+   {
+    "selector": "a.case-study-card > h4.hds-text.case-study-card__title",
+    "covered": false
+   },
+   {
+    "selector": "a.startups-program-card.startups__program-card--startups > div.startups-program-card__border",
+    "covered": true
+   },
+   {
+    "selector": "div.startups-program-card__content > div.hds-link.fake-link",
+    "covered": false
+   },
+   {
+    "selector": "a.startups-program-card.startups__program-card--atlas > div.startups-program-card__inner",
+    "covered": false
+   },
+   {
+    "selector": "div > div.platform-graphic-browser-card-item__title",
+    "covered": false
+   },
+   {
+    "selector": "div.platform-graphic__feature-card__wrap > div.platform-graphic__feature-card__content",
+    "covered": true
+   },
+   {
+    "selector": "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__capital",
+    "covered": false
+   },
+   {
+    "selector": "div.platform-graphic__feature-card__container.platform-graphic-features__payouts > div.platform-graphic__feature-card__shadow",
+    "covered": false
+   },
+   {
+    "selector": "div.testimonial-carousel__cards > div.testimonial-card.testimonial-carousel__card",
+    "covered": false
+   },
+   {
+    "selector": "div.testimonial-card__author > span.testimonial-card__author-role",
+    "covered": false
+   },
+   {
+    "selector": "div > a.hds-button.hds-button-primary",
+    "covered": false
+   },
+   {
+    "selector": "div.dom-graphic__content > div.integrated-code-graphic__card",
+    "covered": false
+   },
+   {
+    "selector": "div.footer-cta-section__feature-grid > div.footer-cta-section__feature-card",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.15s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "div.globe__ui-container > div.globe__arc-ui",
+   "count": 117
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.15s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "div.globe__ui-container > div.globe__arc-ui",
+   "count": 116
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 48
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "svg > path",
+   "count": 36
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "svg > path",
+   "count": 34
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 27
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__dashboard-main > div",
+   "count": 27
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 23
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 22
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "g > g.arrow-group",
+   "count": 21
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "g.arrow-group > rect.shaft",
+   "count": 21
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.47, 0, 0.75, 0.72)"
+   ],
+   "delay": "1000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__dashboard-main > div",
+   "count": 18
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__dashboard-main > div",
+   "count": 18
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.47, 0, 0.75, 0.72)"
+   ],
+   "delay": "1000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__dashboard-main > div",
+   "count": 18
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "2260ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.agentic-commerce-graphic__chat-bubble > span",
+   "count": 17
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "a.case-study-card > div.case-study-card__media",
+   "count": 16
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "a.case-study-card > div.case-study-card__mediaLogo",
+   "count": 16
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "a.case-study-card > div.case-study-card__media",
+   "count": 16
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "a.case-study-card > div.case-study-card__mediaLogo",
+   "count": 16
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.25s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__border > div",
+   "count": 15
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 15
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.25s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__border > div",
+   "count": 15
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "svg > path",
+   "count": 12
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "clipPath",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 12
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 12
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.feature-detail__footer > a.hds-link.hds-link--callout",
+   "count": 11
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "450ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 10
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 10
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 10
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 10
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 10
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 10
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 10
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 10
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 10
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__dashboard-main > div",
+   "count": 9
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.47, 0, 0.75, 0.72)"
+   ],
+   "delay": "1000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__dashboard-main > div",
+   "count": 9
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "2000ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.65, 0.05, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-card > div",
+   "count": 9
+  },
+  {
+   "kind": "waapi",
+   "phase": "final",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.47, 0, 0.75, 0.72)"
+   ],
+   "delay": "1000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__dashboard-main > div",
+   "count": 9
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "a.case-study-card > div.case-study-card__media",
+   "count": 8
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "picture > img.case-study-card__image",
+   "count": 8
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "a.case-study-card > div.case-study-card__mediaLogo",
+   "count": 8
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "a.case-study-card > div.hds-link.fake-link",
+   "count": 8
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic-browser-card-item > div",
+   "count": 8
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "g > g.arrow-group",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "g.arrow-group > rect.shaft",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "g > g.arrow-group",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "g.arrow-group > rect.shaft",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-payments",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__border",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__inner",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-payments",
+   "count": 7
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "clipPath",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 6
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "clipPath",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 6
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.25s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__border > div",
+   "count": 6
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "450ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div::before",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div::after",
+   "count": 6
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 6
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 5
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 5
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div.developer-systems-animation__system",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div.developer-systems-animation__system",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div::before",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div::after",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__border",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__inner",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-agentic-commerce",
+   "count": 5
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 5
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div.developer-systems-animation__system",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div.developer-systems-animation__system",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 5
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "400ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "width",
+   "declaredProperty": "width",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "width",
+   "declaredProperty": "width",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.hds-button.customer-story-button > div.customer-story-button__container",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "span#stat-historical-uptime-description > a.hds-link.stats-menu__stat-description__link",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "stroke-dashoffset",
+   "declaredProperty": "stroke-dashoffset",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.66, 0, 0.34, 1)",
+   "delay": "0s",
+   "selector": "svg > path",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div.developer-systems-animation__psp-app",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div.developer-systems-animation__psp-app",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)",
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-screen > div",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.connect-platform-graphic__payment-screen",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-input-label > div",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.47, 0, 0.75, 0.72)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > svg",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)",
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-screen > div",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.connect-platform-graphic__payment-screen",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div::before",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div::after",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div.modular-solutions-bento-card__border",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div.modular-solutions-bento-card__inner",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-agentic-commerce",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "div.startups-program-card__border-color > div",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "div.feature-detail__image > div.lazy-animation",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "border-bottom-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "border-left-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "border-right-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "border-top-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-story-button__container > div.customer-story-button__text",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-story-button__container > div.customer-story-button__icon",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__background > div.lazy-animation.lazy-animation--loaded",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "2.5s",
+   "selector": "div > div",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "2.5s",
+   "selector": "div > div",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "2.5s",
+   "selector": "div > div",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "2.5s",
+   "selector": "div > div",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "div.feature-detail__image > div.lazy-animation.lazy-animation--loaded",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "section.hds-color-mode.section > div.section-background.modular-solutions-bg::after",
+   "count": 3
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 3
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__connection > svg.connect-platform-graphic__connection-ring",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div::before",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div::after",
+   "count": 3
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "2000ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.65, 0.05, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-card > div",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.25s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div.startups-program-card__border > div.startups-program-card__border-color",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.startups-program-card__content > div.hds-link.fake-link",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.25s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div.startups-program-card__border > div.startups-program-card__border-color",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.startups-program-card__content > div.hds-link.fake-link",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "2s",
+   "timingFunction": "cubic-bezier(0.9, 0, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.developer-systems-animation__app > div.developer-systems-animation__app-logo",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "2s",
+   "timingFunction": "cubic-bezier(0.9, 0, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.developer-systems-animation__app > div.developer-systems-animation__app-logo",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.25s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div.startups-program-card__border > div.startups-program-card__border-color",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "div.startups-program-card__border-color > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.startups-program-card__content > div.hds-link.fake-link",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "50ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "100ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "150ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "250ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "300ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "350ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "500ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-input-label > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.47, 0, 0.75, 0.72)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > svg",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-input-label > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.47, 0, 0.75, 0.72)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > svg",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "section.hds-color-mode.section > div.section-background.modular-solutions-bg::after",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div::after",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-payments",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__border",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__inner",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "2260ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.165, 0.84, 0.44, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.agentic-commerce-graphic__chat > div.agentic-commerce-graphic__chat-bubble",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "2260ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.165, 0.84, 0.44, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.agentic-commerce-graphic__chat > div.agentic-commerce-graphic__chat-bubble",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__graphic > div.lazy-animation.lazy-animation--loaded",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div::after",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-issuing",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div.modular-solutions-bento-card__border",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div.modular-solutions-bento-card__inner",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div::after",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-connect",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div.modular-solutions-bento-card__border",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div.modular-solutions-bento-card__inner",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)",
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-screen > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.connect-platform-graphic__payment-screen",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-bottom-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-left-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-right-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-top-color",
+   "declaredProperty": "background",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "2s",
+   "timingFunction": "cubic-bezier(0.9, 0, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.developer-systems-animation__app > div.developer-systems-animation__app-logo",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "400ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.connect-platform-graphic__payment-screen",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-screen > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__connection > svg.connect-platform-graphic__connection-ring",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "325ms",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "keyframeEasings": [],
+   "delay": "450ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span > span",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__terminal-pay-label > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__terminal-payment-amount > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__terminal-message > div.payments-graphic__terminal-message-values",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-separator-text > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.browser-graphic__url-box-content > svg",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.payments-graphic__checkout-header-logos",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-input > div.payments-graphic__checkout-input-values",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-item-card > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-payment-table > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-payment-table > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "7000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.payments-graphic__checkout-payment-button",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)"
+   ],
+   "delay": "1000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div::after",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-billing",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div.modular-solutions-bento-card__border",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div.modular-solutions-bento-card__inner",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "--hover-progress",
+   "declaredProperty": "--hover-progress",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+   "delay": "0s",
+   "selector": "div.billing-plan-graphic__wrapper > div.billing-plan-graphic__plan-grid",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div::after",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-billing",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div.modular-solutions-bento-card__border",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div.modular-solutions-bento-card__inner",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "--hover-progress",
+   "declaredProperty": "--hover-progress",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+   "delay": "0s",
+   "selector": "div.billing-plan-graphic__wrapper > div.billing-plan-graphic__plan-grid",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.connect-platform-graphic__payment-screen",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-screen > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__connection > svg.connect-platform-graphic__connection-ring",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div.modular-solutions-bento-card__border",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card > div.modular-solutions-bento-card__inner",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__connection > svg.connect-platform-graphic__connection-ring",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-issuing",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-issuing",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)"
+   ],
+   "delay": "1000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)",
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-screen > div",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.connect-platform-graphic__payment-screen",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div::after",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-connect",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div.modular-solutions-bento-card__border",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div.modular-solutions-bento-card__inner",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div::after",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-connect",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div.modular-solutions-bento-card__border",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-connect > div.modular-solutions-bento-card__inner",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "picture > img.case-study-card__image",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "a.case-study-card > div.hds-link.fake-link",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "picture > img.case-study-card__image",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "a.case-study-card > div.hds-link.fake-link",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "book-of-the-week-fade-in",
+   "keyframeProperties": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.book-of-the-week__image-container > div.book-of-the-week__picture.book-of-the-week__image-placeholder",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "book-of-the-week-fade-in",
+   "keyframeProperties": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.book-of-the-week > div.book-of-the-week__content",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "1.2s",
+   "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+   "delay": "0s",
+   "selector": "div.section-row.section-row-gap > h2.hds-heading.stats-section__title",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "button.stats-menu__stat.stats-menu__stat--active > p#stat-payment-methods-value",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.stats-menu__stat-wrapper > span#stat-payment-methods-description",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "button.stats-menu__stat > p#stat-payments-volume-value",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.stats-menu__stat-wrapper > span#stat-payments-volume-description",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "button.stats-menu__stat > p#stat-historical-uptime-value",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.stats-menu__stat-wrapper > span#stat-historical-uptime-description",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "span#stat-historical-uptime-description > a.hds-link.stats-menu__stat-description__link::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "button.stats-menu__stat > p#stat-active-subscriptions-value",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.stats-menu__stat-wrapper > span#stat-active-subscriptions-description",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "max-height",
+   "declaredProperty": "max-height",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+   "delay": "0s",
+   "selector": "div#customer-Hertz > div#detail-customer-content-Hertz",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "visibility",
+   "declaredProperty": "visibility",
+   "duration": "0s",
+   "timingFunction": "steps(1)",
+   "delay": "0.5s",
+   "selector": "div#customer-URBN > div#detail-customer-content-URBN",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "visibility",
+   "declaredProperty": "visibility",
+   "duration": "0s",
+   "timingFunction": "steps(1)",
+   "delay": "0.5s",
+   "selector": "div#customer-Instacart > div#detail-customer-content-Instacart",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "visibility",
+   "declaredProperty": "visibility",
+   "duration": "0s",
+   "timingFunction": "steps(1)",
+   "delay": "0.5s",
+   "selector": "div#customer-LeMonde > div#detail-customer-content-LeMonde",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "1.2s",
+   "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+   "delay": "0s",
+   "selector": "div.stats-animation-gradient > div.stats-animation-gradient__gradient",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__terminal-pay-label > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__terminal-payment-amount > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__terminal-message > div.payments-graphic__terminal-message-values",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-separator-text > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.payments-graphic__checkout-header-logos",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-input > div.payments-graphic__checkout-input-values",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-item-card > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "transform",
+   "duration": "0ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "10ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.payments-graphic__checkout-payment-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__graphic > div.lazy-animation.lazy-animation--loaded",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.25s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "div.single-wave__contents.single-wave--drawn > div.single-wave__static",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__terminal-pay-label > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__terminal-payment-amount > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__terminal-message > div.payments-graphic__terminal-message-values",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-separator-text > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.browser-graphic__url-box-content > svg",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.payments-graphic__checkout-header-logos",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-input > div.payments-graphic__checkout-input-values",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.payments-graphic__checkout-item-card > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1420ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.78, 0, 0.22, 1)"
+   ],
+   "delay": "4000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.payments-graphic__checkout-payment-button",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "2260ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.165, 0.84, 0.44, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.agentic-commerce-graphic__layout > div.agentic-commerce-graphic__products",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "2260ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.165, 0.84, 0.44, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.agentic-commerce-graphic__layout > div.agentic-commerce-graphic__products",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.connect-platform-graphic__payment-screen",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-screen > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__connection > svg.connect-platform-graphic__connection-ring",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "gradient-border-input-shimmer",
+   "keyframeProperties": "opacity, transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.39, 0.58, 0.57, 1)",
+   "delay": "1.85s",
+   "iterations": "1",
+   "selector": "div.gradient-border-input > div.gradient-border-input__gradient",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic__dom > div.dom-graphic.dom-graphic--variant-default",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic__dom > div.dom-graphic.dom-graphic--variant-default",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__payments",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__payments",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__capital",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__capital",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__payouts",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__payouts",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__notification",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "11950ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.2, 0, 0, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.platform-graphic-features > div.platform-graphic__feature-card__container.platform-graphic-features__notification",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "div.section-row.section-row-gap > div.lazy-animation.lazy-animation--loaded",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "3s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "3s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "3s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "3s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "div.developers-scale-subsection > div.lazy-animation.lazy-animation--loaded",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "book-of-the-week-fade-in",
+   "keyframeProperties": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div.book-of-the-week__image-container > picture.book-of-the-week__picture",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "transform",
+   "duration": "1400ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-in-out",
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)"
+   ],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__connection > svg.connect-platform-graphic__connection-ring",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)"
+   ],
+   "delay": "1000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "nav#navigation-menu > a.hds-link.navigation-menu-home-link",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-bottom-color",
+   "declaredProperty": "color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-left-color",
+   "declaredProperty": "color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-right-color",
+   "declaredProperty": "color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-top-color",
+   "declaredProperty": "color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "a.hds-button.navigation-cta-button > svg.navigation-item__sign-in__mask",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "a.hds-button.navigation-cta-button > span.navigation-button-measure",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0.1s",
+   "selector": "div.section-container.navigation__layout > div.navigation-menu__background",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "navigation-menu-delay-reset",
+   "keyframeProperties": "",
+   "duration": "0s",
+   "timingFunction": "linear",
+   "delay": "0.1s",
+   "iterations": "1",
+   "selector": "div.section-container.navigation__layout > nav#navigation-menu",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "nav#navigation-menu > a.hds-link.navigation-menu-home-link",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-bottom-color",
+   "declaredProperty": "color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-left-color",
+   "declaredProperty": "color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-right-color",
+   "declaredProperty": "color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-top-color",
+   "declaredProperty": "color",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "a.hds-button.navigation-cta-button > svg.navigation-item__sign-in__mask",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "a.hds-button.navigation-cta-button > span.navigation-button-measure",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.24s",
+   "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+   "delay": "0s",
+   "selector": "div.section-container.navigation__layout > div.navigation-menu__background",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+   "delay": "0s",
+   "selector": "section.hds-color-mode.section > div.section-background.modular-solutions-bg::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.hds-button-group.hero-section__actions > a.hds-button.hds-button--primary",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.hds-button-group.hero-section__actions > a.hds-button.hds-button--primary",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div > button.platform-graphic__replay-button.platform-graphic__replay-button--visible",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div.modular-solutions-bento-card__border",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div.modular-solutions-bento-card__inner",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div.modular-solutions-bento-card__border",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-issuing > div.modular-solutions-bento-card__inner",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-crypto",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div.modular-solutions-bento-card__border",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div.modular-solutions-bento-card__inner",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.modular-solutions-bento-card__text > h3#bento-card-title-crypto",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div.modular-solutions-bento-card__border",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "button.modular-solutions-bento-card.modular-solutions-bento__card-crypto > div.modular-solutions-bento-card__inner",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.39, 0.58, 0.57, 1)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div.connect-platform-graphic__payment-screen",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__payment-screen > div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "transform",
+   "duration": "4480ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "ease-out",
+    "cubic-bezier(0.22, 0.61, 0.36, 1)"
+   ],
+   "delay": "1200ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.connect-platform-graphic__connection > svg.connect-platform-graphic__connection-ring",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "button.stats-menu__stat > p#stat-payments-volume-value",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.stats-menu__stat-wrapper > span#stat-payments-volume-description",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "left",
+   "declaredProperty": "left",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.stats-section__active-indicator-graphic > span.stats-section__active-indicator.stats-section__active-indicator--top",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "left",
+   "declaredProperty": "left",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.stats-section__active-indicator-graphic > span.stats-section__active-indicator.stats-section__active-indicator--bottom",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "button.stats-menu__stat > p#stat-payments-volume-value",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.stats-menu__stat-wrapper > span#stat-payments-volume-description",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "left",
+   "declaredProperty": "left",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.stats-section__active-indicator-graphic > span.stats-section__active-indicator.stats-section__active-indicator--top",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "left",
+   "declaredProperty": "left",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.stats-section__active-indicator-graphic > span.stats-section__active-indicator.stats-section__active-indicator--bottom",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div.hds-button-group.section-header__actions > a.hds-button.hds-button--primary",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div > a.hds-button.hds-button-primary",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "stroke-dashoffset",
+   "declaredProperty": "stroke-dashoffset",
+   "duration": "3.25s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "1.75s",
+   "selector": "svg > path",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "stroke-dashoffset",
+   "declaredProperty": "stroke-dashoffset",
+   "duration": "3.25s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "2.25s",
+   "selector": "svg > path",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div.developer-systems-animation__system",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div.developer-systems-animation__system",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "2.5s",
+   "selector": "div > div.developer-systems-animation__psp-app",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "2.5s",
+   "selector": "div > div.developer-systems-animation__psp-app",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "2.5s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "2.5s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "2.5s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "2.5s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "3s",
+   "selector": "div > div.developer-systems-animation__psp-app",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "3s",
+   "selector": "div > div.developer-systems-animation__psp-app",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "3s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "3s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "3s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.5s",
+   "timingFunction": "linear",
+   "delay": "3s",
+   "selector": "div > div",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+   "delay": "0s",
+   "selector": "div > a.hds-button.hds-button-primary",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "final",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [
+    "cubic-bezier(0.55, 0.06, 0.68, 0.19)"
+   ],
+   "delay": "1000ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > div",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 4202,
+  "elementsTotal": 4202,
+  "transitionAllElements": 0,
+  "transitions": [
+   {
+    "property": "color",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 195,
+    "samples": [
+     "div.products-callout.products-callout--mobile > a.hds-link",
+     "div.hds-button-group > a.hds-button.hds-button--primary",
+     "div.hds-button-group > a.hds-button.hds-button--secondary-on-quiet"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 125,
+    "samples": [
+     "button.hds-ui-button.hds-navigation-menu__trigger > svg",
+     "g > path",
+     "button.hds-ui-button.hds-ui-button--quiet > svg"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 60,
+    "samples": [
+     "g.arrow-group > rect.shaft",
+     "div > button.platform-graphic__replay-button.platform-graphic__replay-button--visible"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 59,
+    "samples": [
+     "span.hds-nowrap-svg > svg.hds-icon.hds-icon-hover-arrow"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 59,
+    "samples": [
+     "g > g.arrow-group"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+    "delay": "0s",
+    "count": 46,
+    "samples": [
+     "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div",
+     "div.modular-solutions-bento-card__text > h3#bento-card-title-payments",
+     "div.modular-solutions-bento-card__content > div"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 45,
+    "samples": [
+     "div.hds-button-group > a.hds-button.hds-button--primary",
+     "div.hds-button-group > a.hds-button.hds-button--secondary-on-quiet",
+     "section.navigation-menu-header > button.hds-button.navigation-back-button"
+    ]
+   },
+   {
+    "property": "outline-color",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 43,
+    "samples": [
+     "div.hds-button-group > a.hds-button.hds-button--primary",
+     "div.hds-button-group > a.hds-button.hds-button--secondary-on-quiet",
+     "section.navigation-menu-header > button.hds-button.navigation-back-button"
+    ]
+   },
+   {
+    "property": "border",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 39,
+    "samples": [
+     "div.hds-button-group > a.hds-button.hds-button--primary",
+     "div.hds-button-group > a.hds-button.hds-button--secondary-on-quiet",
+     "section.navigation-menu-header > button.hds-button.navigation-back-button"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.15s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "count": 36,
+    "samples": [
+     "ul.logo-carousel__marquee > li.logo-carousel__item"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.12s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 16,
+    "samples": [
+     "div.squeezy-carousel__items-details-container > div.squeezy-carousel__item-details",
+     "div.squeezy-carousel__item-details > div.squeezy-carousel__item-copy"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 12,
+    "samples": [
+     "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div::before",
+     "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div::after",
+     "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div::before"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 12,
+    "samples": [
+     "svg > path"
+    ]
+   },
+   {
+    "property": "clip-path",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+    "delay": "0s",
+    "count": 12,
+    "samples": [
+     "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__border",
+     "button.modular-solutions-bento-card.modular-solutions-bento__card-payments > div.modular-solutions-bento-card__inner",
+     "button.modular-solutions-bento-card.modular-solutions-bento__card-billing > div.modular-solutions-bento-card__border"
+    ]
+   },
+   {
+    "property": "stroke-dashoffset",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+    "delay": "0s",
+    "count": 12,
+    "samples": [
+     "g.time-of-day-select-icon__sun-group > path.time-of-day-select-icon__sun-path.time-of-day-select-icon__sun-bottom-right",
+     "g.time-of-day-select-icon__sun-group > path.time-of-day-select-icon__sun-path.time-of-day-select-icon__sun-bottom-left",
+     "g.time-of-day-select-icon__sun-group > path.time-of-day-select-icon__sun-path.time-of-day-select-icon__sun-top-left"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 12,
+    "samples": [
+     "div.developer-systems-animation__apps > div.developer-systems-animation__app",
+     "div > div",
+     "div > div.developer-systems-animation__app"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+    "delay": "0s",
+    "count": 11,
+    "samples": [
+     "div.modular-solutions-bento-card__graphic > div.lazy-animation.lazy-animation--loaded",
+     "div.modular-solutions-bento-card__background > div.lazy-animation.lazy-animation--loaded",
+     "div.section-row.section-row-gap > div.lazy-animation.lazy-animation--loaded"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.24s",
+    "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+    "delay": "0s",
+    "count": 9,
+    "samples": [
+     "li.hds-navigation-menu__item.navigation-item > button.hds-button.hds-navigation-menu__trigger",
+     "li.hds-navigation-menu__item.navigation-item > a.hds-button.hds-navigation-menu__trigger",
+     "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.24s",
+    "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+    "delay": "0s",
+    "count": 9,
+    "samples": [
+     "li.hds-navigation-menu__item.navigation-item > button.hds-button.hds-navigation-menu__trigger",
+     "li.hds-navigation-menu__item.navigation-item > a.hds-button.hds-navigation-menu__trigger",
+     "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.24s",
+    "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+    "delay": "0s",
+    "count": 9,
+    "samples": [
+     "li.hds-navigation-menu__item.navigation-item > button.hds-button.hds-navigation-menu__trigger",
+     "li.hds-navigation-menu__item.navigation-item > a.hds-button.hds-navigation-menu__trigger",
+     "li.hds-navigation-menu__item.navigation-item > a.hds-button.navigation-cta-button"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.25s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "count": 9,
+    "samples": [
+     "div.single-wave__contents.single-wave--drawn > div.single-wave__static",
+     "div.modular-solutions-bento-card__border > div",
+     "div.startups-program-card__border > div.startups-program-card__border-color"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 9,
+    "samples": [
+     "div > div.developer-systems-animation__system",
+     "div > div.developer-systems-animation__psp-app"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.25s",
+    "timingFunction": "cubic-bezier(0.6, 0, 0.2, 0.5)",
+    "delay": "0s",
+    "count": 8,
+    "samples": [
+     "svg.hds-icon.navigation__chevron-down-icon > path.navigation__chevron-down-icon__left",
+     "svg.hds-icon.navigation__chevron-down-icon > path.navigation__chevron-down-icon__right"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 8,
+    "samples": [
+     "div > div",
+     "div.startups-program-card__border-color > div"
+    ]
+   },
+   {
+    "property": "width",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 8,
+    "samples": [
+     "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button",
+     "a.hds-button.customer-story-button > div.customer-story-button__container"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 8,
+    "samples": [
+     "div.customer-story-button__container > div.customer-story-button__text",
+     "div.customer-story-button__container > div.customer-story-button__icon"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "2s",
+    "timingFunction": "cubic-bezier(0.9, 0, 0.1, 1)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "div.developer-systems-animation__app > div.developer-systems-animation__app-logo"
+    ]
+   },
+   {
+    "property": "z-index",
+    "duration": "0.1s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "div.modular-solutions-bento__layout > button.modular-solutions-bento-card.modular-solutions-bento__card-payments",
+     "div.modular-solutions-bento__layout > button.modular-solutions-bento-card.modular-solutions-bento__card-billing",
+     "div.modular-solutions-bento__layout > button.modular-solutions-bento-card"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "1.2s",
+    "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "div.stats-animation-gradient > div.stats-animation-gradient__gradient",
+     "div.stats-animation-gradient > div.stats-animation-gradient__gradient.stats-animation-gradient__gradient--dusk",
+     "div.stats-animation-gradient > div.stats-animation-gradient__gradient.stats-animation-gradient__gradient--night"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.25s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "svg > rect.navigation-hamburger__background",
+     "svg > rect.navigation-hamburger__line.line-1",
+     "svg > rect.navigation-hamburger__line.line-2"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.25s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "svg > rect.navigation-hamburger__background",
+     "svg > rect.navigation-hamburger__line.line-1",
+     "svg > rect.navigation-hamburger__line.line-2"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.1s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "svg > rect.navigation-hamburger__background",
+     "svg > rect.navigation-hamburger__line.line-1",
+     "svg > rect.navigation-hamburger__line.line-2"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.15s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "div.globe__ui-container > div.globe__arc-ui"
+    ]
+   },
+   {
+    "property": "scale",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "div > div.developer-systems-animation__system"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.24s",
+    "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "nav#navigation-menu > a.hds-link.navigation-menu-home-link",
+     "a.hds-button.navigation-cta-button > svg.navigation-item__sign-in__mask",
+     "a.hds-button.navigation-cta-button > span.navigation-button-measure"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button"
+    ]
+   },
+   {
+    "property": "border",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.3, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div.customer-stories__customer-summary-action > a.hds-button.customer-story-button"
+    ]
+   },
+   {
+    "property": "max-height",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div#customer-Hertz > div#detail-customer-content-Hertz",
+     "div#customer-URBN > div#detail-customer-content-URBN",
+     "div#customer-Instacart > div#detail-customer-content-Instacart"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.5s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div > div"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div > div.developer-systems-animation__psp-app"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "button.query-input__button.double-up-effect > div.double-up-effect__container",
+     "div.double-up-effect__container > div.double-up-effect__item"
+    ]
+   },
+   {
+    "property": "left",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "span.stats-section__active-indicator-graphic > span.stats-section__active-indicator.stats-section__active-indicator--top",
+     "span.stats-section__active-indicator-graphic > span.stats-section__active-indicator.stats-section__active-indicator--bottom"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "span.stats-section__active-indicator-graphic > span.stats-section__active-indicator.stats-section__active-indicator--top",
+     "span.stats-section__active-indicator-graphic > span.stats-section__active-indicator.stats-section__active-indicator--bottom"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "1.2s",
+    "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "div.section-row.section-row-gap > h2.hds-heading.stats-section__title",
+     "button.time-of-day-select__trigger > svg.time-of-day-select-icon"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "1.2s",
+    "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "div.section-row.section-row-gap > div.stats-section__stats-menu",
+     "div.stats-section__controls > button.time-of-day-select__trigger"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "svg.time-of-day-select-icon > g.time-of-day-select-icon__sun-group",
+     "svg.time-of-day-select-icon > path.time-of-day-select-icon__moon"
+    ]
+   },
+   {
+    "property": "stroke-dashoffset",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.66, 0, 0.34, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "svg > path"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "div.hds-button-group > a.book-button"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "div.hds-button-group > a.book-button"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "a.book-button > span.book-button__text"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.24s",
+    "timingFunction": "cubic-bezier(0.45, 0.05, 0.55, 0.95)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "svg > path"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.25s",
+    "timingFunction": "ease-in",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.navigation-menu-overflow > section.navigation-menu-header"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "section.hds-color-mode.section > div.section-background.modular-solutions-bg::after"
+    ]
+   },
+   {
+    "property": "--hover-progress",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.billing-plan-graphic__wrapper > div.billing-plan-graphic__plan-grid"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.gradient-border-input-scope > div.gradient-border-input"
+    ]
+   },
+   {
+    "property": "outline",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.gradient-border-input-scope > div.gradient-border-input"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.3s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.gradient-border-input > div.gradient-border-input__gradient"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.2s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.gradient-border-input > div.gradient-border-input__gradient"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.3s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.query-input__footer > div.query-input__counter"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.query-input__footer > button.query-input__button.double-up-effect"
+    ]
+   },
+   {
+    "property": "outline-color",
+    "duration": "0.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.query-input__footer > button.query-input__button.double-up-effect"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "span#stat-historical-uptime-description > a.hds-link.stats-menu__stat-description__link::before"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "span#stat-historical-uptime-description > a.hds-link.stats-menu__stat-description__link::before"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "1.2s",
+    "timingFunction": "cubic-bezier(0.65, 0, 0.35, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "g.time-of-day-select-icon__sun-group > circle.time-of-day-select-icon__sun-center"
+    ]
+   },
+   {
+    "property": "stroke-dashoffset",
+    "duration": "3.25s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "1.75s",
+    "count": 1,
+    "samples": [
+     "svg > path"
+    ]
+   },
+   {
+    "property": "stroke-dashoffset",
+    "duration": "3.25s",
+    "timingFunction": "cubic-bezier(0.25, 1, 0.5, 1)",
+    "delay": "2.25s",
+    "count": 1,
+    "samples": [
+     "svg > path"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.5s",
+    "timingFunction": "linear",
+    "delay": "2.5s",
+    "count": 1,
+    "samples": [
+     "div > div"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "2.5s",
+    "count": 1,
+    "samples": [
+     "div > div.developer-systems-animation__psp-app"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "2.5s",
+    "count": 1,
+    "samples": [
+     "div > div.developer-systems-animation__psp-app"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.1s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.no-code-graphic__message.no-code-graphic__message--sent-link > a.hds-link"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "book-of-the-week-fade-in",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.33, 1, 0.68, 1)",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 2,
+    "samples": [
+     "div.book-of-the-week__image-container > picture.book-of-the-week__picture",
+     "div.book-of-the-week > div.book-of-the-week__content"
+    ]
+   },
+   {
+    "name": "detect-scroll",
+    "duration": "auto",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "div.section-container.navigation__layout > nav#navigation-menu"
+    ]
+   },
+   {
+    "name": "gradient-border-input-shimmer",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.39, 0.58, 0.57, 1)",
+    "delay": "1.85s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "div.gradient-border-input > div.gradient-border-input__gradient"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 0,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+  "canvases": 13,
+  "viewportSizedCanvases": 7,
+  "webglContexts": 7,
+  "canvas2dContexts": 24,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 2,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion)"
+  ],
+  "documentHeight": 15241
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 295,
+  "stylesheets": 8,
+  "scripts": 142,
+  "failed": 32
+ },
+ "stylesheets": {
+  "files": 8,
+  "bytes": 559841,
+  "reducedMotionQueries": 92,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "nav-hover-arrow-in",
+   "nav-hover-arrow-out",
+   "detect-scroll",
+   "navigation-menu-delay-reset",
+   "gradient-border-input-shimmer",
+   "bento-overlay-gradient-opacity-animation",
+   "bento-dialog-reveal-fade-in-up",
+   "agentic-commerce-graphic-border-spin",
+   "book-of-the-week-fade-in",
+   "opacityAnimation"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0.25, 1, 0.5, 1)": 46,
+   "cubic-bezier(0.45, 0.05, 0.55, 0.95)": 2,
+   "cubic-bezier(0.6, 0, 0.2, 0.5)": 1,
+   "cubic-bezier(0.4, 0, 0.2, 1)": 8,
+   "cubic-bezier(0, 0, 0.2, 1)": 5,
+   "cubic-bezier(0.39, 0.58, 0.57, 1)": 1,
+   "cubic-bezier(0.33, 1, 0.68, 1)": 5,
+   "cubic-bezier(0.2, 0, 0, 1)": 1,
+   "cubic-bezier(0.165, 0.84, 0.44, 1)": 2,
+   "cubic-bezier(0.16, 1, 0.3, 1)": 4,
+   "cubic-bezier(0.65, 0, 0.35, 1)": 4,
+   "cubic-bezier(0.3, 0, 0.2, 1)": 4,
+   "cubic-bezier(0.9, 0, 0.1, 1)": 1,
+   "cubic-bezier(0.66, 0, 0.34, 1)": 1,
+   "cubic-bezier(0.78, 0, 0.22, 1)": 1,
+   "cubic-bezier(0.65, 0.05, 0.36, 1)": 4,
+   "cubic-bezier(0.22, 1, 0.36, 1)": 1,
+   "cubic-bezier(0, 0, 0.1, 1)": 2,
+   "cubic-bezier(0.46, 0.03, 0.52, 0.96)": 2
+  }
+ },
+ "scripts": {
+  "files": 141,
+  "bytes": 8691830,
+  "reducedMotionMentions": 2,
+  "libraries": {
+   "framerMotion": true,
+   "springPhysics": true,
+   "three": true
+  }
+ },
+ "elapsedMs": 82346
+}

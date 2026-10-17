@@ -1,0 +1,79 @@
+{
+  "name": "Locomotive",
+  "site": "locomotive.ca",
+  "url": "https://locomotive.ca/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/locomotive.ca/2026-10-17.json",
+  "rawReduced": "data/raw/locomotive.ca/2026-10-17-reduced.json",
+  "status": "partial",
+  "statusReason": "Locomotive's scroll and page motion run through Lenis, GSAP, ScrollTrigger, Barba and three.js. None exposed GSAP on window, so the scroll-linked moves aren't readable. The CSS layer below is what the tool could see.",
+  "posture": "spatial",
+  "summary": "Project images widen on hover over 0.45s on quint-out and shrink back in 0.2s, the preloader logo appears on a 0.9s cubic-out, and the header answers in 0.2s. The big moves are in JavaScript.",
+  "tiers": [
+    {
+      "role": "secondary",
+      "kind": "animation",
+      "label": "preloader logo appearing",
+      "property": "preloaderAppear",
+      "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+      "duration": "0.9s",
+      "durationMs": 900,
+      "phase": "load",
+      "selector": "div.c-preloader_inner > div.c-preloader_logo",
+      "count": 1
+    },
+    {
+      "role": "signature",
+      "kind": "transition",
+      "label": "project image widening on hover",
+      "property": "width",
+      "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "duration": "0.45s",
+      "durationMs": 450,
+      "phase": "hover",
+      "selector": "div.c-featured-links_title > div.c-image.c-featured-links_visual",
+      "count": 3
+    },
+    {
+      "role": "exit",
+      "kind": "transition",
+      "label": "project image narrowing as the pointer leaves",
+      "property": "width",
+      "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "unhover",
+      "selector": "div.c-featured-links_title > div.c-image.c-featured-links_visual",
+      "count": 3
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "header shifting on hover",
+      "property": "transform",
+      "timingFunction": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "hover",
+      "selector": "header > div.c-header",
+      "count": 1
+    },
+    {
+      "role": "ambient",
+      "kind": "animation",
+      "label": "featured list flash",
+      "property": "featuredProjectsAllFlash",
+      "timingFunction": "linear",
+      "duration": "2s",
+      "durationMs": 2000,
+      "phase": "load",
+      "selector": "li.c-featured-links_item > div.c-featured-links_title::before",
+      "count": 1
+    }
+  ],
+  "honestyNote": "The project image animates width, which triggers layout on every frame. Five prefers-reduced-motion queries are in the CSS, but the 16 movement events seen ran the same with reduced motion on.",
+  "notes": [
+    "A faster exit, by state: the hover rule says 0.45s and the resting rule says 0.2s, so arriving takes more than twice as long as leaving.",
+    "The two long curves are the usual stand-ins for cubic-out (0.215, 0.61, 0.355, 1) and quint-out (0.23, 1, 0.32, 1)."
+  ]
+}

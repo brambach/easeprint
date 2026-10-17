@@ -1,0 +1,834 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://basement.studio",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T06:06:27.991Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "no-preference",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ],
+  "clicks": []
+ },
+ "status": 200,
+ "finalUrl": "https://basement.studio/",
+ "scrolledTo": 5814,
+ "hover": {
+  "candidates": {
+   "available": 89,
+   "distinct": 14,
+   "picked": [
+    "div.grid-layout.h-9 > button.col-span-1.w-fit",
+    "div.flex.items-center > a.group.space-x-1",
+    "div.col-start-11.col-end-13 > button.inline-flex.items-center",
+    "div.col-start-11.col-end-13 > button#nav-contact",
+    "div.grid-rows-auto.group > a.text-brand-w1",
+    "div.relative.col-span-full > a.block",
+    "div.grid-layout.py-4 > a.hidden.h-max",
+    "h3.text-f-h4-mobile > a",
+    "div.relative.col-span-5 > a",
+    "li > a.flex.w-fit",
+    "li > button.flex.flex-col",
+    "form.flex.flex-col > button.ml-1.flex",
+    "div.flex.flex-row > a.h-max.text-brand-w1",
+    "div.flex.items-center > a.px-3.uppercase"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div.grid-layout.h-9 > button.col-span-1.w-fit",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > a.group.space-x-1",
+    "covered": false
+   },
+   {
+    "selector": "div.col-start-11.col-end-13 > button.inline-flex.items-center",
+    "covered": false
+   },
+   {
+    "selector": "div.col-start-11.col-end-13 > button#nav-contact",
+    "covered": false
+   },
+   {
+    "selector": "div.grid-rows-auto.group > a.text-brand-w1",
+    "covered": true
+   },
+   {
+    "selector": "div.relative.col-span-full > a.block",
+    "covered": true
+   },
+   {
+    "selector": "div.grid-layout.py-4 > a.hidden.h-max",
+    "covered": false
+   },
+   {
+    "selector": "h3.text-f-h4-mobile > a",
+    "covered": true
+   },
+   {
+    "selector": "div.relative.col-span-5 > a",
+    "covered": true
+   },
+   {
+    "selector": "li > a.flex.w-fit",
+    "covered": true
+   },
+   {
+    "selector": "li > button.flex.flex-col",
+    "covered": false
+   },
+   {
+    "selector": "form.flex.flex-col > button.ml-1.flex",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.flex-row > a.h-max.text-brand-w1",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > a.px-3.uppercase",
+    "covered": true
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-in-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.grid-rows-auto.group > a.text-brand-w1",
+   "count": 72
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "diagonalPatternAnimation",
+   "keyframeProperties": "",
+   "duration": "6s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.relative.h-full > div.with-diagonal-lines.pointer-events-none::after",
+   "count": 36
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.absolute.left-0 > p.bg-brand-k.text-brand-w1",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.group.relative > div.pointer-events-none.absolute",
+   "count": 6
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "subtle-pulse",
+   "keyframeProperties": "opacity",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.group.relative > img.h-full.w-full",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "button.flex.flex-col > span.actionable::before",
+   "count": 4
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "subtle-pulse",
+   "keyframeProperties": "opacity",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.group.relative > img.h-full.w-full",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.group.relative > div.pointer-events-none.absolute",
+   "count": 3
+  },
+  {
+   "kind": "waapi",
+   "phase": "unhover",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.absolute.left-0 > p.bg-brand-k.text-brand-w1",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.group.relative > div.pointer-events-none.absolute",
+   "count": 3
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "--_number-flow-d",
+   "duration": "900ms",
+   "timingFunction": "linear(0 0%, 0.005 1.1235955056179776%, 0.019 2.247191011235955%, 0.039 3.370786516853933%, 0.066 4.49438202247191%, 0.096 5.617977528089888%, 0.129 6.741573033707866%, 0.165 7.865168539325843%, 0.202 8.98876404494382%, 0.24 10.112359550561798%, 0.278 11.235955056179776%, 0.316 12.359550561797754%, 0.354 13.483146067415731%, 0.39 14.606741573033709%, 0.426 15.730337078651687%, 0.461 16.853932584269664%, 0.494 17.97752808988764%, 0.526 19.10112359550562%, 0.557 20.224719101123597%, 0.586 21.348314606741575%, 0.614 22.471910112359552%, 0.64 23.59550561797753%, 0.665 24.719101123595507%, 0.689 25.842696629213485%, 0.711 26.966292134831463%, 0.731 28.08988764044944%, 0.751 29.213483146067418%, 0.769 30.337078651685395%, 0.786 31.460674157303373%, 0.802 32.58426966292135%, 0.817 33.70786516853933%, 0.831 34.831460674157306%, 0.844 35.95505617977528%, 0.856 37.07865168539326%, 0.867 38.20224719101124%, 0.877 39.325842696629216%, 0.887 40.449438202247194%, 0.896 41.57303370786517%, 0.904 42.69662921348315%, 0.912 43.82022471910113%, 0.919 44.943820224719104%, 0.925 46.06741573033708%, 0.931 47.19101123595506%, 0.937 48.31460674157304%, 0.942 49.438202247191015%, 0.947 50.56179775280899%, 0.951 51.68539325842697%, 0.955 52.80898876404495%, 0.959 53.932584269662925%, 0.962 55.0561797752809%, 0.965 56.17977528089888%, 0.968 57.30337078651686%, 0.971 58.426966292134836%, 0.973 59.55056179775281%, 0.976 60.67415730337079%, 0.978 61.79775280898877%, 0.98 62.921348314606746%, 0.981 64.04494382022472%, 0.983 65.16853932584269%, 0.984 66.29213483146067%, 0.986 67.41573033707866%, 0.987 68.53932584269663%, 0.988 69.6629213483146%, 0.989 70.78651685393258%, 0.99 71.91011235955057%, 0.991 73.03370786516854%, 0.992 74.15730337078651%, 0.992 75.28089887640449%, 0.993 76.40449438202248%, 0.994 77.52808988764045%, 0.994 78.65168539325842%, 0.995 79.7752808988764%, 0.995 80.89887640449439%, 0.996 82.02247191011236%, 0.996 83.14606741573033%, 0.9963 84.26966292134831%, 0.9967 85.3932584269663%, 0.9969 86.51685393258427%, 0.9972 87.64044943820224%, 0.9975 88.76404494382022%, 0.9977 89.88764044943821%, 0.9979 91.01123595505618%, 0.9981 92.13483146067415%, 0.9982 93.25842696629213%, 0.9984 94.38202247191012%, 0.9985 95.50561797752809%, 0.9987 96.62921348314606%, 0.9988 97.75280898876404%, 0.9989 98.87640449438203%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span.section.section--justify-right > span.digit.animate-presence",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "--_number-flow-dx, --_number-flow-d-width",
+   "duration": "900ms",
+   "timingFunction": "linear(0 0%, 0.005 1.1235955056179776%, 0.019 2.247191011235955%, 0.039 3.370786516853933%, 0.066 4.49438202247191%, 0.096 5.617977528089888%, 0.129 6.741573033707866%, 0.165 7.865168539325843%, 0.202 8.98876404494382%, 0.24 10.112359550561798%, 0.278 11.235955056179776%, 0.316 12.359550561797754%, 0.354 13.483146067415731%, 0.39 14.606741573033709%, 0.426 15.730337078651687%, 0.461 16.853932584269664%, 0.494 17.97752808988764%, 0.526 19.10112359550562%, 0.557 20.224719101123597%, 0.586 21.348314606741575%, 0.614 22.471910112359552%, 0.64 23.59550561797753%, 0.665 24.719101123595507%, 0.689 25.842696629213485%, 0.711 26.966292134831463%, 0.731 28.08988764044944%, 0.751 29.213483146067418%, 0.769 30.337078651685395%, 0.786 31.460674157303373%, 0.802 32.58426966292135%, 0.817 33.70786516853933%, 0.831 34.831460674157306%, 0.844 35.95505617977528%, 0.856 37.07865168539326%, 0.867 38.20224719101124%, 0.877 39.325842696629216%, 0.887 40.449438202247194%, 0.896 41.57303370786517%, 0.904 42.69662921348315%, 0.912 43.82022471910113%, 0.919 44.943820224719104%, 0.925 46.06741573033708%, 0.931 47.19101123595506%, 0.937 48.31460674157304%, 0.942 49.438202247191015%, 0.947 50.56179775280899%, 0.951 51.68539325842697%, 0.955 52.80898876404495%, 0.959 53.932584269662925%, 0.962 55.0561797752809%, 0.965 56.17977528089888%, 0.968 57.30337078651686%, 0.971 58.426966292134836%, 0.973 59.55056179775281%, 0.976 60.67415730337079%, 0.978 61.79775280898877%, 0.98 62.921348314606746%, 0.981 64.04494382022472%, 0.983 65.16853932584269%, 0.984 66.29213483146067%, 0.986 67.41573033707866%, 0.987 68.53932584269663%, 0.988 69.6629213483146%, 0.989 70.78651685393258%, 0.99 71.91011235955057%, 0.991 73.03370786516854%, 0.992 74.15730337078651%, 0.992 75.28089887640449%, 0.993 76.40449438202248%, 0.994 77.52808988764045%, 0.994 78.65168539325842%, 0.995 79.7752808988764%, 0.995 80.89887640449439%, 0.996 82.02247191011236%, 0.996 83.14606741573033%, 0.9963 84.26966292134831%, 0.9967 85.3932584269663%, 0.9969 86.51685393258427%, 0.9972 87.64044943820224%, 0.9975 88.76404494382022%, 0.9977 89.88764044943821%, 0.9979 91.01123595505618%, 0.9981 92.13483146067415%, 0.9982 93.25842696629213%, 0.9984 94.38202247191012%, 0.9985 95.50561797752809%, 0.9987 96.62921348314606%, 0.9988 97.75280898876404%, 0.9989 98.87640449438203%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span.number",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.absolute.left-0 > p.bg-brand-k.text-brand-w1",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "a.flex.w-fit > span.actionable::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button.flex.flex-col > span.actionable",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "button.flex.flex-col > span.actionable",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "button.flex.flex-col > span.actionable::before",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "diagonalPatternAnimation",
+   "keyframeProperties": "",
+   "duration": "6s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.relative.col-span-full > div.with-diagonal-lines.pointer-events-none::after",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "auto",
+   "timingFunction": "linear(0 0%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div > span.flex.items-center",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "ease-out",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "h2.col-span-full.text-f-h3-mobile > span",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "pulse",
+   "keyframeProperties": "opacity",
+   "duration": "2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.6, 1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "span.group.relative > span.animate-pulse.rounded-full",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "nav.pointer-events-none.fixed",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.items-center > a.group.space-x-1",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "div.flex.items-center > a.group.space-x-1",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "button#nav-contact > span.actionable-opacity",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "button#nav-contact > span.actionable-opacity",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "nav.pointer-events-none.fixed",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "unhover",
+   "name": "subtle-pulse",
+   "keyframeProperties": "opacity",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.group.relative > img.h-full.w-full",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.flex.w-fit > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "nav.pointer-events-none.fixed",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "a.flex.w-fit > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "none",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "button.flex.flex-col > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.06s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.h-max.text-brand-w1 > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "a.h-max.text-brand-w1 > span.actionable::before",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "actionable-blink",
+   "keyframeProperties": "",
+   "duration": "0.3s",
+   "timingFunction": "linear",
+   "delay": "0.06s",
+   "iterations": "1",
+   "selector": "a.h-max.text-brand-w1 > span.actionable",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "--_number-flow-d",
+   "duration": "900ms",
+   "timingFunction": "linear(0 0%, 0.005 1.1235955056179776%, 0.019 2.247191011235955%, 0.039 3.370786516853933%, 0.066 4.49438202247191%, 0.096 5.617977528089888%, 0.129 6.741573033707866%, 0.165 7.865168539325843%, 0.202 8.98876404494382%, 0.24 10.112359550561798%, 0.278 11.235955056179776%, 0.316 12.359550561797754%, 0.354 13.483146067415731%, 0.39 14.606741573033709%, 0.426 15.730337078651687%, 0.461 16.853932584269664%, 0.494 17.97752808988764%, 0.526 19.10112359550562%, 0.557 20.224719101123597%, 0.586 21.348314606741575%, 0.614 22.471910112359552%, 0.64 23.59550561797753%, 0.665 24.719101123595507%, 0.689 25.842696629213485%, 0.711 26.966292134831463%, 0.731 28.08988764044944%, 0.751 29.213483146067418%, 0.769 30.337078651685395%, 0.786 31.460674157303373%, 0.802 32.58426966292135%, 0.817 33.70786516853933%, 0.831 34.831460674157306%, 0.844 35.95505617977528%, 0.856 37.07865168539326%, 0.867 38.20224719101124%, 0.877 39.325842696629216%, 0.887 40.449438202247194%, 0.896 41.57303370786517%, 0.904 42.69662921348315%, 0.912 43.82022471910113%, 0.919 44.943820224719104%, 0.925 46.06741573033708%, 0.931 47.19101123595506%, 0.937 48.31460674157304%, 0.942 49.438202247191015%, 0.947 50.56179775280899%, 0.951 51.68539325842697%, 0.955 52.80898876404495%, 0.959 53.932584269662925%, 0.962 55.0561797752809%, 0.965 56.17977528089888%, 0.968 57.30337078651686%, 0.971 58.426966292134836%, 0.973 59.55056179775281%, 0.976 60.67415730337079%, 0.978 61.79775280898877%, 0.98 62.921348314606746%, 0.981 64.04494382022472%, 0.983 65.16853932584269%, 0.984 66.29213483146067%, 0.986 67.41573033707866%, 0.987 68.53932584269663%, 0.988 69.6629213483146%, 0.989 70.78651685393258%, 0.99 71.91011235955057%, 0.991 73.03370786516854%, 0.992 74.15730337078651%, 0.992 75.28089887640449%, 0.993 76.40449438202248%, 0.994 77.52808988764045%, 0.994 78.65168539325842%, 0.995 79.7752808988764%, 0.995 80.89887640449439%, 0.996 82.02247191011236%, 0.996 83.14606741573033%, 0.9963 84.26966292134831%, 0.9967 85.3932584269663%, 0.9969 86.51685393258427%, 0.9972 87.64044943820224%, 0.9975 88.76404494382022%, 0.9977 89.88764044943821%, 0.9979 91.01123595505618%, 0.9981 92.13483146067415%, 0.9982 93.25842696629213%, 0.9984 94.38202247191012%, 0.9985 95.50561797752809%, 0.9987 96.62921348314606%, 0.9988 97.75280898876404%, 0.9989 98.87640449438203%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span.section.section--justify-right > span.digit.animate-presence",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "--_number-flow-dx, --_number-flow-d-width",
+   "duration": "900ms",
+   "timingFunction": "linear(0 0%, 0.005 1.1235955056179776%, 0.019 2.247191011235955%, 0.039 3.370786516853933%, 0.066 4.49438202247191%, 0.096 5.617977528089888%, 0.129 6.741573033707866%, 0.165 7.865168539325843%, 0.202 8.98876404494382%, 0.24 10.112359550561798%, 0.278 11.235955056179776%, 0.316 12.359550561797754%, 0.354 13.483146067415731%, 0.39 14.606741573033709%, 0.426 15.730337078651687%, 0.461 16.853932584269664%, 0.494 17.97752808988764%, 0.526 19.10112359550562%, 0.557 20.224719101123597%, 0.586 21.348314606741575%, 0.614 22.471910112359552%, 0.64 23.59550561797753%, 0.665 24.719101123595507%, 0.689 25.842696629213485%, 0.711 26.966292134831463%, 0.731 28.08988764044944%, 0.751 29.213483146067418%, 0.769 30.337078651685395%, 0.786 31.460674157303373%, 0.802 32.58426966292135%, 0.817 33.70786516853933%, 0.831 34.831460674157306%, 0.844 35.95505617977528%, 0.856 37.07865168539326%, 0.867 38.20224719101124%, 0.877 39.325842696629216%, 0.887 40.449438202247194%, 0.896 41.57303370786517%, 0.904 42.69662921348315%, 0.912 43.82022471910113%, 0.919 44.943820224719104%, 0.925 46.06741573033708%, 0.931 47.19101123595506%, 0.937 48.31460674157304%, 0.942 49.438202247191015%, 0.947 50.56179775280899%, 0.951 51.68539325842697%, 0.955 52.80898876404495%, 0.959 53.932584269662925%, 0.962 55.0561797752809%, 0.965 56.17977528089888%, 0.968 57.30337078651686%, 0.971 58.426966292134836%, 0.973 59.55056179775281%, 0.976 60.67415730337079%, 0.978 61.79775280898877%, 0.98 62.921348314606746%, 0.981 64.04494382022472%, 0.983 65.16853932584269%, 0.984 66.29213483146067%, 0.986 67.41573033707866%, 0.987 68.53932584269663%, 0.988 69.6629213483146%, 0.989 70.78651685393258%, 0.99 71.91011235955057%, 0.991 73.03370786516854%, 0.992 74.15730337078651%, 0.992 75.28089887640449%, 0.993 76.40449438202248%, 0.994 77.52808988764045%, 0.994 78.65168539325842%, 0.995 79.7752808988764%, 0.995 80.89887640449439%, 0.996 82.02247191011236%, 0.996 83.14606741573033%, 0.9963 84.26966292134831%, 0.9967 85.3932584269663%, 0.9969 86.51685393258427%, 0.9972 87.64044943820224%, 0.9975 88.76404494382022%, 0.9977 89.88764044943821%, 0.9979 91.01123595505618%, 0.9981 92.13483146067415%, 0.9982 93.25842696629213%, 0.9984 94.38202247191012%, 0.9985 95.50561797752809%, 0.9987 96.62921348314606%, 0.9988 97.75280898876404%, 0.9989 98.87640449438203%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span.number",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.06s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "selector": "a.h-max.text-brand-w1 > span.actionable::before",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 698,
+  "elementsTotal": 698,
+  "transitionAllElements": 3,
+  "transitions": [
+   {
+    "property": "opacity",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 41,
+    "samples": [
+     "div.relative.h-full > div.with-diagonal-lines.pointer-events-none",
+     "div.with-dots.relative > div.group.relative",
+     "nav.pointer-events-none.fixed"
+    ]
+   },
+   {
+    "property": "none",
+    "duration": "0.06s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "count": 40,
+    "samples": [
+     "div.flex.items-center > a.group.space-x-1",
+     "button#nav-contact > span.actionable-opacity",
+     "a.text-f-h2-mobile.text-brand-w1 > span.actionable"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.06s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "count": 33,
+    "samples": [
+     "a.text-f-h2-mobile.text-brand-w1 > span.actionable::before",
+     "a.hidden.h-max > span.actionable.group::before",
+     "a > span.actionable::before"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "nav.fixed.top-0",
+     "span.relative.flex > span.w-full.origin-center",
+     "div.col-span-full > div.grid-layout.py-4"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "span.group.relative > span.text-caption.pointer-events-none",
+     "div.group.relative > div.pointer-events-none.absolute"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "span.actionable.group > span.translate-x-6.transition-transform"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "span.actionable.group > svg.size-6.opacity-0"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "legend.px-1 > button.bg-black.px-1",
+     "div.w-full.px-4 > button.h-8.w-full",
+     "div.pointer-events-none.fixed"
+    ]
+   },
+   {
+    "property": "width",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "span.relative.flex > span.w-full.origin-center"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "text-decoration-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.items-center > a.px-3.uppercase"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "diagonalPatternAnimation",
+    "duration": "6s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 37,
+    "samples": [
+     "div.relative.h-full > div.with-diagonal-lines.pointer-events-none::after",
+     "div.relative.col-span-full > div.with-diagonal-lines.pointer-events-none::after"
+    ]
+   },
+   {
+    "name": "pulse",
+    "duration": "2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.6, 1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 1,
+    "samples": [
+     "span.group.relative > span.animate-pulse.rounded-full"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 0,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "basement.studio | We make cool shit that performs.",
+  "canvases": 2,
+  "viewportSizedCanvases": 2,
+  "webglContexts": 2,
+  "canvas2dContexts": 10,
+  "videos": 4,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 2,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion)"
+  ],
+  "documentHeight": 6714
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 321,
+  "stylesheets": 2,
+  "scripts": 70,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 2,
+  "bytes": 118835,
+  "reducedMotionQueries": 2,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "fade-in",
+   "fade-in-out",
+   "fade-out-in",
+   "pulse",
+   "spin",
+   "actionable-blink",
+   "diagonalPatternAnimation",
+   "machine-reveal",
+   "machine-flicker",
+   "marquee-translate",
+   "subtle-pulse",
+   "accordion-up",
+   "accordion-down"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0.4, 0, 0.6, 1)": 1,
+   "cubic-bezier(0.4, 0, 0.2, 1)": 14
+  }
+ },
+ "scripts": {
+  "files": 70,
+  "bytes": 7621150,
+  "reducedMotionMentions": 6,
+  "libraries": {
+   "framerMotion": true,
+   "springPhysics": true,
+   "three": true
+  }
+ },
+ "elapsedMs": 43060
+}

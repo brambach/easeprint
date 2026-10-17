@@ -1,0 +1,78 @@
+{
+  "name": "Arc",
+  "site": "arc.net",
+  "url": "https://arc.net/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/arc.net/2026-10-17.json",
+  "rawReduced": "data/raw/arc.net/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "material",
+  "summary": "Buttons lift on a 0.15s ease with a 0.15s ease-out shadow, sections fade on 300ms ease-in-out, and a logo marquee takes 78.5 seconds a lap. Small, quick, friendly, and no long statement move.",
+  "tiers": [
+    {
+      "role": "signature",
+      "kind": "transition",
+      "label": "large button lift on hover",
+      "property": "transform",
+      "timingFunction": "ease",
+      "duration": "0.15s",
+      "durationMs": 150,
+      "phase": "hover",
+      "selector": "a > button.c-bCeQxv.c-bCeQxv-jbZBFp-size-large",
+      "count": 3
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "large button shadow on hover",
+      "property": "box-shadow",
+      "timingFunction": "ease-out",
+      "duration": "0.15s",
+      "durationMs": 150,
+      "phase": "hover",
+      "selector": "a > button.c-bCeQxv.c-bCeQxv-jbZBFp-size-large",
+      "count": 2
+    },
+    {
+      "role": "utility",
+      "kind": "waapi",
+      "label": "section fading in (WAAPI)",
+      "property": "opacity",
+      "timingFunction": "ease-in-out",
+      "duration": "300ms",
+      "durationMs": 300,
+      "phase": "scroll",
+      "selector": "section.c-gujhdE > div.c-fdRmVl",
+      "count": 2
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "icon nudge on hover",
+      "property": "transform",
+      "timingFunction": "ease-in-out",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "hover",
+      "selector": "span.c-knvjIb > svg",
+      "count": 1
+    },
+    {
+      "role": "ambient",
+      "kind": "animation",
+      "label": "logo marquee",
+      "property": "scroll",
+      "timingFunction": "linear",
+      "duration": "78.5225s",
+      "durationMs": 78522.5,
+      "phase": "load",
+      "selector": "div.marquee-container > div.marquee",
+      "count": 2
+    }
+  ],
+  "honestyNote": "Two inline rules set transition: all (0.15s and 0.1s ease-out), though no element computed it at the end of the visit. No prefers-reduced-motion query anywhere in the CSS; the 12 movement events ran the same with it on.",
+  "notes": [
+    "The marquee's duration, 78.5225s, looks computed from its content width rather than chosen.",
+    "Nothing longer than 0.3s apart from the marquee: no statement tier at all."
+  ]
+}

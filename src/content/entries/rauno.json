@@ -1,0 +1,42 @@
+{
+  "name": "Rauno Freiberg",
+  "site": "rauno.me",
+  "url": "https://rauno.me/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/rauno.me/2026-10-17.json",
+  "rawReduced": "data/raw/rauno.me/2026-10-17-reduced.json",
+  "status": "partial",
+  "statusReason": "The homepage's CSS motion is two fades. The scripts carry Framer Motion and spring physics, which run on requestAnimationFrame and aren't readable from styles, and two of the three hover targets were covered by other elements when the tool reached them.",
+  "posture": "material",
+  "summary": "Frames fade in on a 0.35s ease-in-out at load and the minimap tracker changes on a 0.2s ease-in-out with a 0.2s delay. That's all the CSS says; the interesting motion is spring-driven.",
+  "tiers": [
+    {
+      "role": "secondary",
+      "kind": "animation",
+      "label": "work frames fading in on load",
+      "property": "index_fadeFrames__RAnv2",
+      "timingFunction": "ease-in-out",
+      "duration": "0.35s",
+      "durationMs": 350,
+      "phase": "load",
+      "selector": "div.index_frames__d9hw4 > a.index_frame__XKrH1",
+      "count": 5
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "minimap tracker opacity",
+      "property": "opacity",
+      "timingFunction": "ease-in-out",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "final",
+      "selector": "div.c-lesPJm.c-lesPJm-icvxujr-css > a.minimap_tracker__HbSjC",
+      "count": 4
+    }
+  ],
+  "notes": [
+    "Nothing measured moves position or size, so there was nothing for reduced motion to remove in the CSS.",
+    "The minimap's background and border wait 0.2s before changing; its opacity doesn't wait."
+  ]
+}

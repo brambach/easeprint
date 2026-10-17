@@ -1,0 +1,42 @@
+{
+  "name": "Paco Coursey",
+  "site": "paco.me",
+  "url": "https://paco.me/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/paco.me/2026-10-17.json",
+  "rawReduced": "data/raw/paco.me/2026-10-17-reduced.json",
+  "status": "measured",
+  "posture": "spatial",
+  "summary": "One move: the page's text enters on a plain 0.6s ease, staggered in 0.12s steps from the heading down. Links underline in 0.24s. Then nothing moves.",
+  "tiers": [
+    {
+      "role": "statement",
+      "kind": "animation",
+      "label": "page text entering, staggered by 0.12s",
+      "property": "enter",
+      "timingFunction": "ease",
+      "duration": "0.6s",
+      "durationMs": 600,
+      "phase": "load",
+      "selector": "div > h1",
+      "count": 2
+    },
+    {
+      "role": "utility",
+      "kind": "transition",
+      "label": "link underline colour",
+      "property": "text-decoration-color",
+      "timingFunction": "ease",
+      "duration": "0.24s",
+      "durationMs": 240,
+      "phase": "final",
+      "selector": "p > a",
+      "count": 13
+    }
+  ],
+  "notes": [
+    "The entrance animates opacity and transform together, with delays of 0s, 0.12s, 0.24s, 0.36s, 0.6s and 0.72s down the page.",
+    "With reduced motion on, the entrance doesn't run at all: 8 movement events became 0.",
+    "The statement is the keyword ease. Not an aggressive ease-out, and not long."
+  ]
+}

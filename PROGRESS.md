@@ -80,3 +80,63 @@ entry links its raw files, served unchanged at `/raw/<site>/<file>`.
   `reducedMotion: 'reduce'` a click produces no running animation and one constant transform.
 - Screenshots: `evidence/m3-entry-cuberto-desktop.png` (full page), `evidence/m3-entry-raycast-mobile.png`.
 - `pnpm test`: 72 passed.
+
+## M4 The other 18 entries
+
+All 20 sites loaded and measured on 2026-10-17: every normal and reduced run returned 200 and `outcome: ok`. No
+site was blocked, gone, or WebGL-only to the point of having no DOM motion, so there's no replacement to pick.
+Six are marked **partial** because their main motion is somewhere the tool can't read, and each entry says where:
+
+- **vercel.com**: WebGL hero, Rive and Lottie. CSS shows colour, shadow, fades and a marquee only.
+- **emilkowal.ski**: the homepage is nearly still; the motion lives in articles and the libraries (Sonner and Vaul
+  have their own entries).
+- **rauno.me**: two CSS fades; the rest is Framer Motion springs on requestAnimationFrame. Two of three hover
+  targets were covered by other elements.
+- **darkroom.engineering**: scroll is Lenis, scenes are GSAP and ScrollTrigger, not exposed on `window`.
+- **locomotive.ca**: Lenis, GSAP, ScrollTrigger, Barba and three.js, same problem.
+- **basement.studio**: two viewport-sized WebGL canvases carry the showpiece motion ("motion lives in canvas").
+
+Changes to the tool made while doing this, all recorded in the raw files:
+
+- `--click <css>` (opt-in): sonner.emilkowal.ski and vaul.emilkowal.ski only animate after a click, so they were
+  re-measured clicking their own demo buttons (Render a toast; Open Drawer), then Escape. Still one load per run.
+- Tool 1.1 records which properties a CSS animation's keyframes touch, so opacity-only keyframes don't count as
+  movement. Cuberto and Raycast were measured with 1.0 and their animations count as movement; neither was
+  re-measured, to keep to one load per site per run.
+- The reduced-motion verdict compares *movement* events (transform, position, size) between the normal run and
+  the reduced run. Fades are allowed under reduced motion. A site that moves nothing gets `no-movement`.
+
+Entries were written from `pnpm summarize` and `pnpm records` output; tier values were copied out of the raw
+files by script, so the long `linear()` springs (up to 175 stops) are exact. Every comparative claim in an entry's
+notes was checked against all 20 raw files before it went in.
+
+| Site | Status | Posture | Tiers | Statement | Reduced motion | `transition: all` elements |
+|---|---|---|---|---|---|---|
+| arc.net | measured | material | 5 | none | not-honored (12 to 12) | 0 |
+| attio.com | measured | material | 6 | `cubic-bezier(0, 0, 0.58, 1)` 600ms | partial (77 to 22) | 11 |
+| basement.studio | partial | ambient, character | 6 | none | not-honored (43 to 43) | 3 |
+| brycerambach.com | measured | spatial | 7 | `cubic-bezier(0.2, 0.7, 0.1, 1)` 1.15s | honored (121 to 0) | 0 |
+| cuberto.com | measured | material | 5 | `cubic-bezier(0.16, 1, 0.3, 1)` 1.2s | not-honored (148 to 134) | 1 |
+| darkroom.engineering | partial | spatial | 4 | none | honored (107 to 0) | 0 |
+| emilkowal.ski | partial | material | 2 | none | no-movement (0 to 0) | 0 |
+| family.co | measured | material | 5 | `cubic-bezier(0.19, 1, 0.22, 1)` 1s | not-honored (350 to 337) | 123 |
+| linear.app | measured | ambient, diagrammatic | 6 | `cubic-bezier(0.25, 0.1, 0.25, 1)` 1000ms | honored (474 to 18) | 2 |
+| locomotive.ca | partial | spatial | 5 | none | not-honored (16 to 16) | 0 |
+| motion.dev | measured | material | 6 | `linear() spring` 1750ms | honored (6 to 0) | 0 |
+| obys.agency | measured | spatial | 5 | `cubic-bezier(0.16, 1, 0.3, 1)` 1.6s | not-honored (65 to 62) | 0 |
+| paco.me | measured | spatial | 2 | `ease` 0.6s | honored (8 to 0) | 0 |
+| rauno.me | partial | material | 2 | none | no-movement (0 to 0) | 0 |
+| raycast.com | measured | material | 8 | `cubic-bezier(0.165, 0.84, 0.44, 1)` 2s | not-honored (84 to 80) | 149 |
+| resend.com | measured | material | 8 | `ease-in-out` 1.5s | not-honored (21 to 19) | 16 |
+| sonner.emilkowal.ski | measured | spatial | 4 | `ease` 0.4s | partial (8 to 2) | 2 |
+| stripe.com | measured | ambient, diagrammatic | 8 | `cubic-bezier(0.165, 0.84, 0.44, 1)` 0.8s | honored (852 to 54) | 0 |
+| vaul.emilkowal.ski | measured | spatial | 5 | `cubic-bezier(0.32, 0.72, 0, 1)` 0.5s | not-honored (4 to 4) | 1 |
+| vercel.com | partial | ambient, decorative | 6 | none | no-movement (0 to 0) | 13 |
+
+Evidence:
+
+- `tests/unit/entries.test.ts`: the entry sites equal the brief's 20 exactly, and each passes the schema with a
+  raw file and a reduced-motion run beside it.
+- `tests/unit/trace.test.ts`: all 105 tiers trace to one raw record each (timing, duration, phase, property,
+  selector, count). The schema enforces the same at build time.
+- `pnpm test`: 203 passed. `pnpm build`: 21 pages. `pnpm lint` clean.

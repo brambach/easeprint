@@ -106,19 +106,23 @@ export function rawPairs(raw: RawFile): Map<string, Pair> {
  */
 export function findInRaw(
   raw: RawFile,
-  tier: { timingFunction: string; duration: string; phase: string; property: string; selector: string; count: number },
+  tier: { kind: string; timingFunction: string; duration: string; phase: string; property: string; selector: string; count: number },
 ): { found: boolean; reason?: string } {
   const p = rawPairs(raw).get(pairKey(tier.timingFunction, tier.duration));
   if (!p) return { found: false, reason: `pair ${tier.timingFunction} ${tier.duration} not in raw file` };
   if (!p.phases.has(tier.phase)) return { found: false, reason: `pair seen in ${[...p.phases].join('/')}, not ${tier.phase}` };
   const candidates: { property: string; selectors: string[]; count: number }[] =
     tier.phase === 'final'
-      ? [...(raw.computed?.transitions ?? []), ...(raw.computed?.animations ?? [])]
+      ? [
+          ...(tier.kind === 'transition' ? (raw.computed?.transitions ?? []) : []),
+          ...(tier.kind === 'animation' ? (raw.computed?.animations ?? []) : []),
+        ]
           .filter((r) => r.timingFunction === tier.timingFunction && r.duration === tier.duration)
           .map((r) => ({ property: r.property ?? r.name ?? '', selectors: r.samples, count: r.count }))
       : (raw.observed ?? [])
-          .filter((r) => r.phase === tier.phase && r.timingFunction === tier.timingFunction && r.duration === tier.duration)
+          .filter((r) => r.kind === tier.kind && r.phase === tier.phase && r.timingFunction === tier.timingFunction && r.duration === tier.duration)
           .map((r) => ({ property: r.property ?? r.name ?? '', selectors: [r.selector], count: r.count }));
+  if (candidates.length === 0) return { found: false, reason: `no ${tier.kind} record with this pair in ${tier.phase}` };
   const propertyMatches = (pr: string) => pr === tier.property || pr.split(', ').includes(tier.property);
   const withProperty = candidates.filter((c) => propertyMatches(c.property));
   if (withProperty.length === 0) {

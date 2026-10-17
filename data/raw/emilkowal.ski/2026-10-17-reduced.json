@@ -1,0 +1,273 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://emilkowal.ski",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:54:27.512Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "reduce",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://emilkowal.ski/",
+ "scrolledTo": 1580,
+ "hover": {
+  "candidates": {
+   "available": 20,
+   "distinct": 6,
+   "picked": [
+    "p > a.font-medium",
+    "div.relative.mx-auto > button.absolute.right-3",
+    "header.mb-32.flex > a.text-medium.inline-block",
+    "div.flex.flex-col > a.flex.flex-col",
+    "form.mt-6.flex > button.rounded-full.bg-gray-1200",
+    "span.text-gray-1100 > a"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "p > a.font-medium",
+    "covered": true
+   },
+   {
+    "selector": "div.relative.mx-auto > button.absolute.right-3",
+    "covered": true
+   },
+   {
+    "selector": "header.mb-32.flex > a.text-medium.inline-block",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.flex-col > a.flex.flex-col",
+    "covered": false
+   },
+   {
+    "selector": "form.mt-6.flex > button.rounded-full.bg-gray-1200",
+    "covered": false
+   },
+   {
+    "selector": "span.text-gray-1100 > a",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "auto",
+   "timingFunction": "linear(0 0%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "50ms",
+   "timingFunction": "linear(0 0%, 1 25%, 1 50%, 1 75%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.sticky.left-0",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 143,
+  "elementsTotal": 143,
+  "transitionAllElements": 0,
+  "transitions": [
+   {
+    "property": "color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "form.mt-6.flex > input#email"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "form.mt-6.flex > input#email"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "form.mt-6.flex > input#email"
+    ]
+   },
+   {
+    "property": "text-decoration-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "form.mt-6.flex > input#email"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "form.mt-6.flex > input#email"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "form.mt-6.flex > input#email"
+    ]
+   }
+  ],
+  "animations": []
+ },
+ "inlineSheets": {
+  "sheets": 1,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [
+   "sp-k-eyOShd",
+   "sp-k-iOHdLQ"
+  ],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Emil Kowalski",
+  "canvases": 0,
+  "viewportSizedCanvases": 0,
+  "webglContexts": 0,
+  "canvas2dContexts": 0,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 1,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion)"
+  ],
+  "documentHeight": 2480
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 72,
+  "stylesheets": 10,
+  "scripts": 42,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 10,
+  "bytes": 152524,
+  "reducedMotionQueries": 3,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "popoverEnter",
+   "popoverEnterLong",
+   "transformAnimation",
+   "down",
+   "spin",
+   "popoverExit",
+   "popoverExitLong",
+   "skeleton_loading__NX0ZB",
+   "pulse",
+   "dropdowns_enter__4isBi",
+   "dropdowns_exit__rIR0x",
+   "loading-spinner_spin__UwarW",
+   "tooltips_enter__uaYda",
+   "tooltips_exit__ZbtPd",
+   "crypto-select_enter__7W4Ut",
+   "crypto-select_exit__Y_774",
+   "dropdowns_enter__4pDKb",
+   "dropdowns_exit__3icnb",
+   "style_spin__mjwod",
+   "origin-aware_enter__qCHY5",
+   "origin-aware_exit__OYVZV",
+   "origin-aware_scaleBigEnter__0YOZ2",
+   "origin-aware_scaleBigExit__3YrW_",
+   "scale-zero_enter__UmJiN",
+   "scale-zero_exit__dXYIO",
+   "scale-zero_scaleBigEnter__SbfTO",
+   "scale-zero_scaleBigExit__dnSxj",
+   "sonner-fade-up",
+   "swipe-out-left",
+   "swipe-out-right",
+   "swipe-out-up",
+   "swipe-out-down",
+   "sonner-fade-in",
+   "sonner-fade-out",
+   "sonner-spin",
+   "dropdowns_enter__jCYkG",
+   "dropdowns_exit___jGNX",
+   "easing-diff_rotate__SCuhT",
+   "loading-spinner_spin__HjdHu",
+   "loading-spinners_rotate__H2e1T",
+   "coin-flip_rotate__rp_Xs",
+   "stripe-checkbox_slideDown__cwO8g",
+   "stripe-checkbox_slideUp__zrY2e",
+   "theme-switcher_revealClipPath__SdLHT"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0.4, 0, 0.2, 1)": 12,
+   "cubic-bezier(0.25, 0.46, 0.45, 0.94)": 8,
+   "cubic-bezier(0.4, 0, 1, 1)": 1,
+   "cubic-bezier(0, 0, 0.2, 1)": 1,
+   "cubic-bezier(0.165, 0.84, 0.44, 1)": 2,
+   "cubic-bezier(0.4, 0, 0.6, 1)": 1,
+   "cubic-bezier(0.32, 0.72, 0, 1)": 2,
+   "cubic-bezier(0.19, 1, 0.22, 1)": 4,
+   "cubic-bezier(0.23, 1, 0.32, 1)": 2,
+   "cubic-bezier(0.645, 0.045, 0.355, 1)": 1,
+   "cubic-bezier(0.77, 0, 0.175, 1)": 1
+  }
+ },
+ "scripts": {
+  "files": 42,
+  "bytes": 3878021,
+  "reducedMotionMentions": 3,
+  "libraries": {
+   "framerMotion": true,
+   "springPhysics": true
+  }
+ },
+ "elapsedMs": 17853
+}

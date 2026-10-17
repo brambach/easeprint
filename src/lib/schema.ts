@@ -57,6 +57,8 @@ export const rawReducedPath = z
 export const tierSchema = z
   .strictObject({
     role: z.enum(ROLES),
+    /** How the site runs it: a CSS transition, a CSS keyframe animation, or the Web Animations API. */
+    kind: z.enum(['transition', 'animation', 'waapi']),
     /** What moves, in plain words: "nav link underline". */
     label: z.string().min(3),
     /** The CSS property the site animates. Our demo still only moves transform and opacity. */

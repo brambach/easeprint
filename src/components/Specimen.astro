@@ -1,0 +1,218 @@
+---
+import CurvePlot from './CurvePlot.astro';
+import { customProperties, transitionValue } from '../lib/copy';
+import type { Tier } from '../lib/schema';
+
+interface Props {
+  tier: Tier;
+  posture: 'spatial' | 'material' | 'ambient';
+  id: string;
+}
+const { tier, posture, id } = Astro.props;
+const mode = tier.property === 'opacity' ? 'fade' : 'move';
+const shownAs =
+  tier.kind === 'animation'
+    ? `a keyframe animation (${tier.property})`
+    : tier.property === 'opacity' || tier.property === 'transform'
+      ? null
+      : tier.property;
+const copyTransition = transitionValue(tier);
+const copyProps = customProperties(tier);
+const phaseText: Record<string, string> = {
+  load: 'on load',
+  scroll: 'while scrolling',
+  hover: 'on hover',
+  unhover: 'when the pointer left',
+  final: 'in computed style at the end',
+};
+---
+<article
+  class="specimen"
+  id={id}
+  data-demo
+  data-tf={tier.timingFunction}
+  data-duration-ms={tier.durationMs}
+  data-mode={mode}
+  data-posture={posture}
+>
+  <header class="specimen-head">
+    <span class="kicker">{tier.role}</span>
+    <h3>{tier.label}</h3>
+  </header>
+  <div class="specimen-grid">
+    <figure class="specimen-plot">
+      <CurvePlot
+        timingFunction={tier.timingFunction}
+        color={`var(--${posture})`}
+        marker
+        label={`Curve plot of ${tier.timingFunction} over ${tier.duration}`}
+      />
+      <figcaption class="value">{tier.timingFunction}</figcaption>
+    </figure>
+    <div class="specimen-body">
+      <div class="stage" data-stage>
+        <button class="stage-hit" type="button" data-play aria-label={`Play: ${tier.label}, ${tier.duration}`}>
+          <span class="puck" data-puck aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="controls">
+        <button class="btn" type="button" data-play>Replay</button>
+        <button class="btn" type="button" data-slow aria-pressed="false">Slow-mo 10%</button>
+        <label class="scrub">
+          <span class="sr">Scrub through the curve</span>
+          <input type="range" min="0" max="1000" value="0" step="1" data-scrub />
+        </label>
+      </div>
+      <p class="fine demo-status" data-status aria-live="polite">
+        {shownAs ? `The site animates ${shownAs}; the demo shows the same timing as ${mode === 'fade' ? 'a fade' : 'movement'}.` : 'Click the track or Replay.'}
+      </p>
+      <dl class="spec">
+        <div><dt>Timing</dt><dd class="value">{tier.timingFunction}</dd></div>
+        <div><dt>Duration</dt><dd class="value">{tier.duration}</dd></div>
+        <div><dt>Property</dt><dd class="value">{tier.property}</dd></div>
+        <div><dt>Seen</dt><dd>{tier.kind === 'waapi' ? 'Web Animations API' : `CSS ${tier.kind}`}, {phaseText[tier.phase]}, {tier.count}&times;</dd></div>
+        <div><dt>On</dt><dd class="value selector">{tier.selector}</dd></div>
+      </dl>
+      <div class="btn-row copy-row">
+        <button class="btn" type="button" data-copy={copyTransition}>Copy {tier.kind === 'animation' ? 'animation timing' : 'transition'}</button>
+        <button class="btn" type="button" data-copy={copyProps}>Copy custom properties</button>
+        <span class="fine" data-copy-status aria-live="polite"></span>
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+  .specimen {
+    border-top: 1px solid var(--line);
+    padding-block: var(--s6);
+  }
+
+  .specimen-head {
+    display: flex;
+    align-items: baseline;
+    gap: var(--s3);
+    margin-bottom: var(--s4);
+  }
+
+  .specimen-head h3 {
+    font: 500 18px/1.3 var(--f-text);
+    letter-spacing: -0.005em;
+  }
+
+  .specimen-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+    gap: var(--s6);
+    align-items: start;
+  }
+
+  @media (width <= 720px) {
+    .specimen-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .specimen-plot {
+      max-width: 280px;
+    }
+  }
+
+  .specimen-plot figcaption {
+    margin-top: var(--s2);
+    color: var(--muted);
+  }
+
+  .stage {
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--canvas);
+    padding: 14px;
+  }
+
+  .stage-hit {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    border-radius: var(--r-sm);
+    background-image: linear-gradient(var(--line2), var(--line2));
+    background-size: 100% 1px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+  }
+
+  .puck {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    background: var(--spatial);
+  }
+
+  [data-posture="material"] .puck {
+    background: var(--material);
+  }
+
+  [data-posture="ambient"] .puck {
+    background: var(--ambient);
+  }
+
+  [data-mode="fade"] .puck {
+    width: 100%;
+    opacity: 0;
+  }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s2);
+    margin-top: var(--s3);
+  }
+
+  .scrub {
+    flex: 1 1 140px;
+    display: flex;
+  }
+
+  .scrub input {
+    width: 100%;
+    accent-color: var(--ink);
+  }
+
+  .demo-status {
+    margin-top: var(--s2);
+    min-height: 1.6em;
+  }
+
+  .spec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--s3) var(--s5);
+    margin-top: var(--s4);
+    padding-top: var(--s4);
+    border-top: 1px dashed var(--line);
+  }
+
+  .spec dt {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .spec dd {
+    margin: 0;
+  }
+
+  .spec .selector {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .copy-row {
+    align-items: center;
+    margin-top: var(--s4);
+  }
+</style>

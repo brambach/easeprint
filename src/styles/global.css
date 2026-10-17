@@ -241,9 +241,11 @@ p {
 
 .masthead .wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: var(--s5);
-  height: 56px;
+  gap: var(--s2) var(--s5);
+  min-height: 56px;
+  padding-block: var(--s3);
 }
 
 .brand {
@@ -264,6 +266,7 @@ p {
   margin-left: auto;
   font-size: 14px;
   color: var(--muted);
+  white-space: nowrap;
 }
 
 .masthead nav a {

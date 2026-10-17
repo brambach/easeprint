@@ -1,0 +1,111 @@
+---
+import { plot } from '../lib/plot';
+
+interface Props {
+  timingFunction: string;
+  size?: number;
+  /** CSS colour for the curve. */
+  color?: string;
+  handles?: boolean;
+  /** Adds a progress marker the demo script moves. */
+  marker?: boolean;
+  label: string;
+  class?: string;
+}
+const { timingFunction, size = 240, color = 'var(--ink)', handles = true, marker = false, label, class: cls } = Astro.props;
+const pad = Math.round(size * 0.07);
+const p = plot(timingFunction, { size, pad });
+const [x0, y0] = p.toSvg(0, 0);
+const [x1, y1] = p.toSvg(1, 1);
+const overshoot = p.yMax > 1.001 || p.yMin < -0.001;
+// Handles can sit far outside the curve's range (cubic-bezier(0.34, 4.56, ...)); clip them to the plot and say so.
+const clipId = `plot-clip-${(globalThis.__plotId = ((globalThis as { __plotId?: number }).__plotId ?? 0) + 1)}`;
+const offChart =
+  p.easing.kind === 'cubic'
+    ? [p.easing.bezier[1], p.easing.bezier[3]].filter((y) => y > p.yMax + 0.001 || y < p.yMin - 0.001)
+    : [];
+---
+<svg
+  class:list={['plot', cls]}
+  viewBox={`0 0 ${size} ${size}`}
+  role="img"
+  aria-label={label}
+  data-plot
+  data-size={size}
+  data-pad={pad}
+  data-ymin={p.yMin}
+  data-ymax={p.yMax}
+  style={`--curve: ${color}`}
+>
+  <defs>
+    <clipPath id={clipId}><rect x="0" y="0" width={size} height={size} /></clipPath>
+  </defs>
+  <rect class="plot-frame" x={x0} y={y1} width={x1 - x0} height={y0 - y1} />
+  {overshoot && <line class="plot-guide" x1={x0} y1={y0} x2={x1} y2={y0} />}
+  <line class="plot-diag" x1={x0} y1={y0} x2={x1} y2={y1} />
+  {handles && p.handles && (
+    <g class="plot-handles" aria-hidden="true" clip-path={`url(#${clipId})`}>
+      <line x1={x0} y1={y0} x2={p.handles[0][0]} y2={p.handles[0][1]} />
+      <line x1={x1} y1={y1} x2={p.handles[1][0]} y2={p.handles[1][1]} />
+      <circle cx={p.handles[0][0]} cy={p.handles[0][1]} r={size / 80 + 1.5} />
+      <circle cx={p.handles[1][0]} cy={p.handles[1][1]} r={size / 80 + 1.5} />
+    </g>
+  )}
+  <path class="plot-curve" d={p.d} />
+  {handles && offChart.length > 0 && (
+    <text class="plot-note" x={size - 4} y={11} text-anchor="end" aria-hidden="true">handle y {offChart.join(', ')} off chart</text>
+  )}
+  {marker && <circle class="plot-marker" cx={x0} cy={y0} r={size / 48 + 2} data-marker />}
+</svg>
+
+<style>
+  .plot {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .plot-frame {
+    fill: none;
+    stroke: var(--line2);
+    stroke-width: 1;
+  }
+
+  .plot-guide,
+  .plot-diag {
+    stroke: var(--line2);
+    stroke-width: 1;
+    stroke-dasharray: 3 4;
+  }
+
+  .plot-handles line {
+    stroke: var(--faint);
+    stroke-width: 1;
+  }
+
+  .plot-handles circle {
+    fill: var(--paper);
+    stroke: var(--faint);
+    stroke-width: 1.25;
+  }
+
+  .plot-curve {
+    fill: none;
+    stroke: var(--curve);
+    stroke-width: 2.25;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .plot-note {
+    font: 400 10px var(--f-mono);
+    fill: var(--muted);
+  }
+
+  .plot-marker {
+    fill: var(--curve);
+    stroke: var(--paper);
+    stroke-width: 2;
+  }
+</style>

@@ -1,0 +1,902 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://vercel.com",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:57:59.368Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "no-preference",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://vercel.com/",
+ "scrolledTo": 4320,
+ "hover": {
+  "candidates": {
+   "available": 186,
+   "distinct": 14,
+   "picked": [
+    "div > a#marketing-header-logo",
+    "div > button.group.flex",
+    "div > a.cursor-pointer.outline-offset-4",
+    "div.contents > a.outline-none.m-0",
+    "div.flex.w-full > a.outline-none.m-0",
+    "div > a.outline-none.m-0",
+    "nav.flex.flex-col > a.cursor-pointer.outline-offset-4",
+    "section.grid.grid-cols-1 > a.cursor-pointer.outline-offset-4",
+    "div.flex.flex-col > a.outline-none.m-0",
+    "div.flex.flex-col > button.outline-none.m-0",
+    "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4",
+    "li.list-none > a.cursor-pointer.outline-offset-4",
+    "div.flex.items-center > a.cursor-pointer.outline-offset-4",
+    "span.inline-flex.h-fit > button.relative.flex"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div > a#marketing-header-logo",
+    "covered": false
+   },
+   {
+    "selector": "div > button.group.flex",
+    "covered": false
+   },
+   {
+    "selector": "div > a.cursor-pointer.outline-offset-4",
+    "covered": false
+   },
+   {
+    "selector": "div.contents > a.outline-none.m-0",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.w-full > a.outline-none.m-0",
+    "covered": false
+   },
+   {
+    "selector": "div > a.outline-none.m-0",
+    "covered": false
+   },
+   {
+    "selector": "nav.flex.flex-col > a.cursor-pointer.outline-offset-4",
+    "covered": false
+   },
+   {
+    "selector": "section.grid.grid-cols-1 > a.cursor-pointer.outline-offset-4",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.flex-col > a.outline-none.m-0",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.flex-col > button.outline-none.m-0",
+    "covered": false
+   },
+   {
+    "selector": "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4",
+    "covered": false
+   },
+   {
+    "selector": "li.list-none > a.cursor-pointer.outline-offset-4",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.items-center > a.cursor-pointer.outline-offset-4",
+    "covered": false
+   },
+   {
+    "selector": "span.inline-flex.h-fit > button.relative.flex",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.relative.inline-flex > span.flex.size-6",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.relative.inline-flex > span.flex.size-6",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.relative.inline-flex > span.flex.size-6",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.relative.inline-flex > span.flex.size-6",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.relative.inline-flex > span.flex.size-6",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "span.relative.inline-flex > span.flex.size-6",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-col > button.outline-none.m-0",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.contents > a.outline-none.m-0",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.w-full > a.outline-none.m-0",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-col > a.outline-none.m-0",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "fade-in",
+   "keyframeProperties": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "span.grid.place-items-center > span.col-start-1.row-start-1",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "150ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#home-hero > div.absolute.inset-0",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "150ms",
+   "timingFunction": "linear",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#home-hero > canvas.pointer-events-none.absolute",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-col > button.outline-none.m-0",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > a.outline-none.m-0",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div > a.outline-none.m-0",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.flex-col > button.outline-none.m-0",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.cursor-pointer.outline-offset-4 > div.min-w-0.w-auto",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.cursor-pointer.outline-offset-4 > div.min-w-0.w-auto",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "unhover",
+   "name": "fadeInTooltip",
+   "keyframeProperties": "opacity, pointerEvents",
+   "duration": "0.1s",
+   "timingFunction": "ease-in",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div > div#tooltip-_R_2lb5tr9abqpfivb_",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 1202,
+  "elementsTotal": 1202,
+  "transitionAllElements": 13,
+  "transitions": [
+   {
+    "property": "color",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "outline-color",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "text-decoration-color",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "--tw-gradient-from",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "--tw-gradient-via",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "--tw-gradient-to",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 79,
+    "samples": [
+     "li.text-gray-900.leading-5 > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "outline-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "text-decoration-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "--tw-gradient-from",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "--tw-gradient-via",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "--tw-gradient-to",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 37,
+    "samples": [
+     "details.group.flex > summary.flex.min-h-11",
+     "li > a.cursor-pointer.outline-offset-4",
+     "div.contents > a.cursor-pointer.outline-offset-4"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 12,
+    "samples": [
+     "div.contents > a.outline-none.m-0",
+     "div.contents > button.outline-none.m-0",
+     "div.flex.flex-col > a.outline-none.m-0"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div.flex-1.min-w-0 > header#marketing-header",
+     "div.relative.flex > header.relative.z-10",
+     "div.relative.flex > div.hidden.relative"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "span.relative.inline-flex > span.flex.size-6"
+    ]
+   },
+   {
+    "property": "box-shadow",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "span.relative.inline-flex > span.flex.size-6"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "span.relative.flex > span.absolute.inset-0"
+    ]
+   },
+   {
+    "property": "scale",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "span.relative.flex > span.absolute.inset-0"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.mx-auto.flex > div#logo-branding-menu"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "a.cursor-pointer.outline-offset-4 > div.absolute.inset-0"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.absolute.inset-0 > div.relative.size-full"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "1s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "li.text-gray-900.leading-5 > button#fides-modal-link"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "a.cursor-pointer.outline-offset-4 > div.min-w-0.w-auto"
+    ]
+   },
+   {
+    "property": "width",
+    "duration": "0.25s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.min-w-0 > aside.shrink-0.sticky"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.3, 0.57, 0.07, 0.95)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.inset-0.pointer-events-none > div.min-w-max.transition-opacity"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "marquee",
+    "duration": "40s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "div.flex.overflow-hidden > div.flex.shrink-0"
+    ]
+   },
+   {
+    "name": "fade-in",
+    "duration": "0.2s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span.grid.place-items-center > span.col-start-1.row-start-1"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 2,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Agentic Infrastructure - Vercel",
+  "canvases": 3,
+  "viewportSizedCanvases": 1,
+  "webglContexts": 2,
+  "canvas2dContexts": 4,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 7,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)"
+  ],
+  "documentHeight": 5930
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 262,
+  "stylesheets": 14,
+  "scripts": 149,
+  "failed": 1
+ },
+ "stylesheets": {
+  "files": 14,
+  "bytes": 1084340,
+  "reducedMotionQueries": 30,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "modal-appear",
+   "AMTIxG_xsDisappear",
+   "AMTIxG_smDisappear",
+   "AMTIxG_mdDisappear",
+   "AMTIxG_lgDisappear",
+   "zm99lG_fadeIn",
+   "pFnISG_mount-li",
+   "pFnISG_scroll",
+   "eaE5iq_reveal",
+   "eaE5iq_fluctuate",
+   "knmcua_drawPath",
+   "AEUiAq_float",
+   "disV0a_fadeIn",
+   "FAaERa_glimmer",
+   "soft-fade-in",
+   "show",
+   "hide",
+   "fade-in",
+   "fade-out",
+   "spinner-opacity",
+   "slide-in",
+   "fade-slide-in",
+   "blue-glow",
+   "thinking-loader",
+   "bar-pulse",
+   "logo-carousel",
+   "sandbox-left",
+   "sandbox-right",
+   "sandbox-left-reverse",
+   "sandbox-right-reverse",
+   "blink",
+   "flip-front",
+   "flip-back",
+   "accordion-down",
+   "accordion-up",
+   "marquee",
+   "fadein-inplace",
+   "slideUpFadeIn",
+   "barPulse",
+   "progress-bar",
+   "border-trail",
+   "float-y",
+   "bubble-nudge",
+   "bubble-shimmer",
+   "ping",
+   "pulse",
+   "bounce",
+   "enter",
+   "exit",
+   "loading",
+   "loading-skeleton",
+   "fadeInTooltip",
+   "feedbackAppear",
+   "feedbackFadeIn",
+   "feedbackFadeOut",
+   "fadeOut",
+   "cmdkLoading",
+   "cmdkFadeIn",
+   "cmdkFadeOut",
+   "cmdkScaleIn",
+   "cmdkScaleOut",
+   "qCxnUW_blink",
+   "eLF4NW_translate",
+   "AvhdMG_postcard-entry",
+   "EGTWIa_save-the-date-draw",
+   "tB4k2a_loading",
+   "ZhFleW_fade",
+   "_9BHB5W_fade",
+   "mfdgma_pop",
+   "mfdgma_pulse",
+   "GR3F8q_gateway-glow-pulse",
+   "Ybl_QW_blastIn"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0.5, 0.25, 0.35, 1)": 1,
+   "cubic-bezier(0.645, 0.045, 0.355, 1)": 2,
+   "cubic-bezier(0.25, 0.57, 0.45, 0.94)": 4,
+   "cubic-bezier(0.33, 0.01, 0.63, 1.01)": 3,
+   "cubic-bezier(0.65, 0, 0.35, 1)": 1,
+   "cubic-bezier(0.4, 0, 1, 1)": 1,
+   "cubic-bezier(0, 0, 0.2, 1)": 7,
+   "cubic-bezier(0.4, 0, 0.2, 1)": 11,
+   "cubic-bezier(0.4, 0, 0.6, 1)": 1,
+   "cubic-bezier(0.16, 1, 0.3, 1)": 6,
+   "cubic-bezier(0.455, 0.03, 0.515, 0.955)": 6,
+   "cubic-bezier(0.4, 0.04, 0.04, 1)": 5,
+   "cubic-bezier(0.6, 0.3, 0.98, 0.5)": 2,
+   "cubic-bezier(0.1, 0, 0.1, 1.1)": 2,
+   "cubic-bezier(0.3, 0, 0.1, 1.05)": 2,
+   "cubic-bezier(0.5, 0, 0.1, 1.2)": 2,
+   "cubic-bezier(0.22, 1, 0.36, 1)": 3,
+   "cubic-bezier(0.23, 1, 0.32, 1)": 2,
+   "cubic-bezier(0.25, 1, 0.5, 1)": 2,
+   "cubic-bezier(0.32, 0.72, 0, 1)": 4,
+   "cubic-bezier(0.3, 0.57, 0.07, 0.95)": 2,
+   "cubic-bezier(0.25, 0.75, 0.6, 0.98)": 2,
+   "cubic-bezier(0.29, 0.31, 0.05, 0.96)": 2,
+   "cubic-bezier(0.2, -0.5, 0, 1.5)": 1,
+   "cubic-bezier(0.77, 0, 0.175, 1)": 1,
+   "cubic-bezier(0.175, 0.885, 0.32, 1.1)": 1,
+   "cubic-bezier(0.8, 0, 1, 1)": 1
+  }
+ },
+ "scripts": {
+  "files": 149,
+  "bytes": 11866109,
+  "reducedMotionMentions": 33,
+  "libraries": {
+   "framerMotion": true,
+   "springPhysics": true,
+   "three": true,
+   "rive": true,
+   "lottie": true
+  }
+ },
+ "elapsedMs": 113446
+}

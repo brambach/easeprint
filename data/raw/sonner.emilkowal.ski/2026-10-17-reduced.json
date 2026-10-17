@@ -1,0 +1,409 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://sonner.emilkowal.ski",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:55:12.803Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "reduce",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://sonner.emilkowal.ski/",
+ "scrolledTo": 1797,
+ "hover": {
+  "candidates": {
+   "available": 36,
+   "distinct": 10,
+   "picked": [
+    "p > a.font-medium.underline",
+    "div.relative.mx-auto > button.ml-2.h-7",
+    "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+    "div.hero_buttons__WlsdS > a.hero_button__qYlMs",
+    "div.hero_wrapper__dZUsS > a.hero_link__YsoSH",
+    "code.installation_code__y4bNo > button.installation_copy__jLkfy",
+    "div.buttons > button.button",
+    "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N",
+    "div > a.mt-6.inline-flex",
+    "span > a"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "p > a.font-medium.underline",
+    "covered": true
+   },
+   {
+    "selector": "div.relative.mx-auto > button.ml-2.h-7",
+    "covered": true
+   },
+   {
+    "selector": "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+    "covered": false
+   },
+   {
+    "selector": "div.hero_buttons__WlsdS > a.hero_button__qYlMs",
+    "covered": false
+   },
+   {
+    "selector": "div.hero_wrapper__dZUsS > a.hero_link__YsoSH",
+    "covered": false
+   },
+   {
+    "selector": "code.installation_code__y4bNo > button.installation_copy__jLkfy",
+    "covered": false
+   },
+   {
+    "selector": "div.buttons > button.button",
+    "covered": false
+   },
+   {
+    "selector": "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N",
+    "covered": false
+   },
+   {
+    "selector": "div > a.mt-6.inline-flex",
+    "covered": false
+   },
+   {
+    "selector": "span > a",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "border-color",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.buttons > button.button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-bottom-color",
+   "declaredProperty": "border-color",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.buttons > button.button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-left-color",
+   "declaredProperty": "border-color",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.buttons > button.button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-right-color",
+   "declaredProperty": "border-color",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.buttons > button.button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "border-top-color",
+   "declaredProperty": "border-color",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.buttons > button.button",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "box-shadow",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "box-shadow",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.hero_buttons__WlsdS > a.hero_button__qYlMs::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.hero_buttons__WlsdS > a.hero_button__qYlMs::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "text-decoration-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.mt-6.inline-flex > span.underline.decoration-gray-300",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "text-decoration-color",
+   "declaredProperty": "all",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "a.mt-6.inline-flex > span.underline.decoration-gray-300",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 314,
+  "elementsTotal": 314,
+  "transitionAllElements": 2,
+  "transitions": [
+   {
+    "property": "box-shadow",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 30,
+    "samples": [
+     "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+     "div.hero_buttons__WlsdS > a.hero_button__qYlMs",
+     "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 30,
+    "samples": [
+     "div.hero_buttons__WlsdS > button.hero_button__qYlMs",
+     "div.hero_buttons__WlsdS > a.hero_button__qYlMs",
+     "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 23,
+    "samples": [
+     "div.buttons > button.button"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "div.code-block_outerWrapper__nx8W3 > button.code-block_copyButton___ka9N"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "div.relative.mx-auto > button.ml-2.h-7",
+     "a.mt-6.inline-flex > span.underline.decoration-gray-300"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "div.hero_buttons__WlsdS > button.hero_button__qYlMs::after",
+     "div.hero_buttons__WlsdS > a.hero_button__qYlMs::after"
+    ]
+   }
+  ],
+  "animations": []
+ },
+ "inlineSheets": {
+  "sheets": 2,
+  "reducedMotionRules": 1,
+  "transitionAll": [],
+  "keyframes": [
+   "swipe-out-left",
+   "swipe-out-right",
+   "swipe-out-up",
+   "swipe-out-down",
+   "sonner-fade-in",
+   "sonner-fade-out",
+   "sonner-spin",
+   "fadeIn",
+   "fadeOut",
+   "slideFromBottom",
+   "slideToBottom",
+   "slideFromTop",
+   "slideToTop",
+   "slideFromLeft",
+   "slideToLeft",
+   "slideFromRight",
+   "slideToRight"
+  ],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Sonner",
+  "canvases": 0,
+  "viewportSizedCanvases": 0,
+  "webglContexts": 0,
+  "canvas2dContexts": 0,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 1,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion)"
+  ],
+  "documentHeight": 2697
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 23,
+  "stylesheets": 2,
+  "scripts": 16,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 2,
+  "bytes": 34824,
+  "reducedMotionQueries": 0,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [],
+  "cubicBeziers": {
+   "cubic-bezier(0.4, 0, 0.2, 1)": 4
+  }
+ },
+ "scripts": {
+  "files": 16,
+  "bytes": 800938,
+  "reducedMotionMentions": 2,
+  "libraries": {
+   "framerMotion": true,
+   "springPhysics": true
+  }
+ },
+ "elapsedMs": 23984
+}

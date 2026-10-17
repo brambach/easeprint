@@ -42,6 +42,7 @@ describe('pnpm measure', () => {
 
   it('records the hover transition with its exact computed values', () => {
     const hit = findInRaw(raw, {
+      kind: 'transition',
       timingFunction: 'cubic-bezier(0.19, 1, 0.22, 1)',
       duration: '0.9s',
       phase: 'hover',

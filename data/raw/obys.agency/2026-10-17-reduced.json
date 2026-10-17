@@ -1,0 +1,567 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://obys.agency",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:54:37.462Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "reduce",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://obys.agency/",
+ "scrolledTo": 0,
+ "hover": {
+  "candidates": {
+   "available": 198,
+   "distinct": 11,
+   "picked": [
+    "div > a.r",
+    "div > a",
+    "div.ho-wo-2-li > a.ho-wo-2-img.r",
+    "div#ho-wo-mo > button#ho-wo-mo-0",
+    "div#ho-wo-mo > button#ho-wo-mo-1",
+    "div#ho-wo-mo > button#ho-wo-mo-2",
+    "div#fx-co > a#fix-co-em",
+    "header#header > a#header-title",
+    "div#header-menu > a.is-on",
+    "div#header-menu > a",
+    "div#header-contact_ > button#header-contact"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div > a.r",
+    "covered": true
+   },
+   {
+    "selector": "div > a",
+    "covered": true
+   },
+   {
+    "selector": "div.ho-wo-2-li > a.ho-wo-2-img.r",
+    "covered": true
+   },
+   {
+    "selector": "div#ho-wo-mo > button#ho-wo-mo-0",
+    "covered": false
+   },
+   {
+    "selector": "div#ho-wo-mo > button#ho-wo-mo-1",
+    "covered": false
+   },
+   {
+    "selector": "div#ho-wo-mo > button#ho-wo-mo-2",
+    "covered": false
+   },
+   {
+    "selector": "div#fx-co > a#fix-co-em",
+    "covered": false
+   },
+   {
+    "selector": "header#header > a#header-title",
+    "covered": false
+   },
+   {
+    "selector": "div#header-menu > a.is-on",
+    "covered": false
+   },
+   {
+    "selector": "div#header-menu > a",
+    "covered": false
+   },
+   {
+    "selector": "div#header-contact_ > button#header-contact",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "figure.ho-wo-2-r > img",
+   "count": 38
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "3.5s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "div#prg > div",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.4s",
+   "timingFunction": "ease-out",
+   "delay": "0s",
+   "selector": "div#logo",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.76, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div#prg_ > div#prg",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "div#ho-wo-mo > button#ho-wo-mo-0::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+   "delay": "0s",
+   "selector": "a.is-on > span::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "svg > g#logo-r",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "svg > g#logo-l",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "svg > path",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "60ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "svg > path",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "120ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "svg > path",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "180ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "svg > path",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "240ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "svg > path",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "300ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#header-menu > a.is-on",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "360ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#header-menu > a",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "420ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#header-time > span",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "480ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#header-contact_ > button#header-contact",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "540ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#ho-wo-mo > button#ho-wo-mo-0",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "600ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#ho-wo-mo > button#ho-wo-mo-1",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "660ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div#ho-wo-mo > button#ho-wo-mo-2",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "hover",
+   "property": "transform",
+   "duration": "1600ms",
+   "timingFunction": "linear(0 0%, 0.1294 2%, 0.2421 4%, 0.3402 6%, 0.4257 8%, 0.5 10%, 0.5647 12%, 0.6211 14%, 0.6701 16%, 0.7128 18%, 0.75 20%, 0.7824 22%, 0.8105 24%, 0.8351 26%, 0.8564 28%, 0.875 30%, 0.8912 32%, 0.9053 34%, 0.9175 36%, 0.9282 38%, 0.9375 40%, 0.9456 42%, 0.9526 44%, 0.9588 46%, 0.9641 48%, 0.9688 50%, 0.9728 52%, 0.9763 54%, 0.9794 56%, 0.9821 58%, 0.9844 60%, 0.9864 62%, 0.9882 64%, 0.9897 66%, 0.991 68%, 0.9922 70%, 0.9932 72%, 0.9941 74%, 0.9948 76%, 0.9955 78%, 0.9961 80%, 0.9966 82%, 0.997 84%, 0.9974 86%, 0.9978 88%, 0.998 90%, 0.9983 92%, 0.9985 94%, 0.9987 96%, 0.9989 98%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "720ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "span.ln_ > span.ln",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "a#fix-co-em > div.l",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "delay": "0s",
+   "selector": "a#fix-co-em > div.l",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+   "delay": "0s",
+   "selector": "a > span::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+   "delay": "0s",
+   "selector": "a > span::before",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 1554,
+  "elementsTotal": 1554,
+  "transitionAllElements": 0,
+  "transitions": [
+   {
+    "property": "clip-path",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 38,
+    "samples": [
+     "div.ho-wo-2-hv > figure.ho-wo-2-r"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "1.6s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 38,
+    "samples": [
+     "figure.ho-wo-2-r > img"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "div#ho-wo-mo > button#ho-wo-mo-0::before",
+     "div#ho-wo-mo > button#ho-wo-mo-1::before",
+     "div#ho-wo-mo > button#ho-wo-mo-2::before"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "a.is-on > span::before",
+     "a > span::before"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "svg > g#logo-r",
+     "svg > g#logo-l"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "a#fix-co-em > div.l"
+    ]
+   },
+   {
+    "property": "max-width",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "header#header > a#header-title"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.4s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div#logo"
+    ]
+   },
+   {
+    "property": "width",
+    "duration": "1.6s",
+    "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div#logo > svg"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.76, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div#prg_ > div#prg"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "3.5s",
+    "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div#prg > div"
+    ]
+   }
+  ],
+  "animations": []
+ },
+ "inlineSheets": {
+  "sheets": 1,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Obys Agency",
+  "canvases": 1,
+  "viewportSizedCanvases": 1,
+  "webglContexts": 1,
+  "canvas2dContexts": 0,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 0,
+  "reducedMotionQueries": [],
+  "documentHeight": 900
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 28,
+  "stylesheets": 1,
+  "scripts": 2,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 1,
+  "bytes": 14804,
+  "reducedMotionQueries": 0,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [],
+  "cubicBeziers": {
+   "cubic-bezier(0.19, 1, 0.22, 1)": 3,
+   "cubic-bezier(0.16, 1, 0.3, 1)": 11
+  }
+ },
+ "scripts": {
+  "files": 2,
+  "bytes": 655362,
+  "reducedMotionMentions": 0,
+  "libraries": {
+   "springPhysics": true
+  }
+ },
+ "elapsedMs": 27401
+}

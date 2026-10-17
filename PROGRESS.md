@@ -61,3 +61,22 @@ Evidence:
 Findings so far: neither site honors reduced motion for the CSS motion measured. Cuberto still runs 91% of its
 movement events with it on, Raycast 95% (Raycast ships 12 reduced-motion queries; they don't touch these
 transitions). Honesty notes are computed from raw files (`src/lib/honesty.ts`), not typed.
+
+## M3 Curve plot, demo, copy
+
+Each tier renders as a specimen: an SVG plot (`src/components/CurvePlot.astro`, geometry in `src/lib/plot.ts`)
+with bezier handles (clipped, and labelled when a handle sits off chart, as Cuberto's y = 4.56 does), a demo
+track our own element runs on with WAAPI using the measured timing string, Replay, Slow-mo 10% (duration x10),
+a scrubber, and copy buttons for the exact `transition` value or custom properties. The plot's marker follows the
+demo. With reduced motion on, clicks jump between start and end, nothing animates, and a note says so. Each
+entry links its raw files, served unchanged at `/raw/<site>/<file>`.
+
+- `tests/unit/plot.test.ts`: every plotted point, read back into curve space, matches `bezier-easing` within
+  SVG rounding, for 7 curves including two with overshoot. Steps draw as risers and treads.
+- `tests/unit/copy.test.ts`: the copy strings.
+- `tests/e2e/demo.spec.ts` (desktop and mobile Chromium, 10 passed): the copy button puts
+  `transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);` on the clipboard exactly, and the custom-property
+  pair; the demo passes through intermediate positions; Slow-mo sets the animation to 12000ms; with
+  `reducedMotion: 'reduce'` a click produces no running animation and one constant transform.
+- Screenshots: `evidence/m3-entry-cuberto-desktop.png` (full page), `evidence/m3-entry-raycast-mobile.png`.
+- `pnpm test`: 72 passed.

@@ -1,0 +1,219 @@
+---
+import Base from '../../layouts/Base.astro';
+import Specimen from '../../components/Specimen.astro';
+import { loadEntries, rawHref, type EntryWithHonesty } from '../../lib/entries';
+
+export async function getStaticPaths() {
+  const entries = await loadEntries();
+  return entries.map((entry, i) => ({
+    params: { slug: entry.id },
+    props: { entry, prev: entries[i - 1] ?? null, next: entries[i + 1] ?? null },
+  }));
+}
+
+interface Props {
+  entry: EntryWithHonesty;
+  prev: EntryWithHonesty | null;
+  next: EntryWithHonesty | null;
+}
+const { entry, prev, next } = Astro.props;
+const e = entry.data;
+const h = entry.honesty;
+const verdict: Record<string, string> = {
+  honored: 'Honored',
+  partial: 'Partly honored',
+  'not-honored': 'Not honored',
+  unknown: 'Unknown',
+};
+const allUsed = h.transitionAllElements > 0 || h.transitionAllDeclarations > 0;
+const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+---
+<Base title={e.name} description={e.summary}>
+  <article class="wrap entry">
+    <header class="entry-head">
+      <p class="tags">
+        <span class="tag" data-posture={e.posture}><i></i>{e.posture}{e.ambientKind ? `, ${e.ambientKind}` : ''}</span>
+        <span class="tag" data-status={e.status}>{e.status}</span>
+      </p>
+      <h1 class="display">{e.name}</h1>
+      <p class="entry-meta value">
+        <a href={e.url} rel="noopener external">{e.site}</a>
+        <span>captured {e.captured}</span>
+        <a href={rawHref(e.raw)}>raw file</a>
+        {e.rawReduced && <a href={rawHref(e.rawReduced)}>reduced-motion run</a>}
+      </p>
+      <p class="lede">{e.summary}</p>
+      {e.statusReason && <p class="status-reason">{e.statusReason}</p>}
+    </header>
+
+    {e.tiers.length > 0 && (
+      <section aria-labelledby="tiers">
+        <h2 class="h2 section-title" id="tiers">Tiers</h2>
+        <p class="fine section-note">Each curve was read from the browser while visiting {e.site}. The demo is our own element running the same timing.</p>
+        {e.tiers.map((tier, i) => <Specimen tier={tier} posture={e.posture} id={`${i + 1}-${slug(tier.label)}`} />)}
+      </section>
+    )}
+
+    <section aria-labelledby="honest" class="honest">
+      <h2 class="h2 section-title" id="honest">Honest notes</h2>
+      <dl class="facts">
+        <div>
+          <dt>Reduced motion</dt>
+          <dd>
+            <strong data-verdict={h.reducedMotion}>{verdict[h.reducedMotion]}</strong>
+            <p class="fine">{h.reducedMotionEvidence}</p>
+          </dd>
+        </div>
+        <div>
+          <dt><code>transition: all</code></dt>
+          <dd>
+            <strong>{allUsed ? 'Used' : 'Not seen'}</strong>
+            <p class="fine">{h.transitionAllElements} {h.transitionAllElements === 1 ? 'element' : 'elements'} computed <code>transition-property: all</code> at the end of the visit. {h.transitionAllDeclarations} {h.transitionAllDeclarations === 1 ? 'declaration' : 'declarations'} in the CSS the page loaded.</p>
+          </dd>
+        </div>
+        <div>
+          <dt>Motion in JavaScript</dt>
+          <dd>
+            <strong>{h.motionInJs ? 'Yes' : 'None seen'}</strong>
+            <p class="fine">{h.jsLibraries.length ? `Scripts include ${h.jsLibraries.join(', ')}.` : 'No motion library fingerprints in the scripts.'} Motion run on requestAnimationFrame isn't readable from styles, so it isn't in the tiers.</p>
+          </dd>
+        </div>
+        <div>
+          <dt>Canvas</dt>
+          <dd>
+            <strong>{h.motionInCanvas ? 'Motion lives in canvas' : 'No viewport-sized WebGL canvas'}</strong>
+            <p class="fine">{h.motionInCanvas ? 'A WebGL canvas covers at least a quarter of the viewport. What it draws is out of scope here.' : 'Nothing here was hidden in a canvas.'}</p>
+          </dd>
+        </div>
+        <div>
+          <dt>Coverage</dt>
+          <dd>
+            <strong>One load, {h.hovered} elements hovered</strong>
+            <p class="fine">Scrolled to the bottom with the mouse wheel, hovered and left a spread sample of links and buttons. Menus, clicks, forms and other pages weren't visited.</p>
+          </dd>
+        </div>
+      </dl>
+      {e.honestyNote && <p class="note">{e.honestyNote}</p>}
+    </section>
+
+    {e.notes.length > 0 && (
+      <section aria-labelledby="notes">
+        <h2 class="h2 section-title" id="notes">Notes</h2>
+        <ul class="notes">{e.notes.map((n) => <li>{n}</li>)}</ul>
+      </section>
+    )}
+
+    {e.fromNotes.length > 0 && (
+      <section aria-labelledby="from-notes">
+        <h2 class="h2 section-title" id="from-notes">From notes</h2>
+        <p class="fine section-note">Values from Bryce's own notes, kept apart from the measurement. Dated as written.</p>
+        <ul class="notes">
+          {e.fromNotes.map((n) => (
+            <li>
+              <span class="value">{n.date}</span> {n.label}: {n.timingFunction && <code>{n.timingFunction}</code>} {n.duration && <code>{n.duration}</code>} {n.text}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <nav class="pager" aria-label="Entries">
+      {prev ? <a href={`/entries/${prev.id}/`} rel="prev">&larr; {prev.data.name}</a> : <span></span>}
+      {next ? <a href={`/entries/${next.id}/`} rel="next">{next.data.name} &rarr;</a> : <span></span>}
+    </nav>
+  </article>
+</Base>
+
+<script>
+  import '../../scripts/demo';
+  import '../../scripts/copy';
+</script>
+
+<style>
+  .entry-head {
+    padding-block: var(--s8) var(--s6);
+  }
+
+  .tags {
+    display: flex;
+    gap: var(--s2);
+    margin-bottom: var(--s5);
+  }
+
+  .entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s2) var(--s5);
+    margin-block: var(--s4) var(--s5);
+    color: var(--muted);
+  }
+
+  .status-reason {
+    margin-top: var(--s4);
+    padding: var(--s3) var(--s4);
+    border: 1px dashed var(--line2);
+    border-radius: var(--r);
+    max-width: 44em;
+  }
+
+  .section-title {
+    margin-top: var(--s8);
+  }
+
+  .section-note {
+    margin-block: var(--s2) var(--s4);
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--s5) var(--s6);
+    margin-top: var(--s5);
+    padding-top: var(--s5);
+    border-top: 1px solid var(--line);
+  }
+
+  .facts dt {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: var(--s1);
+  }
+
+  .facts dd {
+    margin: 0;
+  }
+
+  .facts strong {
+    font-weight: 600;
+  }
+
+  .facts p {
+    margin-top: var(--s1);
+  }
+
+  .note {
+    margin-top: var(--s5);
+    max-width: 44em;
+    color: var(--ink2);
+  }
+
+  .notes {
+    margin-top: var(--s4);
+    max-width: 44em;
+    display: grid;
+    gap: var(--s3);
+  }
+
+  .notes li {
+    padding-left: var(--s4);
+    border-left: 1px solid var(--line2);
+  }
+
+  .pager {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--s8);
+    padding-top: var(--s5);
+    border-top: 1px solid var(--line);
+  }
+</style>

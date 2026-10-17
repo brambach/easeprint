@@ -1,0 +1,3571 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://linear.app",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:56:13.381Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "reduce",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://linear.app/",
+ "scrolledTo": 9060,
+ "hover": {
+  "candidates": {
+   "available": 182,
+   "distinct": 49,
+   "picked": [
+    "div > a.TZTsQG_logoLink.I_mUeq_root",
+    "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+    "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+    "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+    "div.QI8oKG_descriptionContainer.ImRUSq_root > a.hide-tablet.QI8oKG_newFeatureLink",
+    "div.ImRUSq_root > button.Mmx1Wq_searchButton",
+    "div.ImRUSq_root > button.Mmx1Wq_newIssueButton",
+    "div > button.Mmx1Wq_navItem.Mmx1Wq_collapsible",
+    "div.ImRUSq_root > button._1uFtza_navButton",
+    "div.ImRUSq_root.ImRUSq_align-center > button._1uFtza_pillButton",
+    "div.KFZpfa_body.KFZpfa_contentColumn > div.KFZpfa_commentCard.Fzcv4W_edgeHighlightRing",
+    "div.KFZpfa_body.KFZpfa_contentColumn > div.KFZpfa_connectedCard.Fzcv4W_edgeHighlightRing",
+    "div.uPPvIq_cardWrap > div.uPPvIq_card.wMQZWG_card",
+    "div._7bwwmq_root._7bwwmq_homepage > a.MR81zG_logosLink.I_mUeq_root",
+    "div.b-30Va_actionWrapper > a.qqCMlG_root.I_mUeq_root",
+    "div.ImRUSq_root.ImRUSq_column > div._5k-xcq_card.qM9FAa_issue",
+    "div.qM9FAa_toolbar.ImRUSq_root > button.qM9FAa_attachmentButton",
+    "div.qM9FAa_toolbar.ImRUSq_root > button.qM9FAa_iconButton",
+    "div.qM9FAa_sendButtonGroup > button.qM9FAa_sendButton",
+    "div.M31rWW_ingredient > button.M31rWW_ingredientButton",
+    "div.M31rWW_ingredient.M31rWW_unevenIngredient > button.M31rWW_ingredientButton",
+    "div.uPPvIq_cardWrap > div.uPPvIq_card.kAD07W_card",
+    "div.uPPvIq_cardWrap > div.uPPvIq_card.sIPoMW_card",
+    "div.m-yS4G_wrapper > button#base-ui-_r_5q_",
+    "div.Fzcv4W_inset.Fzcv4W_insetLarge > a.qqCMlG_root.I_mUeq_root",
+    "section#customers > div.Dc5tqa_customerCards",
+    "div.Dc5tqa_customerCards > a.Dc5tqa_customerCard.Dc5tqa_secondary",
+    "div.ImRUSq_root > a.S36ykG_root.S36ykG_variant-invert",
+    "div.ImRUSq_root > a.S36ykG_root.S36ykG_variant-secondary",
+    "li.Jmh1Wq_sectionItem > a.Jmh1Wq_sectionLink.I_mUeq_root"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div > a.TZTsQG_logoLink.I_mUeq_root",
+    "covered": false
+   },
+   {
+    "selector": "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+    "covered": false
+   },
+   {
+    "selector": "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+    "covered": false
+   },
+   {
+    "selector": "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+    "covered": false
+   },
+   {
+    "selector": "div.QI8oKG_descriptionContainer.ImRUSq_root > a.hide-tablet.QI8oKG_newFeatureLink",
+    "covered": false
+   },
+   {
+    "selector": "div.ImRUSq_root > button.Mmx1Wq_searchButton",
+    "covered": false
+   },
+   {
+    "selector": "div.ImRUSq_root > button.Mmx1Wq_newIssueButton",
+    "covered": false
+   },
+   {
+    "selector": "div > button.Mmx1Wq_navItem.Mmx1Wq_collapsible",
+    "covered": false
+   },
+   {
+    "selector": "div.ImRUSq_root > button._1uFtza_navButton",
+    "covered": false
+   },
+   {
+    "selector": "div.ImRUSq_root.ImRUSq_align-center > button._1uFtza_pillButton",
+    "covered": false
+   },
+   {
+    "selector": "div.KFZpfa_body.KFZpfa_contentColumn > div.KFZpfa_commentCard.Fzcv4W_edgeHighlightRing",
+    "covered": false
+   },
+   {
+    "selector": "div.KFZpfa_body.KFZpfa_contentColumn > div.KFZpfa_connectedCard.Fzcv4W_edgeHighlightRing",
+    "covered": false
+   },
+   {
+    "selector": "div.uPPvIq_cardWrap > div.uPPvIq_card.wMQZWG_card",
+    "covered": false
+   },
+   {
+    "selector": "div._7bwwmq_root._7bwwmq_homepage > a.MR81zG_logosLink.I_mUeq_root",
+    "covered": false
+   },
+   {
+    "selector": "div.b-30Va_actionWrapper > a.qqCMlG_root.I_mUeq_root",
+    "covered": false
+   },
+   {
+    "selector": "div.ImRUSq_root.ImRUSq_column > div._5k-xcq_card.qM9FAa_issue",
+    "covered": true
+   },
+   {
+    "selector": "div.qM9FAa_toolbar.ImRUSq_root > button.qM9FAa_attachmentButton",
+    "covered": false
+   },
+   {
+    "selector": "div.qM9FAa_toolbar.ImRUSq_root > button.qM9FAa_iconButton",
+    "covered": false
+   },
+   {
+    "selector": "div.qM9FAa_sendButtonGroup > button.qM9FAa_sendButton",
+    "covered": false
+   },
+   {
+    "selector": "div.M31rWW_ingredient > button.M31rWW_ingredientButton",
+    "covered": false
+   },
+   {
+    "selector": "div.M31rWW_ingredient.M31rWW_unevenIngredient > button.M31rWW_ingredientButton",
+    "covered": false
+   },
+   {
+    "selector": "div.uPPvIq_cardWrap > div.uPPvIq_card.kAD07W_card",
+    "covered": false
+   },
+   {
+    "selector": "div.uPPvIq_cardWrap > div.uPPvIq_card.sIPoMW_card",
+    "covered": false
+   },
+   {
+    "selector": "div.m-yS4G_wrapper > button#base-ui-_r_5q_",
+    "covered": false
+   },
+   {
+    "selector": "div.Fzcv4W_inset.Fzcv4W_insetLarge > a.qqCMlG_root.I_mUeq_root",
+    "covered": false
+   },
+   {
+    "selector": "section#customers > div.Dc5tqa_customerCards",
+    "covered": false
+   },
+   {
+    "selector": "div.Dc5tqa_customerCards > a.Dc5tqa_customerCard.Dc5tqa_secondary",
+    "covered": false
+   },
+   {
+    "selector": "div.ImRUSq_root > a.S36ykG_root.S36ykG_variant-invert",
+    "covered": false
+   },
+   {
+    "selector": "div.ImRUSq_root > a.S36ykG_root.S36ykG_variant-secondary",
+    "covered": false
+   },
+   {
+    "selector": "li.Jmh1Wq_sectionItem > a.Jmh1Wq_sectionLink.I_mUeq_root",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear(0 0%, 0.0411 3.4482758620689653%, 0.1342 6.896551724137931%, 0.2478 10.344827586206897%, 0.3638 13.793103448275863%, 0.4725 17.24137931034483%, 0.5692 20.689655172413794%, 0.6524 24.137931034482758%, 0.7222 27.586206896551722%, 0.7798 31.034482758620687%, 0.8267 34.48275862068965%, 0.8644 37.93103448275862%, 0.8944 41.37931034482759%, 0.9181 44.827586206896555%, 0.9367 48.27586206896552%, 0.9513 51.72413793103449%, 0.9626 55.17241379310346%, 0.9714 58.62068965517243%, 0.9782 62.068965517241395%, 0.9834 65.51724137931036%, 0.9874 68.96551724137933%, 0.9904 72.4137931034483%, 0.9927 75.86206896551727%, 0.9945 79.31034482758623%, 0.9959 82.7586206896552%, 0.9969 86.20689655172416%, 0.9976 89.65517241379311%, 0.9982 93.10344827586208%, 0.9987 96.55172413793105%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.q1lnWq_turn > div",
+   "count": 7
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "filter",
+   "duration": "300ms",
+   "timingFunction": "linear(0 0%, 0.0411 3.4482758620689653%, 0.1342 6.896551724137931%, 0.2478 10.344827586206897%, 0.3638 13.793103448275863%, 0.4725 17.24137931034483%, 0.5692 20.689655172413794%, 0.6524 24.137931034482758%, 0.7222 27.586206896551722%, 0.7798 31.034482758620687%, 0.8267 34.48275862068965%, 0.8644 37.93103448275862%, 0.8944 41.37931034482759%, 0.9181 44.827586206896555%, 0.9367 48.27586206896552%, 0.9513 51.72413793103449%, 0.9626 55.17241379310346%, 0.9714 58.62068965517243%, 0.9782 62.068965517241395%, 0.9834 65.51724137931036%, 0.9874 68.96551724137933%, 0.9904 72.4137931034483%, 0.9927 75.86206896551727%, 0.9945 79.31034482758623%, 0.9959 82.7586206896552%, 0.9969 86.20689655172416%, 0.9976 89.65517241379311%, 0.9982 93.10344827586208%, 0.9987 96.55172413793105%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.q1lnWq_turn > div",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.Dc5tqa_customerCards > a.Dc5tqa_customerCard.Dc5tqa_primary",
+   "count": 5
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.Dc5tqa_customerCards > a.Dc5tqa_customerCard.Dc5tqa_primary",
+   "count": 4
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear(0 0%, 0.0411 3.4482758620689653%, 0.1342 6.896551724137931%, 0.2478 10.344827586206897%, 0.3638 13.793103448275863%, 0.4725 17.24137931034483%, 0.5692 20.689655172413794%, 0.6524 24.137931034482758%, 0.7222 27.586206896551722%, 0.7798 31.034482758620687%, 0.8267 34.48275862068965%, 0.8644 37.93103448275862%, 0.8944 41.37931034482759%, 0.9181 44.827586206896555%, 0.9367 48.27586206896552%, 0.9513 51.72413793103449%, 0.9626 55.17241379310346%, 0.9714 58.62068965517243%, 0.9782 62.068965517241395%, 0.9834 65.51724137931036%, 0.9874 68.96551724137933%, 0.9904 72.4137931034483%, 0.9927 75.86206896551727%, 0.9945 79.31034482758623%, 0.9959 82.7586206896552%, 0.9969 86.20689655172416%, 0.9976 89.65517241379311%, 0.9982 93.10344827586208%, 0.9987 96.55172413793105%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.q1lnWq_turn > div",
+   "count": 3
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "filter",
+   "duration": "300ms",
+   "timingFunction": "linear(0 0%, 0.0411 3.4482758620689653%, 0.1342 6.896551724137931%, 0.2478 10.344827586206897%, 0.3638 13.793103448275863%, 0.4725 17.24137931034483%, 0.5692 20.689655172413794%, 0.6524 24.137931034482758%, 0.7222 27.586206896551722%, 0.7798 31.034482758620687%, 0.8267 34.48275862068965%, 0.8644 37.93103448275862%, 0.8944 41.37931034482759%, 0.9181 44.827586206896555%, 0.9367 48.27586206896552%, 0.9513 51.72413793103449%, 0.9626 55.17241379310346%, 0.9714 58.62068965517243%, 0.9782 62.068965517241395%, 0.9834 65.51724137931036%, 0.9874 68.96551724137933%, 0.9904 72.4137931034483%, 0.9927 75.86206896551727%, 0.9945 79.31034482758623%, 0.9959 82.7586206896552%, 0.9969 86.20689655172416%, 0.9976 89.65517241379311%, 0.9982 93.10344827586208%, 0.9987 96.55172413793105%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.q1lnWq_turn > div",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li.Jmh1Wq_sectionItem > a.Jmh1Wq_sectionLink.I_mUeq_root",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li.Jmh1Wq_sectionItem > a.Jmh1Wq_sectionLink.I_mUeq_root",
+   "count": 3
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-0-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-0-0-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-1-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-0-1-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-2-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-0-2-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-3-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-0-3-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-4-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-0-4-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-0-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-1-0-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-1-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-1-1-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-2-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-1-2-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-3-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-1-3-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-4-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-1-4-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-0-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-2-0-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-1-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-2-1-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-2-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-2-2-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-3-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-2-3-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-4-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-2-4-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-0-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-3-0-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-1-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-3-1-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-2-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-3-2-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-3-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-3-3-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-4-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-3-4-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-0-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-4-0-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-1-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-4-1-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-2-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-4-2-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-3-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-4-3-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-4-upDown",
+   "keyframeProperties": "opacity",
+   "duration": "2.8s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader > circle.grid-dot-4-4-upDown",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-0-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-0-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-1-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-1-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-2-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-2-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-3-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-3-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-4-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-4-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-0-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-0-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-1-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-1-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-2-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-2-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-3-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-3-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-4-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-4-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-0-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-0-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-1-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-1-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-2-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-2-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-3-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-3-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-4-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-4-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-0-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-0-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-1-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-1-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-2-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-2-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-3-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-3-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-4-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-4-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-0-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-0-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-1-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-1-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-2-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-2-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-3-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-3-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-4-pong",
+   "keyframeProperties": "opacity",
+   "duration": "1.6s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-4-pong",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-0-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-1-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-2-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-3-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-0-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-4-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-0-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-1-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-2-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-3-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-1-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-4-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-0-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-1-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-2-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-3-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-2-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-4-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-0-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-1-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-2-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-3-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-3-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-4-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-0-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-1-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-2-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-3-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "grid-dot-4-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-4-agent",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "qM9FAa_cursorBlink",
+   "keyframeProperties": "opacity",
+   "duration": "1.25s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.ImRUSq_root.ImRUSq_align-center > div.qM9FAa_cursor",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "350ms",
+   "timingFunction": "cubic-bezier(0.16, 1, 0.3, 1)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.GkoSzG_content > div.aFfDra_conversation",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.Dc5tqa_customerCards > a.Dc5tqa_customerCard.Dc5tqa_primary",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span.sc-KOGVz.jqlWID > span.M31rWW_ingredientPlus",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "button.M31rWW_ingredientButton > span.M31rWW_ingredientLink",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span.sc-KOGVz.jqlWID > span.M31rWW_ingredientPlus",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "button.M31rWW_ingredientButton > span.M31rWW_ingredientLink",
+   "count": 2
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "auto",
+   "timingFunction": "linear(0 0%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "300ms",
+   "timingFunction": "linear(0 0%, 0.0411 3.4482758620689653%, 0.1342 6.896551724137931%, 0.2478 10.344827586206897%, 0.3638 13.793103448275863%, 0.4725 17.24137931034483%, 0.5692 20.689655172413794%, 0.6524 24.137931034482758%, 0.7222 27.586206896551722%, 0.7798 31.034482758620687%, 0.8267 34.48275862068965%, 0.8644 37.93103448275862%, 0.8944 41.37931034482759%, 0.9181 44.827586206896555%, 0.9367 48.27586206896552%, 0.9513 51.72413793103449%, 0.9626 55.17241379310346%, 0.9714 58.62068965517243%, 0.9782 62.068965517241395%, 0.9834 65.51724137931036%, 0.9874 68.96551724137933%, 0.9904 72.4137931034483%, 0.9927 75.86206896551727%, 0.9945 79.31034482758623%, 0.9959 82.7586206896552%, 0.9969 86.20689655172416%, 0.9976 89.65517241379311%, 0.9982 93.10344827586208%, 0.9987 96.55172413793105%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.GkoSzG_content > div.q1lnWq_message",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "filter",
+   "duration": "300ms",
+   "timingFunction": "linear(0 0%, 0.0411 3.4482758620689653%, 0.1342 6.896551724137931%, 0.2478 10.344827586206897%, 0.3638 13.793103448275863%, 0.4725 17.24137931034483%, 0.5692 20.689655172413794%, 0.6524 24.137931034482758%, 0.7222 27.586206896551722%, 0.7798 31.034482758620687%, 0.8267 34.48275862068965%, 0.8644 37.93103448275862%, 0.8944 41.37931034482759%, 0.9181 44.827586206896555%, 0.9367 48.27586206896552%, 0.9513 51.72413793103449%, 0.9626 55.17241379310346%, 0.9714 58.62068965517243%, 0.9782 62.068965517241395%, 0.9834 65.51724137931036%, 0.9874 68.96551724137933%, 0.9904 72.4137931034483%, 0.9927 75.86206896551727%, 0.9945 79.31034482758623%, 0.9959 82.7586206896552%, 0.9969 86.20689655172416%, 0.9976 89.65517241379311%, 0.9982 93.10344827586208%, 0.9987 96.55172413793105%, 1 100%)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.GkoSzG_content > div.q1lnWq_message",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "load",
+   "property": "opacity",
+   "duration": "200ms",
+   "timingFunction": "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.KFZpfa_body.KFZpfa_contentColumn > div.KFZpfa_chatBox",
+   "count": 1
+  },
+  {
+   "kind": "waapi",
+   "phase": "scroll",
+   "property": "opacity",
+   "duration": "800ms",
+   "timingFunction": "cubic-bezier(0.22, 1, 0.36, 1)",
+   "keyframeEasings": [],
+   "delay": "0ms",
+   "iterations": "1",
+   "source": "element.animate",
+   "selector": "div.qM9FAa_toolbar.ImRUSq_root > div.qM9FAa_sendButtonGroup",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-0-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-0-0-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-0-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-0-1-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-0-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-0-2-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-0-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-0-3-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-0-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-0-4-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-1-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-1-0-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-1-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-1-1-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-1-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-1-2-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-1-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-1-3-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-1-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-1-4-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-2-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-2-0-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-2-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-2-1-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-2-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-2-2-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-2-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-2-3-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-2-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-2-4-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-3-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-3-0-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-3-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-3-1-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-3-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-3-2-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-3-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-3-3-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-3-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-3-4-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-4-0-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-4-0-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-4-1-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-4-1-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-4-2-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-4-2-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-4-3-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-4-3-agent",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "grid-dot-4-4-agent",
+   "keyframeProperties": "opacity",
+   "duration": "3.2s",
+   "timingFunction": "steps(1)",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "svg.sIPoMW_loader > circle.grid-dot-4-4-agent",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-position-x",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-position-y",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.12s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "a.I_mUeq_root > div.TZTsQG_inlineLink.ImRUSq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-position-x",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-position-y",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-position-x",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-position-y",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-position-x",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-position-y",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-position-x",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-position-y",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "hover",
+   "name": "_6QN9Vq_tooltipOpen",
+   "keyframeProperties": "opacity, transform",
+   "duration": "0.12s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div > div._6QN9Vq_content",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-position-x",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-position-y",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "span#header-tooltip-login > a.TZTsQG_anchor.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "unhover",
+   "name": "_6QN9Vq_tooltipClose",
+   "keyframeProperties": "opacity, transform",
+   "duration": "0.12s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "div > div._6QN9Vq_content",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.QI8oKG_descriptionContainer.ImRUSq_root > a.hide-tablet.QI8oKG_newFeatureLink",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.QI8oKG_descriptionContainer.ImRUSq_root > a.hide-tablet.QI8oKG_newFeatureLink",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > button._1uFtza_navButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-position-x",
+   "declaredProperty": "background",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > button._1uFtza_navButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-position-y",
+   "declaredProperty": "background",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > button._1uFtza_navButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > button._1uFtza_navButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-position-x",
+   "declaredProperty": "background",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > button._1uFtza_navButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-position-y",
+   "declaredProperty": "background",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > button._1uFtza_navButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root.ImRUSq_align-center > button._1uFtza_pillButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root.ImRUSq_align-center > button._1uFtza_pillButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root.ImRUSq_align-center > button._1uFtza_pillButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root.ImRUSq_align-center > button._1uFtza_pillButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.b-30Va_actionWrapper > a.qqCMlG_root.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.b-30Va_actionWrapper > a.qqCMlG_root.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.qM9FAa_sendButtonGroup > button.qM9FAa_sendButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.qM9FAa_toolbar.ImRUSq_root > div.qM9FAa_sendButtonGroup",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.qM9FAa_sendButtonGroup > button.qM9FAa_sendButton",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.qM9FAa_toolbar.ImRUSq_root > div.qM9FAa_sendButtonGroup",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.m-yS4G_wrapper > button#base-ui-_r_5q_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.m-yS4G_wrapper > button#base-ui-_r_5q_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.m-yS4G_wrapper > button#base-ui-_r_5q_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.m-yS4G_wrapper > button#base-ui-_r_5q_",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.1s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.Fzcv4W_inset.Fzcv4W_insetLarge > a.qqCMlG_root.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.2s",
+   "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+   "delay": "0s",
+   "selector": "div.Fzcv4W_inset.Fzcv4W_insetLarge > a.qqCMlG_root.I_mUeq_root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.Dc5tqa_customerCards > a.Dc5tqa_customerCard.Dc5tqa_secondary",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.Dc5tqa_customerCards > a.Dc5tqa_customerCard.Dc5tqa_secondary",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > a.S36ykG_root.S36ykG_variant-invert",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > a.S36ykG_root.S36ykG_variant-invert",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > a.S36ykG_root.S36ykG_variant-secondary",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.16s",
+   "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+   "delay": "0s",
+   "selector": "div.ImRUSq_root > a.S36ykG_root.S36ykG_variant-secondary",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 4977,
+  "elementsTotal": 4977,
+  "transitionAllElements": 2,
+  "transitions": [
+   {
+    "property": "color",
+    "duration": "0.1s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 38,
+    "samples": [
+     "div.hide-mobile.Jmh1Wq_logoColumn > a.Jmh1Wq_logoWrapper.I_mUeq_root",
+     "li.Jmh1Wq_sectionItem > a.Jmh1Wq_sectionLink.I_mUeq_root"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.16s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 36,
+    "samples": [
+     "span#header-tooltip-open-app > a.S36ykG_root.S36ykG_variant-invert",
+     "li.TZTsQG_buttonItem.TZTsQG_item > a.S36ykG_root.S36ykG_variant-invert",
+     "div.QI8oKG_descriptionContainer.ImRUSq_root > a.show-tablet.QI8oKG_newFeatureLink"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.16s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 31,
+    "samples": [
+     "span#header-tooltip-open-app > a.S36ykG_root.S36ykG_variant-invert",
+     "li.TZTsQG_buttonItem.TZTsQG_item > a.S36ykG_root.S36ykG_variant-invert",
+     "div.ImRUSq_root.ImRUSq_align-center > button._1uFtza_pillButton"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.16s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 31,
+    "samples": [
+     "span#header-tooltip-open-app > a.S36ykG_root.S36ykG_variant-invert",
+     "li.TZTsQG_buttonItem.TZTsQG_item > a.S36ykG_root.S36ykG_variant-invert",
+     "div.ImRUSq_root.ImRUSq_align-center > button._1uFtza_buttonBase._1uFtza_locationBarButton"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "0.4s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "count": 25,
+    "samples": [
+     "span.line.diff-old > span.ngusfW_variable.ngusfW_charRemoved",
+     "span.line.diff-old > span.ngusfW_keyword.ngusfW_charRemoved",
+     "span.line.diff-new > span.ngusfW_text.ngusfW_charAdded"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 9,
+    "samples": [
+     "div > header.TZTsQG_header.TZTsQG_header",
+     "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+     "li.hide-tablet.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 8,
+    "samples": [
+     "li.hide-tablet.TZTsQG_item > button.TZTsQG_anchor.TZTsQG_trigger",
+     "li.hide-tablet.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root",
+     "li.hide-laptop.TZTsQG_item > a.TZTsQG_anchor.I_mUeq_root"
+    ]
+   },
+   {
+    "property": "border",
+    "duration": "0.16s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "span#header-tooltip-open-app > a.S36ykG_root.S36ykG_variant-invert",
+     "li.TZTsQG_buttonItem.TZTsQG_item > a.S36ykG_root.S36ykG_variant-invert",
+     "div.m-yS4G_wrapper > button#base-ui-_r_5q_"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.16s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "span#header-tooltip-open-app > a.S36ykG_root.S36ykG_variant-invert",
+     "li.TZTsQG_buttonItem.TZTsQG_item > a.S36ykG_root.S36ykG_variant-invert",
+     "div.m-yS4G_wrapper > button#base-ui-_r_5q_"
+    ]
+   },
+   {
+    "property": "box-shadow",
+    "duration": "0.16s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "span#header-tooltip-open-app > a.S36ykG_root.S36ykG_variant-invert",
+     "li.TZTsQG_buttonItem.TZTsQG_item > a.S36ykG_root.S36ykG_variant-invert",
+     "div.m-yS4G_wrapper > button#base-ui-_r_5q_"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.16s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "span#header-tooltip-open-app > a.S36ykG_root.S36ykG_variant-invert",
+     "li.TZTsQG_buttonItem.TZTsQG_item > a.S36ykG_root.S36ykG_variant-invert",
+     "div.m-yS4G_wrapper > button#base-ui-_r_5q_"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "0.16s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "div.ImRUSq_root.ImRUSq_align-center > button#base-ui-_r_u_",
+     "div.ImRUSq_root > button._1uFtza_navButton",
+     "div.ImRUSq_root.ImRUSq_align-center > button._1uFtza_pillButton"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "div.b-30Va_actionWrapper > a.qqCMlG_root.I_mUeq_root",
+     "div.Fzcv4W_inset.Fzcv4W_insetLarge > a.qqCMlG_root.I_mUeq_root",
+     "div.Dc5tqa_footer.hide-laptop > a.qqCMlG_root.I_mUeq_root"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.1s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div.fjOtda_changelogItem > a.fjOtda_link.I_mUeq_root"
+    ]
+   },
+   {
+    "property": "all",
+    "duration": "0.16s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "svg > rect"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.1s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div > header.TZTsQG_header.TZTsQG_header"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.2s",
+    "timingFunction": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "a.MR81zG_logosLink.I_mUeq_root > ul.MR81zG_root.Fzcv4W_inset"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "grid-dot-0-0-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-0-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-0-0-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-0-1-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-1-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-0-1-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-0-2-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-2-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-0-2-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-0-3-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-3-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-0-3-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-0-4-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-0-4-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-0-4-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-1-0-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-0-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-1-0-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-1-1-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-1-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-1-1-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-1-2-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-2-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-1-2-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-1-3-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-3-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-1-3-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-1-4-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-1-4-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-1-4-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-2-0-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-0-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-2-0-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-2-1-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-1-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-2-1-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-2-2-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-2-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-2-2-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-2-3-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-3-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-2-3-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-2-4-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-2-4-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-2-4-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-3-0-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-0-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-3-0-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-3-1-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-1-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-3-1-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-3-2-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-2-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-3-2-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-3-3-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-3-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-3-3-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-3-4-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-3-4-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-3-4-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-4-0-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-0-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-4-0-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-4-1-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-1-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-4-1-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-4-2-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-2-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-4-2-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-4-3-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-3-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-4-3-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-4-4-agent",
+    "duration": "3.2s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 3,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderAgent > circle.grid-dot-4-4-agent",
+     "svg.sIPoMW_loader > circle.grid-dot-4-4-agent"
+    ]
+   },
+   {
+    "name": "grid-dot-0-0-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-0-0-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-0-1-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-0-1-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-0-2-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-0-2-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-0-3-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-0-3-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-0-4-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-0-4-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-1-0-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-1-0-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-1-1-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-1-1-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-1-2-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-1-2-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-1-3-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-1-3-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-1-4-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-1-4-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-2-0-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-2-0-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-2-1-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-2-1-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-2-2-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-2-2-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-2-3-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-2-3-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-2-4-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-2-4-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-3-0-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-3-0-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-3-1-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-3-1-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-3-2-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-3-2-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-3-3-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-3-3-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-3-4-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-3-4-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-4-0-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-4-0-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-4-1-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-4-1-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-4-2-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-4-2-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-4-3-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-4-3-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-4-4-upDown",
+    "duration": "2.8s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader > circle.grid-dot-4-4-upDown"
+    ]
+   },
+   {
+    "name": "grid-dot-0-0-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-0-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-0-1-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-1-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-0-2-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-2-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-0-3-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-3-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-0-4-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-0-4-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-1-0-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-0-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-1-1-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-1-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-1-2-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-2-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-1-3-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-3-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-1-4-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-1-4-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-2-0-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-0-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-2-1-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-1-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-2-2-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-2-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-2-3-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-3-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-2-4-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-2-4-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-3-0-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-0-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-3-1-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-1-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-3-2-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-2-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-3-3-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-3-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-3-4-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-3-4-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-4-0-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-0-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-4-1-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-1-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-4-2-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-2-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-4-3-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-3-pong"
+    ]
+   },
+   {
+    "name": "grid-dot-4-4-pong",
+    "duration": "1.6s",
+    "timingFunction": "steps(1)",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "svg._3fVNxW_gridLoader._3fVNxW_gridLoaderPong > circle.grid-dot-4-4-pong"
+    ]
+   },
+   {
+    "name": "qM9FAa_cursorBlink",
+    "duration": "1.25s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 1,
+    "samples": [
+     "div.ImRUSq_root.ImRUSq_align-center > div.qM9FAa_cursor"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 4,
+  "reducedMotionRules": 1,
+  "transitionAll": [],
+  "keyframes": [
+   "grid-dot-0-0-upDown",
+   "grid-dot-0-1-upDown",
+   "grid-dot-0-2-upDown",
+   "grid-dot-0-3-upDown",
+   "grid-dot-0-4-upDown",
+   "grid-dot-1-0-upDown",
+   "grid-dot-1-1-upDown",
+   "grid-dot-1-2-upDown",
+   "grid-dot-1-3-upDown",
+   "grid-dot-1-4-upDown",
+   "grid-dot-2-0-upDown",
+   "grid-dot-2-1-upDown",
+   "grid-dot-2-2-upDown",
+   "grid-dot-2-3-upDown",
+   "grid-dot-2-4-upDown",
+   "grid-dot-3-0-upDown",
+   "grid-dot-3-1-upDown",
+   "grid-dot-3-2-upDown",
+   "grid-dot-3-3-upDown",
+   "grid-dot-3-4-upDown",
+   "grid-dot-4-0-upDown",
+   "grid-dot-4-1-upDown",
+   "grid-dot-4-2-upDown",
+   "grid-dot-4-3-upDown",
+   "grid-dot-4-4-upDown",
+   "grid-dot-0-0-pong",
+   "grid-dot-0-1-pong",
+   "grid-dot-0-2-pong",
+   "grid-dot-0-3-pong",
+   "grid-dot-0-4-pong",
+   "grid-dot-1-0-pong",
+   "grid-dot-1-1-pong",
+   "grid-dot-1-2-pong",
+   "grid-dot-1-3-pong",
+   "grid-dot-1-4-pong",
+   "grid-dot-2-0-pong",
+   "grid-dot-2-1-pong",
+   "grid-dot-2-2-pong",
+   "grid-dot-2-3-pong",
+   "grid-dot-2-4-pong",
+   "grid-dot-3-0-pong",
+   "grid-dot-3-1-pong",
+   "grid-dot-3-2-pong",
+   "grid-dot-3-3-pong",
+   "grid-dot-3-4-pong",
+   "grid-dot-4-0-pong",
+   "grid-dot-4-1-pong",
+   "grid-dot-4-2-pong",
+   "grid-dot-4-3-pong",
+   "grid-dot-4-4-pong",
+   "grid-dot-0-0-agent",
+   "grid-dot-0-1-agent",
+   "grid-dot-0-2-agent",
+   "grid-dot-0-3-agent",
+   "grid-dot-0-4-agent",
+   "grid-dot-1-0-agent",
+   "grid-dot-1-1-agent",
+   "grid-dot-1-2-agent",
+   "grid-dot-1-3-agent",
+   "grid-dot-1-4-agent",
+   "grid-dot-2-0-agent",
+   "grid-dot-2-1-agent",
+   "grid-dot-2-2-agent",
+   "grid-dot-2-3-agent",
+   "grid-dot-2-4-agent",
+   "grid-dot-3-0-agent",
+   "grid-dot-3-1-agent",
+   "grid-dot-3-2-agent",
+   "grid-dot-3-3-agent",
+   "grid-dot-3-4-agent",
+   "grid-dot-4-0-agent",
+   "grid-dot-4-1-agent",
+   "grid-dot-4-2-agent",
+   "grid-dot-4-3-agent",
+   "grid-dot-4-4-agent",
+   "swipe-out-left",
+   "swipe-out-right",
+   "swipe-out-up",
+   "swipe-out-down",
+   "sonner-fade-in",
+   "sonner-fade-out",
+   "sonner-spin",
+   "fadeIn",
+   "fadeOut",
+   "slideFromBottom",
+   "slideToBottom",
+   "slideFromTop",
+   "slideToTop",
+   "slideFromLeft",
+   "slideToLeft",
+   "slideFromRight",
+   "slideToRight"
+  ],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Linear – The system for product development",
+  "canvases": 0,
+  "viewportSizedCanvases": 0,
+  "webglContexts": 0,
+  "canvas2dContexts": 0,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 12,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)"
+  ],
+  "documentHeight": 9960
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 642,
+  "stylesheets": 155,
+  "scripts": 389,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 155,
+  "bytes": 832227,
+  "reducedMotionQueries": 77,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "WinFxq_contextMenuIn",
+   "WinFxq_contextMenuOut",
+   "TZTsQG_mobileMenuIn",
+   "TZTsQG_mobileMenuOut",
+   "TZTsQG_slideFromRight",
+   "TZTsQG_slideFromLeft",
+   "TZTsQG_slideToRight",
+   "TZTsQG_slideToLeft",
+   "TZTsQG_scaleIn",
+   "TZTsQG_scaleOut",
+   "TZTsQG_fadeIn",
+   "TZTsQG_fadeOut",
+   "sx-9xrbjn-B",
+   "sx-1vt4tmj-B",
+   "sx-1qog62f-B",
+   "sx-2bsi4l-B",
+   "sx-45fvhf-B",
+   "wOrUyW_scaleIn",
+   "wOrUyW_scaleOut",
+   "wOrUyW_fadeIn",
+   "wOrUyW_fadeOut",
+   "wOrUyW_dialogBounce",
+   "Sz_9La_load",
+   "vaulFadeIn",
+   "vaulFadeOut",
+   "vaulSlideFromBottom",
+   "vaulSlideToBottom",
+   "_6QN9Vq_tooltipOpen",
+   "_6QN9Vq_tooltipClose",
+   "dYXc1G_fadeIn",
+   "-VOcTG_agentBorderSweep",
+   "-VOcTG_agentLabelSweep",
+   "xt7VyG_scroll",
+   "xt7VyG_scroll-vertical",
+   "xt7VyG_scroll-abs",
+   "xt7VyG_scroll-abs-vertical",
+   "fFDhtq_dotIn",
+   "qM9FAa_shimmerSweep",
+   "qM9FAa_cursorBlink",
+   "_4YXZSa_pillarHeroPulse",
+   "PPSGPG_blink",
+   "qqCMlG_suffixEnter",
+   "qqCMlG_suffixExit",
+   "gli-sprite",
+   "PSAPAG_dialogOpen",
+   "PSAPAG_dialogClose",
+   "PSAPAG_fadeIn",
+   "PSAPAG_fadeOut",
+   "rWdRxW_statusFlash",
+   "rWdRxW_statusPulse",
+   "lAb7VG_highlight",
+   "UVNdXW_open",
+   "UVNdXW_close",
+   "_4phDSW_highlightReveal",
+   "_4phDSW_cursorIn",
+   "J1CkbW_move",
+   "J1CkbW_offset",
+   "J1CkbW_offsetIsometric",
+   "rgSKaG_fadeIn",
+   "_3R3Zma_enter",
+   "_X0uBq_slideDown",
+   "_X0uBq_slideUp",
+   "hsTF7q_rotate",
+   "uBQc7a_fadeIn",
+   "_9-NKAa_highlight",
+   "UyKwXq_dialogIn",
+   "UyKwXq_dialogOut",
+   "j9EdOW_blink",
+   "uDqFfq_dialogIn",
+   "uDqFfq_dialogOut"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0.55, 0.085, 0.68, 0.53)": 1,
+   "cubic-bezier(0.55, 0.055, 0.675, 0.19)": 1,
+   "cubic-bezier(0.895, 0.03, 0.685, 0.22)": 1,
+   "cubic-bezier(0.755, 0.05, 0.855, 0.06)": 1,
+   "cubic-bezier(0.95, 0.05, 0.795, 0.035)": 1,
+   "cubic-bezier(0.6, 0.04, 0.98, 0.335)": 1,
+   "cubic-bezier(0.25, 0.46, 0.45, 0.94)": 1,
+   "cubic-bezier(0.215, 0.61, 0.355, 1)": 1,
+   "cubic-bezier(0.165, 0.84, 0.44, 1)": 1,
+   "cubic-bezier(0.23, 1, 0.32, 1)": 1,
+   "cubic-bezier(0.19, 1, 0.22, 1)": 1,
+   "cubic-bezier(0.075, 0.82, 0.165, 1)": 1,
+   "cubic-bezier(0.455, 0.03, 0.515, 0.955)": 1,
+   "cubic-bezier(0.645, 0.045, 0.355, 1)": 1,
+   "cubic-bezier(0.77, 0, 0.175, 1)": 1,
+   "cubic-bezier(0.86, 0, 0.07, 1)": 1,
+   "cubic-bezier(1, 0, 0, 1)": 1,
+   "cubic-bezier(0.785, 0.135, 0.15, 0.86)": 1,
+   "cubic-bezier(0.43, 0.07, 0.59, 0.94)": 2,
+   "cubic-bezier(0.45, 1.45, 0.8, 1)": 2,
+   "cubic-bezier(0.32, 0.72, 0, 1)": 7,
+   "cubic-bezier(0.66, 0, 0, 1)": 2,
+   "cubic-bezier(0.16, 1, 0.3, 1)": 1
+  }
+ },
+ "scripts": {
+  "files": 389,
+  "bytes": 4516422,
+  "reducedMotionMentions": 8,
+  "libraries": {
+   "framerMotion": true,
+   "springPhysics": true
+  }
+ },
+ "elapsedMs": 65524
+}

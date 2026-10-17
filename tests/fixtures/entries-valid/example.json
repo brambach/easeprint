@@ -10,6 +10,7 @@
   "tiers": [
     {
       "role": "utility",
+      "kind": "transition",
       "label": "link hover",
       "property": "opacity",
       "timingFunction": "ease-out",

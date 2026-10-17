@@ -33,7 +33,7 @@ describe('entry schema', () => {
     expect(parse(entry).success).toBe(false);
   });
 
-  it.each(['timingFunction', 'duration', 'durationMs', 'phase', 'selector', 'count', 'role'])(
+  it.each(['timingFunction', 'duration', 'durationMs', 'phase', 'selector', 'count', 'role', 'kind'])(
     'rejects a tier missing %s',
     (field) => {
       const entry = structuredClone(valid);
@@ -59,7 +59,7 @@ describe('entry schema', () => {
   });
 
   it('rejects a tier whose values are not in the raw file', () => {
-    for (const change of [{ duration: '0.3s', durationMs: 300 }, { selector: 'button' }, { property: 'transform' }, { count: 2 }, { phase: 'scroll' }]) {
+    for (const change of [{ duration: '0.3s', durationMs: 300 }, { selector: 'button' }, { property: 'transform' }, { count: 2 }, { phase: 'scroll' }, { kind: 'animation' }]) {
       const entry = structuredClone(valid);
       Object.assign(entry.tiers[0], change);
       expect(parse(entry).success, JSON.stringify(change)).toBe(false);

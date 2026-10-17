@@ -1,0 +1,3441 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://brycerambach.com",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:56:12.521Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "no-preference",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://www.brycerambach.com/",
+ "scrolledTo": 1710,
+ "hover": {
+  "candidates": {
+   "available": 24,
+   "distinct": 7,
+   "picked": [
+    "div.sky-berth > a.sky-card",
+    "li > a.sky-head.is-on",
+    "li > a.sky-head",
+    "p.sky-fade > a.sky-u",
+    "p.sky-about > a.sky-pl.lit-up",
+    "li > a.sky-u",
+    "li > a.sky-u.sky-ext"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div.sky-berth > a.sky-card",
+    "covered": true
+   },
+   {
+    "selector": "li > a.sky-head.is-on",
+    "covered": false
+   },
+   {
+    "selector": "li > a.sky-head",
+    "covered": false
+   },
+   {
+    "selector": "p.sky-fade > a.sky-u",
+    "covered": false
+   },
+   {
+    "selector": "p.sky-about > a.sky-pl.glint",
+    "covered": false
+   },
+   {
+    "selector": "li > a.sky-u",
+    "covered": false
+   },
+   {
+    "selector": "li > a.sky-u.sky-ext",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-drift",
+   "keyframeProperties": "",
+   "duration": "1.3s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "a.sky-pl > span.sky-w.sky-pw::after",
+   "count": 6
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-swell",
+   "keyframeProperties": "",
+   "duration": "0.9s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "a.sky-pl > span.sky-w.sky-pw::after",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.028s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.028s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.028s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.056s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.056s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.056s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.084s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.084s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.084s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.112s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.112s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.112s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.14s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.14s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.14s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.168s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.168s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.168s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.196s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.196s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.196s",
+   "selector": "span > span.sky-ch",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1.3s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.25s",
+   "selector": "h2.sky-title > span.sky-rule",
+   "count": 3
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "a.sky-pl.lit-up > span.sky-w.sky-pw",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-pl.lit-up > span.sky-w.sky-pw::before",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head > span.sky-nm",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-card > div.sky-shot",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.45, 0, 0.75, 0.25)",
+   "delay": "0s",
+   "selector": "div.sky-berth > a.sky-card",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.45, 0, 0.75, 0.25)",
+   "delay": "0s",
+   "selector": "div.sky-berths > canvas.sky-mirror",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.224s",
+   "selector": "span > span.sky-ch",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.224s",
+   "selector": "span > span.sky-ch",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.224s",
+   "selector": "span > span.sky-ch",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "ul.sky-links > li",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "ul.sky-links > li",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-card > div.sky-shot",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.45, 0, 0.75, 0.25)",
+   "delay": "0s",
+   "selector": "div.sky-berth > a.sky-card",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-card > div.sky-shot",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.42s",
+   "selector": "div.sky-berth.is-up > a.sky-card",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.42s",
+   "selector": "div.sky-berths > canvas.sky-mirror.is-up",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head.is-on > span.sky-no",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head.is-on > span.sky-kd",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.35s",
+   "selector": "p.sky-said > span.is-on",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.42s",
+   "selector": "div.sky-berth.is-up > a.sky-card",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.42s",
+   "selector": "div.sky-berths > canvas.sky-mirror.is-up",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head > span.sky-no",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head > span.sky-nm",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head > span.sky-kd",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head.is-on > span.sky-no",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head.is-on > span.sky-nm",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head.is-on > span.sky-kd",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head.is-on::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head.is-on::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "p.sky-said > span",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "p.sky-said > span",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "p.sky-said > span",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.35s",
+   "selector": "p.sky-said > span.is-on",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.35s",
+   "selector": "p.sky-said > span.is-on",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.35s",
+   "selector": "p.sky-said > span.is-on",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.12s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.154s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.188s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.222s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.256s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.29s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.324s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.358s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-settle",
+   "keyframeProperties": "opacity, filter, translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.34s",
+   "iterations": "1",
+   "selector": "div.sky-who > p.sky-sub.sky-in",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.392s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.426s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.46s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.494s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-rise",
+   "keyframeProperties": "filter, opacity, rotate, translate",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.528s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-settle",
+   "keyframeProperties": "opacity, filter, translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.5s",
+   "iterations": "1",
+   "selector": "nav.sky-ix > h2#sky-work",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-settle",
+   "keyframeProperties": "opacity, filter, translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.74s",
+   "iterations": "1",
+   "selector": "nav.sky-ix > p.sky-how.sky-in",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-settle",
+   "keyframeProperties": "opacity, filter, translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.9s",
+   "iterations": "1",
+   "selector": "ol > li",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-settle",
+   "keyframeProperties": "opacity, filter, translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.97s",
+   "iterations": "1",
+   "selector": "ol > li",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-settle",
+   "keyframeProperties": "opacity, filter, translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "1.04s",
+   "iterations": "1",
+   "selector": "ol > li",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-settle",
+   "keyframeProperties": "opacity, filter, translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "1.11s",
+   "iterations": "1",
+   "selector": "ol > li",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-settle",
+   "keyframeProperties": "opacity, filter, translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "1.18s",
+   "iterations": "1",
+   "selector": "ol > li",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-settle",
+   "keyframeProperties": "opacity, filter, translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "1.25s",
+   "iterations": "1",
+   "selector": "ol > li",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "1.7s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "1.755s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "1.81s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "1.865s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "1.92s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "1.975s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "2.03s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "2.085s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "2.14s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "2.195s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "2.25s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "2.305s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "2.36s",
+   "iterations": "1",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-card > div.sky-shot",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-berth.is-up > a.sky-card",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-berths > canvas.sky-mirror.is-up",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head.is-on > span.sky-no",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head.is-on > span.sky-nm",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head.is-on > span.sky-kd",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head.is-on::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head.is-on::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.35s",
+   "selector": "p.sky-said > span.is-on",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.35s",
+   "selector": "p.sky-said > span.is-on",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.35s",
+   "selector": "p.sky-said > span.is-on",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-card > div.sky-shot",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.45, 0, 0.75, 0.25)",
+   "delay": "0s",
+   "selector": "div.sky-berth > a.sky-card",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.45, 0, 0.75, 0.25)",
+   "delay": "0s",
+   "selector": "div.sky-berths > canvas.sky-mirror",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-intro > p.sky-fade",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-intro > p.sky-fade",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.08s",
+   "selector": "div.sky-intro > p.sky-fade",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.08s",
+   "selector": "div.sky-intro > p.sky-fade",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-sunlayer > span.sky-clock.is-on",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "background-size",
+   "declaredProperty": "background-size",
+   "duration": "0.55s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "p.sky-fade > a.sky-u",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.09s",
+   "selector": "a.sky-pl.lit-up > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.18s",
+   "selector": "a.sky-pl.lit-up > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.27s",
+   "selector": "a.sky-pl.lit-up > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "0.07s",
+   "iterations": "1",
+   "selector": "a.sky-pl.lit-up > span.sky-w.sky-pw",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.252s",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.252s",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.252s",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.28s",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.28s",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.28s",
+   "selector": "span > span.sky-ch",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.8s",
+   "selector": "h2.sky-title > span.sky-meta",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "0.14s",
+   "iterations": "1",
+   "selector": "a.sky-pl.lit-up > span.sky-w.sky-pw",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.07s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.07s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "sky-glint",
+   "keyframeProperties": "textShadow, color",
+   "duration": "1.2s",
+   "timingFunction": "ease-in-out",
+   "delay": "0.21s",
+   "iterations": "1",
+   "selector": "a.sky-pl.lit-up > span.sky-w.sky-pw",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.06s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.06s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.12s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.12s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.18s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.18s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.24s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.24s",
+   "selector": "ul.sky-links > li",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-col > p.sky-sign.sky-fade",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.8s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-col > p.sky-sign.sky-fade",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-sunlayer > span.sky-clock",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.09s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.18s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.27s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.05s",
+   "selector": "div.sky-berth.is-up > a.sky-card",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.05s",
+   "selector": "div.sky-berths > canvas.sky-mirror.is-up",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "1.15s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-card > div.sky-shot.is-port",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "p.sky-said > span",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-card > div.sky-shot.is-port",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "clip-path",
+   "declaredProperty": "clip-path",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.45, 0, 0.75, 0.25)",
+   "delay": "0s",
+   "selector": "div.sky-berths > canvas.sky-mirror",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head > span.sky-no",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head > span.sky-kd",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "filter",
+   "declaredProperty": "filter",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "p.sky-said > span",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "p.sky-said > span",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-head.is-on > span.sky-nm",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.4s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head.is-on::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "scale",
+   "declaredProperty": "scale",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-head.is-on::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.5s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.35s",
+   "selector": "p.sky-said > span.is-on",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.35s",
+   "selector": "p.sky-said > span.is-on",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-sunlayer > span.sky-clock.is-on",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-size",
+   "declaredProperty": "background-size",
+   "duration": "0.55s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "p.sky-fade > a.sky-u",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-size",
+   "declaredProperty": "background-size",
+   "duration": "0.55s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "p.sky-fade > a.sky-u",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.09s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.18s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.9s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0.27s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.35s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.35s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.35s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.35s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "a.sky-pl.glint > span.sky-w.sky-pw::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-size",
+   "declaredProperty": "background-size",
+   "duration": "0.55s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-u",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-size",
+   "declaredProperty": "background-size",
+   "duration": "0.55s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-u",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.6s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "div.sky-sunlayer > span.sky-clock",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-size",
+   "declaredProperty": "background-size",
+   "duration": "0.55s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-u.sky-ext",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-u.sky-ext::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.45s",
+   "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-u.sky-ext::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-size",
+   "declaredProperty": "background-size",
+   "duration": "0.55s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-u.sky-ext",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.3s",
+   "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-u.sky-ext::after",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "translate",
+   "declaredProperty": "translate",
+   "duration": "0.45s",
+   "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+   "delay": "0s",
+   "selector": "li > a.sky-u.sky-ext::after",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 284,
+  "elementsTotal": 284,
+  "transitionAllElements": 0,
+  "transitions": [
+   {
+    "property": "color",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 18,
+    "samples": [
+     "a.sky-head > span.sky-no",
+     "a.sky-head > span.sky-nm",
+     "a.sky-head > span.sky-kd"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.35s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 12,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw::before",
+     "a.sky-pl.glint > span.sky-w.sky-pw::after"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.3s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "count": 9,
+    "samples": [
+     "li > a.sky-head",
+     "li > a.sky-head.is-on",
+     "p.sky-about > a.sky-pl.glint"
+    ]
+   },
+   {
+    "property": "background-size",
+    "duration": "0.55s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 9,
+    "samples": [
+     "p.sky-fade > a.sky-u",
+     "li > a.sky-u",
+     "li > a.sky-u.sky-ext"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 8,
+    "samples": [
+     "nav.sky-ix > p.sky-how.sky-in",
+     "div.sky-intro > p.sky-fade",
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.45, 0, 0.75, 0.25)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "div.sky-berth > a.sky-card"
+    ]
+   },
+   {
+    "property": "box-shadow",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "a.sky-card > div.sky-shot",
+     "a.sky-card > div.sky-shot.is-tall",
+     "a.sky-card > div.sky-shot.is-port"
+    ]
+   },
+   {
+    "property": "clip-path",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.45, 0, 0.75, 0.25)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "div.sky-berths > canvas.sky-mirror"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "li > a.sky-head::before",
+     "li > a.sky-head.is-on::before"
+    ]
+   },
+   {
+    "property": "scale",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "li > a.sky-head::before",
+     "li > a.sky-head.is-on::before"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.4s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 6,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "p.sky-said > span"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "p.sky-said > span"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "p.sky-said > span"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "div.sky-intro > p.sky-fade",
+     "ul.sky-links > li",
+     "div.sky-col > p.sky-sign.sky-fade"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.45s",
+    "timingFunction": "cubic-bezier(0.34, 1.5, 0.64, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "li > a.sky-u.sky-ext::after"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.3s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "li > a.sky-u.sky-ext::after"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.028s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.028s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.028s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.056s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.056s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.056s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.084s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.084s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.084s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.112s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.112s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.112s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.14s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.14s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.14s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.168s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.168s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.168s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.196s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.196s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.196s",
+    "count": 3,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "1.3s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.25s",
+    "count": 3,
+    "samples": [
+     "h2.sky-title > span.sky-rule"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw::before"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.224s",
+    "count": 2,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.224s",
+    "count": 2,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.224s",
+    "count": 2,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.35s",
+    "count": 1,
+    "samples": [
+     "p.sky-said > span.is-on"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.35s",
+    "count": 1,
+    "samples": [
+     "p.sky-said > span.is-on"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.5s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.35s",
+    "count": 1,
+    "samples": [
+     "p.sky-said > span.is-on"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.08s",
+    "count": 1,
+    "samples": [
+     "div.sky-intro > p.sky-fade"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.08s",
+    "count": 1,
+    "samples": [
+     "div.sky-intro > p.sky-fade"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.09s",
+    "count": 1,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw::before"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.18s",
+    "count": 1,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw::before"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.27s",
+    "count": 1,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw::before"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.252s",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.252s",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.252s",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.28s",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "filter",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.28s",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.28s",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.8s",
+    "count": 1,
+    "samples": [
+     "h2.sky-title > span.sky-meta"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.07s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.07s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.06s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.06s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.12s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.12s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.18s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.18s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.24s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "translate",
+    "duration": "0.8s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.24s",
+    "count": 1,
+    "samples": [
+     "ul.sky-links > li"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.6s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.sky-sunlayer > span.sky-clock"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "sky-drift",
+    "duration": "1.3s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 6,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw::after"
+    ]
+   },
+   {
+    "name": "sky-swell",
+    "duration": "0.9s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 6,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw::after"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "iterations": "1",
+    "count": 3,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.12s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "1.7s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.154s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "1.755s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.188s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "1.81s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.222s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "1.865s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.256s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "1.92s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.29s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "1.975s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.324s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "2.03s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.358s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "2.085s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.392s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "2.14s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.426s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "2.195s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.46s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "2.25s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.494s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "2.305s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-rise",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.528s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "2.36s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "span > span.sky-ch"
+    ]
+   },
+   {
+    "name": "sky-settle",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.34s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "div.sky-who > p.sky-sub.sky-in"
+    ]
+   },
+   {
+    "name": "sky-settle",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.5s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "nav.sky-ix > h2#sky-work"
+    ]
+   },
+   {
+    "name": "sky-settle",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.9s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "ol > li"
+    ]
+   },
+   {
+    "name": "sky-settle",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.97s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "ol > li"
+    ]
+   },
+   {
+    "name": "sky-settle",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "1.04s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "ol > li"
+    ]
+   },
+   {
+    "name": "sky-settle",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "1.11s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "ol > li"
+    ]
+   },
+   {
+    "name": "sky-settle",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "1.18s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "ol > li"
+    ]
+   },
+   {
+    "name": "sky-settle",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "1.25s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "ol > li"
+    ]
+   },
+   {
+    "name": "sky-settle",
+    "duration": "0.9s",
+    "timingFunction": "cubic-bezier(0.2, 0.7, 0.1, 1)",
+    "delay": "0.74s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "nav.sky-ix > p.sky-how.sky-in"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0.07s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0.14s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw"
+    ]
+   },
+   {
+    "name": "sky-glint",
+    "duration": "1.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0.21s",
+    "iterations": "1",
+    "count": 1,
+    "samples": [
+     "a.sky-pl.glint > span.sky-w.sky-pw"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 1,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Bryce Rambach",
+  "canvases": 11,
+  "viewportSizedCanvases": 3,
+  "webglContexts": 0,
+  "canvas2dContexts": 17,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 6137,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)"
+  ],
+  "documentHeight": 2610
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 26,
+  "stylesheets": 4,
+  "scripts": 8,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 4,
+  "bytes": 102115,
+  "reducedMotionQueries": 6,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "fir-breeze",
+   "fog-drift-a",
+   "fog-drift-b",
+   "shaft-drift",
+   "hint",
+   "leader-march",
+   "star-blink",
+   "firefly-a",
+   "firefly-b",
+   "tick",
+   "quiet-exhaust",
+   "quiet-vapour",
+   "sky-settle",
+   "sky-rise",
+   "sky-glint",
+   "sky-drift",
+   "sky-swell",
+   "sky-burst",
+   "sky-port-close",
+   "sky-vt-in",
+   "pt-glow",
+   "pt-rise",
+   "pt-flatten",
+   "pt-in",
+   "pt-pulse",
+   "pt-spin",
+   "pt-ping",
+   "pt-grow"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0, 0, 0.2, 1)": 1,
+   "cubic-bezier(0.4, 0, 0.2, 1)": 2,
+   "cubic-bezier(0.2, 1.4, 0.4, 1)": 1,
+   "cubic-bezier(0.16, 1, 0.3, 1.35)": 1,
+   "cubic-bezier(0.16, 1, 0.3, 1)": 2,
+   "cubic-bezier(0.2, 0.7, 0.1, 1)": 3,
+   "cubic-bezier(0.34, 1.5, 0.64, 1)": 1,
+   "cubic-bezier(0.45, 0, 0.75, 0.25)": 2,
+   "cubic-bezier(0.6, 0, 0.2, 1)": 1
+  }
+ },
+ "scripts": {
+  "files": 8,
+  "bytes": 290829,
+  "reducedMotionMentions": 4,
+  "libraries": {}
+ },
+ "elapsedMs": 31843
+}

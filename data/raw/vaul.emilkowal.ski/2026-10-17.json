@@ -1,0 +1,227 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://vaul.emilkowal.ski",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:55:38.425Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "no-preference",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://vaul.emilkowal.ski/",
+ "scrolledTo": 0,
+ "hover": {
+  "candidates": {
+   "available": 5,
+   "distinct": 5,
+   "picked": [
+    "p > a.font-medium.underline",
+    "div.relative.mx-auto > button.ml-2.h-7",
+    "div.flex.gap-4 > button.rounded-full.bg-white",
+    "div.flex.gap-4 > a.font-medium.text-sm",
+    "div.flex.justify-center > a.text-center.mt-4"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "p > a.font-medium.underline",
+    "covered": true
+   },
+   {
+    "selector": "div.relative.mx-auto > button.ml-2.h-7",
+    "covered": true
+   },
+   {
+    "selector": "div.flex.gap-4 > button.rounded-full.bg-white",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.gap-4 > a.font-medium.text-sm",
+    "covered": false
+   },
+   {
+    "selector": "div.flex.justify-center > a.text-center.mt-4",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.justify-center > a.text-center.mt-4",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.15s",
+   "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+   "delay": "0s",
+   "selector": "div.flex.justify-center > a.text-center.mt-4",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 76,
+  "elementsTotal": 76,
+  "transitionAllElements": 1,
+  "transitions": [
+   {
+    "property": "all",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.relative.mx-auto > button.ml-2.h-7"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.justify-center > a.text-center.mt-4"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.justify-center > a.text-center.mt-4"
+    ]
+   },
+   {
+    "property": "border-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.justify-center > a.text-center.mt-4"
+    ]
+   },
+   {
+    "property": "text-decoration-color",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.justify-center > a.text-center.mt-4"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.justify-center > a.text-center.mt-4"
+    ]
+   },
+   {
+    "property": "stroke",
+    "duration": "0.15s",
+    "timingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "delay": "0s",
+    "count": 1,
+    "samples": [
+     "div.flex.justify-center > a.text-center.mt-4"
+    ]
+   }
+  ],
+  "animations": []
+ },
+ "inlineSheets": {
+  "sheets": 1,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [
+   "fadeIn",
+   "fadeOut",
+   "slideFromBottom",
+   "slideToBottom",
+   "slideFromTop",
+   "slideToTop",
+   "slideFromLeft",
+   "slideToLeft",
+   "slideFromRight",
+   "slideToRight"
+  ],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Vaul",
+  "canvases": 0,
+  "viewportSizedCanvases": 0,
+  "webglContexts": 0,
+  "canvas2dContexts": 0,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 1,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion)"
+  ],
+  "documentHeight": 900
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 18,
+  "stylesheets": 1,
+  "scripts": 13,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 1,
+  "bytes": 29923,
+  "reducedMotionQueries": 0,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [],
+  "cubicBeziers": {
+   "cubic-bezier(0.4, 0, 0.2, 1)": 4
+  }
+ },
+ "scripts": {
+  "files": 13,
+  "bytes": 1139029,
+  "reducedMotionMentions": 1,
+  "libraries": {
+   "framerMotion": true,
+   "springPhysics": true
+  }
+ },
+ "elapsedMs": 15323
+}

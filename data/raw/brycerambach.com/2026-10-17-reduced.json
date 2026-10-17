@@ -1,0 +1,266 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://brycerambach.com",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:56:46.059Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "reduce",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://www.brycerambach.com/",
+ "scrolledTo": 1710,
+ "hover": {
+  "candidates": {
+   "available": 24,
+   "distinct": 7,
+   "picked": [
+    "div.sky-berth > a.sky-card",
+    "li > a.sky-head.is-on",
+    "li > a.sky-head",
+    "p.sky-fade > a.sky-u",
+    "p.sky-about > a.sky-pl.lit-up",
+    "li > a.sky-u",
+    "li > a.sky-u.sky-ext"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div.sky-berth > a.sky-card",
+    "covered": true
+   },
+   {
+    "selector": "li > a.sky-head.is-on",
+    "covered": false
+   },
+   {
+    "selector": "li > a.sky-head",
+    "covered": false
+   },
+   {
+    "selector": "p.sky-fade > a.sky-u",
+    "covered": false
+   },
+   {
+    "selector": "p.sky-about > a.sky-pl.lit-up",
+    "covered": false
+   },
+   {
+    "selector": "li > a.sky-u",
+    "covered": false
+   },
+   {
+    "selector": "li > a.sky-u.sky-ext",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "background-color",
+   "declaredProperty": "all",
+   "duration": "1e-05s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "html",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "1e-05s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "html > body",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "font-size",
+   "declaredProperty": "all",
+   "duration": "1e-05s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "html > body",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "line-height",
+   "declaredProperty": "all",
+   "duration": "1e-05s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "html > body",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "color",
+   "declaredProperty": "all",
+   "duration": "1e-05s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div#root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "font-size",
+   "declaredProperty": "all",
+   "duration": "1e-05s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div#root",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "line-height",
+   "declaredProperty": "all",
+   "duration": "1e-05s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div#root",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 283,
+  "elementsTotal": 283,
+  "transitionAllElements": 45,
+  "transitions": [
+   {
+    "property": "all",
+    "duration": "1e-05s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 45,
+    "samples": [
+     "html",
+     "html > head",
+     "head > meta"
+    ]
+   }
+  ],
+  "animations": []
+ },
+ "inlineSheets": {
+  "sheets": 1,
+  "reducedMotionRules": 0,
+  "transitionAll": [],
+  "keyframes": [],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Bryce Rambach",
+  "canvases": 10,
+  "viewportSizedCanvases": 2,
+  "webglContexts": 0,
+  "canvas2dContexts": 16,
+  "videos": 0,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 713,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)",
+   "(prefers-reduced-motion: reduce)"
+  ],
+  "documentHeight": 2610
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 26,
+  "stylesheets": 4,
+  "scripts": 8,
+  "failed": 0
+ },
+ "stylesheets": {
+  "files": 4,
+  "bytes": 102115,
+  "reducedMotionQueries": 6,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [
+   "fir-breeze",
+   "fog-drift-a",
+   "fog-drift-b",
+   "shaft-drift",
+   "hint",
+   "leader-march",
+   "star-blink",
+   "firefly-a",
+   "firefly-b",
+   "tick",
+   "quiet-exhaust",
+   "quiet-vapour",
+   "pt-glow",
+   "pt-rise",
+   "pt-flatten",
+   "pt-in",
+   "pt-pulse",
+   "pt-spin",
+   "pt-ping",
+   "pt-grow",
+   "sky-settle",
+   "sky-rise",
+   "sky-glint",
+   "sky-drift",
+   "sky-swell",
+   "sky-burst",
+   "sky-port-close",
+   "sky-vt-in"
+  ],
+  "cubicBeziers": {
+   "cubic-bezier(0, 0, 0.2, 1)": 1,
+   "cubic-bezier(0.4, 0, 0.2, 1)": 2,
+   "cubic-bezier(0.2, 1.4, 0.4, 1)": 1,
+   "cubic-bezier(0.16, 1, 0.3, 1.35)": 1,
+   "cubic-bezier(0.16, 1, 0.3, 1)": 2,
+   "cubic-bezier(0.2, 0.7, 0.1, 1)": 3,
+   "cubic-bezier(0.34, 1.5, 0.64, 1)": 1,
+   "cubic-bezier(0.45, 0, 0.75, 0.25)": 2,
+   "cubic-bezier(0.6, 0, 0.2, 1)": 1
+  }
+ },
+ "scripts": {
+  "files": 8,
+  "bytes": 290829,
+  "reducedMotionMentions": 4,
+  "libraries": {}
+ },
+ "elapsedMs": 29822
+}

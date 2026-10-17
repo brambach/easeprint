@@ -1,0 +1,1102 @@
+{
+ "schema": 1,
+ "tool": "easeprint-measure 1.1.0",
+ "url": "https://family.co",
+ "date": "2026-10-17",
+ "capturedAt": "2026-10-17T05:54:08.327Z",
+ "browser": "Chromium 141.0.7390.37",
+ "viewport": {
+  "width": 1440,
+  "height": 900
+ },
+ "reducedMotion": "no-preference",
+ "method": {
+  "loads": 1,
+  "steps": [
+   "load, settle 3s",
+   "wheel-scroll to bottom in 80% viewport steps",
+   "hover then leave up to 30 elements",
+   "final computed scan"
+  ]
+ },
+ "status": 200,
+ "finalUrl": "https://family.co/",
+ "scrolledTo": 10415,
+ "hover": {
+  "candidates": {
+   "available": 133,
+   "distinct": 14,
+   "picked": [
+    "div.Topbar__LogoAnchor-sc-gsec0x-1.bBWjGI > a",
+    "li > a",
+    "div.Nav__ActionMenu-sc-141m4ur-12.ekXEVU > a.login-button",
+    "a.login-button > button.Button__Container-sc-1jjqbrw-0.hACioR",
+    "div > button.Button__Container-sc-1jjqbrw-0.fnjIlG",
+    "div.OJwrO > a.SectionIntro__Button-sc-1nhl813-4.dQyCQZ",
+    "div > button.WatchDemo__Container-sc-1kj9jjo-0.dIaiHi",
+    "div.PostPreviews__PostItem-sc-rka16f-1.VpfNW > a",
+    "div > a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg",
+    "div > a",
+    "div.Testimonials__Social-sc-1rcs3hw-4.gWzFOE > a",
+    "div.Item__StyledCollapsableItem-sc-bjycf3-2.egfBPj > button.Item__Toggle-sc-bjycf3-4.iIeMnL",
+    "p.Typography__Paragraph-sc-p3xo6h-7.dwgfHL > a",
+    "div.fMWa-dx > a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg"
+   ]
+  },
+  "hovered": [
+   {
+    "selector": "div.Topbar__LogoAnchor-sc-gsec0x-1.bBWjGI > a",
+    "covered": false
+   },
+   {
+    "selector": "li > a",
+    "covered": false
+   },
+   {
+    "selector": "div.Nav__ActionMenu-sc-141m4ur-12.ekXEVU > a.login-button",
+    "covered": false
+   },
+   {
+    "selector": "a.login-button > button.Button__Container-sc-1jjqbrw-0.hACioR",
+    "covered": false
+   },
+   {
+    "selector": "div > button.Button__Container-sc-1jjqbrw-0.fnjIlG",
+    "covered": false
+   },
+   {
+    "selector": "div.OJwrO > a.SectionIntro__Button-sc-1nhl813-4.dQyCQZ",
+    "covered": false
+   },
+   {
+    "selector": "div > button.WatchDemo__Container-sc-1kj9jjo-0.dIaiHi",
+    "covered": false
+   },
+   {
+    "selector": "div.PostPreviews__PostItem-sc-rka16f-1.VpfNW > a",
+    "covered": false
+   },
+   {
+    "selector": "div > a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg",
+    "covered": false
+   },
+   {
+    "selector": "div > a",
+    "covered": true
+   },
+   {
+    "selector": "div.Testimonials__Social-sc-1rcs3hw-4.gWzFOE > a",
+    "covered": true
+   },
+   {
+    "selector": "div.Item__StyledCollapsableItem-sc-bjycf3-2.egfBPj > button.Item__Toggle-sc-bjycf3-4.iIeMnL",
+    "covered": false
+   },
+   {
+    "selector": "p.Typography__Paragraph-sc-p3xo6h-7.dwgfHL > a",
+    "covered": true
+   },
+   {
+    "selector": "div.fMWa-dx > a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg",
+    "covered": false
+   }
+  ]
+ },
+ "observed": [
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 78
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 65
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "dLwxQl",
+   "keyframeProperties": "",
+   "duration": "1.2s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.sc-fqkvVR.iYzOko > div.sc-gsFSXq.cBSgSE::before",
+   "count": 60
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 52
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 39
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "dLwxQl",
+   "keyframeProperties": "",
+   "duration": "1.2s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.sc-fqkvVR.dsrLJw > div.sc-gsFSXq.kakWLo::before",
+   "count": 28
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.4s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "g > text",
+   "count": 21
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > path",
+   "count": 20
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.4s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "g > text",
+   "count": 18
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > path",
+   "count": 17
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.4s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "g > text",
+   "count": 15
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > path",
+   "count": 13
+  },
+  {
+   "kind": "transition",
+   "phase": "final",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "1s",
+   "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+   "delay": "0s",
+   "selector": "div > div",
+   "count": 13
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "box-shadow",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.Testimonials__RowContainer-sc-1rcs3hw-1.Qwkbu > div.Testimonials__Panel-sc-1rcs3hw-3.gqyXuo",
+   "count": 12
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.Testimonials__RowContainer-sc-1rcs3hw-1.Qwkbu > div.Testimonials__Panel-sc-1rcs3hw-3.gqyXuo",
+   "count": 12
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > path",
+   "count": 10
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.4s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "g > text",
+   "count": 9
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "box-shadow",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.Testimonials__RowContainer-sc-1rcs3hw-1.Qwkbu > div.Testimonials__Panel-sc-1rcs3hw-3.gqyXuo",
+   "count": 9
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.Testimonials__RowContainer-sc-1rcs3hw-1.Qwkbu > div.Testimonials__Panel-sc-1rcs3hw-3.gqyXuo",
+   "count": 9
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > circle",
+   "count": 8
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.4s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > g",
+   "count": 7
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > circle",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.4s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > g",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > circle",
+   "count": 6
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.4s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > g",
+   "count": 5
+  },
+  {
+   "kind": "animation",
+   "phase": "load",
+   "name": "hdKGda",
+   "keyframeProperties": "transform",
+   "duration": "120s",
+   "timingFunction": "linear",
+   "delay": "0s",
+   "iterations": "infinite",
+   "selector": "div.kLosTT > div.Testimonials__RowContainer-sc-1rcs3hw-1.Qwkbu",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > circle",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "g > circle",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "g > circle",
+   "count": 4
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.4s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > g",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "final",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > path",
+   "count": 3
+  },
+  {
+   "kind": "transition",
+   "phase": "load",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "g > circle",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "g > circle",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.gDEmYq",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "scroll",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.gDEmYq::before",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.login-button > button.Button__Container-sc-1jjqbrw-0.hACioR",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.login-button > button.Button__Container-sc-1jjqbrw-0.hACioR",
+   "count": 2
+  },
+  {
+   "kind": "transition",
+   "phase": "final",
+   "property": "fill",
+   "declaredProperty": "fill",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "svg > circle",
+   "count": 2
+  },
+  {
+   "kind": "animation",
+   "phase": "scroll",
+   "name": "hBaPda",
+   "keyframeProperties": "transform",
+   "duration": "1s",
+   "timingFunction": "ease-in-out",
+   "delay": "0s",
+   "iterations": "1",
+   "selector": "svg.send-animation > path",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li > a",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li > a",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li > div.Nav__DropdownContainer-sc-141m4ur-3.jmGeWm",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li > div.Nav__DropdownContainer-sc-141m4ur-3.jmGeWm",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li > a",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "color",
+   "declaredProperty": "color",
+   "duration": "0.2s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li > a",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li > div.Nav__DropdownContainer-sc-141m4ur-3.jmGeWm",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "li > div.Nav__DropdownContainer-sc-141m4ur-3.jmGeWm",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div > button.Button__Container-sc-1jjqbrw-0.fnjIlG",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div > button.Button__Container-sc-1jjqbrw-0.fnjIlG",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.OJwrO > a.SectionIntro__Button-sc-1nhl813-4.dQyCQZ",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "background-color",
+   "declaredProperty": "background-color",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div.OJwrO > a.SectionIntro__Button-sc-1nhl813-4.dQyCQZ",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div > button.WatchDemo__Container-sc-1kj9jjo-0.dIaiHi",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "box-shadow",
+   "declaredProperty": "box-shadow",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "div > button.WatchDemo__Container-sc-1kj9jjo-0.dIaiHi",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.18s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "span.sc-iGgWBj.dVSjCO > img",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.18s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "span.sc-iGgWBj.dVSjCO > img",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.ciJSrs",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.ciJSrs::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.ciJSrs",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.ciJSrs::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.euvARA",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "hover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.euvARA::before",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "transform",
+   "declaredProperty": "transform",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.euvARA",
+   "count": 1
+  },
+  {
+   "kind": "transition",
+   "phase": "unhover",
+   "property": "opacity",
+   "declaredProperty": "opacity",
+   "duration": "0.1s",
+   "timingFunction": "ease",
+   "delay": "0s",
+   "selector": "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.euvARA::before",
+   "count": 1
+  }
+ ],
+ "computed": {
+  "elementsScanned": 2704,
+  "elementsTotal": 2704,
+  "transitionAllElements": 123,
+  "transitions": [
+   {
+    "property": "all",
+    "duration": "0.2s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "count": 123,
+    "samples": [
+     "div.Topbar__LogoAnchor-sc-gsec0x-1.bBWjGI > a",
+     "li > a",
+     "div.Nav__ActionMenu-sc-141m4ur-12.ekXEVU > a.login-button"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 69,
+    "samples": [
+     "g > g.fTQCoV"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "1s",
+    "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+    "delay": "0s",
+    "count": 56,
+    "samples": [
+     "div > div"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.2s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 44,
+    "samples": [
+     "div.sc-fqkvVR.dsrLJw > div.sc-gsFSXq.kakWLo::before",
+     "div.sc-fqkvVR.iYzOko > div.sc-gsFSXq.cBSgSE::before"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.1s",
+    "timingFunction": "ease-in-out",
+    "delay": "0s",
+    "count": 44,
+    "samples": [
+     "div.sc-gsFSXq.kakWLo > span.sc-iGgWBj.dVSjCO",
+     "div.sc-gsFSXq.cBSgSE > span.sc-iGgWBj.dVSjCO"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.22s",
+    "timingFunction": "cubic-bezier(0.19, 1, 0.22, 1)",
+    "delay": "0s",
+    "count": 42,
+    "samples": [
+     "span.sc-iGgWBj.dVSjCO > img"
+    ]
+   },
+   {
+    "property": "box-shadow",
+    "duration": "0.1s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 33,
+    "samples": [
+     "div > button.WatchDemo__Container-sc-1kj9jjo-0.dIaiHi",
+     "div.Testimonials__RowContainer-sc-1rcs3hw-1.Qwkbu > div.Testimonials__Panel-sc-1rcs3hw-3.gqyXuo"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "0.1s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 33,
+    "samples": [
+     "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.ciJSrs",
+     "div.Testimonials__RowContainer-sc-1rcs3hw-1.Qwkbu > div.Testimonials__Panel-sc-1rcs3hw-3.gqyXuo",
+     "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.gDEmYq"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.1s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 8,
+    "samples": [
+     "svg > path",
+     "svg > circle",
+     "g > circle"
+    ]
+   },
+   {
+    "property": "fill",
+    "duration": "0.4s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 7,
+    "samples": [
+     "svg > g",
+     "g > text"
+    ]
+   },
+   {
+    "property": "opacity",
+    "duration": "0.1s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "li > div.Nav__DropdownContainer-sc-141m4ur-3.jmGeWm",
+     "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.ciJSrs::before",
+     "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.gDEmYq::before"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.1s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 5,
+    "samples": [
+     "li > div.Nav__DropdownContainer-sc-141m4ur-3.jmGeWm",
+     "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.ciJSrs",
+     "a.ButtonSecondary__Anchor-sc-famgus-1.keMDOg > div.ButtonSecondary__Container-sc-famgus-0.gDEmYq"
+    ]
+   },
+   {
+    "property": "background-color",
+    "duration": "0.1s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 4,
+    "samples": [
+     "a.login-button > button.Button__Container-sc-1jjqbrw-0.hACioR",
+     "div > button.Button__Container-sc-1jjqbrw-0.fnjIlG",
+     "div.OJwrO > a.SectionIntro__Button-sc-1nhl813-4.dQyCQZ"
+    ]
+   },
+   {
+    "property": "background",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "li > a"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "li > a"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.2s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "button.Nav__MenuButton-sc-141m4ur-7.fMLkQg > div.Nav__Hamburger-sc-141m4ur-6.iVRvzB",
+     "button.Nav__MenuButton-sc-141m4ur-7.fMLkQg > div.Nav__Hamburger-sc-141m4ur-6.iVRvzB::before",
+     "button.Nav__MenuButton-sc-141m4ur-7.fMLkQg > div.Nav__Hamburger-sc-141m4ur-6.iVRvzB::after"
+    ]
+   },
+   {
+    "property": "color",
+    "duration": "0.14s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 3,
+    "samples": [
+     "a > svg"
+    ]
+   },
+   {
+    "property": "transform",
+    "duration": "0.18s",
+    "timingFunction": "ease",
+    "delay": "0s",
+    "count": 2,
+    "samples": [
+     "span.sc-iGgWBj.dVSjCO > img"
+    ]
+   }
+  ],
+  "animations": [
+   {
+    "name": "dLwxQl",
+    "duration": "1.2s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 44,
+    "samples": [
+     "div.sc-fqkvVR.dsrLJw > div.sc-gsFSXq.kakWLo::before",
+     "div.sc-fqkvVR.iYzOko > div.sc-gsFSXq.cBSgSE::before"
+    ]
+   },
+   {
+    "name": "hdKGda",
+    "duration": "120s",
+    "timingFunction": "linear",
+    "delay": "0s",
+    "iterations": "infinite",
+    "count": 2,
+    "samples": [
+     "div.kLosTT > div.Testimonials__RowContainer-sc-1rcs3hw-1.Qwkbu"
+    ]
+   }
+  ]
+ },
+ "inlineSheets": {
+  "sheets": 3,
+  "reducedMotionRules": 0,
+  "transitionAll": [
+   {
+    "selector": "a",
+    "value": "0.2s ease-out all"
+   },
+   {
+    "selector": "a",
+    "value": "0.2s ease-out all"
+   }
+  ],
+  "keyframes": [
+   "hr",
+   "dLwxQl",
+   "hBaPda",
+   "WxNdC",
+   "fEWCgj",
+   "hdKGda"
+  ],
+  "unreadable": 0
+ },
+ "fingerprint": {
+  "title": "Family",
+  "canvases": 0,
+  "viewportSizedCanvases": 0,
+  "webglContexts": 0,
+  "canvas2dContexts": 2,
+  "videos": 9,
+  "gsap": null,
+  "scrollTrigger": false,
+  "lenis": false,
+  "locomotiveScroll": false,
+  "framerMotionAttrs": 0,
+  "reducedMotionQueryCount": 1,
+  "reducedMotionQueries": [
+   "(prefers-reduced-motion)"
+  ],
+  "documentHeight": 11315
+ },
+ "errors": [],
+ "outcome": "ok",
+ "requests": {
+  "total": 141,
+  "stylesheets": 0,
+  "scripts": 28,
+  "failed": 13
+ },
+ "stylesheets": {
+  "files": 0,
+  "bytes": 0,
+  "reducedMotionQueries": 0,
+  "transitionAll": [],
+  "transitionAllCount": 0,
+  "keyframes": [],
+  "cubicBeziers": {}
+ },
+ "scripts": {
+  "files": 27,
+  "bytes": 6047948,
+  "reducedMotionMentions": 2,
+  "libraries": {
+   "springPhysics": true,
+   "lottie": true
+  }
+ },
+ "elapsedMs": 40804
+}

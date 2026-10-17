@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const entries = await getCollection('entries');
+---
+<Base title="easeprint" current="index">
+  <section class="wrap">
+    <h1 class="display">easeprint</h1>
+    <p class="lede">How real sites move. {entries.length} entries so far.</p>
+  </section>
+</Base>

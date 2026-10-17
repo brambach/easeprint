@@ -1,0 +1,371 @@
+/*
+ * easeprint's chrome. Material borrowed from Dervo (trydervo.com): warm paper, ink, hairlines, one 1200px column,
+ * serif only for display. The chrome stays neutral; the demos carry the colour. Pine is the one accent and each
+ * page spends it once, on the wordmark's full stop.
+ */
+@import "@fontsource/instrument-serif/400.css";
+@import "@fontsource/instrument-serif/400-italic.css";
+@import "@fontsource-variable/instrument-sans/index.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+@import "./motion.css";
+
+:root {
+  color-scheme: light;
+  --paper: #f7f6f3;
+  --canvas: #fdfdfc;
+  --raised: #fff;
+  --sunk: #f2f1ed;
+  --ink: #1b1b19;
+  --ink2: #3c3c38;
+  --muted: #5b5a55;
+  --faint: #696762;
+  --line: #e6e5df;
+  --line2: #d6d5ce;
+  --pine: #22382b;
+
+  /* Demo colours, one per posture. These are the only colour on the page. */
+  --spatial: #b0461f;
+  --material: #4f6b45;
+  --ambient: #8a6a12;
+  --compare-a: #b0461f;
+  --compare-b: #2f5f8a;
+  --f-display: "Instrument Serif", georgia, serif;
+  --f-text: "Instrument Sans Variable", "Instrument Sans", -apple-system, blinkmacsystemfont, system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, sfmono-regular, menlo, monospace;
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+  --s9: 96px;
+  --wrap: 1200px;
+  --r-sm: 6px;
+  --r: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #141312;
+    --canvas: #1b1a18;
+    --raised: #242220;
+    --sunk: #2a2826;
+    --ink: #eeece7;
+    --ink2: #cdc9c1;
+    --muted: #b4b0a7;
+    --faint: #a5a198;
+    --line: #2b2926;
+    --line2: #3d3a35;
+    --pine: #adc19b;
+    --spatial: #e0845b;
+    --material: #9cbf8a;
+    --ambient: #d9b24a;
+    --compare-a: #e0845b;
+    --compare-b: #7fb2e0;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #141312;
+  --canvas: #1b1a18;
+  --raised: #242220;
+  --sunk: #2a2826;
+  --ink: #eeece7;
+  --ink2: #cdc9c1;
+  --muted: #b4b0a7;
+  --faint: #a5a198;
+  --line: #2b2926;
+  --line2: #3d3a35;
+  --pine: #adc19b;
+  --spatial: #e0845b;
+  --material: #9cbf8a;
+  --ambient: #d9b24a;
+  --compare-a: #e0845b;
+  --compare-b: #7fb2e0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 16px/1.6 var(--f-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+code,
+.mono {
+  font-family: var(--f-mono);
+  font-size: 0.875em;
+}
+
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ink) 70%, transparent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+h1,
+h2 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+.wrap {
+  max-width: calc(var(--wrap) + 48px);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (width <= 640px) {
+  .wrap {
+    padding-inline: 16px;
+  }
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -120px;
+  z-index: 50;
+  padding: 10px 14px;
+  border-radius: var(--r);
+  background: var(--raised);
+  border: 1px solid var(--line2);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.skip:focus {
+  top: 12px;
+}
+
+/* ---------- Type roles ---------- */
+.display {
+  font: 400 clamp(44px, 6.4vw, 84px) / 0.95 var(--f-display);
+  letter-spacing: -0.022em;
+}
+
+.h2 {
+  font: 400 clamp(30px, 3.4vw, 44px) / 1.02 var(--f-display);
+  letter-spacing: -0.014em;
+}
+
+.kicker {
+  font: 500 12px/1.4 var(--f-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.lede {
+  font-size: clamp(17px, 1.5vw, 19px);
+  line-height: 1.55;
+  color: var(--ink2);
+  max-width: 38em;
+}
+
+.fine {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.value {
+  font-family: var(--f-mono);
+  font-size: 13px;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Header ---------- */
+.masthead {
+  border-bottom: 1px solid var(--line);
+}
+
+.masthead .wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--s5);
+  height: 56px;
+}
+
+.brand {
+  font: 400 24px/1 var(--f-display);
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  margin-top: -3px;
+}
+
+.brand b {
+  font-weight: 400;
+  color: var(--pine);
+}
+
+.masthead nav {
+  display: flex;
+  gap: var(--s5);
+  margin-left: auto;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.masthead nav a {
+  text-decoration: none;
+}
+
+.masthead nav a:hover,
+.masthead nav a[aria-current="page"] {
+  color: var(--ink);
+}
+
+@media (width <= 520px) {
+  .masthead nav {
+    gap: var(--s4);
+    font-size: 13px;
+  }
+}
+
+/* ---------- Footer ---------- */
+.foot {
+  margin-top: var(--s9);
+  border-top: 1px solid var(--line);
+  padding-block: var(--s6) var(--s7);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.foot p + p {
+  margin-top: var(--s2);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line2);
+  background: var(--raised);
+  color: var(--ink);
+  font: 500 13px/1 var(--f-text);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform var(--dur-utility) var(--ease-utility);
+}
+
+.btn:hover {
+  background: var(--sunk);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+
+/* ---------- Tags ---------- */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: 500 11px/1 var(--f-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line2);
+  color: var(--muted);
+}
+
+.tag i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentcolor;
+}
+
+.tag[data-posture="spatial"] {
+  color: var(--spatial);
+}
+
+.tag[data-posture="material"] {
+  color: var(--material);
+}
+
+.tag[data-posture="ambient"] {
+  color: var(--ambient);
+}
+
+.tag[data-status="partial"],
+.tag[data-status="unmeasurable"] {
+  border-style: dashed;
+}

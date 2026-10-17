@@ -1,0 +1,42 @@
+/*
+ * motion.css: the house tiers, as custom properties.
+ *
+ * Reconstructed 2026-10-17 from the tiers stated in the easeprint brief. The original design/motion.css was not
+ * in the repo. Replace this file with the original when it lands; the variable names below are what the site uses.
+ *
+ * - statement: one per viewport, plays once. 900ms cubic-bezier(0.19, 1, 0.22, 1)
+ * - signature: 400ms cubic-bezier(0.2, 1.4, 0.4, 1), the overshoot
+ * - utility:   200ms ease-out, hover and press
+ * - exit:      140ms ease-in, leaving is faster than arriving
+ *
+ * Transform and opacity only. Reduced motion zeroes every duration, so the end state shows at once.
+ */
+
+:root {
+  --ease-statement: cubic-bezier(0.19, 1, 0.22, 1);
+  --dur-statement: 900ms;
+  --ease-signature: cubic-bezier(0.2, 1.4, 0.4, 1);
+  --dur-signature: 400ms;
+  --ease-utility: ease-out;
+  --dur-utility: 200ms;
+  --ease-exit: ease-in;
+  --dur-exit: 140ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-statement: 0ms;
+    --dur-signature: 0ms;
+    --dur-utility: 0ms;
+    --dur-exit: 0ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+}

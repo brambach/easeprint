@@ -1,4 +1,5 @@
 ---
+import { nextId } from '../lib/ids';
 import { plot } from '../lib/plot';
 
 interface Props {
@@ -19,7 +20,7 @@ const [x0, y0] = p.toSvg(0, 0);
 const [x1, y1] = p.toSvg(1, 1);
 const overshoot = p.yMax > 1.001 || p.yMin < -0.001;
 // Handles can sit far outside the curve's range (cubic-bezier(0.34, 4.56, ...)); clip them to the plot and say so.
-const clipId = `plot-clip-${(globalThis.__plotId = ((globalThis as { __plotId?: number }).__plotId ?? 0) + 1)}`;
+const clipId = nextId('plot-clip');
 const offChart =
   p.easing.kind === 'cubic'
     ? [p.easing.bezier[1], p.easing.bezier[3]].filter((y) => y > p.yMax + 0.001 || y < p.yMin - 0.001)

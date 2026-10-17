@@ -1,12 +1,275 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import CurvePlot from '../components/CurvePlot.astro';
+import { leadTier, loadEntries } from '../lib/entries';
+import { POSTURES } from '../lib/schema';
 
-const entries = await getCollection('entries');
+const entries = await loadEntries();
+const tiers = entries.reduce((n, e) => n + e.data.tiers.length, 0);
+const honored = entries.filter((e) => e.honesty.reducedMotion === 'honored').length;
+const dates = [...new Set(entries.map((e) => e.data.captured))].sort();
+const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => e.data.posture === p).length]));
+const verdict: Record<string, string> = {
+  honored: 'honors reduced motion',
+  partial: 'partly honors reduced motion',
+  'not-honored': 'ignores reduced motion',
+  'no-movement': 'nothing measured moves',
+  unknown: 'reduced motion unknown',
+};
 ---
 <Base title="easeprint" current="index">
-  <section class="wrap">
-    <h1 class="display">easeprint</h1>
-    <p class="lede">How real sites move. {entries.length} entries so far.</p>
+  <section class="hero wrap">
+    <h1 class="wordmark" data-statement>easeprint</h1>
+    <p class="lede">
+      How {entries.length} real sites move, measured in a browser. Exact cubic-beziers and durations, read from computed
+      styles. Every curve plotted, rebuilt as a demo in our own code, and copyable. Honest notes on reduced motion
+      and{' '}<code>transition: all</code>.
+    </p>
+    <p class="facts value">
+      <span>{entries.length} sites</span>
+      <span>{tiers} tiers</span>
+      <span>captured {dates.join(', ')}</span>
+      <span>{honored} of {entries.length} honor reduced motion</span>
+    </p>
+  </section>
+
+  <section class="wrap" aria-labelledby="entries-title">
+    <div class="list-head">
+      <h2 class="h2" id="entries-title">Entries</h2>
+      <div class="filter" role="group" aria-label="Filter by posture" data-filter>
+        <button class="btn" type="button" aria-pressed="true" data-posture-filter="all">All <span class="n">{entries.length}</span></button>
+        {POSTURES.map((p) => (
+          <button class="btn" type="button" aria-pressed="false" data-posture-filter={p}>
+            <i class="dot" data-posture={p} aria-hidden="true"></i>{p} <span class="n">{counts[p]}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+    <p class="fine filter-status" aria-live="polite" data-filter-status></p>
+
+    <ol class="grid">
+      {entries.map((e) => {
+        const lead = leadTier(e);
+        return (
+          <li class="card" data-posture={e.data.posture}>
+            <a href={`/entries/${e.id}/`} class="card-link">
+              <div class="card-plot">
+                {lead && (
+                  <CurvePlot
+                    timingFunction={lead.timingFunction}
+                    size={120}
+                    handles={false}
+                    color={`var(--${e.data.posture})`}
+                    label={`${e.data.name} ${lead.role}: ${lead.timingFunction} over ${lead.duration}`}
+                  />
+                )}
+              </div>
+              <div class="card-body">
+                <h3>{e.data.name}</h3>
+                <p class="value card-site">{e.data.site}</p>
+                {lead && (
+                  <p class="value card-curve">
+                    <span class="kicker">{lead.role}</span>{' '}
+                    {lead.timingFunction.startsWith('linear(') ? 'linear() spring' : lead.timingFunction} · {lead.duration}
+                  </p>
+                )}
+                <p class="card-tags">
+                  <span class="tag" data-posture={e.data.posture}><i></i>{e.data.posture}{e.data.ambientKind ? `, ${e.data.ambientKind}` : ''}</span>
+                  {e.data.status !== 'measured' && <span class="tag" data-status={e.data.status}>{e.data.status}</span>}
+                </p>
+                <p class="fine card-rm">{verdict[e.honesty.reducedMotion]}</p>
+              </div>
+            </a>
+          </li>
+        );
+      })}
+    </ol>
   </section>
 </Base>
+
+<script>
+  const buttons = [...document.querySelectorAll<HTMLButtonElement>('[data-posture-filter]')];
+  const cards = [...document.querySelectorAll<HTMLElement>('.card')];
+  const status = document.querySelector<HTMLElement>('[data-filter-status]');
+  function apply(posture: string) {
+    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.postureFilter === posture)));
+    let shown = 0;
+    cards.forEach((c) => {
+      const show = posture === 'all' || c.dataset.posture === posture;
+      c.hidden = !show;
+      if (show) shown++;
+    });
+    if (status) status.textContent = posture === 'all' ? '' : `Showing ${shown} ${posture} ${shown === 1 ? 'entry' : 'entries'}.`;
+    const url = new URL(location.href);
+    if (posture === 'all') url.searchParams.delete('posture');
+    else url.searchParams.set('posture', posture);
+    history.replaceState(null, '', url);
+  }
+  buttons.forEach((b) => b.addEventListener('click', () => apply(b.dataset.postureFilter!)));
+  const initial = new URL(location.href).searchParams.get('posture');
+  if (initial && buttons.some((b) => b.dataset.postureFilter === initial)) apply(initial);
+</script>
+
+<style>
+  .hero {
+    padding-block: var(--s8) var(--s7);
+  }
+
+  /* The one oversized wordmark. Its statement move: it settles up once on load, painted visible from the start. */
+  .wordmark {
+    font: 400 clamp(84px, 19vw, 264px) / 0.82 var(--f-display);
+    letter-spacing: -0.045em;
+    margin-left: -0.04em;
+    animation: statement-settle var(--dur-statement) var(--ease-statement) both;
+  }
+
+  @keyframes statement-settle {
+    from {
+      transform: translateY(0.12em);
+    }
+
+    to {
+      transform: none;
+    }
+  }
+
+  .hero .lede {
+    margin-top: var(--s7);
+  }
+
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s2) var(--s5);
+    margin-top: var(--s5);
+    padding-top: var(--s4);
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+  }
+
+  .list-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: var(--s4);
+    margin-top: var(--s6);
+  }
+
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s2);
+  }
+
+  .filter .btn {
+    text-transform: capitalize;
+  }
+
+  .filter .n {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .filter .btn[aria-pressed="true"] .n {
+    color: inherit;
+    opacity: 0.7;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+
+  .dot[data-posture="spatial"] {
+    background: var(--spatial);
+  }
+
+  .dot[data-posture="material"] {
+    background: var(--material);
+  }
+
+  .dot[data-posture="ambient"] {
+    background: var(--ambient);
+  }
+
+  .filter-status {
+    min-height: 1.6em;
+    margin-top: var(--s2);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--s4);
+    margin-top: var(--s3);
+  }
+
+  .card[hidden] {
+    display: none;
+  }
+
+  .card-link {
+    display: flex;
+    gap: var(--s4);
+    height: 100%;
+    padding: var(--s4);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--canvas);
+    text-decoration: none;
+
+    /* Leaving uses the exit tier; arriving uses utility (below). */
+    transition: transform var(--dur-exit) var(--ease-exit);
+  }
+
+  .card-link:hover {
+    border-color: var(--line2);
+    transform: translateY(-2px);
+    transition: transform var(--dur-utility) var(--ease-utility);
+  }
+
+  .card-plot {
+    flex: none;
+    width: 96px;
+  }
+
+  .card-body {
+    min-width: 0;
+  }
+
+  .card h3 {
+    font: 400 26px/1 var(--f-display);
+    letter-spacing: -0.01em;
+    overflow-wrap: anywhere;
+  }
+
+  .card-site {
+    color: var(--muted);
+    margin-top: var(--s1);
+  }
+
+  .card-curve {
+    margin-top: var(--s3);
+    font-size: 12px;
+  }
+
+  .card-curve .kicker {
+    font-size: 10px;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s1);
+    margin-top: var(--s3);
+  }
+
+  .card-rm {
+    margin-top: var(--s2);
+    font-size: 12px;
+  }
+</style>

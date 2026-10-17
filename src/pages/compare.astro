@@ -1,0 +1,275 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadEntries } from '../lib/entries';
+
+const entries = await loadEntries();
+const options = entries.flatMap((e) =>
+  e.data.tiers.map((t, i) => ({
+    key: `${e.id}:${i}`,
+    site: e.data.name,
+    slug: e.id,
+    role: t.role,
+    label: t.label,
+    property: t.property,
+    kind: t.kind,
+    timingFunction: t.timingFunction,
+    duration: t.duration,
+    durationMs: t.durationMs,
+  })),
+);
+const statementOf = (slug: string) => options.find((o) => o.slug === slug && o.role === 'statement')?.key ?? options[0]!.key;
+const defaults = { a: statementOf('cuberto'), b: statementOf('family') };
+---
+<Base title="Compare" current="compare" description="Overlay any two measured curves and run them side by side.">
+  <section class="wrap compare" data-compare data-default-a={defaults.a} data-default-b={defaults.b}>
+    <header class="page-head">
+      <h1 class="display">Compare</h1>
+      <p class="lede">Pick any two measured tiers. Both curves are drawn on one scale, and both demos run together, so you can see which arrives first and which settles longer.</p>
+    </header>
+
+    <div class="pickers">
+      {(['a', 'b'] as const).map((side) => (
+        <label class={`picker picker-${side}`}>
+          <span class="picker-name"><i aria-hidden="true"></i>{side.toUpperCase()}</span>
+          <select data-pick={side}>
+            {entries.map((e) => (
+              <optgroup label={e.data.name}>
+                {options.filter((o) => o.slug === e.id).map((o) => (
+                  <option value={o.key} selected={o.key === defaults[side]}>{o.site}: {o.role}, {o.label} ({o.duration})</option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+      ))}
+    </div>
+
+    <div class="compare-grid">
+      <figure class="overlay">
+        <svg viewBox="0 0 320 320" role="img" data-overlay aria-label="Two curves overlaid">
+          <rect class="frame" data-frame />
+          <line class="guide" data-guide-0 />
+          <line class="guide" data-guide-1 />
+          <path class="curve curve-a" data-curve="a" />
+          <path class="curve curve-b" data-curve="b" />
+          <circle class="marker marker-a" r="6" data-marker="a" />
+          <circle class="marker marker-b" r="6" data-marker="b" />
+        </svg>
+        <figcaption class="fine">Time runs left to right on each curve's own duration; progress bottom to top. Dashed lines mark 0 and 1 when a curve overshoots.</figcaption>
+      </figure>
+
+      <div class="runs">
+        {(['a', 'b'] as const).map((side) => (
+          <div class={`run run-${side}`}>
+            <p class="run-label"><span class="picker-name"><i aria-hidden="true"></i>{side.toUpperCase()}</span> <a data-link={side}></a></p>
+            <div class="track"><span class="puck" data-puck={side} aria-hidden="true"></span></div>
+            <dl class="spec">
+              <div><dt>Timing</dt><dd class="value" data-tf={side}></dd></div>
+              <div><dt>Duration</dt><dd class="value" data-dur={side}></dd></div>
+              <div><dt>At 25% of the time</dt><dd class="value" data-quarter={side}></dd></div>
+            </dl>
+            <div class="btn-row">
+              <button class="btn" type="button" data-copy="" data-copy-side={side}>Copy transition</button>
+              <span class="fine" data-copy-status aria-live="polite"></span>
+            </div>
+          </div>
+        ))}
+        <div class="controls">
+          <button class="btn" type="button" data-play-both>Play both</button>
+          <button class="btn" type="button" data-slow aria-pressed="false">Slow-mo 10%</button>
+          <label class="scrub"><span class="sr">Scrub both curves</span><input type="range" min="0" max="1000" value="0" data-scrub /></label>
+        </div>
+        <p class="fine" data-status aria-live="polite">Both play on a shared clock, so the shorter one finishes first.</p>
+      </div>
+    </div>
+  </section>
+  <script id="compare-data" type="application/json" set:html={JSON.stringify(options)} />
+</Base>
+
+<script>
+  import '../scripts/compare';
+  import '../scripts/copy';
+</script>
+
+<style>
+  .page-head {
+    padding-block: var(--s8) var(--s5);
+  }
+
+  .page-head .lede {
+    margin-top: var(--s4);
+  }
+
+  .pickers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--s4);
+  }
+
+  .picker {
+    display: grid;
+    gap: var(--s2);
+  }
+
+  .picker select {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid var(--line2);
+    border-radius: var(--r-sm);
+    background: var(--raised);
+    color: var(--ink);
+    font: 400 14px var(--f-text);
+  }
+
+  .picker-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font: 500 12px/1 var(--f-mono);
+  }
+
+  .picker-name i {
+    width: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--compare-a);
+  }
+
+  .picker-b .picker-name i,
+  .run-b .picker-name i {
+    background: var(--compare-b);
+  }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+    gap: var(--s7);
+    margin-top: var(--s6);
+    align-items: start;
+  }
+
+  @media (width <= 800px) {
+    .compare-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .overlay svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .overlay figcaption {
+    margin-top: var(--s2);
+  }
+
+  .frame {
+    fill: none;
+    stroke: var(--line2);
+  }
+
+  .guide {
+    stroke: var(--line2);
+    stroke-dasharray: 3 4;
+  }
+
+  .curve {
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .curve-a,
+  .marker-a {
+    stroke: var(--compare-a);
+  }
+
+  .curve-b,
+  .marker-b {
+    stroke: var(--compare-b);
+  }
+
+  /* Second curve dashed, so the two read apart without colour. */
+  .curve-b {
+    stroke-dasharray: 7 4;
+  }
+
+  .marker {
+    fill: var(--paper);
+    stroke-width: 2.5;
+  }
+
+  .runs {
+    display: grid;
+    gap: var(--s5);
+  }
+
+  .run-label a {
+    margin-left: var(--s2);
+    font-size: 14px;
+  }
+
+  .track {
+    margin-top: var(--s2);
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--canvas);
+  }
+
+  .puck {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--compare-a);
+  }
+
+  [data-puck="b"] {
+    background: var(--compare-b);
+    border-radius: 50%;
+  }
+
+  .spec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--s2) var(--s4);
+    margin-top: var(--s3);
+  }
+
+  .spec dt {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .spec dd {
+    margin: 0;
+  }
+
+  .btn-row {
+    align-items: center;
+    margin-top: var(--s3);
+  }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s2);
+    align-items: center;
+    padding-top: var(--s4);
+    border-top: 1px solid var(--line);
+  }
+
+  .scrub {
+    flex: 1 1 160px;
+    display: flex;
+  }
+
+  .scrub input {
+    width: 100%;
+    accent-color: var(--ink);
+  }
+</style>

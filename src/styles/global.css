@@ -24,12 +24,13 @@
   --line2: #d6d5ce;
   --pine: #22382b;
 
-  /* Demo colours, one per posture. These are the only colour on the page. */
-  --spatial: #b0461f;
-  --material: #4f6b45;
-  --ambient: #8a6a12;
-  --compare-a: #b0461f;
-  --compare-b: #2f5f8a;
+  /* Demo colours, one per posture. These are the only colour on the page. Validated as a categorical set
+     (lightness band, chroma, CVD and normal-vision separation, 3:1 on paper) in light and dark. */
+  --spatial: #c4552a;
+  --material: #2a72cc;
+  --ambient: #14996a;
+  --compare-a: #c4552a;
+  --compare-b: #2a72cc;
   --f-display: "Instrument Serif", georgia, serif;
   --f-text: "Instrument Sans Variable", "Instrument Sans", -apple-system, blinkmacsystemfont, system-ui, sans-serif;
   --f-mono: "JetBrains Mono", ui-monospace, sfmono-regular, menlo, monospace;
@@ -61,11 +62,11 @@
     --line: #2b2926;
     --line2: #3d3a35;
     --pine: #adc19b;
-    --spatial: #e0845b;
-    --material: #9cbf8a;
-    --ambient: #d9b24a;
-    --compare-a: #e0845b;
-    --compare-b: #7fb2e0;
+    --spatial: #d46a3d;
+    --material: #4585d6;
+    --ambient: #1fa274;
+    --compare-a: #d46a3d;
+    --compare-b: #4585d6;
   }
 }
 
@@ -82,11 +83,11 @@
   --line: #2b2926;
   --line2: #3d3a35;
   --pine: #adc19b;
-  --spatial: #e0845b;
-  --material: #9cbf8a;
-  --ambient: #d9b24a;
-  --compare-a: #e0845b;
-  --compare-b: #7fb2e0;
+  --spatial: #d46a3d;
+  --material: #4585d6;
+  --ambient: #1fa274;
+  --compare-a: #d46a3d;
+  --compare-b: #4585d6;
 }
 
 *,
@@ -356,19 +357,40 @@ p {
   background: currentcolor;
 }
 
-.tag[data-posture="spatial"] {
-  color: var(--spatial);
+.tag[data-posture] {
+  color: var(--ink2);
 }
 
-.tag[data-posture="material"] {
-  color: var(--material);
+/* Identity is carried by the dot; the label stays in text ink for contrast. */
+.tag[data-posture="spatial"] i {
+  background: var(--spatial);
 }
 
-.tag[data-posture="ambient"] {
-  color: var(--ambient);
+.tag[data-posture="material"] i {
+  background: var(--material);
+}
+
+.tag[data-posture="ambient"] i {
+  background: var(--ambient);
 }
 
 .tag[data-status="partial"],
 .tag[data-status="unmeasurable"] {
   border-style: dashed;
+}
+
+/* Signature tier: the copy confirmation stamps in with the house overshoot. */
+[data-copy-status]:not(:empty) {
+  display: inline-block;
+  animation: signature-stamp var(--dur-signature) var(--ease-signature) both;
+}
+
+@keyframes signature-stamp {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: none;
+  }
 }

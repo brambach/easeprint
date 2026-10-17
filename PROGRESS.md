@@ -140,3 +140,59 @@ Evidence:
 - `tests/unit/trace.test.ts`: all 105 tiers trace to one raw record each (timing, duration, phase, property,
   selector, count). The schema enforces the same at build time.
 - `pnpm test`: 203 passed. `pnpm build`: 21 pages. `pnpm lint` clean.
+
+## M5 Index, filter, compare, the convention
+
+- **Index** (`/`): one oversized wordmark, 20 cards with each site's lead curve, posture, status and
+  reduced-motion verdict. The posture filter (All, Spatial 7, Material 9, Ambient 4) is a small script that hides
+  cards and keeps `?posture=` in the URL; without JavaScript every card shows.
+- **Compare** (`/compare/`): any two of the 105 tiers, overlaid on one shared scale (A solid, B dashed, so the two
+  read apart without colour), both demos on one clock, Slow-mo 10%, a scrubber, exact copy for each.
+  Shareable as `?a=<entry>:<tier>&b=<entry>:<tier>`.
+- **The convention** (`/convention/`): the claim as three tests in `src/lib/convention.ts` (at least 60% of the
+  distance by 25% of the time, 700ms or longer, a non-ambient tier at 300ms or less). **5 of 20 pass:** Cuberto,
+  Family, Raycast, brycerambach.com and Stripe. Near misses passing two of three: Motion, Obys, Resend, Linear,
+  Vaul. Seven sites have no statement move measured. Two charts (every statement curve on one scale;
+  statement against fastest tier) and a full table, all computed from the entries.
+- **Method** (`/method/`): the visit, the glossary, the verdict thresholds, the limits.
+- **The site on motion.css**: the wordmark is the one statement move (900ms, `cubic-bezier(0.19, 1, 0.22, 1)`,
+  transform only, painted visible from the first frame); the copy confirmation stamps in on the signature
+  overshoot; cards rise on utility (200ms ease-out) and drop on exit (140ms ease-in). Reduced motion zeroes all
+  four. Note that `motion.css` is a reconstruction from the brief's tiers (see PLAN.md).
+- **Colour**: posture and compare colours were changed to a set that passes a categorical palette check
+  (lightness band, chroma, CVD and normal-vision separation, 3:1) in light and dark. Tag text stays in text ink.
+
+Evidence:
+
+- Screenshots, desktop and mobile: `evidence/index-*.png`, `evidence/convention-*.png`, `evidence/compare-*.png`,
+  `evidence/entries-family-*.png`; dark: `evidence/index-desktop-dark.png`, `evidence/entries-raycast-desktop-dark.png`.
+- `tests/e2e/site.spec.ts`: axe finds no serious or critical issues on six pages (index, two entries, compare,
+  convention, method) at desktop and mobile, and on four pages in dark mode. Fixed along the way: tag text
+  contrast, and keyboard access to the scrolling chart and table.
+- Reduced motion (`reducedMotion: 'reduce'`): on the index, an entry, compare and the convention, no animation is
+  running before or after pressing play; compare demos jump instead of moving (plus the M3 entry tests).
+- Filter and compare are covered end to end, including exact clipboard strings for a transition and an animation.
+- `tests/unit/stylelint.test.ts`: stylelint fails on `transition: all`, `transition-property: all`, a list
+  containing `all`, and transitions on anything but transform and opacity; it passes the site's own CSS.
+- Final run: `pnpm test` 208 passed, `pnpm test:e2e` 46 passed, `pnpm lint` clean, `pnpm check` 0 errors,
+  `pnpm build` 24 pages.
+
+## Summary
+
+**Built:** a static Astro site with 20 measured entries (105 tiers), each traced to raw files that the build
+checks; a measuring tool with normal, reduced-motion and opt-in click runs; plots, demos, slow-mo, scrub and
+exact copy; index with posture filter; compare overlay; the convention page; a method page.
+
+**Failed measurement:** none outright. Six are partial, with reasons on each entry: vercel.com, emilkowal.ski,
+rauno.me, darkroom.engineering, locomotive.ca, basement.studio. Their main motion is in canvas or on
+requestAnimationFrame. If you'd rather have 20 fully measured sites, those are the candidates to swap.
+
+**Needed from you:**
+
+1. Your `design/` folder (TASTE.md, MOTION.md, motion.css, motion/GLOSSARY.md, and the Cuberto, Raycast, Family and
+   brycerambach.com notes). Then the notes go into each entry's `fromNotes` beside the live values, dated, and
+   `src/styles/motion.css` gets replaced with the original.
+2. A `main` branch. The repo had no commits, so `claude/easeprint-mvp` is its only branch and GitHub shows it as the
+   default; a PR needs a base to merge into.
+3. A call on the type: I followed Dervo (Instrument Serif, Instrument Sans, JetBrains Mono) per your message; the
+   brief's fallback was Fraunces, Hanken Grotesk and Plex Mono. It's one block in `src/styles/global.css`.

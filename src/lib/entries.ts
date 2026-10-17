@@ -18,9 +18,10 @@ export async function loadEntries(): Promise<EntryWithHonesty[]> {
     .sort((a, b) => a.data.name.localeCompare(b.data.name));
 }
 
-/** The tier that represents a site on the index and in comparisons: its statement, or its longest move. */
+/** The tier that represents a site on the index: its statement, else its longest non-ambient move, else anything. */
 export function leadTier(e: CollectionEntry<'entries'>) {
-  return e.data.tiers.find((t) => t.role === 'statement') ?? [...e.data.tiers].sort((a, b) => b.durationMs - a.durationMs)[0];
+  const byLength = [...e.data.tiers].sort((a, b) => b.durationMs - a.durationMs);
+  return e.data.tiers.find((t) => t.role === 'statement') ?? byLength.find((t) => t.role !== 'ambient') ?? byLength[0];
 }
 
 export const rawHref = (path: string) => `/${path.replace(/^data\//, '')}`;

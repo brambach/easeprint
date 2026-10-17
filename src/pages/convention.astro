@@ -1,0 +1,425 @@
+---
+import Base from '../layouts/Base.astro';
+import { CRITERIA, conventionRow } from '../lib/convention';
+import { loadEntries } from '../lib/entries';
+import { plot, sharedRange } from '../lib/plot';
+
+const entries = await loadEntries();
+const rows = entries
+  .map((e) => ({ e, r: conventionRow(e.data.tiers) }))
+  .sort((a, b) => Number(b.r.meets) - Number(a.r.meets) || (b.r.statement?.durationMs ?? -1) - (a.r.statement?.durationMs ?? -1));
+const meets = rows.filter((x) => x.r.meets);
+const withStatement = rows.filter((x) => x.r.statement);
+const nearMisses = withStatement.filter((x) => !x.r.meets && [x.r.aggressive, x.r.long, x.r.hasFast].filter(Boolean).length === 2);
+const list = (names: string[]) => (names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names.at(-1)}`);
+const dates = [...new Set(entries.map((e) => e.data.captured))].join(', ');
+
+// Chart 1: every statement curve on one scale.
+const SIZE = 360;
+const PAD = 24;
+const range = sharedRange(withStatement.map((x) => x.r.statement!.timingFunction));
+const curves = withStatement.map((x) => ({ ...x, p: plot(x.r.statement!.timingFunction, { size: SIZE, pad: PAD, ...range }) }));
+// Frame geometry from a reference plot on the same scale, so the page builds even with no statement curves.
+const ref = plot('linear', { size: SIZE, pad: PAD, ...range });
+const [fx0, fy0] = ref.toSvg(0, 0);
+const [fx1, fy1] = ref.toSvg(1, 1);
+const [, qy] = ref.toSvg(0, CRITERIA.minProgressAtQuarter);
+const [qx] = ref.toSvg(0.25, 0);
+
+// Chart 2: statement duration against the fastest tier, one row per site with a statement.
+const W = 720;
+const LEFT = 150;
+const RIGHT = 24;
+const ROW = 30;
+const TOP = 28;
+const maxMs = 2000;
+const x = (ms: number) => LEFT + (Math.min(ms, maxMs) / maxMs) * (W - LEFT - RIGHT);
+const ticks = [0, 250, 500, 1000, 1500, 2000];
+const H = TOP + withStatement.length * ROW + 28;
+const pct = (n: number | null) => (n === null ? '–' : `${Math.round(n * 100)}%`);
+const tfShort = (tf: string) => (tf.startsWith('linear(') ? 'linear() spring' : tf);
+---
+<Base title="The convention" current="convention" description="An aggressive ease-out at long duration for the statement, a fast tier underneath. Tested against 20 sites.">
+  <article class="wrap conv">
+    <header class="page-head">
+      <p class="kicker">The convention</p>
+      <h1 class="display">Slow to settle, quick to answer</h1>
+      <p class="lede">
+        The claim: separate teams landed on the same shape. The one statement move is an aggressive ease-out at a long
+        duration, and under it sits a fast tier for everything you touch. Here it is as three tests, run against every
+        site measured on {dates}.
+      </p>
+    </header>
+
+    <section class="tests" aria-labelledby="tests">
+      <h2 class="sr" id="tests">The tests</h2>
+      <ol>
+        <li><span class="value">1</span><p><strong>Aggressive ease-out.</strong> The statement covers at least {CRITERIA.minProgressAtQuarter * 100}% of its distance in the first 25% of its time.</p></li>
+        <li><span class="value">2</span><p><strong>Long.</strong> The statement runs {CRITERIA.minStatementMs}ms or more.</p></li>
+        <li><span class="value">3</span><p><strong>A fast tier underneath.</strong> Some other tier on the site, not ambient, takes {CRITERIA.maxFastMs}ms or less.</p></li>
+      </ol>
+    </section>
+
+    <section class="verdict" aria-labelledby="verdict">
+      <h2 class="h2" id="verdict">{meets.length} of {entries.length} sites pass all three</h2>
+      <p class="lede">
+        {list(meets.map((m) => m.e.data.name))}.
+        {nearMisses.length > 0 && <> Near misses, passing two of three: {list(nearMisses.map((m) => m.e.data.name))}.</>}
+        {' '}{entries.length - withStatement.length} sites have no statement move measured at all.
+      </p>
+      <p class="fine">
+        The tests show the shape is shared. Whether the teams got there independently isn't something a browser can measure.
+        Cuberto and Obys use the identical curve, cubic-bezier(0.16, 1, 0.3, 1); Raycast and Stripe both use the
+        usual quart-out, cubic-bezier(0.165, 0.84, 0.44, 1).
+      </p>
+    </section>
+
+    <section class="charts" aria-labelledby="curves-title">
+      <figure class="chart">
+        <h2 class="chart-title" id="curves-title">Every statement curve, one scale</h2>
+        <ul class="legend">
+          <li><i class="swatch meets" aria-hidden="true"></i>passes all three ({meets.length})</li>
+          <li><i class="swatch other" aria-hidden="true"></i>doesn't ({withStatement.length - meets.length})</li>
+        </ul>
+        <svg viewBox={`0 0 ${SIZE} ${SIZE}`} role="img" aria-labelledby="curves-title curves-desc" class="curves">
+          <desc id="curves-desc">Statement curves for {withStatement.length} sites. The table below lists every value.</desc>
+          <rect class="frame" x={fx0} y={fy1} width={fx1 - fx0} height={fy0 - fy1} />
+          <line class="threshold" x1={fx0} x2={fx1} y1={qy} y2={qy} />
+          <line class="threshold" x1={qx} x2={qx} y1={fy0} y2={fy1} />
+          <text class="axis-label" x={qx + 4} y={fy0 - 6}>25% of time</text>
+          <text class="axis-label" x={fx1 - 4} y={qy - 6} text-anchor="end">{CRITERIA.minProgressAtQuarter * 100}% of distance</text>
+          {curves.filter((c) => !c.r.meets).map((c) => (
+            <path class="c other" d={c.p.d}><title>{c.e.data.name}: {tfShort(c.r.statement!.timingFunction)}, {c.r.statement!.duration}, {pct(c.r.quarter)} at 25%</title></path>
+          ))}
+          {curves.filter((c) => c.r.meets).map((c) => (
+            <path class="c meets" d={c.p.d}><title>{c.e.data.name}: {c.r.statement!.timingFunction}, {c.r.statement!.duration}, {pct(c.r.quarter)} at 25%</title></path>
+          ))}
+          <text class="axis-label" x={fx0} y={SIZE - 4}>time</text>
+          <text class="axis-label" x={4} y={fy1 + 10}>progress</text>
+        </svg>
+        <figcaption class="fine">A curve that passes test 1 crosses the dashed vertical line above the dashed horizontal one. Hover a line for its site.</figcaption>
+      </figure>
+
+      <figure class="chart">
+        <h2 class="chart-title" id="spread-title">Statement against the fastest tier</h2>
+        <ul class="legend">
+          <li><i class="pin hollow" aria-hidden="true"></i>fastest tier</li>
+          <li><i class="pin solid" aria-hidden="true"></i>statement</li>
+          <li><i class="swatch meets" aria-hidden="true"></i>passes all three</li>
+        </ul>
+        <div class="scroll-x" tabindex="0" role="region" aria-label="Statement against fastest tier chart, scrolls sideways">
+          <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="spread-title spread-desc" class="spread" style={`min-width: ${W * 0.75}px`}>
+            <desc id="spread-desc">For each site with a statement, its fastest tier and its statement duration in milliseconds. Thresholds at {CRITERIA.maxFastMs}ms and {CRITERIA.minStatementMs}ms.</desc>
+            {ticks.map((t) => (
+              <g>
+                <line class="grid" x1={x(t)} x2={x(t)} y1={TOP - 8} y2={H - 8} />
+                <text class="axis-label" x={x(t)} y={TOP - 14} text-anchor="middle">{t === 0 ? '0' : t >= 1000 ? `${t / 1000}s` : `${t}ms`}</text>
+              </g>
+            ))}
+            <line class="threshold" x1={x(CRITERIA.maxFastMs)} x2={x(CRITERIA.maxFastMs)} y1={TOP - 8} y2={H - 8} />
+            <line class="threshold" x1={x(CRITERIA.minStatementMs)} x2={x(CRITERIA.minStatementMs)} y1={TOP - 8} y2={H - 8} />
+            <text class="axis-label" x={x(CRITERIA.maxFastMs) + 4} y={H - 12}>fast, {CRITERIA.maxFastMs}ms</text>
+            <text class="axis-label" x={x(CRITERIA.minStatementMs) + 4} y={H - 12}>long, {CRITERIA.minStatementMs}ms</text>
+            {withStatement.map((row, i) => {
+              const y = TOP + i * ROW + ROW / 2;
+              const s = row.r.statement!;
+              const f = row.r.fast;
+              const cls = row.r.meets ? 'meets' : 'other';
+              return (
+                <g class={`row ${cls}`}>
+                  <title>{row.e.data.name}: statement {s.duration} ({tfShort(s.timingFunction)}){f ? `, fastest ${f.duration} (${f.label})` : ', no tier at 300ms or under'}</title>
+                  <rect class="hit" x="0" y={y - ROW / 2} width={W} height={ROW} />
+                  <text class="row-label" x={LEFT - 12} y={y + 4} text-anchor="end">{row.e.data.name}</text>
+                  {f && <line class="span" x1={x(f.durationMs)} x2={x(s.durationMs)} y1={y} y2={y} />}
+                  {f && <circle class="pin-hollow" cx={x(f.durationMs)} cy={y} r="5" />}
+                  <circle class="pin-solid" cx={x(s.durationMs)} cy={y} r="5.5" />
+                </g>
+              );
+            })}
+          </svg>
+        </div>
+        <figcaption class="fine">Dashed lines at {CRITERIA.maxFastMs}ms (test 3) and {CRITERIA.minStatementMs}ms (test 2). Durations over 2s would be clipped; none are.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="table-title">
+      <h2 class="h2" id="table-title">Every site</h2>
+      <div class="scroll-x" tabindex="0" role="region" aria-label="Results table, scrolls sideways">
+        <table class="results">
+          <thead>
+            <tr>
+              <th scope="col">Site</th>
+              <th scope="col">Statement</th>
+              <th scope="col">Duration</th>
+              <th scope="col">At 25% of time</th>
+              <th scope="col">Fastest tier</th>
+              <th scope="col">Passes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(({ e, r }) => (
+              <tr class={r.meets ? 'meets' : ''}>
+                <th scope="row"><a href={`/entries/${e.id}/`}>{e.data.name}</a></th>
+                <td class="value">{r.statement ? tfShort(r.statement.timingFunction) : 'no statement tier'}</td>
+                <td class="value">{r.statement?.duration ?? '–'}</td>
+                <td class="value">{pct(r.quarter)}</td>
+                <td class="value">{r.fast ? `${r.fast.duration} ${r.fast.role}` : 'none at 300ms or under'}</td>
+                <td>{r.meets ? 'all three' : [r.aggressive && '1', r.long && '2', r.hasFast && '3'].filter(Boolean).join(', ') || 'none'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="fine table-note">
+        Statement means the tier marked statement on each entry: the longest, most prominent single move measured.
+        Cuberto's fastest tier is exactly {CRITERIA.maxFastMs}ms, on the line. Thresholds are a reading of "aggressive",
+        "long" and "fast"; move them and the count moves, which the table makes easy to check.
+      </p>
+    </section>
+  </article>
+</Base>
+
+<style>
+  .page-head {
+    padding-block: var(--s8) var(--s5);
+  }
+
+  .page-head .display {
+    margin-top: var(--s3);
+    max-width: 12em;
+  }
+
+  .page-head .lede {
+    margin-top: var(--s5);
+  }
+
+  .tests ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--s4);
+    margin-top: var(--s4);
+  }
+
+  .tests li {
+    display: flex;
+    gap: var(--s3);
+    padding: var(--s4);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--canvas);
+  }
+
+  .tests .value {
+    color: var(--muted);
+  }
+
+  .verdict {
+    margin-top: var(--s8);
+  }
+
+  .verdict .lede {
+    margin-top: var(--s3);
+  }
+
+  .verdict .fine {
+    margin-top: var(--s3);
+    max-width: 44em;
+  }
+
+  .charts {
+    display: grid;
+    grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+    gap: var(--s7);
+    margin-top: var(--s7);
+  }
+
+  @media (width <= 900px) {
+    .charts {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .chart-title {
+    font: 500 16px/1.3 var(--f-text);
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s2) var(--s4);
+    margin-block: var(--s2) var(--s3);
+    font-size: 13px;
+    color: var(--ink2);
+  }
+
+  .legend li {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .swatch {
+    width: 16px;
+    height: 2px;
+    border-radius: 2px;
+  }
+
+  .swatch.meets {
+    background: var(--ink);
+    height: 3px;
+  }
+
+  .swatch.other {
+    background: var(--line2);
+  }
+
+  .pin {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--ink);
+  }
+
+  .pin.solid {
+    background: var(--ink);
+  }
+
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .chart figcaption {
+    margin-top: var(--s2);
+  }
+
+  .frame {
+    fill: none;
+    stroke: var(--line2);
+  }
+
+  .threshold {
+    stroke: var(--muted);
+    stroke-dasharray: 3 4;
+  }
+
+  .grid {
+    stroke: var(--line);
+  }
+
+  .axis-label {
+    font: 400 10px var(--f-mono);
+    fill: var(--muted);
+  }
+
+  .c {
+    fill: none;
+    stroke-linecap: round;
+  }
+
+  .c.other {
+    stroke: var(--line2);
+    stroke-width: 1.5;
+  }
+
+  .c.meets {
+    stroke: var(--ink);
+    stroke-width: 2;
+  }
+
+  .c:hover {
+    stroke-width: 3.5;
+  }
+
+  .row-label {
+    font: 400 12px var(--f-text);
+    fill: var(--muted);
+  }
+
+  .row.meets .row-label {
+    fill: var(--ink);
+    font-weight: 600;
+  }
+
+  .hit {
+    fill: transparent;
+  }
+
+  .row:hover .hit {
+    fill: var(--sunk);
+  }
+
+  .span {
+    stroke: var(--line2);
+    stroke-width: 2;
+  }
+
+  .row.meets .span {
+    stroke: var(--ink);
+  }
+
+  .pin-hollow {
+    fill: var(--paper);
+    stroke: var(--muted);
+    stroke-width: 2;
+  }
+
+  .pin-solid {
+    fill: var(--muted);
+    stroke: var(--paper);
+    stroke-width: 2;
+  }
+
+  .row.meets .pin-hollow {
+    stroke: var(--ink);
+  }
+
+  .row.meets .pin-solid {
+    fill: var(--ink);
+  }
+
+  .scroll-x {
+    overflow-x: auto;
+  }
+
+  .results {
+    width: 100%;
+    margin-top: var(--s4);
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  .results th,
+  .results td {
+    padding: 10px 12px 10px 0;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .results thead th {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  .results tbody th {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .results tr.meets th a {
+    font-weight: 700;
+  }
+
+  #table-title {
+    margin-top: var(--s8);
+  }
+
+  .table-note {
+    margin-top: var(--s3);
+    max-width: 48em;
+  }
+</style>

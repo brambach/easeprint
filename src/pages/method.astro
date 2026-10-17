@@ -1,0 +1,156 @@
+---
+import Base from '../layouts/Base.astro';
+import { CRITERIA } from '../lib/convention';
+---
+<Base title="Method" current="about" description="How easeprint measures a site, what the words mean, and what it can't see.">
+  <article class="wrap method">
+    <header class="page-head">
+      <h1 class="display">Method</h1>
+      <p class="lede">Each number here was read from a browser while it visited the site. Nothing was estimated from video or copied from a stylesheet by eye.</p>
+    </header>
+
+    <section aria-labelledby="visit">
+      <h2 class="h2" id="visit">One visit</h2>
+      <ol class="steps">
+        <li><strong>Load once</strong> in Chromium at 1440 by 900, wait for the network to settle, then three more seconds.</li>
+        <li><strong>Scroll</strong> to the bottom with the mouse wheel, in steps of 80% of the viewport, pausing 450ms each.</li>
+        <li><strong>Hover and leave</strong> up to 30 distinct links and buttons, spread through the page.</li>
+        <li><strong>Click</strong>, only for component demo sites whose motion needs it (Sonner, Vaul): their own demo buttons, then Escape. Listed in the raw file.</li>
+        <li><strong>Scan</strong> every element's computed <code>transition</code> and <code>animation</code>, including <code>::before</code> and <code>::after</code>.</li>
+      </ol>
+      <p>
+        Throughout, a probe injected before the page's own scripts records every <code>transitionrun</code> and
+        <code>animationstart</code> event with the exact computed timing, every <code>element.animate()</code> call,
+        <code>document.getAnimations()</code> every 120ms, and GSAP's timeline when a page exposes it. Stylesheet and
+        script text is scanned for counts only (reduced-motion queries, <code>transition: all</code>, keyframe names,
+        library fingerprints). No site code, asset or screenshot is stored.
+      </p>
+      <p>
+        A second run does the same with <code>prefers-reduced-motion: reduce</code>. Each run is one load. Raw files
+        are published beside the site, and an entry's values must match one raw record exactly (timing, duration,
+        phase, property, selector, count) or the build fails.
+      </p>
+    </section>
+
+    <section aria-labelledby="words">
+      <h2 class="h2" id="words">Words</h2>
+      <dl class="glossary">
+        <div><dt>Spatial</dt><dd>Motion that says where things are and where they go: travel, slides, layers, stacks.</dd></div>
+        <div><dt>Material</dt><dd>Motion that says what things are made of: press, give, glow, blur, spring.</dd></div>
+        <div><dt>Ambient</dt><dd>Motion that runs on its own, not in answer to you. <em>Decorative</em> (marquees, drifts), <em>diagrammatic</em> (product diagrams that explain), or <em>character</em> (motion with a personality).</dd></div>
+        <div><dt>Statement</dt><dd>The one big move. At most one per site here.</dd></div>
+        <div><dt>Secondary</dt><dd>Long moves under the statement.</dd></div>
+        <div><dt>Signature</dt><dd>The move that's recognisably theirs, often an overshoot.</dd></div>
+        <div><dt>Utility</dt><dd>Hover, press, colour: the fast floor.</dd></div>
+        <div><dt>Exit</dt><dd>Leaving, when it's timed differently from arriving.</dd></div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="verdicts">
+      <h2 class="h2" id="verdicts">Reduced motion verdicts</h2>
+      <p>Movement events (transform, translate, scale, rotate, position, size) in the reduced run as a share of the normal run. Fades are allowed under reduced motion, so they don't count against a site.</p>
+      <dl class="glossary">
+        <div><dt>Honored</dt><dd>20% or less of the movement remains.</dd></div>
+        <div><dt>Partly honored</dt><dd>More than 20%, up to 75%.</dd></div>
+        <div><dt>Not honored</dt><dd>More than 75% remains.</dd></div>
+        <div><dt>Nothing measured moves</dt><dd>No movement in the normal run, so nothing to reduce in CSS or WAAPI.</dd></div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="limits">
+      <h2 class="h2" id="limits">What it can't see</h2>
+      <ul class="limits">
+        <li>Motion run on <code>requestAnimationFrame</code>: smooth scroll (Lenis, Locomotive), GSAP tweens on pages that don't expose GSAP, Framer Motion springs not handed to WAAPI.</li>
+        <li>Anything drawn in a canvas. Entries say "motion lives in canvas" when a WebGL canvas covers a quarter of the viewport or more.</li>
+        <li>Menus, forms, drags, other pages, and states behind clicks (except the two demo sites).</li>
+        <li>Timing only. Distances, scale amounts and keyframe values aren't recorded, so the demos show each curve as a fixed travel or a fade.</li>
+        <li>One visit on one day. Sites change; a measurement is true for its date.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="convention-def">
+      <h2 class="h2" id="convention-def">The convention, as tests</h2>
+      <p>An aggressive ease-out (at least {CRITERIA.minProgressAtQuarter * 100}% of the distance by 25% of the time), {CRITERIA.minStatementMs}ms or longer, with a non-ambient tier of {CRITERIA.maxFastMs}ms or less on the same site. <a href="/convention/">See who passes.</a></p>
+    </section>
+
+    <section aria-labelledby="run">
+      <h2 class="h2" id="run">Run it</h2>
+      <pre class="value"><code>pnpm measure https://example.com
+pnpm measure https://example.com --reduced
+pnpm summarize data/raw/example.com/2026-10-17.json</code></pre>
+    </section>
+  </article>
+</Base>
+
+<style>
+  .page-head {
+    padding-block: var(--s8) var(--s5);
+  }
+
+  .page-head .lede {
+    margin-top: var(--s4);
+  }
+
+  .method section {
+    max-width: 46em;
+    margin-top: var(--s7);
+  }
+
+  .method section > p {
+    margin-top: var(--s3);
+  }
+
+  .steps,
+  .limits {
+    display: grid;
+    gap: var(--s2);
+    margin-top: var(--s4);
+    padding-left: 1.4em;
+  }
+
+  .steps {
+    list-style: decimal;
+  }
+
+  .limits {
+    list-style: disc;
+  }
+
+  .glossary {
+    display: grid;
+    gap: var(--s3);
+    margin-top: var(--s4);
+  }
+
+  .glossary div {
+    display: grid;
+    grid-template-columns: 11em 1fr;
+    gap: var(--s4);
+    padding-top: var(--s3);
+    border-top: 1px solid var(--line);
+  }
+
+  @media (width <= 560px) {
+    .glossary div {
+      grid-template-columns: 1fr;
+      gap: var(--s1);
+    }
+  }
+
+  .glossary dt {
+    font-weight: 600;
+  }
+
+  .glossary dd {
+    margin: 0;
+  }
+
+  pre {
+    margin-top: var(--s4);
+    padding: var(--s4);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--canvas);
+    overflow-x: auto;
+  }
+</style>

@@ -13,3 +13,17 @@ container's Chromium 141. `CLAUDE.md` is 32 lines. `.claude/hooks/session-start.
 - `pnpm test`: 11 passed (easing parser, durations, list splitting)
 - `pnpm build`: 1 page built
 - `pnpm check` (astro check): 0 errors, 0 warnings, 0 hints
+
+## M1 Schema
+
+`src/lib/schema.ts` is a strict zod schema (unknown keys fail). Structure carries the rules: timing functions
+must parse, `durationMs` must equal `duration`, the raw file must exist and its date must match `captured`,
+ambient posture needs an `ambientKind`, partial and unmeasurable entries must say why, at most one statement
+tier per site. Values from notes live in a separate dated `fromNotes` list and can't be mixed with measured tiers.
+
+- `tests/unit/schema.test.ts` runs a real `astro build` twice: the valid fixture builds (control), and the same
+  fixture with `posture` deleted fails with `InvalidContentEntryDataError` naming `posture`. It also checks that
+  removing any of 11 entry fields or 7 tier fields fails the schema.
+- `pnpm test`: 37 passed.
+- The brief's two M1 entries can't come from notes (not in the repo), so Cuberto and Raycast are written in M2 from
+  measured data.

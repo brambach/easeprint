@@ -1,0 +1,33 @@
+{
+  "name": "Example",
+  "site": "example.com",
+  "url": "https://example.com/",
+  "captured": "2026-10-17",
+  "raw": "data/raw/example.com/2026-10-17.json",
+  "status": "measured",
+  "summary": "A fixture entry that the schema accepts, used as the control in schema tests.",
+  "tiers": [
+    {
+      "role": "utility",
+      "label": "link hover",
+      "property": "opacity",
+      "timingFunction": "ease-out",
+      "duration": "0.2s",
+      "durationMs": 200,
+      "phase": "hover",
+      "selector": "a",
+      "count": 1
+    }
+  ],
+  "honesty": {
+    "reducedMotion": "unknown",
+    "reducedMotionEvidence": "Fixture, not measured.",
+    "transitionAll": {
+      "computedElements": 0,
+      "declarations": 0
+    },
+    "motionInJs": false,
+    "motionInCanvas": false
+  },
+  "notes": []
+}

@@ -1,0 +1,6 @@
+{
+  "fixture": true,
+  "note": "Hand-written stand-in for schema tests. Not a measurement.",
+  "observed": [{ "phase": "hover", "kind": "transition", "property": "opacity", "duration": "0.2s", "timingFunction": "ease-out", "delay": "0s", "selector": "a", "count": 1 }],
+  "computed": []
+}

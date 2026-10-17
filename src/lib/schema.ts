@@ -37,11 +37,13 @@ const duration = z.string().refine(
   { message: 'not a CSS duration like "0.9s" or "200ms"' },
 );
 
-/** A file under data/raw that exists on disk. Paths are relative to the repo root. */
+/** A file under data/raw that exists on disk. Paths are relative to the repo root (EASEPRINT_ROOT in tests). */
 export const rawPath = z
   .string()
   .regex(/^data\/raw\/[a-z0-9.-]+\/\d{4}-\d{2}-\d{2}\.json$/, 'expected data/raw/<site>/<YYYY-MM-DD>.json')
-  .refine((p) => existsSync(resolve(process.cwd(), p)), { message: 'raw measurement file does not exist' });
+  .refine((p) => existsSync(resolve(process.env.EASEPRINT_ROOT ?? process.cwd(), p)), {
+    message: 'raw measurement file does not exist',
+  });
 
 export const tierSchema = z
   .strictObject({

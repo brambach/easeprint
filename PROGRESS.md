@@ -209,6 +209,24 @@ glossary, `motion/default/` and the four motion notes. Not edited (its AGENTS.md
 - `pnpm test` 208 passed, `pnpm test:e2e` 46 passed (axe light and dark, reduced motion, filter, compare,
   clipboard), `pnpm lint` clean, `pnpm check` 0 errors, `pnpm build` 24 pages.
 
+## Shared tokens (2026-10-18)
+
+- `vendor/design-tokens` is `@brambach/design-tokens` 0.1.0 from design-taste `tokens/` at commit `e8404234`
+  (not tagged yet, so `VERSION` records the SHA as the ref). This run couldn't read the private repo, so the copy
+  came from a tarball of that commit and `VERSION`/`SHA256SUMS` were written in `sync.sh`'s format.
+  `sh vendor/design-tokens/sync.sh --check` (`pnpm tokens:check`) passes offline and runs first in
+  `.github/workflows/ci.yml`. Bumping needs `sync.sh --ref <tag>` on a machine that can read design-taste.
+- `global.css` imports `tokens.css` and `auto-dark.css`, then `motion.css` (so its `--ease-signature` still wins).
+  The hand-copied surfaces, inks, lines, primary, lift, type families, space and radii are gone; usages renamed
+  (`--ink2` to `--ink-2`, `--line2` to `--line-strong`, `--pine`/`--pine-ink` to `--primary`/`--on-primary`,
+  `--f-*` to `--font-*`, `--r-sm`/`--r`/`--r-card` to `--r1`/`--r2`/`--r3`). Kept local: `--font-text` (Instrument
+  Sans Variable), `--wrap`, `--lift-hover` and the demo colours.
+- No contrast overrides. The shared `--muted` is lighter than ours was but still 4.66:1 or more on every surface in
+  both modes (lowest: light `--sunk`); `--faint` only strokes plot handles. axe passed light and dark without them.
+- Visible: muted text, hairlines and borders are a shade lighter; dark `--sunk` is a shade lighter; dark cards lose
+  the 4% white top highlight (the shared `--lift` leaves it to `--card-edge`, which we don't use). Layout unchanged.
+- `pnpm build` 24 pages, `pnpm test` 208 passed, `pnpm test:e2e` 46 passed, `pnpm lint` clean.
+
 ## Summary
 
 **Built:** a static Astro site with 20 measured entries (105 tiers), each traced to raw files that the build

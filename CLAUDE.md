@@ -26,7 +26,8 @@ A static Astro site documenting how 20 real sites move, with every value traced 
 - Honesty notes (reduced motion, `transition: all`, JS, canvas) are computed in `src/lib/honesty.ts`, never typed.
 - Copy: no em dashes, contractions, say what wasn't checked. Check comparative claims against every raw file.
 - Design: before changing UI, read `APPLY.md` in github.com/brambach/design-taste (private; clone it). This
-  project's tokens in `src/styles/global.css` win. `src/styles/motion.css` is its `motion/default` file, unchanged.
+  Tokens come from `vendor/design-tokens` (never edit it; `pnpm tokens:check` fails CI if you do); override them
+  in `src/styles/global.css`. `src/styles/motion.css` is its `motion/default` file, unchanged.
 
 ## Layout
 
@@ -34,4 +35,5 @@ A static Astro site documenting how 20 real sites move, with every value traced 
 - `src/lib/`: easing math, schema, trace helpers, shared by the site and tests
 - `src/content/entries/*.json`: one entry per site
 - `tests/unit`, `tests/e2e`, `tests/fixtures`
+- `vendor/design-tokens`: `@brambach/design-tokens`, pinned in its `VERSION`; bump with its `sync.sh --ref <tag>`
 - Playwright uses `/opt/pw-browsers/chromium` when it exists (cloud container); set `EASEPRINT_CHROMIUM` to override.

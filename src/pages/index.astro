@@ -111,7 +111,7 @@ const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => 
 
   /* The one oversized wordmark. It doesn't move: the page paints finished, and the long moves live in the demos. */
   .wordmark {
-    font: 400 clamp(84px, 19vw, 264px) / 0.82 var(--f-display);
+    font: 400 clamp(84px, 19vw, 264px) / 0.82 var(--font-display);
     letter-spacing: -0.045em;
     margin-left: -0.04em;
   }
@@ -150,7 +150,7 @@ const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => 
   }
 
   .filter .n {
-    font-family: var(--f-mono);
+    font-family: var(--font-mono);
     font-size: 11px;
     color: var(--muted);
   }
@@ -202,7 +202,7 @@ const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => 
     gap: var(--s4);
     height: 100%;
     padding: var(--s4);
-    border-radius: var(--r-card);
+    border-radius: var(--r3);
     background: var(--raised);
     box-shadow: var(--lift);
     text-decoration: none;
@@ -241,7 +241,7 @@ const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => 
   }
 
   .card h3 {
-    font: 600 17px/1.2 var(--f-text);
+    font: 600 17px/1.2 var(--font-text);
     letter-spacing: -0.005em;
     overflow-wrap: anywhere;
   }

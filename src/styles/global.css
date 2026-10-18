@@ -8,27 +8,18 @@
 @import "@fontsource-variable/instrument-sans/index.css";
 @import "@fontsource/jetbrains-mono/400.css";
 @import "@fontsource/jetbrains-mono/500.css";
+
+/* Shared tokens from design-taste, vendored in vendor/design-tokens. Don't edit them there; override here. */
+@import "@brambach/design-tokens/tokens.css";
+@import "@brambach/design-tokens/auto-dark.css";
+
+/* After the tokens, so its tiers (including --ease-signature) win over the shared motion tokens. */
 @import "./motion.css";
 
 :root {
-  color-scheme: light;
-  --paper: #f7f6f3;
-  --canvas: #fdfdfc;
-  --raised: #fff;
-  --sunk: #f2f1ed;
-  --ink: #1b1b19;
-  --ink2: #3c3c38;
-  --muted: #5b5a55;
-  --faint: #696762;
-  --line: #e6e5df;
-  --line2: #d6d5ce;
-  --pine: #22382b;
-  --pine-ink: #f8f8f5;
-  --lift:
-    0 0 0 1px rgb(20 30 24 / 5%),
-    0 1px 2px rgb(20 30 24 / 5%),
-    0 4px 10px -4px rgb(20 30 24 / 8%),
-    0 18px 36px -18px rgb(34 56 43 / 22%);
+  /* @fontsource-variable registers the family under this name. */
+  --font-text: "Instrument Sans Variable", "Instrument Sans", -apple-system, blinkmacsystemfont, system-ui, sans-serif;
+  --wrap: 1200px;
   --lift-hover:
     0 0 0 1px rgb(20 30 24 / 7%),
     0 2px 4px rgb(20 30 24 / 6%),
@@ -42,40 +33,11 @@
   --ambient: #14996a;
   --compare-a: #c4552a;
   --compare-b: #2a72cc;
-  --f-display: "Instrument Serif", georgia, serif;
-  --f-text: "Instrument Sans Variable", "Instrument Sans", -apple-system, blinkmacsystemfont, system-ui, sans-serif;
-  --f-mono: "JetBrains Mono", ui-monospace, sfmono-regular, menlo, monospace;
-  --s1: 4px;
-  --s2: 8px;
-  --s3: 12px;
-  --s4: 16px;
-  --s5: 24px;
-  --s6: 32px;
-  --s7: 48px;
-  --s8: 64px;
-  --s9: 96px;
-  --wrap: 1200px;
-  --r-sm: 6px;
-  --r: 10px;
-  --r-card: 14px;
 }
 
+/* Same selectors as auto-dark.css and tokens.css, for the values the shared tokens don't cover. */
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --paper: #141312;
-    --canvas: #1b1a18;
-    --raised: #242220;
-    --sunk: #2a2826;
-    --ink: #eeece7;
-    --ink2: #cdc9c1;
-    --muted: #b4b0a7;
-    --faint: #a5a198;
-    --line: #2b2926;
-    --line2: #3d3a35;
-    --pine: #dfe8d6;
-    --pine-ink: #161a14;
-    --lift: inset 0 1px 0 rgb(255 255 255 / 4%), 0 1px 2px rgb(0 0 0 / 35%), 0 12px 30px -14px rgb(0 0 0 / 70%);
+  :root:not([data-theme]) {
     --lift-hover: inset 0 1px 0 rgb(255 255 255 / 6%), 0 2px 4px rgb(0 0 0 / 40%), 0 18px 40px -16px rgb(0 0 0 / 75%);
     --spatial: #d46a3d;
     --material: #4585d6;
@@ -86,20 +48,6 @@
 }
 
 :root[data-theme="dark"] {
-  color-scheme: dark;
-  --paper: #141312;
-  --canvas: #1b1a18;
-  --raised: #242220;
-  --sunk: #2a2826;
-  --ink: #eeece7;
-  --ink2: #cdc9c1;
-  --muted: #b4b0a7;
-  --faint: #a5a198;
-  --line: #2b2926;
-  --line2: #3d3a35;
-  --pine: #dfe8d6;
-  --pine-ink: #161a14;
-  --lift: inset 0 1px 0 rgb(255 255 255 / 4%), 0 1px 2px rgb(0 0 0 / 35%), 0 12px 30px -14px rgb(0 0 0 / 70%);
   --lift-hover: inset 0 1px 0 rgb(255 255 255 / 6%), 0 2px 4px rgb(0 0 0 / 40%), 0 18px 40px -16px rgb(0 0 0 / 75%);
   --spatial: #d46a3d;
   --material: #4585d6;
@@ -122,7 +70,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 400 16px/1.6 var(--f-text);
+  font: 400 16px/1.6 var(--font-text);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
   overflow-x: clip;
@@ -159,7 +107,7 @@ button {
 
 code,
 .mono {
-  font-family: var(--f-mono);
+  font-family: var(--font-mono);
   font-size: 0.875em;
 }
 
@@ -205,9 +153,9 @@ p {
   top: -120px;
   z-index: 50;
   padding: 10px 14px;
-  border-radius: var(--r);
+  border-radius: var(--r2);
   background: var(--raised);
-  border: 1px solid var(--line2);
+  border: 1px solid var(--line-strong);
   font-size: 14px;
   font-weight: 600;
 }
@@ -218,17 +166,17 @@ p {
 
 /* ---------- Type roles ---------- */
 .display {
-  font: 400 clamp(44px, 6.4vw, 84px) / 0.95 var(--f-display);
+  font: 400 clamp(44px, 6.4vw, 84px) / 0.95 var(--font-display);
   letter-spacing: -0.022em;
 }
 
 .h2 {
-  font: 400 clamp(30px, 3.4vw, 44px) / 1.02 var(--f-display);
+  font: 400 clamp(30px, 3.4vw, 44px) / 1.02 var(--font-display);
   letter-spacing: -0.014em;
 }
 
 .kicker {
-  font: 500 12px/1.4 var(--f-mono);
+  font: 500 12px/1.4 var(--font-mono);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--muted);
@@ -237,7 +185,7 @@ p {
 .lede {
   font-size: clamp(17px, 1.5vw, 19px);
   line-height: 1.55;
-  color: var(--ink2);
+  color: var(--ink-2);
   max-width: 38em;
 }
 
@@ -247,7 +195,7 @@ p {
 }
 
 .value {
-  font-family: var(--f-mono);
+  font-family: var(--font-mono);
   font-size: 13px;
   color: var(--ink);
   overflow-wrap: anywhere;
@@ -268,7 +216,7 @@ p {
 }
 
 .brand {
-  font: 400 24px/1 var(--f-display);
+  font: 400 24px/1 var(--font-display);
   letter-spacing: -0.01em;
   text-decoration: none;
   margin-top: -3px;
@@ -324,10 +272,10 @@ p {
   height: 32px;
   padding: 0 12px;
   border-radius: 999px;
-  border: 1px solid var(--line2);
+  border: 1px solid var(--line-strong);
   background: var(--raised);
   color: var(--ink);
-  font: 500 13px/1 var(--f-text);
+  font: 500 13px/1 var(--font-text);
   cursor: pointer;
   white-space: nowrap;
   transition: transform var(--dur-micro) var(--ease-utility);
@@ -342,13 +290,13 @@ p {
 }
 
 .btn-primary {
-  background: var(--pine);
-  color: var(--pine-ink);
+  background: var(--primary);
+  color: var(--on-primary);
   border-color: transparent;
 }
 
 .btn-primary:hover {
-  background: color-mix(in srgb, var(--pine) 88%, var(--canvas));
+  background: color-mix(in srgb, var(--primary) 88%, var(--canvas));
 }
 
 .btn[aria-pressed="true"] {
@@ -368,12 +316,12 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font: 500 11px/1 var(--f-mono);
+  font: 500 11px/1 var(--font-mono);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 5px 8px;
   border-radius: 999px;
-  border: 1px solid var(--line2);
+  border: 1px solid var(--line-strong);
   color: var(--muted);
 }
 
@@ -385,7 +333,7 @@ p {
 }
 
 .tag[data-posture] {
-  color: var(--ink2);
+  color: var(--ink-2);
 }
 
 /* Identity is carried by the dot; the label stays in text ink for contrast. */

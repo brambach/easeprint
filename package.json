@@ -11,6 +11,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "tokens:check": "sh vendor/design-tokens/sync.sh --check",
     "lint": "eslint . && stylelint \"src/**/*.css\"",
     "test": "vitest run",
     "test:e2e": "playwright test",

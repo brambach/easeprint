@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "easeprint",
+  "version": "0.1.0",
+  "description": "Read how any site moves. See its motion fingerprint and copy its curves and durations into your code.",
+  "minimum_chrome_version": "116",
+  "action": { "default_title": "Read this page's motion" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "side_panel": { "default_path": "panel.html" },
+  "permissions": ["activeTab", "scripting", "sidePanel", "storage"],
+  "optional_host_permissions": ["https://*/*", "http://*/*"],
+  "commands": {
+    "_execute_action": { "suggested_key": { "default": "Alt+Shift+E" }, "description": "Read this page's motion" }
+  },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" }
+}

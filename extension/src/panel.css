@@ -1,0 +1,479 @@
+/*
+ * The side panel. Same material as easeprint.com: warm paper, ink, serif only where it speaks. The print is the
+ * one piece of art; the demos are the only things that move, and only when you ask.
+ */
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("fonts/instrument-serif.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("fonts/instrument-sans.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/jetbrains-mono-400.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/jetbrains-mono-500.woff2") format("woff2");
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font: 400 var(--fs-body) / var(--lh-ui) var(--font-text);
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+}
+
+main {
+  padding: var(--s5) var(--s4) var(--s7);
+  display: grid;
+  gap: var(--s6);
+}
+
+/* Head */
+.head {
+  display: grid;
+  gap: var(--s2);
+}
+
+.head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+}
+
+.brand {
+  font: 600 var(--fs-small) / 1 var(--font-text);
+  letter-spacing: -0.01em;
+  color: var(--muted);
+}
+
+.brand b {
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0;
+  font: 400 var(--fs-h1) / var(--lh-tight) var(--font-display);
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  color: var(--muted);
+  font-size: var(--fs-small);
+}
+
+.glyph {
+  width: 12px;
+  height: 12px;
+  flex: none;
+}
+
+.glyph.reading circle {
+  transform-origin: 6px 6px;
+  animation: spin var(--dur-loop) linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Buttons */
+.btn {
+  appearance: none;
+  border: 0;
+  border-radius: var(--r-pill);
+  padding: 6px 12px;
+  background: var(--sunk);
+  color: var(--ink);
+  font-size: var(--fs-small);
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform var(--dur-instant) var(--ease-out);
+}
+
+.btn:hover {
+  background: var(--line);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: var(--on-primary);
+  box-shadow: var(--btn-lit);
+}
+
+.btn[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* The print */
+.print {
+  position: relative;
+  background: var(--raised);
+  border-radius: var(--r3);
+  box-shadow: var(--lift);
+  padding: var(--s5) var(--s5) var(--s4);
+  display: grid;
+  justify-items: center;
+  gap: var(--s3);
+}
+
+.print svg {
+  width: min(78%, 260px);
+  height: auto;
+  color: var(--ink);
+  overflow: visible;
+}
+
+.print path {
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.print.focus path {
+  opacity: 0.16;
+}
+
+.print.focus path.on {
+  opacity: 1;
+}
+
+.print-caption {
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Sections */
+section {
+  display: grid;
+  gap: var(--s3);
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s3);
+}
+
+h2 {
+  margin: 0;
+  font: 600 var(--fs-title) / 1.3 var(--font-text);
+}
+
+.tools {
+  display: flex;
+  gap: var(--s2);
+}
+
+/* Scrubber */
+.scrub {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--s3);
+}
+
+.scrub input {
+  width: 100%;
+  accent-color: var(--ink);
+}
+
+.scrub output {
+  min-width: 6ch;
+  text-align: right;
+  color: var(--muted);
+}
+
+/* Tier rows: quiet, no rules between them; hover dims the others. */
+.tiers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.tiers:hover .tier:not(:hover) {
+  opacity: 0.55;
+}
+
+.tier {
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s2) var(--s2);
+  margin: 0 calc(var(--s2) * -1);
+  border-radius: var(--r2);
+  cursor: pointer;
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.tier:hover {
+  background: var(--sunk);
+}
+
+.tier-main {
+  min-width: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.tier-name {
+  font-weight: 600;
+}
+
+.tier-name .fit {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.tier-value {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+
+.tier-meta {
+  font-size: var(--fs-caption);
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tier-side {
+  display: grid;
+  justify-items: end;
+  gap: 2px;
+}
+
+.tier-dur {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  font-weight: 500;
+}
+
+.icon-btn {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 2px 4px;
+  border-radius: var(--r1);
+  color: var(--muted);
+  font-size: var(--fs-caption);
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  color: var(--ink);
+  background: var(--line);
+}
+
+/* Demos: our own small elements, run on the tier's exact curve and duration. */
+.demo {
+  position: relative;
+  width: 52px;
+  height: 44px;
+  border-radius: var(--r2);
+  background: var(--sunk);
+  overflow: hidden;
+}
+
+.demo .card {
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  width: 30px;
+  height: 22px;
+  border-radius: 5px;
+  background: var(--raised);
+  box-shadow: 0 0 0 1px var(--line-strong);
+}
+
+.demo .card-shadow {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 8px 14px -6px rgb(34 56 43 / 45%);
+  opacity: 0;
+}
+
+.demo .word {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font: 400 22px / 1 var(--font-display);
+}
+
+.demo .word span {
+  display: block;
+}
+
+.demo .pop {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  margin: -9px 0 0 -9px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.demo .spin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid var(--ink);
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+/* Honesty */
+.honest {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s2);
+  font-size: var(--fs-small);
+  color: var(--ink-2);
+}
+
+.honest li {
+  display: grid;
+  grid-template-columns: 14px 1fr;
+  gap: var(--s2);
+  align-items: start;
+}
+
+.honest svg {
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+  color: var(--muted);
+}
+
+/* Copy */
+.formats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.formats .btn {
+  padding: 4px 10px;
+  font-size: var(--fs-caption);
+}
+
+pre {
+  margin: 0;
+  padding: var(--s3) var(--s4);
+  background: var(--canvas);
+  border-radius: var(--r2);
+  box-shadow: var(--card-edge);
+  font: 400 var(--fs-caption) / 1.6 var(--font-mono);
+  color: var(--ink-2);
+  overflow: auto;
+  max-height: 260px;
+  white-space: pre;
+}
+
+.copy-row {
+  display: flex;
+  gap: var(--s2);
+  align-items: center;
+}
+
+.stamp {
+  color: var(--muted);
+  font-size: var(--fs-small);
+  opacity: 0;
+}
+
+/* Empty and blocked states */
+.blank {
+  display: grid;
+  gap: var(--s4);
+  padding-top: var(--s7);
+}
+
+.blank p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: var(--fs-read);
+  line-height: var(--lh-read);
+  max-width: 34ch;
+}
+
+.blank kbd {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  padding: 1px 6px;
+  border-radius: var(--r1);
+  background: var(--sunk);
+}
+
+.hint {
+  color: var(--muted);
+  font-size: var(--fs-small);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glyph.reading circle {
+    animation: none;
+  }
+}

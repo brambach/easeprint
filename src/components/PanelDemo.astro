@@ -1,0 +1,332 @@
+---
+import Print from './Print.astro';
+import { parseEasing, yRange } from '../lib/easing';
+import { entryPrintTiers } from '../lib/print/entry';
+import { exportTiers } from '../lib/print/export';
+import { buildTiers, durationLabel, type Tier } from '../lib/print/tiers';
+import type { EntryWithHonesty } from '../lib/entries';
+
+/**
+ * The extension's side panel, rebuilt in HTML with a measured entry, so the home page shows the real product
+ * working. Tiers go through the same buildTiers() the extension runs, so names and values match what you'd see.
+ */
+interface Props {
+  entry: EntryWithHonesty;
+}
+const { entry } = Astro.props;
+const e = entry.data;
+const { tiers } = buildTiers(
+  e.tiers.map((t) => ({
+    kind: t.kind,
+    property: t.property,
+    timingFunction: t.timingFunction,
+    durationMs: t.durationMs,
+    count: t.count,
+    iterations: t.role === 'ambient' && t.kind === 'animation' ? 'infinite' : undefined,
+  })),
+  { max: 6 },
+);
+const moves = e.tiers.reduce((n, t) => n + t.count, 0);
+const longest = Math.max(...tiers.map((t) => t.durationMs));
+const css = exportTiers({ site: e.site, date: e.captured, tiers }, 'css').split('\n').slice(1, 6).join('\n') + '\n  …';
+
+function demo(t: Tier): 'pop' | 'word' | 'card' {
+  try {
+    if (yRange(parseEasing(t.timingFunction))[1] > 1.02) return 'pop';
+  } catch {
+    /* steps fall through */
+  }
+  return t.durationMs >= 600 ? 'word' : 'card';
+}
+const short = (tf: string) => (tf.startsWith('linear(') ? 'linear() spring' : tf);
+---
+<div class="pd" data-panel-demo>
+  <div class="pd-head">
+    <span class="pd-brand">easeprint<b>.</b></span>
+    <span class="pd-chip">Record from load</span>
+  </div>
+  <p class="pd-host">{e.site}</p>
+  <p class="pd-status"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.5 5 9l5-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Measured {e.captured} · {moves.toLocaleString('en-US')} moves</p>
+
+  <div class="pd-print">
+    <Print tiers={entryPrintTiers(entry)} label={`Motion fingerprint of ${e.site}`} draw={{ timingFunction: 'cubic-bezier(0.19, 1, 0.22, 1)', durationMs: 1100, on: 'view' }} />
+  </div>
+
+  <div class="pd-bar">
+    <span class="pd-h">Tiers</span>
+    <button class="btn btn-primary" type="button" data-pd-play>Play all</button>
+  </div>
+  <label class="pd-scrub"><input type="range" min="0" max={Math.round(longest)} value={Math.round(longest)} step="1" data-pd-scrub aria-label="Scrub every demo together, in milliseconds" /><output class="value" data-pd-out>{Math.round(longest)}ms</output></label>
+  <ol class="pd-tiers">
+    {tiers.map((t) => (
+      <li class="pd-tier">
+        <button type="button" class="pd-row" data-ease={t.timingFunction} data-dur={t.durationMs} data-kind={demo(t)}>
+          <span class="sr">Play</span>
+          <span class="pd-demo" aria-hidden="true">
+            {demo(t) === 'card' && <span class="pd-card" data-part="card"></span>}
+            {demo(t) === 'word' && <span class="pd-word"><span data-part="word">Aa</span></span>}
+            {demo(t) === 'pop' && <span class="pd-pop" data-part="pop"></span>}
+          </span>
+          <span class="pd-main">
+            <span class="pd-name">{t.name}</span>
+            <span class="pd-value">{short(t.timingFunction)}</span>
+          </span>
+          <span class="pd-dur">{durationLabel(t.durationMs)}</span>
+        </button>
+      </li>
+    ))}
+  </ol>
+  <pre class="pd-code" aria-label="The CSS it copies">{css}</pre>
+</div>
+
+<script>
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  const KEYS: Record<string, Keyframe[]> = {
+    card: [{ transform: 'translateY(5px)' }, { transform: 'translateY(-3px)' }],
+    word: [{ transform: 'translateY(110%)' }, { transform: 'none' }],
+    pop: [{ transform: 'scale(0.4)' }, { transform: 'none' }],
+  };
+  for (const root of document.querySelectorAll<HTMLElement>('[data-panel-demo]')) {
+    const rows = [...root.querySelectorAll<HTMLButtonElement>('.pd-row')];
+    const anims = rows.map((row) => {
+      const el = row.querySelector<HTMLElement>('[data-part]')!;
+      const dur = Number(row.dataset.dur);
+      const a = el.animate(KEYS[row.dataset.kind!]!, { duration: dur, easing: row.dataset.ease!, fill: 'both' });
+      a.pause();
+      a.currentTime = dur;
+      return a;
+    });
+    const scrub = root.querySelector<HTMLInputElement>('[data-pd-scrub]')!;
+    const out = root.querySelector<HTMLOutputElement>('[data-pd-out]')!;
+    const play = (list: Animation[]) => {
+      for (const a of list) {
+        a.currentTime = 0;
+        if (reduce.matches) a.finish();
+        else a.play();
+      }
+    };
+    rows.forEach((row, i) => row.addEventListener('click', () => play([anims[i]!])));
+    root.querySelector('[data-pd-play]')!.addEventListener('click', () => {
+      scrub.value = scrub.max;
+      out.value = `${scrub.max}ms`;
+      play(anims);
+    });
+    scrub.addEventListener('input', () => {
+      const ms = Number(scrub.value);
+      out.value = `${ms}ms`;
+      anims.forEach((a, i) => {
+        a.pause();
+        a.currentTime = Math.min(ms, Number(rows[i]!.dataset.dur));
+      });
+    });
+  }
+</script>
+
+<style>
+  .pd {
+    width: 100%;
+    max-width: 400px;
+    padding: var(--s5) var(--s4) var(--s4);
+    border-radius: 18px;
+    background: var(--paper);
+    box-shadow: var(--float);
+    font-size: 14px;
+  }
+
+  .pd-head,
+  .pd-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pd-brand {
+    font: 600 13px/1 var(--font-text);
+    color: var(--muted);
+  }
+
+  .pd-brand b {
+    color: var(--accent);
+  }
+
+  .pd-chip {
+    font: 500 12px/1 var(--font-text);
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--sunk);
+  }
+
+  .pd-host {
+    margin-top: var(--s2);
+    font: 400 32px/1.1 var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  .pd-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: var(--s1);
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .pd-status svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .pd-print {
+    display: grid;
+    place-items: center;
+    margin-top: var(--s4);
+    padding: var(--s4);
+    border-radius: var(--r3);
+    background: var(--raised);
+    box-shadow: var(--lift);
+  }
+
+  .pd-print :global(svg) {
+    width: 62%;
+    height: auto;
+    color: var(--ink);
+  }
+
+  .pd-bar {
+    margin-top: var(--s5);
+  }
+
+  .pd-h {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .pd-scrub {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--s3);
+    align-items: center;
+    margin-top: var(--s3);
+  }
+
+  .pd-scrub input {
+    width: 100%;
+    accent-color: var(--ink);
+  }
+
+  .pd-scrub output {
+    min-width: 6ch;
+    text-align: right;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .pd-tiers {
+    margin-top: var(--s2);
+  }
+
+  .pd-tiers:hover .pd-tier:not(:hover) {
+    opacity: 0.55;
+  }
+
+  .pd-tier {
+    transition: opacity var(--dur-exit) var(--ease-exit);
+  }
+
+  .pd-row {
+    all: unset;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 48px 1fr auto;
+    gap: var(--s3);
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    border-radius: var(--r2);
+    cursor: pointer;
+  }
+
+  .pd-row:hover {
+    background: var(--sunk);
+  }
+
+  .pd-row:focus-visible {
+    outline: 2px solid var(--focus);
+  }
+
+  .pd-demo {
+    position: relative;
+    width: 48px;
+    height: 40px;
+    border-radius: var(--r2);
+    background: var(--sunk);
+    overflow: hidden;
+  }
+
+  .pd-card {
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    width: 28px;
+    height: 20px;
+    border-radius: 5px;
+    background: var(--raised);
+    box-shadow: 0 0 0 1px var(--line-strong), 0 6px 10px -6px rgb(34 56 43 / 40%);
+  }
+
+  .pd-word {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font: 400 20px/1 var(--font-display);
+  }
+
+  .pd-word span {
+    display: block;
+  }
+
+  .pd-pop {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+
+  .pd-main {
+    display: grid;
+    min-width: 0;
+  }
+
+  .pd-name {
+    font-weight: 600;
+  }
+
+  .pd-value {
+    font: 400 11.5px/1.4 var(--font-mono);
+    color: var(--ink-2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .pd-dur {
+    font: 500 13px/1 var(--font-mono);
+  }
+
+  .pd-code {
+    margin: var(--s4) 0 0;
+    padding: var(--s3);
+    border-radius: var(--r2);
+    background: var(--canvas);
+    box-shadow: var(--card-edge);
+    font: 400 11.5px/1.6 var(--font-mono);
+    color: var(--ink-2);
+    overflow: hidden;
+    white-space: pre;
+  }
+</style>

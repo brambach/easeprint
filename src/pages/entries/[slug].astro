@@ -1,8 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Print from '../../components/Print.astro';
 import Specimen from '../../components/Specimen.astro';
 import Verdict from '../../components/Verdict.astro';
-import { loadEntries, rawHref, type EntryWithHonesty } from '../../lib/entries';
+import { leadTier, loadEntries, rawHref, type EntryWithHonesty } from '../../lib/entries';
+import { entryPrintTiers } from '../../lib/print/entry';
 
 export async function getStaticPaths() {
   const entries = await loadEntries();
@@ -26,11 +28,21 @@ const tellText =
   `(colour, shadow, background, filter)${tell.looping ? `, and ${tell.looping} elements loop` : ''}. ` +
   `The glossary's quick test reads that as ${tell.suggests}.`;
 const allUsed = h.transitionAllElements > 0 || h.transitionAllDeclarations > 0;
+const lead = leadTier(entry);
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 ---
 <Base title={e.name} description={e.summary}>
   <article class="wrap entry">
     <header class="entry-head">
+      {e.tiers.length > 0 && (
+        <div class="entry-print">
+          <Print
+            tiers={entryPrintTiers(entry)}
+            label={`Motion fingerprint of ${e.site}, ${e.tiers.length} tiers`}
+            draw={lead ? { timingFunction: lead.timingFunction, durationMs: lead.durationMs, on: 'view' } : undefined}
+          />
+        </div>
+      )}
       <p class="tags">
         <span class="tag" data-posture={e.posture}><i></i>{e.posture}{e.ambientKind ? `, ${e.ambientKind}` : ''}</span>
         <span class="tag" data-status={e.status}>{e.status}</span>
@@ -138,7 +150,30 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
   import '../../scripts/copy';
 </script>
 
+<script>
+  import '../../scripts/print';
+</script>
+
 <style>
+  .entry-print {
+    float: right;
+    width: clamp(120px, 22vw, 220px);
+    margin: 0 0 var(--s4) var(--s6);
+    color: var(--ink);
+  }
+
+  .entry-print :global(svg) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (width <= 640px) {
+    .entry-print {
+      width: 96px;
+      margin-left: var(--s4);
+    }
+  }
+
   .entry-head {
     padding-block: var(--s8) var(--s6);
   }

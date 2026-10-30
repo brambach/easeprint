@@ -8,6 +8,8 @@ A static Astro site documenting how 20 real sites move, with every value traced 
 - `pnpm build`: static build to `dist/` (fails on any entry the schema rejects)
 - `pnpm test`: vitest units, including the schema, trace and easing tests
 - `pnpm test:e2e`: Playwright against the built site (desktop and mobile)
+- `pnpm ext:build`: the Chrome extension to `extension/dist` (and a zip in `public/` for the site); `pnpm test:ext` runs it
+  in a real Chromium against `tests/fixtures/ext`
 - `pnpm lint`: eslint and stylelint
 - `pnpm measure <url> [--reduced] [--click <css>]`: one load of a live site, writes `data/raw/<site>/<date>.json`
   (`--reduced` writes `<date>-reduced.json`; `--click` only for demo sites whose motion needs a click)
@@ -33,6 +35,8 @@ A static Astro site documenting how 20 real sites move, with every value traced 
 
 - `scripts/measure.ts`, `scripts/lib/`: the measuring tool (runs in Playwright's Chromium)
 - `src/lib/`: easing math, schema, trace helpers, shared by the site and tests
+- `src/lib/print/`: tiers, the fingerprint, exporters and the JS-motion curve fitter, shared by the extension and site
+- `extension/`: the MV3 side panel (`src/panel.ts`), the in-page reader (`src/probe.ts`) and the toolbar worker
 - `src/content/entries/*.json`: one entry per site
 - `tests/unit`, `tests/e2e`, `tests/fixtures`
 - `vendor/design-tokens`: `@brambach/design-tokens`, pinned in its `VERSION`; bump with its `sync.sh --ref <tag>`

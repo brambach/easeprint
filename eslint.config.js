@@ -4,7 +4,7 @@ import astro from 'eslint-plugin-astro';
 import globals from 'globals';
 
 export default [
-  { ignores: ['dist/', '.astro/', 'node_modules/', 'playwright-report/', 'test-results/', 'data/'] },
+  { ignores: ['dist/', 'extension/dist/', 'extension/dist-test/', 'public/', '.astro/', 'node_modules/', 'playwright-report/', 'test-results/', 'data/'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   ...astro.configs.recommended,
@@ -14,4 +14,6 @@ export default [
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     },
   },
+  // Playwright fixtures take an empty destructuring pattern when they need no other fixture.
+  { files: ['tests/extension/**'], rules: { 'no-empty-pattern': 'off' } },
 ];

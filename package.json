@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "tsx scripts/build-extension.ts && astro build",
     "preview": "astro preview",
     "check": "astro check",
     "tokens:check": "sh vendor/design-tokens/sync.sh --check",
@@ -18,7 +18,9 @@
     "measure": "tsx scripts/measure.ts",
     "summarize": "tsx scripts/summarize.ts",
     "records": "tsx scripts/records.ts",
-    "screenshot": "tsx scripts/screenshot.ts"
+    "screenshot": "tsx scripts/screenshot.ts",
+    "ext:build": "tsx scripts/build-extension.ts",
+    "test:ext": "tsx scripts/build-extension.ts --test && playwright test -c playwright.extension.config.ts"
   },
   "dependencies": {
     "@brambach/design-tokens": "link:vendor/design-tokens",
@@ -33,10 +35,13 @@
     "@axe-core/playwright": "^4.14.0",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.64.1",
+    "@types/chrome": "^0.3.7",
     "@types/node": "^26.6.5",
     "astro-eslint-parser": "^3.2.0",
+    "esbuild": "^0.28.2",
     "eslint": "^10.13.0",
     "eslint-plugin-astro": "^3.2.1",
+    "fflate": "^0.8.3",
     "globals": "^17.13.0",
     "playwright": "^1.64.1",
     "stylelint": "^17.16.0",

@@ -5,3 +5,6 @@ playwright-report/
 test-results/
 .DS_Store
 *.log
+extension/dist/
+extension/dist-test/
+public/easeprint-extension.zip

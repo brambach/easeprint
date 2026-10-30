@@ -39,9 +39,10 @@ export const test = base.extend<
       const ext = join(root, 'extension/dist-test');
       const executablePath = chromiumPath();
       const ctx = await chromium.launchPersistentContext('', {
-        ...(executablePath ? { executablePath } : {}),
+        // Extensions need full Chromium; Playwright's default headless shell can't load them.
+        ...(executablePath ? { executablePath } : { channel: 'chromium' }),
         headless: true,
-        args: [`--disable-extensions-except=${ext}`, `--load-extension=${ext}`, '--headless=new'],
+        args: [`--disable-extensions-except=${ext}`, `--load-extension=${ext}`],
         viewport: { width: 1200, height: 900 },
       });
       await use(ctx);

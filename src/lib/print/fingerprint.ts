@@ -51,7 +51,7 @@ const MS_LO = 60;
 const MS_HI = 4000;
 
 export function strandsFor(count: number): number {
-  return Math.max(1, Math.min(4, 1 + Math.floor(Math.log2(Math.max(1, count)) / 1.6)));
+  return Math.max(1, Math.min(3, 1 + Math.floor(Math.log2(Math.max(1, count)) / 2.2)));
 }
 
 /** Where each tier's ridge sits, in viewBox units from the core. */

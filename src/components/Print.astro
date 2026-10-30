@@ -1,0 +1,35 @@
+---
+import { fingerprint, type PrintTier } from '../lib/print/fingerprint';
+
+/**
+ * A site's fingerprint, drawn at build time. With `draw`, the client script redraws it in on the given timing:
+ * on hover for cards (the site's own lead curve), once on view for the hero.
+ */
+interface Props {
+  tiers: PrintTier[];
+  label: string;
+  class?: string;
+  draw?: { timingFunction: string; durationMs: number; on: 'hover' | 'view' };
+}
+const { tiers, label, class: className, draw } = Astro.props;
+const p = fingerprint(tiers);
+---
+<svg
+  class:list={['print', className]}
+  viewBox={p.viewBox}
+  role="img"
+  aria-label={label}
+  data-print-draw={draw?.on}
+  data-ease={draw?.timingFunction}
+  data-dur={draw?.durationMs}
+>
+  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    {p.ridges.map((r) =>
+      r.measured ? (
+        <path d={r.d} data-tier={r.tier} data-r={r.radius.toFixed(1)} stroke-width="0.62" pathLength="1" stroke-dasharray={r.loop ? '0.012 0.01' : undefined} />
+      ) : (
+        <path d={r.d} data-r={r.radius.toFixed(1)} stroke-width="0.37" opacity="0.62" pathLength="1" />
+      ),
+    )}
+  </g>
+</svg>

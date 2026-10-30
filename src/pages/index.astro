@@ -1,8 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
-import CurvePlot from '../components/CurvePlot.astro';
+import PanelDemo from '../components/PanelDemo.astro';
+import Print from '../components/Print.astro';
 import Verdict from '../components/Verdict.astro';
 import { leadTier, loadEntries } from '../lib/entries';
+import { entryPrintTiers } from '../lib/print/entry';
 import { POSTURES } from '../lib/schema';
 
 const entries = await loadEntries();
@@ -10,26 +12,46 @@ const tiers = entries.reduce((n, e) => n + e.data.tiers.length, 0);
 const honored = entries.filter((e) => e.honesty.reducedMotion === 'honored').length;
 const dates = [...new Set(entries.map((e) => e.data.captured))].sort();
 const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => e.data.posture === p).length]));
+const featured = entries.find((e) => e.data.site === 'stripe.com') ?? entries.find((e) => e.data.tiers.length > 0);
 ---
 <Base title="easeprint" current="index">
   <section class="hero wrap">
-    <h1 class="wordmark">easeprint</h1>
-    <p class="lede">
-      How {entries.length} real sites move, measured in a browser. Exact cubic-beziers and durations, read from computed
-      styles. Every curve plotted, rebuilt as a demo in our own code, and copyable. Honest notes on reduced motion
-      and{' '}<code>transition: all</code>.
-    </p>
-    <p class="facts value">
-      <span>{entries.length} sites</span>
-      <span>{tiers} tiers</span>
-      <span>captured {dates.join(', ')}</span>
-      <span>{honored} of {entries.length} honor reduced motion</span>
-    </p>
+    <div class="hero-text">
+      <h1 class="display">How does that site feel so good?</h1>
+      <p class="lede">
+        easeprint is a Chrome extension that reads the motion on whatever page you're on. You get the curves and
+        durations the site actually uses, drawn as one print, and you can copy them straight into CSS, Tailwind,
+        Motion or SwiftUI.
+      </p>
+      <div class="btn-row hero-cta">
+        <a class="btn btn-primary btn-lg" href="/easeprint-extension.zip" download>Download for Chrome</a>
+        <a class="btn btn-lg" href="#install">How to install</a>
+      </div>
+      <p class="fine hero-note">
+        Values are read from what the browser computed, so they're exact. Motion driven from JavaScript gets fitted
+        from its frames and is marked that way. Free, and it only reads a page after you click it.
+      </p>
+    </div>
+    <div class="hero-panel">
+      {featured && <PanelDemo entry={featured} />}
+    </div>
+  </section>
+
+  <section class="wrap read" aria-labelledby="read-title">
+    <h2 class="h2" id="read-title">Reading a print</h2>
+    <div class="read-grid">
+      <p>Each ridge is one timing the site uses. Short, snappy ones sit near the core and slow ones sit further out, so a quick site makes a tight print.</p>
+      <p>A ridge bulges where its curve runs ahead of the clock. An ease-out swells early, an ease-in late, and an overshoot pushes out past its neighbours.</p>
+      <p>Thicker ridges showed up more. Broken ones are loops. The faint lines between are filled in from their neighbours so the whole thing reads as one surface.</p>
+    </div>
   </section>
 
   <section class="wrap" aria-labelledby="entries-title">
     <div class="list-head">
-      <h2 class="h2" id="entries-title">Entries</h2>
+      <div>
+        <h2 class="h2" id="entries-title">{entries.length} sites, measured</h2>
+        <p class="fine list-note">Measured in a browser on {dates.join(', ')}. {tiers} tiers, and {honored} of {entries.length} sites honor reduced motion. Hover a print and it draws itself on that site's own lead curve.</p>
+      </div>
       <div class="filter" role="group" aria-label="Filter by posture" data-filter>
         <button class="btn" type="button" aria-pressed="true" data-posture-filter="all">All <span class="n">{entries.length}</span></button>
         {POSTURES.map((p) => (
@@ -48,15 +70,11 @@ const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => 
           <li class="card" data-posture={e.data.posture}>
             <a href={`/entries/${e.id}/`} class="card-link">
               <div class="card-plot">
-                {lead && (
-                  <CurvePlot
-                    timingFunction={lead.timingFunction}
-                    size={120}
-                    handles={false}
-                    color={`var(--${e.data.posture})`}
-                    label={`${e.data.name} ${lead.role}: ${lead.timingFunction} over ${lead.duration}`}
-                  />
-                )}
+                <Print
+                  tiers={entryPrintTiers(e)}
+                  label={`Motion fingerprint of ${e.data.site}, ${e.data.tiers.length} tiers`}
+                  draw={lead ? { timingFunction: lead.timingFunction, durationMs: lead.durationMs, on: 'hover' } : undefined}
+                />
               </div>
               <div class="card-body">
                 <h3>{e.data.name}</h3>
@@ -79,9 +97,22 @@ const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => 
       })}
     </ol>
   </section>
+
+  <section class="wrap install" id="install" aria-labelledby="install-title">
+    <h2 class="h2" id="install-title">Install it</h2>
+    <p class="lede">It isn't on the Chrome Web Store yet, so for now it installs by hand. Takes about a minute.</p>
+    <ol class="steps">
+      <li><span class="value">1</span><p><a href="/easeprint-extension.zip" download>Download the zip</a> and unzip it.</p></li>
+      <li><span class="value">2</span><p>Open <code>chrome://extensions</code>, turn on Developer mode in the top right, and click Load unpacked. Pick the <code>easeprint</code> folder.</p></li>
+      <li><span class="value">3</span><p>Go to a site you like and click easeprint in the toolbar, or press <code>Alt</code> <code>Shift</code> <code>E</code>. Move around the page and the print fills in.</p></li>
+    </ol>
+    <p class="fine">It asks for nothing up front. Clicking it gives it the one tab you're on until you leave that page. Record from load asks for one site at a time. Nothing leaves your browser.</p>
+  </section>
 </Base>
 
 <script>
+  import '../scripts/print';
+
   const buttons = [...document.querySelectorAll<HTMLButtonElement>('[data-posture-filter]')];
   const cards = [...document.querySelectorAll<HTMLElement>('.card')];
   const status = document.querySelector<HTMLElement>('[data-filter-status]');
@@ -106,28 +137,108 @@ const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => 
 
 <style>
   .hero {
-    padding-block: var(--s8) var(--s7);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
+    gap: var(--s8);
+    align-items: start;
+    padding-block: var(--s9) var(--s8);
   }
 
-  /* The one oversized wordmark. It doesn't move: the page paints finished, and the long moves live in the demos. */
-  .wordmark {
-    font: 400 clamp(84px, 19vw, 264px) / 0.82 var(--font-display);
-    letter-spacing: -0.045em;
-    margin-left: -0.04em;
+  .hero-text {
+    padding-top: var(--s6);
   }
 
   .hero .lede {
-    margin-top: var(--s7);
+    margin-top: var(--s5);
   }
 
-  .facts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--s2) var(--s5);
+  .hero-cta {
+    margin-top: var(--s6);
+  }
+
+  .btn-lg {
+    height: 40px;
+    padding: 0 18px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .hero-note {
     margin-top: var(--s5);
-    padding-top: var(--s4);
-    border-top: 1px solid var(--line);
+    max-width: 34em;
+  }
+
+  .hero-panel {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (width <= 900px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--s7);
+      padding-block: var(--s7);
+    }
+
+    .hero-text {
+      padding-top: 0;
+    }
+
+    .hero-panel {
+      justify-content: flex-start;
+    }
+  }
+
+  .read {
+    padding-block: var(--s6) var(--s8);
+  }
+
+  .read-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--s6);
+    margin-top: var(--s5);
+    color: var(--ink-2);
+    font-size: 15px;
+  }
+
+  @media (width <= 760px) {
+    .read-grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--s4);
+    }
+  }
+
+  .list-note {
+    margin-top: var(--s2);
+    max-width: 40em;
+  }
+
+  .install {
+    padding-top: var(--s9);
+  }
+
+  .install .lede {
+    margin-top: var(--s3);
+  }
+
+  .steps {
+    display: grid;
+    gap: var(--s4);
+    margin-block: var(--s6);
+    max-width: 40em;
+  }
+
+  .steps li {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: var(--s3);
+    font-size: 15px;
+  }
+
+  .steps .value {
     color: var(--muted);
+    padding-top: 2px;
   }
 
   .list-head {
@@ -233,7 +344,13 @@ const counts = Object.fromEntries(POSTURES.map((p) => [p, entries.filter((e) => 
 
   .card-plot {
     flex: none;
-    width: 96px;
+    width: 84px;
+    color: var(--ink);
+  }
+
+  .card-plot :global(svg) {
+    width: 100%;
+    height: auto;
   }
 
   .card-body {

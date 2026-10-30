@@ -300,7 +300,7 @@ function drawPrint() {
       ${p.ridges
         .map((r) =>
           r.measured
-            ? `<path d="${r.d}" data-tier="${r.tier}" stroke-width="0.62" pathLength="1"${r.loop ? ' stroke-dasharray="1.6 1.4"' : ''}/>`
+            ? `<path d="${r.d}" data-tier="${r.tier}" stroke-width="0.62" pathLength="1"${r.loop ? ' stroke-dasharray="0.012 0.01"' : ''}/>`
             : `<path d="${r.d}" stroke-width="0.37" opacity="0.62" pathLength="1"/>`,
         )
         .join('')}

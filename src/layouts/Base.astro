@@ -6,7 +6,7 @@ interface Props {
   description?: string;
   current?: 'index' | 'compare' | 'convention' | 'about';
 }
-const { title, description = 'How 20 real sites move, measured.', current } = Astro.props;
+const { title, description = 'A Chrome extension that reads how any site moves and copies its curves and durations into your code.', current } = Astro.props;
 const fullTitle = title === 'easeprint' ? title : `${title} · easeprint`;
 ---
 <!doctype html>
@@ -24,7 +24,7 @@ const fullTitle = title === 'easeprint' ? title : `${title} · easeprint`;
       <div class="wrap">
         <a class="brand" href="/">easeprint<b>.</b></a>
         <nav aria-label="Site">
-          <a href="/" aria-current={current === 'index' ? 'page' : undefined}>Entries</a>
+          <a href="/" aria-current={current === 'index' ? 'page' : undefined}>Sites</a>
           <a href="/compare/" aria-current={current === 'compare' ? 'page' : undefined}>Compare</a>
           <a href="/convention/" aria-current={current === 'convention' ? 'page' : undefined}>The convention</a>
           <a href="/method/" aria-current={current === 'about' ? 'page' : undefined}>Method</a>

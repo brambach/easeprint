@@ -21,7 +21,8 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
+      # Before the unit tests: tests/unit/measure.test.ts runs the measure tool in a real Chromium.
+      - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm test
       - run: pnpm build
-      - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm test:e2e

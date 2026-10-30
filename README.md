@@ -6,7 +6,7 @@ easeprint is a Chrome extension that reads how a site moves. Click it on any pag
 durations that page actually uses, grouped into a few named tiers, drawn as one print, and ready to copy into CSS,
 Tailwind, Motion or SwiftUI.
 
-Live at [easeprint.vercel.app](https://easeprint.vercel.app).
+Live at [easeprint.brycerambach.com](https://easeprint.brycerambach.com).
 
 ## Why
 
@@ -43,7 +43,7 @@ value traced to a raw file, with compare and convention pages.
 
 It isn't on the Chrome Web Store yet.
 
-1. Download [easeprint-extension.zip](https://easeprint.vercel.app/easeprint-extension.zip) and unzip it.
+1. Download [easeprint-extension.zip](https://easeprint.brycerambach.com/easeprint-extension.zip) and unzip it.
 2. Open `chrome://extensions`, turn on Developer mode, click Load unpacked and pick the `easeprint` folder.
 3. Click easeprint in the toolbar on any site, or press Alt Shift E.
 
